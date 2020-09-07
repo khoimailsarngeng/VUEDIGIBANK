@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md" :style="mobileMode ? '' : 'margin-left:15%;margin-right:6%'">
-    <q-bar class="bg-white text-primary q-mt-md" :style="mobileMode ? 'margin-left:3%;margin-right:0' : 'margin-left:1%;margin-right:14%'">
+    <q-bar class="bg-white text-primary q-mt-md" :style="mobileMode ? 'margin-left:3%;margin-right:0%' : 'margin-right:16%'">
       <span :class="mobileMode ? 'text-h7' : 'text-h5'" style="border-bottom:1px solid #17479D">{{$t('Individualcustomer')}}</span>
       <q-space />
       <q-btn to="/home" color="white" text-color="black" :label="$t('Back')" :style="mobileMode ? 'font-size:12px' : 'font-size:14px'" />      

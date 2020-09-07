@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md" :style="mobileMode ? '' : 'margin-left:15%;margin-right:6%'">
-    <q-bar class="bg-white text-primary q-mt-md" :style="mobileMode ? 'margin-right:1%' : 'margin-right:16%'">
+    <q-bar class="bg-white text-primary q-mt-md" :style="mobileMode ? 'margin-left:3%;margin-right:0' : 'margin-left:1%;margin-right:14%'">
       <span :class="mobileMode ? 'text-h7' : 'text-h5'" style="border-bottom:1px solid #17479D">{{$t('Corporatecustomer')}}</span>
       <q-space />
       <q-btn to="/home" color="white" text-color="black" :label="$t('Back')" :style="mobileMode ? 'font-size:12px' : 'font-size:14px'" />      
@@ -18,7 +18,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
           <q-card class="text-center my-card">
-            <img height="280px" src="/assets/img/bill.jpg" />
+            <img height="280px" src="/assets/img/Bill.jpg" />
             <q-card-section class="q-pt-xs">
               <span class="text-h5">{{ $store.state.language.language === 'en' ? 'Bill Payment' 
                 : $store.state.language.language === 'vi' ? 'Thanh toán hóa đơn' : 'ຊຳລະໃບບິນຕ່າງໆ'}}</span>              

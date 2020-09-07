@@ -1,0 +1,21 @@
+<template>
+  <div>
+    <q-btn-dropdown
+      class="text-primary"
+      stretch
+      flat
+      icon="account_balance"
+      :label="$t('Home')"
+      dropdown-icon="none"
+    ></q-btn-dropdown>
+    <q-btn-dropdown class="text-primary" icon="dashboard" stretch flat :label="$t('Service')"></q-btn-dropdown>
+    <q-btn-dropdown
+      class="text-primary"
+      stretch
+      flat
+      icon="contact_support"
+      :label="$t('Contact')"
+      dropdown-icon="none"
+    ></q-btn-dropdown>
+  </div>
+</template>

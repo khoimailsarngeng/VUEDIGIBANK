@@ -7,7 +7,7 @@
       infinite
       autoplay
       :height="mobileMode ? '300px' : '650px'"
-      thumbnails
+      :thumbnails="mobileMode ? false : true"
     >
       <q-carousel-slide
         style="background-size: 100% 100%;"
@@ -64,7 +64,7 @@
       </template>
     </q-carousel>
     <div class="q-pa-md">
-      <div class="row q-col-gutter-md">
+      <div class="row q-col-gutter-md cls-production">
         <div :style="mobileMode ? 'width:100%' : 'width:50%'">
             <q-card class="bg-custom-card text-center">
               <q-card-section class="q-pb-none">
@@ -326,5 +326,11 @@ export default {
 .bg-custom-card{
   background: rgb(58,117,221) !important;
   background: linear-gradient(90deg, rgba(58,117,221,1) 0%, rgba(175,204,255,1) 52%, rgba(55,112,213,1) 99%) !important;
+}
+
+.cls-production {
+  margin-top:-24px !important;
+  margin-right:-10px !important;
+  margin-left:-26px !important
 }
 </style>

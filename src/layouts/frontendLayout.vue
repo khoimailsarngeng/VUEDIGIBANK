@@ -7,8 +7,8 @@
             class="cursor-pointer text-center"
             style="padding-right:10px;font-size:13px"
           >
-            <span :style="mobileMode ?  window.width > 375 ? 'font-size:10px' : 'font-size:8px'
-               : 'font-size:16px'" class="text-white text-bold">
+            <span  :style="mobileMode ?  window.width > 375 ? 'font-size:10px' : 'font-size:8px'
+               : $store.state.language.language == 'la' ? 'font-size:16px' : 'font-size:13px'" class="text-white text-bold">
               {{$t('LVB')}} <br v-if="mobileMode">
               <span class="text-bold text-white">{{$t('LVB1')}}</span>
             </span>
@@ -43,7 +43,7 @@
             </q-fab>
           </div>
         </q-bar>
-        <q-toolbar class="bg-white shadow-2">
+        <q-toolbar class="bg-white" style="border-bottom:2px solid #17479D">
           <q-toolbar-title class="text-black">
             <img v-if="!mobileMode" src="/assets/img/Final_new.jpg" height="100%" width="220px" />
             <img v-else src="/assets/img/Final_new.jpg" height="50px" width="180px" />
@@ -177,7 +177,9 @@
         </q-list>
       </q-drawer>
       <q-page-container>
-        <router-view />
+        <q-card>
+          <router-view />
+        </q-card>        
       </q-page-container>
     </q-layout>
   </div>

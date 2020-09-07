@@ -147,7 +147,7 @@
             header-class="text-teal"
           >
             <q-list>
-              <q-item clickable v-close-popup>
+              <q-item clickable v-close-popup to="/individual">
                 <q-item-section style="margin-right: -150px;">
                   <img src="assets/img/Generalperson.png" style="width:30px;height:30px" />
                 </q-item-section>

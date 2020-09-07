@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import FrontEndLayout from '../layouts/frontendLayout.vue';
 import Home from '../views/Home/home.vue';
 import Individual from '../views/Home/individual.vue';
+import Corporate from '../views/Home/corporate.vue';
 const route = [
     {
         path: '/',
@@ -18,6 +19,10 @@ const route = [
           {
             path : '/individual',
             component : Individual
+          },
+          {
+            path : '/corporate',
+            component : Corporate
           }
         ]        
     }

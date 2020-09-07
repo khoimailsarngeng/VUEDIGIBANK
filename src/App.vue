@@ -53,7 +53,7 @@ export default {
 </script>
 <style>
 @font-face {
-    font-family: FontName;
+    font-family: KillALLA;
     src: url("./assets/fonts/NotoSerifLao-Regular.ttf") format("truetype");
   }
   
@@ -61,6 +61,13 @@ export default {
     margin: 0;
     padding: 0;
     overflow: auto;
-    font-family: "FontName" , 'Muli', 'sans-serif' !important;
+    font-family: "KillALLA" , 'Muli', 'sans-serif' !important;
+  }
+
+  a:hover{
+    text-decoration: none !important;
+  }
+  button:hover{
+    text-decoration: none !important;
   }
 </style>

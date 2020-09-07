@@ -45,7 +45,7 @@ export default {
   Branch : 'Chi nhánh',
   Check : 'Séc',
   Service : 'Sản phẩm - dịch vụ',
-  Contact : 'Contact',
+  Contact : 'Liên hệ',
   Individualcustomer : 'Khách hàng cá nhân',
   Corporatecustomer : 'Khách hàng doanh nghiệp',
   InfoIndividualcustomer : 'Thông tin Khách hàng cá nhân',

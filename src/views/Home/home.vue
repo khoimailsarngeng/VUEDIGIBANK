@@ -85,7 +85,7 @@
               </q-card-section>
               <q-card-section class="q-pt-xs">
                 <span class="text-h5">{{$t('Corporatecustomer')}}</span> <br>
-                <q-btn class="q-mt-md"  push color="primary" :label="$t('InfoCorporatecustomer')" />
+                <q-btn @click="$router.push('/corporate')" class="q-mt-md"  push color="primary" :label="$t('InfoCorporatecustomer')" />
               </q-card-section>
             </q-card>
         </div>

@@ -44,7 +44,7 @@
           </div>
         </q-bar>
         <q-toolbar class="bg-white" style="border-bottom:2px solid #17479D">
-          <q-toolbar-title class="text-black">
+          <q-toolbar-title class="text-black" to="/home">
             <img v-if="!mobileMode" src="/assets/img/Final_new.jpg" height="100%" width="220px" />
             <img v-else src="/assets/img/Final_new.jpg" height="50px" width="180px" />
           </q-toolbar-title>
@@ -71,17 +71,17 @@
                 <div class="text-center text-h7">{{$t('Service')}}</div>
               </div>
             </template>
-            <q-list>
-              <q-item clickable v-close-popup>
-                <q-item-section style="margin-right: -80px;">
+            <q-list style="min-width:250px">
+              <q-item clickable v-close-popup to="/individual">
+                <q-item-section style="margin-right: -140px;">
                   <img src="assets/img/Generalperson.png" style="width:30px;height:30px" />
                 </q-item-section>
                 <q-item-section>
                   <q-item-label class="text-h7">{{$t('Individualcustomer')}}</q-item-label>
                 </q-item-section>
               </q-item>
-              <q-item clickable v-close-popup>
-                <q-item-section style="margin-right: -80px;">
+              <q-item clickable v-close-popup to="/corporate">
+                <q-item-section style="margin-right: -140px;">
                   <img src="assets/img/Website_Planner-512.png" style="width:30px;height:30px" />
                 </q-item-section>
                 <q-item-section>
@@ -90,14 +90,14 @@
               </q-item>
             </q-list>
           </q-btn-dropdown>
-          <q-btn-dropdown v-if="!mobileMode" class="text-black" stretch flat>
+          <q-btn-dropdown v-if="!mobileMode" class="text-black" stretch flat dropdown-icon="none">
             <template v-slot:label>
               <div class="row items-center no-wrap">
                 <q-icon size="sm" left name="contact_support" />
                 <div class="text-center text-h7">{{$t('Contact')}}</div>
               </div>
             </template>
-            <q-list>
+            <!-- <q-list>
               <q-item clickable v-close-popup>
                 <div class="row items-center no-wrap">
                   <q-icon size="sm" left name="account_balance" />
@@ -116,7 +116,7 @@
                   <div class="text-center text-h7">ທີ່ຕັ້ງຕູ້ ATM</div>
                 </div>
               </q-item>
-            </q-list>
+            </q-list> -->
           </q-btn-dropdown>
           <q-btn
             color="black"
@@ -155,7 +155,7 @@
                   <q-item-label>{{$t('Individualcustomer')}}</q-item-label>
                 </q-item-section>
               </q-item>
-              <q-item clickable v-close-popup>
+              <q-item clickable v-close-popup to="/corporate">
                 <q-item-section style="margin-right: -150px;">
                   <img src="assets/img/Website_Planner-512.png" style="width:30px;height:30px" />
                 </q-item-section>
@@ -220,8 +220,10 @@ a[type='button']:hover {
   color: white !important;
 }
 button:hover {  
-  text-decoration: none;
   background: #0262b6;
   color: white !important;
+}
+a:hover {  
+  text-decoration: none;    
 }
 </style>

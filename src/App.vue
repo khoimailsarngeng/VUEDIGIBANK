@@ -24,7 +24,7 @@ export default {
       this.deviceCheck(true);
       this.SET_WINDOW_RESIZE();
     } else {
-      if (window.innerWidth < 800) {
+      if (window.innerWidth < 1000) {
         this.deviceCheck(true);
         this.SET_WINDOW_RESIZE();
       } else {
@@ -36,7 +36,7 @@ export default {
   mounted(){
     
     window.addEventListener("resize", () => {
-      if (window.innerWidth < 800) {
+      if (window.innerWidth < 1000) {
         this.SET_WINDOW_RESIZE();
         this.deviceCheck(true);
       } else {

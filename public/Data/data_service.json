@@ -33,7 +33,7 @@
         {            
                 "type" : "BillPayment",               
                 "header" : "ຊຳລະໃບບິນຕ່າງໆ", 
-                "headervn" : "Thanh toán hóa đơn", 
+                "headervi" : "Thanh toán hóa đơn", 
                 "headeren" : "Bill Payment",
                 "name" : "Electricity bill payment" , 
                 "img" : "/assets/img/electricity.jpg",
@@ -42,7 +42,7 @@
         {            
                 "type" : "BillPayment",               
                 "header" : "ຊຳລະໃບບິນຕ່າງໆ",
-                "headervn" : "Thanh toán hóa đơn", 
+                "headervi" : "Thanh toán hóa đơn", 
                 "headeren" : "Bill Payment",
                 "name" : "Water bill payment" , 
                 "img" : "/assets/img/water.jpg",
@@ -51,7 +51,7 @@
         {            
                 "type" : "BillPayment",               
                 "header" : "ຊຳລະໃບບິນຕ່າງໆ",          
-                "headervn" : "Thanh toán hóa đơn", 
+                "headervi" : "Thanh toán hóa đơn", 
                 "headeren" : "Bill Payment",       
                 "name" : "Road tax" , 
                 "img" : "/assets/img/road.jpg",
@@ -60,7 +60,7 @@
         {            
                 "type" : "BillPayment",               
                 "header" : "ຊຳລະໃບບິນຕ່າງໆ", 
-                "headervn" : "Thanh toán hóa đơn", 
+                "headervi" : "Thanh toán hóa đơn", 
                 "headeren" : "Bill Payment",
                 "name" : "Telecomunication bill payment" , 
                 "img" : "/assets/img/telecomunication.png",

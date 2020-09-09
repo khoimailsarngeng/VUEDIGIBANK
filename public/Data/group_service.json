@@ -1,0 +1,69 @@
+[
+    {
+        "type" : "Individual",
+        "name" : "ໂອນເງີນ",
+        "namevi" : "Chuyển khoản",
+        "nameen" : "Transfer money" ,
+        "img" : "/assets/img/Bill.jpg",
+        "click" : "Transfer"
+    },
+    {
+        "type" : "Individual",
+        "name" : "ຊຳລະໃບບິນຕ່າງໆ",
+        "namevi" : "Thanh toán hóa đơn",
+        "nameen" : "Bill Payment" ,
+        "img" : "/assets/img/transfer.jpg",
+        "click" : "Bill"
+    },
+    {
+        "type" : "Individual",
+        "name" : "ຊຳລະໃບບິນໂທລະຄົມມະນາຄົມ",
+        "namevi" : "Thanh toán hóa đơn viễn thông",
+        "nameen" : "Telecomunication Bill Payment" ,
+        "img" : "/assets/img/telecomunication.png",
+        "click" : "Telecome"
+    },
+    {
+        "type" : "Individual",
+        "name" : "ຈ່າຍສິນເຊື່ອຕ່າງໆ",
+        "namevi" : "Thủ hộ tài chính tiêu dùng",
+        "nameen" : "Leasing payment" ,
+        "img" : "/assets/img/leasing.jpg",
+        "click" : "Leasing"
+    },
+
+
+
+    {
+        "type" : "Corporate",
+        "name" : "ໂອນເງີນ",
+        "namevi" : "Chuyển khoản",
+        "nameen" : "Transfer money" ,
+        "img" : "/assets/img/Bill.jpg",
+        "click" : "Transfer"
+    },
+    {
+        "type" : "Corporate",
+        "name" : "ຊຳລະໃບບິນຕ່າງໆ",
+        "namevi" : "Thanh toán hóa đơn",
+        "nameen" : "Bill Payment" ,
+        "img" : "/assets/img/transfer.jpg",
+        "click" : "Bill"
+    },
+    {
+        "type" : "Corporate",
+        "name" : "ຊຳລະໃບບິນໂທລະຄົມມະນາຄົມ",
+        "namevi" : "Thanh toán hóa đơn viễn thông",
+        "nameen" : "Telecomunication Bill Payment" ,
+        "img" : "/assets/img/telecomunication.png",
+        "click" : "Telecome"
+    },
+    {
+        "type" : "Corporate",
+        "name" : "ຈ່າຍສິນເຊື່ອຕ່າງໆ",
+        "namevi" : "Thủ hộ tài chính tiêu dùng",
+        "nameen" : "Leasing payment" ,
+        "img" : "/assets/img/leasing.jpg",
+        "click" : "Leasing"
+    }
+]

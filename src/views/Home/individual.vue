@@ -8,10 +8,10 @@
     <div class="q-pa-lg">
       <div class="row q-gutter-md">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-          <q-card class="text-center my-card">            
+          <q-card class="text-center my-card" @click="$router.push('/transfermoney')">            
             <img height="280px" src="/assets/img/banktransfer.jpeg" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h5">{{ $store.state.language.language === 'en' ? 'External Transfer' 
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'External Transfer' 
                 : $store.state.language.language === 'vi' ? 'Chuyển khoản bên ngoài' : 'ໂອນເງີນຂ້າມທະນາຄານ'}}</span>             
             </q-card-section>
           </q-card>
@@ -20,7 +20,7 @@
           <q-card class="text-center my-card">
             <img height="280px" src="/assets/img/road.jpg" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h5">{{ $store.state.language.language === 'en' ? 'Road Payment' 
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Road Payment' 
                 : $store.state.language.language === 'vi' ? 'Thanh toán đường bộ' : 'ຊຳລະຄ່າທາງ'}}</span>
               <!-- <p>ຊຳລະຄ່າທາງໄດ້ 24 ຊົ່ວໂມງ ແລະ ສາມາດໄປເອົາສະຕິກເກິໄດ້ທຸກໜ່ວຍບໍລິການ ແລະ ຕູ້ Kios ທຸກບ່ອນ</p> -->
             </q-card-section>
@@ -30,7 +30,7 @@
           <q-card class="text-center my-card">
             <img height="280px" src="/assets/img/electricity.jpg" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h5">{{ $store.state.language.language === 'en' ? 'Electricity bill payment' 
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Electricity bill payment' 
                 : $store.state.language.language === 'vi' ? 'Thanh toán tiền điện' : 'ຊຳລະຄ່າໄຟຟ້າ'}}</span>
               <!-- <p>ສາມາດຊຳລະຄ່າໄຟຟ້າໄດ້ທຸກ 24 ຊົ່ວໂມງ</p> -->
             </q-card-section>
@@ -40,7 +40,7 @@
           <q-card class="text-center my-card">
             <img height="280px" src="/assets/img/water.jpg" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h5">{{ $store.state.language.language === 'en' ? 'Water bill payment' 
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Water bill payment' 
                 : $store.state.language.language === 'vi' ? 'Thanh toán tiền nước' : 'ຊຳລະຄ່ານໍ້າປະປາ'}}</span>
               <!-- <p>ສາມາດຊຳລະຄ່ານໍ້າປະປາໄດ້ທຸກ 24 ຊົ່ວໂມງ</p> -->
             </q-card-section>
@@ -50,7 +50,7 @@
           <q-card class="text-center my-card">
             <img height="280px" src="/assets/img/online-gaming-merchant-account.png" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h5">{{ $store.state.language.language === 'en' ? 'Top-up' 
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Top-up' 
                 : $store.state.language.language === 'vi' ? 'Nạp tiền' : 'ເຕີມມູນຄ່າໂທ'}}</span>
               <!-- <p>ສາມາດຊຳລະຄ່ານໍ້າປະປາໄດ້ທຸກ 24 ຊົ່ວໂມງ</p> -->
             </q-card-section>
@@ -60,7 +60,7 @@
           <q-card class="text-center my-card">
             <img height="280px" src="/assets/img/Qr.jpg" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h5">{{ $store.state.language.language === 'en' ? 'Qr-pay' 
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Qr-pay' 
                 : $store.state.language.language === 'vi' ? 'Qr-pay' : 'Qr-pay'}}</span>
               <!-- <p>ສາມາດຊຳລະຄ່ານໍ້າປະປາໄດ້ທຸກ 24 ຊົ່ວໂມງ</p> -->
             </q-card-section>
@@ -80,6 +80,6 @@ export default {
 </script>
 <style scoped>
 .my-card {
-  height: 330px;
+  height: 350px;
 }
 </style>

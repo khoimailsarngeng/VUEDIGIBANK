@@ -5,6 +5,7 @@ import Home from '../views/Home/home.vue';
 import Individual from '../views/Home/individual.vue';
 import Corporate from '../views/Home/corporate.vue';
 import FAQs from '../views/Home/faqs.vue';
+import TransferMoney from '../views/Home/transfermoney.vue';
 const route = [
     {
         path: '/',
@@ -28,6 +29,10 @@ const route = [
           {
             path : '/FAQs',
             component : FAQs
+          },
+          {
+            path : '/transfermoney',
+            component : TransferMoney
           }
         ]        
     }

@@ -8,10 +8,10 @@
     <div class="q-pa-lg">
       <div class="row q-gutter-md">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-          <q-card class="text-center my-card">            
+          <q-card class="text-center my-card" @click="$router.push('/transfermoney')">            
             <img height="280px" src="/assets/img/transfer.jpg" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h5">{{ $store.state.language.language === 'en' ? 'Transfer money' 
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Transfer money' 
                 : $store.state.language.language === 'vi' ? 'Chuyển khoản' : 'ໂອນເງີນ'}}</span>             
             </q-card-section>
           </q-card>
@@ -20,7 +20,7 @@
           <q-card class="text-center my-card">
             <img height="280px" src="/assets/img/Bill.jpg" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h5">{{ $store.state.language.language === 'en' ? 'Bill Payment' 
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Bill Payment' 
                 : $store.state.language.language === 'vi' ? 'Thanh toán hóa đơn' : 'ຊຳລະໃບບິນຕ່າງໆ'}}</span>              
             </q-card-section>
           </q-card>
@@ -29,7 +29,7 @@
           <q-card class="text-center my-card">
             <img height="280px" src="/assets/img/telecomunication.png" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h5">{{ $store.state.language.language === 'en' ? 'Telecomunication Bill Payment' 
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Telecomunication Bill Payment' 
                 : $store.state.language.language === 'vi' ? 'Thanh toán hóa đơn viễn thông' : 'ຊຳລະໃບບິນໂທລະຄົມມະນາຄົມ'}}</span>              
             </q-card-section>
           </q-card>
@@ -38,7 +38,7 @@
           <q-card class="text-center my-card">
             <img height="280px" src="/assets/img/leasing.jpg" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h5">{{ $store.state.language.language === 'en' ? 'Leasing payment' 
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Leasing payment' 
                 : $store.state.language.language === 'vi' ? 'Thủ hộ tài chính tiêu dùng' : 'ຈ່າຍສິນເຊື່ອຕ່າງໆ'}}</span>              
             </q-card-section>
           </q-card>
@@ -57,6 +57,6 @@ export default {
 </script>
 <style scoped>
 .my-card {
-  height: 330px;
+  height: 350px;
 }
 </style>

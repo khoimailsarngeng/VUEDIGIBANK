@@ -1,0 +1,65 @@
+[    
+        {            
+                "type" : "Transfer",               
+                "header" : "ໂອນເງີນ", 
+                "headervi" : "Chuyển khoản", 
+                "headeren" : "Transfer Money", 
+                "name" : "Internal Transfer" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : "Transfer"
+        },
+        {            
+                "type" : "Transfer",               
+                "header" : "Transfer Money", 
+                "name" : "Remittance Transfer" , 
+                "img" : "/assets/img/banktransfer.jpeg",
+                "click" : "Transfer"
+        },
+        {            
+                "type" : "Transfer",               
+                "header" : "Transfer Money", 
+                "name" : "International Transfer" , 
+                "img" : "/assets/img/gdpr-international-data-transfer.jpg",
+                "click" : "Transfer"
+        },
+        {            
+                "type" : "Transfer",               
+                "header" : "Transfer Money", 
+                "name" : "Online Transfer 24/7" , 
+                "img" : "/assets/img/onlinetransfer.jpg",
+                "click" : "Transfer"
+        },
+        
+        {            
+                "type" : "BillPayment",               
+                "header" : "ຊຳລະໃບບິນຕ່າງໆ", 
+                "headervn" : "Thanh toán hóa đơn", 
+                "headeren" : "Bill Payment",
+                "name" : "Electricity bill payment" , 
+                "img" : "/assets/img/electricity.jpg",
+                "click" : "Electric"
+        },
+        {            
+                "type" : "BillPayment",               
+                "header" : "ຊຳລະໃບບິນຕ່າງໆ",
+                
+                "name" : "Water bill payment" , 
+                "img" : "/assets/img/water.jpg",
+                "click" : "Water"
+        },
+        {            
+                "type" : "BillPayment",               
+                "header" : "ຊຳລະໃບບິນຕ່າງໆ",                 
+                "name" : "Road tax" , 
+                "img" : "/assets/img/road.jpg",
+                "click" : "Road"
+        },
+        {            
+                "type" : "BillPayment",               
+                "header" : "ຊຳລະໃບບິນຕ່າງໆ", 
+                "name" : "Telecomunication bill payment" , 
+                "img" : "/assets/img/telecomunication.png",
+                "click" : "Telecomunication"
+        }
+
+]

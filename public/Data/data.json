@@ -1,0 +1,6 @@
+[    
+        {"header" : "Transfer Money", "type" : "Transfer" , "name" : "ບໍລິການໂອນເງິນລະຫວ່າງທະນາຄານຜ່ານ MOBILE BANKING" , "img" : "https://www.laovietbank.com.la/files/img_SanPhamDichVu/ChuyenTien1_TL.jpg"},
+        {"header" : "Transfer Money","type" : "Transfer" , "name" : "ວິທິການໂອນເງິນນອກລະບົບຢູ່ໃນ MOBLIE BANKING" , "img" : "https://www.laovietbank.com.la/files/img_SanPhamDichVu/ChuyenTien2_TL.jpg"},
+        {"header" : "Water Payment","type" : "Water" , "name" : "ບໍລິການຊຳລະໃບບິນຄ່ານໍ້າປະປາ" , "img" : "https://www.laovietbank.com.la/files/img_SanPhamDichVu/ND_ThanhToanNuoc_TL.jpg"},
+        {"header" : "Water Payment","type" : "Water" , "name" : "" , "img" : "https://www.laovietbank.com.la/files/img_SanPhamDichVu/HD_TTN_TL.jpg"}
+]

@@ -7,10 +7,10 @@
       <span
         :class="mobileMode ? 'text-h7' : 'text-h5'"
         style="border-bottom:1px solid #17479D"
-      >{{returnData[0].header}}</span>
+      >Transfer Money</span>
       <q-space />
       <q-btn
-        @click="$router.go(-1)"
+        to="/"
         color="white"
         text-color="black"
         :label="$t('Back')"
@@ -20,11 +20,11 @@
     <div class="q-pa-lg">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div v-for="(item,index) in returnData" :key="index">
-                    <span  class="text-h6 text-bold">{{item.name}}</span><br>
-                    <img :src="item.img" alt="" style="width:100%">
-                    <br>
-                </div>
+                <span class="text-h6 text-bold">ບໍລິການໂອນເງິນລະຫວ່າງທະນາຄານຜ່ານ MOBILE BANKING</span><br>
+                <img src="https://www.laovietbank.com.la/files/img_SanPhamDichVu/ChuyenTien1_TL.jpg" alt="" style="width:100%">
+                <br>
+                <span class="text-h6 text-bold">ວິທິການໂອນເງິນນອກລະບົບຢູ່ໃນ MOBLIE BANKING</span> <br>
+                <img src="https://www.laovietbank.com.la/files/img_SanPhamDichVu/ChuyenTien2_TL.jpg" alt="" style="width:100%">
             </div>
         </div>        
     </div>
@@ -36,12 +36,9 @@ import datajson from '../../../public/Data/data.json';
 export default {
   computed: {
     ...mapState('mobileMode', ['mobileMode']),
-    returnData(){
-        console.log(datajson);
-        return datajson.filter(q => {
-            return q.type == this.$route.params.serviceType
-        }); 
-    }
+  },
+  mounted(){
+    console.log(datajson.Transfer);
   }
 };
 </script>

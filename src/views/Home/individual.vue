@@ -3,66 +3,43 @@
     <q-bar class="bg-white text-primary q-mt-md" :style="mobileMode ? 'margin-left:3%;margin-right:0%' : 'margin-right:16%'">
       <span :class="mobileMode ? 'text-h7' : 'text-h5'" style="border-bottom:1px solid #17479D">{{$t('Individualcustomer')}}</span>
       <q-space />
-      <q-btn to="/" color="white" text-color="black" :label="$t('Back')" :style="mobileMode ? 'font-size:12px' : 'font-size:14px'" />      
+      <q-btn @click="$router.go(-1)" color="white" text-color="black" :label="$t('Back')" :style="mobileMode ? 'font-size:12px' : 'font-size:14px'" />      
     </q-bar>
     <div class="q-pa-lg">
       <div class="row q-gutter-md">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-          <q-card class="text-center my-card" @click="$router.push('/transfermoney')">            
-            <img height="280px" src="/assets/img/banktransfer.jpeg" />
+          <q-card class="text-center my-card" @click="$router.push('/service/Transfer')">            
+            <img height="280px" src="/assets/img/transfer.jpg" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'External Transfer' 
-                : $store.state.language.language === 'vi' ? 'Chuyển khoản bên ngoài' : 'ໂອນເງີນຂ້າມທະນາຄານ'}}</span>             
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Transfer money' 
+                : $store.state.language.language === 'vi' ? 'Chuyển khoản' : 'ໂອນເງີນ'}}</span>             
+            </q-card-section>
+          </q-card>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+          <q-card class="text-center my-card" @click="$router.push('/service/BillPayment')">
+            <img height="280px" src="/assets/img/Bill.jpg" />
+            <q-card-section class="q-pt-xs">
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Bill Payment' 
+                : $store.state.language.language === 'vi' ? 'Thanh toán hóa đơn' : 'ຊຳລະໃບບິນຕ່າງໆ'}}</span>              
             </q-card-section>
           </q-card>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
           <q-card class="text-center my-card">
-            <img height="280px" src="/assets/img/road.jpg" />
+            <img height="280px" src="/assets/img/telecomunication.png" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Road Payment' 
-                : $store.state.language.language === 'vi' ? 'Thanh toán đường bộ' : 'ຊຳລະຄ່າທາງ'}}</span>
-              <!-- <p>ຊຳລະຄ່າທາງໄດ້ 24 ຊົ່ວໂມງ ແລະ ສາມາດໄປເອົາສະຕິກເກິໄດ້ທຸກໜ່ວຍບໍລິການ ແລະ ຕູ້ Kios ທຸກບ່ອນ</p> -->
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Telecomunication Bill Payment' 
+                : $store.state.language.language === 'vi' ? 'Thanh toán hóa đơn viễn thông' : 'ຊຳລະໃບບິນໂທລະຄົມມະນາຄົມ'}}</span>              
             </q-card-section>
           </q-card>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
           <q-card class="text-center my-card">
-            <img height="280px" src="/assets/img/electricity.jpg" />
+            <img height="280px" src="/assets/img/leasing.jpg" />
             <q-card-section class="q-pt-xs">
-              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Electricity bill payment' 
-                : $store.state.language.language === 'vi' ? 'Thanh toán tiền điện' : 'ຊຳລະຄ່າໄຟຟ້າ'}}</span>
-              <!-- <p>ສາມາດຊຳລະຄ່າໄຟຟ້າໄດ້ທຸກ 24 ຊົ່ວໂມງ</p> -->
-            </q-card-section>
-          </q-card>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-          <q-card class="text-center my-card">
-            <img height="280px" src="/assets/img/water.jpg" />
-            <q-card-section class="q-pt-xs">
-              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Water bill payment' 
-                : $store.state.language.language === 'vi' ? 'Thanh toán tiền nước' : 'ຊຳລະຄ່ານໍ້າປະປາ'}}</span>
-              <!-- <p>ສາມາດຊຳລະຄ່ານໍ້າປະປາໄດ້ທຸກ 24 ຊົ່ວໂມງ</p> -->
-            </q-card-section>
-          </q-card>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-          <q-card class="text-center my-card">
-            <img height="280px" src="/assets/img/online-gaming-merchant-account.png" />
-            <q-card-section class="q-pt-xs">
-              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Top-up' 
-                : $store.state.language.language === 'vi' ? 'Nạp tiền' : 'ເຕີມມູນຄ່າໂທ'}}</span>
-              <!-- <p>ສາມາດຊຳລະຄ່ານໍ້າປະປາໄດ້ທຸກ 24 ຊົ່ວໂມງ</p> -->
-            </q-card-section>
-          </q-card>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-          <q-card class="text-center my-card">
-            <img height="280px" src="/assets/img/Qr.jpg" />
-            <q-card-section class="q-pt-xs">
-              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Qr-pay' 
-                : $store.state.language.language === 'vi' ? 'Qr-pay' : 'Qr-pay'}}</span>
-              <!-- <p>ສາມາດຊຳລະຄ່ານໍ້າປະປາໄດ້ທຸກ 24 ຊົ່ວໂມງ</p> -->
+              <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Leasing payment' 
+                : $store.state.language.language === 'vi' ? 'Thủ hộ tài chính tiêu dùng' : 'ຈ່າຍສິນເຊື່ອຕ່າງໆ'}}</span>              
             </q-card-section>
           </q-card>
         </div>

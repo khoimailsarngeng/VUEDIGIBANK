@@ -8,7 +8,7 @@
     <div class="q-pa-lg">
       <div class="row q-gutter-md">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-          <q-card class="text-center my-card" @click="$router.push('/transfermoney')">            
+          <q-card class="text-center my-card"  @click="$router.push('/service/Transfer')">            
             <img height="280px" src="/assets/img/transfer.jpg" />
             <q-card-section class="q-pt-xs">
               <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Transfer money' 
@@ -18,7 +18,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
           <q-card class="text-center my-card">
-            <img height="280px" src="/assets/img/Bill.jpg" />
+            <img height="280px" src="/assets/img/Bill.jpg"  @click="$router.push('/service/BillPayment')"/>
             <q-card-section class="q-pt-xs">
               <span class="text-h6">{{ $store.state.language.language === 'en' ? 'Bill Payment' 
                 : $store.state.language.language === 'vi' ? 'Thanh toán hóa đơn' : 'ຊຳລະໃບບິນຕ່າງໆ'}}</span>              

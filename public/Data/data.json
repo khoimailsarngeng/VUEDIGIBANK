@@ -1,6 +1,24 @@
 [    
-        {"header" : "Transfer Money", "type" : "Transfer" , "name" : "ບໍລິການໂອນເງິນລະຫວ່າງທະນາຄານຜ່ານ MOBILE BANKING" , "img" : "https://www.laovietbank.com.la/files/img_SanPhamDichVu/ChuyenTien1_TL.jpg"},
-        {"header" : "Transfer Money","type" : "Transfer" , "name" : "ວິທິການໂອນເງິນນອກລະບົບຢູ່ໃນ MOBLIE BANKING" , "img" : "https://www.laovietbank.com.la/files/img_SanPhamDichVu/ChuyenTien2_TL.jpg"},
+        {
+                "header" : "Transfer Money", 
+                "type" : "Transfer" , 
+                "name" : "ບໍລິການໂອນເງິນລະຫວ່າງທະນາຄານຜ່ານ MOBILE BANKING" , 
+                "namevi" : "DỊCH VỤ THANH TOÁN TIỀN NƯỚC",
+                "nameen" : "WATER BILL PAYMENT SERVICE",
+                "img" : "/assets/img/ChuyenTien1_TL.jpg",
+                "imgvi" : "/assets/img/ND_ThanhToanNuoc_TV.jpg",
+                "imgen" : "/assets/img/ChuyenTien1_TL.jpg"
+        },
+        {
+                "header" : "Transfer Money",
+                "type" : "Transfer" , 
+                "name" : "ວິທິການໂອນເງິນນອກລະບົບຢູ່ໃນ MOBLIE BANKING" , 
+                "namevi" : "" , 
+                "nameen" : "" , 
+                "img" : "/assets/img/ChuyenTien2_TL.jpg",
+                "imgvi" : "/assets/img/ChuyenTien2_TV.jpg",
+                "imgen" : "/assets/img/ChuyenTien2_TV.jpg"
+        },
         {"header" : "Water Payment","type" : "Water" , "name" : "ບໍລິການຊຳລະໃບບິນຄ່ານໍ້າປະປາ" , "img" : "https://www.laovietbank.com.la/files/img_SanPhamDichVu/ND_ThanhToanNuoc_TL.jpg"},
         {"header" : "Water Payment","type" : "Water" , "name" : "" , "img" : "https://www.laovietbank.com.la/files/img_SanPhamDichVu/HD_TTN_TL.jpg"}
 ]

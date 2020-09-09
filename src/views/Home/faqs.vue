@@ -67,7 +67,7 @@
                 <q-expansion-item                    
                   switch-toggle-side 
                   header-class="bg-grey-2"
-                  label="Features of Laoviet Digital Banking"
+                  :label="$store.state.language.language === 'en' ? 'Features of Laoviet Digital Banking' : $store.state.language.language === 'vi' ? 'Các tính năng của dịch vụ  Laoviet Digital banking  ?' : 'ການບໍລິການຂອງ Laoviet Digital banking ມີຄຸນລັກສະນະຫຍັງແດ່?'"                                 
                   expand-icon="help"
                 >     
                 <q-card>
@@ -79,7 +79,7 @@
                 <q-expansion-item                    
                   switch-toggle-side  
                   header-class="bg-grey-2"
-                  label="Can I use my username and password to log in to Laoviet Digital Banking application on different devices?"
+                  :label="$store.state.language.language === 'en' ?  'Can I use my username and password to log in to Laoviet Digital Banking application on different devices?' : $store.state.language.language === 'vi' ? 'Tôi có thể dùng tên đăng nhập và mật khẩu để đăng nhập ứng dụng Laoviet Digital banking trên các thiết bị khác nhau không?' : 'ຂ້ອຍສາມາດໃຊ້ຊື່ຜູ້ໃຊ້ແລະລະຫັດຜ່ານເຂົ້າສູ່ລະບົບແອັບ Laoviet Digital banking ໃນອຸປະກອນຕ່າງກັນບໍ?'"
                   expand-icon="help"
                 >     
                 <q-card>
@@ -91,7 +91,7 @@
                 <q-expansion-item                    
                   switch-toggle-side    
                   header-class="bg-grey-2"                                                    
-                  label="How can I register to use Laoviet Digital Banking?"
+                  :label="$store.state.language.language === 'en' ?  'Will the service be locked if I enter the wrong password? I forgot the password of BIDV Smart banking service, what should I do??' : $store.state.language.language === 'vi' ? 'Tôi nhập sai mật khẩu thì có bị khóa dịch vụ không? Tôi quên mật khẩu dịch vụ BIDV Smart banking, tôi phải làm thế nào?' : 'ບໍລິການຈະຖືກລັອກບໍ່ຖ້າຂ້ອຍໃສ່ລະຫັດຜ່ານທີ່ບໍ່ຖືກຕ້ອງ? ຂ້ອຍລືມລະຫັດຜ່ານຂອງບໍລິການທະນາຄານ BIDV Smart, ຂ້ອຍຄວນເຮັດແນວໃດ?'"
                   expand-icon="help"
                 >     
                 <q-card>

@@ -33,8 +33,7 @@ export default {
       }
     } 
   },
-  mounted(){
-    
+  mounted(){    
     window.addEventListener("resize", () => {
       if (window.innerWidth < 1000) {
         this.SET_WINDOW_RESIZE();

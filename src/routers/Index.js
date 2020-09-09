@@ -4,6 +4,7 @@ import FrontEndLayout from '../layouts/frontendLayout.vue';
 import Home from '../views/Home/home.vue';
 import Individual from '../views/Home/individual.vue';
 import Corporate from '../views/Home/corporate.vue';
+import FAQs from '../views/Home/faqs.vue';
 const route = [
     {
         path: '/',
@@ -13,7 +14,7 @@ const route = [
         }, // check authication krn ja ja khao nar luk thar br tg karn check krn man sai false
         children : [
           {
-            path: '/home',
+            path: '/',
             component: Home,
           },
           {
@@ -23,6 +24,10 @@ const route = [
           {
             path : '/corporate',
             component : Corporate
+          },
+          {
+            path : '/FAQs',
+            component : FAQs
           }
         ]        
     }

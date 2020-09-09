@@ -82,7 +82,9 @@ import {
   QFab,
   QFabAction,
   QBreadcrumbs,
-  QBreadcrumbsEl
+  QBreadcrumbsEl,
+  QFooter
+  
 } from 'quasar';
 
 Vue.use(Quasar, {
@@ -150,7 +152,8 @@ Vue.use(Quasar, {
     QFab,
     QFabAction,
     QBreadcrumbs,
-    QBreadcrumbsEl
+    QBreadcrumbsEl,
+    QFooter
   },
   directives: {
     Ripple,

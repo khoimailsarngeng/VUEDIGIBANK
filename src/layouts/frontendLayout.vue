@@ -55,7 +55,7 @@
             stretch
             flat
             dropdown-icon="none"
-            to="/home"
+            to="/"
           >
             <template v-slot:label>
               <div class="row items-center no-wrap">
@@ -90,33 +90,13 @@
               </q-item>
             </q-list>
           </q-btn-dropdown>
-          <q-btn-dropdown v-if="!mobileMode" class="text-black" stretch flat dropdown-icon="none">
+          <q-btn-dropdown to="/FAQs" v-if="!mobileMode" class="text-black" stretch flat dropdown-icon="none">
             <template v-slot:label>
               <div class="row items-center no-wrap">
-                <q-icon size="sm" left name="contact_support" />
-                <div class="text-center text-h7">{{$t('Contact')}}</div>
+                <q-icon size="sm" left name="forum" />
+                <div class="text-center text-h7">FAQs</div>
               </div>
             </template>
-            <!-- <q-list>
-              <q-item clickable v-close-popup>
-                <div class="row items-center no-wrap">
-                  <q-icon size="sm" left name="account_balance" />
-                  <div class="text-center text-h7">ສຳນັກງານໃຫຍ່</div>
-                </div>
-              </q-item>
-              <q-item clickable v-close-popup>
-                <div class="row items-center no-wrap">
-                  <q-icon size="sm" left name="location_on" />
-                  <div class="text-center text-h7">ສາຂາ ແລະ ໜ່ວຍບໍລິການ</div>
-                </div>
-              </q-item>
-              <q-item clickable v-close-popup>
-                <div class="row items-center no-wrap">
-                  <q-icon size="sm" left name="atm" />
-                  <div class="text-center text-h7">ທີ່ຕັ້ງຕູ້ ATM</div>
-                </div>
-              </q-item>
-            </q-list> -->
           </q-btn-dropdown>
           <q-btn
             color="black"
@@ -137,7 +117,7 @@
             :label="$t('Home')"
             header-class="text-primary"
             expand-icon="none"
-            @click="$router.push('/home')"
+            @click="$router.push('/')"
           ></q-expansion-item>
 
           <q-expansion-item
@@ -169,18 +149,58 @@
           <q-separator />
           <q-expansion-item
             group="somegroup"
-            icon="contact_support"
-            :label="$t('Contact')"
+            icon="forum"
+            label="FAQs"
             header-class="text-green"
             expand-icon="none"
+            @click="$router.push('/FAQs')"
           ></q-expansion-item>
         </q-list>
       </q-drawer>
       <q-page-container>
         <q-card>
           <router-view />
-        </q-card>        
-      </q-page-container>
+        </q-card>    
+        <q-page-sticky position="bottom-right" :offset="[18, 18]">
+          <q-btn v-if="!dialog" @click="dialog = !dialog" round color="primary" icon="chat" size="lg">              
+          </q-btn> 
+           <q-card :style="mobileMode ? 'width: 345px;' : 'width:100%'" v-if="dialog">
+             <q-toolbar class="bg-primary glossy text-white">
+              <q-icon name="chat" size="md">
+              </q-icon>
+              <q-toolbar-title  style="font-size:14px">Chat with LVB Digibank<br><span style="font-size:12px">(From 8h - 11h30 & 13h - 17h30 Monday to Friday except for holidays)</span>
+              </q-toolbar-title>              
+              <q-btn flat round dense icon="close" @click="dialog = !dialog"/>
+            </q-toolbar>
+            <q-card-section>              
+              <q-form class="q-gutter-sm">
+                <q-input outlined placeholder="Fullname/Phone number/gender" dense class="q-pa-sm">
+                  <template v-slot:prepend>
+                    <q-icon name="account_box" />
+                  </template>
+                </q-input>
+                <q-input outlined placeholder="E-mail" dense class="q-pa-sm">
+                  <template v-slot:prepend>
+                    <q-icon name="email" />
+                  </template>
+                </q-input>
+                <hr>
+                <q-input outlined placeholder="Request Description" dense type="textarea">
+                  <template v-slot:prepend>
+                    <q-icon name="comments" />
+                  </template>
+                </q-input>
+            </q-form>
+            </q-card-section>
+            <q-card-section align="center" style="
+               padding-right: 25%;
+               padding-left: 25%;
+            ">
+              <q-btn size="lg" color="primary" unelevated label="Submit" class="full-width" />
+            </q-card-section>
+            </q-card>   
+      </q-page-sticky>      
+      </q-page-container>      
     </q-layout>
   </div>
 </template>
@@ -190,7 +210,9 @@ export default {
   data() {
     return {
       lang: this.$i18n.locale,
-      left: false,      
+      left: false,    
+      dialog : false  ,
+      position : "bottom"
     };
   },
   watch: {
@@ -206,6 +228,10 @@ export default {
   },
   methods : {
     ...mapActions("language",["setLanguage"]),
+    open(val){
+      this.position = val;
+      this.dialog = !this.dialog;
+    }
   },
   computed: {
     ...mapState('mobileMode', ['mobileMode']),    
@@ -226,4 +252,14 @@ button:hover {
 a:hover {  
   text-decoration: none;    
 }
+
+.classChat {
+    visibility: visible;
+    top: 691px !important;
+    left: 1373px;
+    min-height: 56px;
+    max-height: 56px;
+    max-width: 192px;
+}
+
 </style>

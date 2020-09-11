@@ -3,7 +3,7 @@
     <div class="q-pa-sm q-mt-xs">
       <div class="row q-col-gutter-xs">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center q-pt-lg">
-          <img src="/assets/img/Logo-LVBDigiBank.png" height="100px" alt="" />
+          <img src="/assets/img/Logo-LVBDigiBank.png" width="100%" height="100px" alt="" />
         </div>
         <div
           :class="

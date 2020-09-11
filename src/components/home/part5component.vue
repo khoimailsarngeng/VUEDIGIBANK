@@ -29,7 +29,17 @@
                 :label="mobileMode ? 'Download' : 'Download App'"
                 :class="mobileMode ? (window.width === 768 || window.width === 540 || window.width === 600 ? 'q-mr-xs' : 'q-mb-xs') : 'q-mr-xs'"
               />
-              <q-btn size="sm" color="primary" icon="login" label="Login" />
+              <q-btn
+                @click="
+                  Download(
+                    'https://ebank.laovietbank.com.la/IBSRetail/Request?&dse_sessionId=G9UpnSXiqZAk9zo-3KmX5eq&dse_applicationId=-1&dse_pageId=1&dse_operationName=retailIndexProc&dse_errorPage=error_page.jsp&dse_processorState=initial&dse_nextEventName=start'
+                  )
+                "
+                size="sm"
+                color="primary"
+                icon="login"
+                label="Login"
+              />
             </q-card-section>
           </q-card>
         </div>
@@ -62,7 +72,17 @@
                 :label="mobileMode ? 'Download' : 'Download App'"
                 :class="mobileMode ? (window.width === 768 || window.width === 540 || window.width === 600 ? 'q-mr-xs' : 'q-mb-xs') : 'q-mr-xs'"
               />
-              <q-btn size="sm" color="primary" icon="login" label="Login" />
+              <q-btn
+                @click="
+                  Download(
+                    'https://ebank.laovietbank.com.la/IBSCorporate/Request?&dse_sessionId=twMxgl8Piv_NqzmeAW_i1uc&dse_applicationId=-1&dse_pageId=1&dse_operationName=corpIndexProc&dse_errorPage=error_page.jsp&dse_processorState=initial&dse_nextEventName=start'
+                  )
+                "
+                size="sm"
+                color="primary"
+                icon="login"
+                label="Login"
+              />
             </q-card-section>
           </q-card>
         </div>

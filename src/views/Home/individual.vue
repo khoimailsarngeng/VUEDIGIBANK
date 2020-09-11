@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="row q-col-gutter-xs text-center">
+    <div class="row q-col-gutter-xs text-center q-mt-md">
       <div class="col-xs-12">
-        <img src="/assets/img/Logo-LVBDigiBank.png" :width="mobileMode ? '50%' : '60%'" height="100%" alt />
+        <img src="/assets/img/Logo-LVBDigiBank.png" :width="mobileMode ? '50%' : '40%'" height="100%" alt />
       </div>
       <div class="col-xs-12">
         <span class="q-font-25">FOR INDIVIDUAL</span>

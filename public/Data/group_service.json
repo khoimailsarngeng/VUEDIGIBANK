@@ -56,7 +56,7 @@
         "namevi" : "Quản lý tài chính",
         "nameen" : "Quản lý tài chính" ,
         "img" : "/assets/img/Bill.jpg",
-        "click" : ""
+        "click" : "Financial"
     },
     {
         "type" : "Corporate",
@@ -64,7 +64,7 @@
         "namevi" : "Chuyển tiền",
         "nameen" : "Chuyển tiền" ,
         "img" : "/assets/img/transfer.jpg",
-        "click" : ""
+        "click" : "Transfer"
     },
     {
         "type" : "Corporate",
@@ -72,7 +72,7 @@
         "namevi" : "Thanh toán lương",
         "nameen" : "Thanh toán lương" ,
         "img" : "/assets/img/telecomunication.png",
-        "click" : ""
+        "click" : "TTL"
     },
     {
         "type" : "Corporate",
@@ -80,7 +80,7 @@
         "namevi" : "Thanh toán trực tuyến",
         "nameen" : "Thanh toán trực tuyến" ,
         "img" : "/assets/img/leasing.jpg",
-        "click" : ""
+        "click" : "TTHD"
     },
     {
         "type" : "Corporate",
@@ -88,6 +88,6 @@
         "namevi" : "Dịch vụ khách hàng",
         "nameen" : "Dịch vụ khách hàng" ,
         "img" : "/assets/img/leasing.jpg",
-        "click" : ""
+        "click" : "Service"
     }
 ]

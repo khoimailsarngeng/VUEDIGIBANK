@@ -8,41 +8,40 @@ import FAQs from '../views/Home/faqs.vue';
 import TransferMoney from '../views/Home/transfermoney.vue';
 import ServiceLVB from '../views/Home/service.vue';
 const route = [
-    {
+  {
+    path: '/',
+    component: FrontEndLayout,
+    meta: {
+      requiresAuth: true
+    }, // check authication krn ja ja khao nar luk thar br tg karn check krn man sai false
+    children: [
+      {
         path: '/',
-        component: FrontEndLayout,      
-        meta: {
-          requiresAuth: true
-        }, // check authication krn ja ja khao nar luk thar br tg karn check krn man sai false
-        children : [
-          {
-            path: '/',
-            component: Home,
-          },
-          {
-            path : '/individual',
-            component : Individual
-          },
-          {
-            path : '/corporate',
-            component : Corporate
-          },
-          {
-            path : '/FAQs',
-            component : FAQs
-          },
-          {
-            path : '/transfermoney/:serviceType',
-            component : TransferMoney
-          }
-          ,
-          {
-            path : '/service/:serviceType',
-            component : ServiceLVB
-          }
-        ]        
-    }
-]
+        component: Home
+      },
+      {
+        path: '/individual',
+        component: Individual
+      },
+      {
+        path: '/corporate',
+        component: Corporate
+      },
+      {
+        path: '/FAQs',
+        component: FAQs
+      },
+      {
+        path: '/transfermoney/:serviceType',
+        component: TransferMoney
+      },
+      {
+        path: '/service/:serviceType/:type',
+        component: ServiceLVB
+      }
+    ]
+  }
+];
 
 // Always leave this as last one
 // if (process.env.MODE !== 'ssr') {
@@ -53,4 +52,4 @@ const route = [
 //     })
 // }
 
-export default route
+export default route;

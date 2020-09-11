@@ -5,15 +5,13 @@
         <img src="/assets/img/Final_new.jpg" :width="mobileMode ? '50%' : '60%'" height="100%" alt />
       </div>
       <div class="col-xs-12">
-        <span class="q-font-25">FOR INDIVIDUAL</span><br />
-        Là dịch vụ cho: Khách hàng cá nhân, Doanh nghiệp và các tổ chức Có tất cả các dịch ngân hàng Chỉ sử dụng 01 User cho các thiết bị mà có kết nối mạng
-        Internet
+        <span class="q-font-25">FOR INDIVIDUAL</span>
       </div>
     </div>
     <div class="q-pa-md">
       <div class="row q-col-gutter-xs">
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3" v-for="(item, index) in returnData" :key="index">
-          <q-card :class="mobileMode ? 'text-center my-card-mobile' : 'text-center my-card'" @click="$router.push(`/service/${item.click}`)">
+          <q-card :class="mobileMode ? 'text-center my-card-mobile' : 'text-center my-card'" @click="$router.push(`/service/${item.click}/1`)">
             <q-card-section text-center>
               <img :width="mobileMode ? '60px' : '120px'" :height="mobileMode ? '60px' : '120px'" src="/assets/img/transfer.jpg" />
             </q-card-section>

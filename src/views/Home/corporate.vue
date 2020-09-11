@@ -9,7 +9,7 @@
     <div class="q-pa-md">
       <div class="row q-col-gutter-xs">
         <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3" v-for="(item, index) in returnData" :key="index">
-          <q-card :class="mobileMode ? 'text-center my-card-mobile' : 'text-center my-card'">
+          <q-card :class="mobileMode ? 'text-center my-card-mobile' : 'text-center my-card'" @click="$router.push(`/service/${item.click}/2`)">
             <q-card-section text-center>
               <img :width="mobileMode ? '60px' : '120px'" :height="mobileMode ? '60px' : '120px'" src="/assets/img/transfer.jpg" />
             </q-card-section>

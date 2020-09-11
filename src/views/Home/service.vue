@@ -37,9 +37,15 @@ export default {
     ...mapState('mobileMode', ['mobileMode']),
     returnData() {
       console.log(datajson);
-      return datajson.filter(q => {
-        return q.type == this.$route.params.serviceType;
-      });
+      if (this.$route.params.serviceType === 1) {
+        return datajson.Individual.filter(q => {
+          return q.type == this.$route.params.serviceType;
+        });
+      } else {
+        return datajson.Corporate.filter(q => {
+          return q.type == this.$route.params.serviceType;
+        });
+      }
     }
   }
 };

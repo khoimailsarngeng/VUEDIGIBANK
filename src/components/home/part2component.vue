@@ -13,7 +13,7 @@
                 : 'col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left q-pt-lg'
             "
           >
-            <span class="text-primary q-font-22">LVB DigiBank là gì?</span> <br />
+            <span class="text-primary q-font-22">Tiền ích của LVB DigiBank: </span> <br />
             Là dịch vụ cho: Khách hàng cá nhân, Doanh nghiệp và các tổ chức Có tất cả các dịch ngân hàng Chỉ sử dụng 01 User cho các thiết bị mà có kết nối mạng
             Internet
           </div>

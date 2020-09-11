@@ -7,7 +7,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center q-pt-lg">
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center'">
-            <span class="text-primary q-font-22">LVB DigiBank là gì?</span> <br />
+            <span class="text-primary q-font-22">Phải mất phí bao nhiêu để đăng ký dịch vụ LVB DigiBank?</span> <br />
             Khách hàng mới đăng ký dịch vụ LVB DigiBank được miến tất cả phí sử dụng dịch vụ như: phí thường niên, chuyển tiền trong hệ thống, chuyển tiền liên
             ngân hàng, chuyển tiền quốc tế, chuyển tiên 24/7.
           </div>
@@ -18,7 +18,7 @@
           <img src="/assets/img/Final_new.jpg" height="100px" alt />
         </div>
         <div :class="$q.screen.name === 'xs' ? 'col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center' : 'col-xs-12 col-sm-6 col-md-6 col-lg-6 text-left q-pt-lg'">
-          <span class="text-primary q-font-22">LVB DigiBank là gì?</span> <br />
+          <span class="text-primary q-font-22">Phải mất phí bao nhiêu để đăng ký dịch vụ LVB DigiBank?</span> <br />
           Khách hàng mới đăng ký dịch vụ LVB DigiBank được miến tất cả phí sử dụng dịch vụ như: phí thường niên, chuyển tiền trong hệ thống, chuyển tiền liên
           ngân hàng, chuyển tiền quốc tế, chuyển tiên 24/7.
         </div>

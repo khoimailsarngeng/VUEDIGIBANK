@@ -19,7 +19,7 @@
               <img :width="mobileMode ? '60px' : '120px'" :height="mobileMode ? '60px' : '120px'" :src="item.img" />
             </q-card-section>
             <q-card-section class="q-pt-xs">
-              <span :class="mobileMode ? 'text-h7' : 'text-h6'">{{
+              <span :class="mobileMode ? 'q-font-13' : 'text-h6'">{{
                 $store.state.language.language === 'en' ? item.name : $store.state.language.language === 'vi' ? item.name : item.name
               }}</span>
             </q-card-section>

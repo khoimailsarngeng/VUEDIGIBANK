@@ -78,6 +78,8 @@ export default {
     ...mapState('mobileMode', ['mobileMode']),
     ...mapState('mobileMode', ['window']),
     detectDevice() {
+      alert('isAndroid' + isAndroid);
+      alert('isIOS' + isIOS);
       if (isAndroid) {
         return 'A';
       } else if (isIOS) {

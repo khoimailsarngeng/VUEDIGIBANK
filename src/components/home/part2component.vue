@@ -14,8 +14,10 @@
             "
           >
             <span class="text-primary q-font-22">Tiền ích của LVB DigiBank </span> <br />
-            - Khách hàng cá nhân, Doanh nghiệp và các tổ chức -  Có tất cả các dịch ngân hàng -  Chỉ sử dụng 01 User cho các thiết bị mà có kết nối mạng
-            Internet
+            - Khách hàng cá nhân, Doanh nghiệp và các tổ chức
+            <br />
+            -  Có tất cả các dịch ngân hàng <br />
+            -  Chỉ sử dụng 01 User cho các thiết bị mà có kết nối mạng Internet
           </div>
         </div>
       </div>
@@ -23,8 +25,10 @@
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center q-pt-lg">
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left q-pt-lg">
             <span class="text-primary q-font-22">Tiền ích của LVB DigiBank </span> <br />
-            - Khách hàng cá nhân, Doanh nghiệp và các tổ chức -  Có tất cả các dịch ngân hàng -  Chỉ sử dụng 01 User cho các thiết bị mà có kết nối mạng
-            Internet
+            - Khách hàng cá nhân, Doanh nghiệp và các tổ chức
+            <br />
+            -  Có tất cả các dịch ngân hàng <br />
+            -  Chỉ sử dụng 01 User cho các thiết bị mà có kết nối mạng Internet
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center q-pt-lg">
@@ -40,7 +44,10 @@
           "
         >
           <span class="text-primary q-font-22">Tiền ích của LVB DigiBank </span> <br />
-          - Khách hàng cá nhân, Doanh nghiệp và các tổ chức -  Có tất cả các dịch ngân hàng -  Chỉ sử dụng 01 User cho các thiết bị mà có kết nối mạng Internet
+          - Khách hàng cá nhân, Doanh nghiệp và các tổ chức
+          <br />
+          -  Có tất cả các dịch ngân hàng <br />
+          -  Chỉ sử dụng 01 User cho các thiết bị mà có kết nối mạng Internet
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center q-pt-lg">
           <img src="/assets/img/Final_new.jpg" height="100px" alt />

@@ -1,70 +1,281 @@
 [    
         {            
-                "type" : "Transfer",               
-                "header" : "ໂອນເງີນ", 
-                "headervi" : "Chuyển khoản", 
-                "headeren" : "Transfer Money", 
-                "name" : "Internal Transfer" , 
+                "type" : "Financial",               
+                "header" : "Quản lý tài chính", 
+                "headervi" : "Quản lý tài chính", 
+                "headeren" : "Quản lý tài chính", 
+                "name" : "Xem thông tin tài khoản (CA, Saving, Loan)" , 
+                "namevi" : "Xem thông tin tài khoản (CA, Saving, Loan)" , 
+                "nameen" : "Xem thông tin tài khoản (CA, Saving, Loan)" , 
                 "img" : "/assets/img/transfer.jpg",
-                "click" : "Transfer"
+                "click" : ""
         },
         {            
-                "type" : "Transfer",               
-                "header" : "Transfer Money", 
-                "name" : "Remittance Transfer" , 
-                "img" : "/assets/img/banktransfer.jpeg",
-                "click" : "Transfer"
+                "type" : "Financial",               
+                "header" : "Quản lý tài chính", 
+                "headervi" : "Quản lý tài chính", 
+                "headeren" : "Quản lý tài chính", 
+                "name" : "Lịch sử giao dịch" , 
+                "namevi" : "Lịch sử giao dịch" , 
+                "nameen" : "Lịch sử giao dịch" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
         },
         {            
-                "type" : "Transfer",               
-                "header" : "Transfer Money", 
-                "name" : "International Transfer" , 
-                "img" : "/assets/img/gdpr-international-data-transfer.jpg",
-                "click" : "Transfer"
+                "type" : "Financial",               
+                "header" : "Quản lý tài chính", 
+                "headervi" : "Quản lý tài chính", 
+                "headeren" : "Quản lý tài chính", 
+                "name" : "Danh sách tài khoản thụ hưởng" , 
+                "namevi" : "Danh sách tài khoản thụ hưởng" , 
+                "nameen" : "Danh sách tài khoản thụ hưởng" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
         },
-        {            
-                "type" : "Transfer",               
-                "header" : "Transfer Money", 
-                "name" : "Online Transfer 24/7" , 
-                "img" : "/assets/img/onlinetransfer.jpg",
-                "click" : "Transfer"
-        },
-        
-        {            
-                "type" : "BillPayment",               
-                "header" : "ຊຳລະໃບບິນຕ່າງໆ", 
-                "headervi" : "Thanh toán hóa đơn", 
-                "headeren" : "Bill Payment",
-                "name" : "Electricity bill payment" , 
-                "img" : "/assets/img/electricity.jpg",
-                "click" : "Electric"
-        },
-        {            
-                "type" : "BillPayment",               
-                "header" : "ຊຳລະໃບບິນຕ່າງໆ",
-                "headervi" : "Thanh toán hóa đơn", 
-                "headeren" : "Bill Payment",
-                "name" : "Water bill payment" , 
-                "img" : "/assets/img/water.jpg",
-                "click" : "Water"
-        },
-        {            
-                "type" : "BillPayment",               
-                "header" : "ຊຳລະໃບບິນຕ່າງໆ",          
-                "headervi" : "Thanh toán hóa đơn", 
-                "headeren" : "Bill Payment",       
-                "name" : "Road tax" , 
-                "img" : "/assets/img/road.jpg",
-                "click" : "Road"
-        },
-        {            
-                "type" : "BillPayment",               
-                "header" : "ຊຳລະໃບບິນຕ່າງໆ", 
-                "headervi" : "Thanh toán hóa đơn", 
-                "headeren" : "Bill Payment",
-                "name" : "Telecomunication bill payment" , 
-                "img" : "/assets/img/telecomunication.png",
-                "click" : "Telecomunication"
-        }
 
+        {            
+                "type" : "Transfer",               
+                "header" : "Chuyển tiền", 
+                "headervi" : "Chuyển tiền", 
+                "headeren" : "Chuyển tiền", 
+                "name" : "Chuyển tiền trong hệ thống" , 
+                "namevi" : "Chuyển tiền trong hệ thống" , 
+                "nameen" : "Chuyển tiền trong hệ thống" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "Transfer",               
+                "header" : "Chuyển tiền", 
+                "headervi" : "Chuyển tiền", 
+                "headeren" : "Chuyển tiền", 
+                "name" : "Chuyển tiền ngoài hệ thống" , 
+                "namevi" : "Chuyển tiền ngoài hệ thống" , 
+                "nameen" : "Chuyển tiền ngoài hệ thống" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "Transfer",               
+                "header" : "Chuyển tiền", 
+                "headervi" : "Chuyển tiền", 
+                "headeren" : "Chuyển tiền", 
+                "name" : "Chuyển tiền quốc tế" , 
+                "namevi" : "Chuyển tiền quốc tế" , 
+                "nameen" : "Chuyển tiền quốc tế" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        }
+        ,
+        {            
+                "type" : "Transfer",               
+                "header" : "Chuyển tiền", 
+                "headervi" : "Chuyển tiền", 
+                "headeren" : "Chuyển tiền", 
+                "name" : "Chuyển tiền nhanh đến NH, ví điện tử" , 
+                "namevi" : "Chuyển tiền nhanh đến NH, ví điện tử" , 
+                "nameen" : "Chuyển tiền nhanh đến NH, ví điện tử" ,  
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        }
+        ,
+        {            
+                "type" : "Transfer",               
+                "header" : "Chuyển tiền", 
+                "headervi" : "Chuyển tiền", 
+                "headeren" : "Chuyển tiền", 
+                "name" : "Chuyển tiền số điện thoại" , 
+                "namevi" : "Chuyển tiền số điện thoại" , 
+                "nameen" : "Chuyển tiền số điện thoại" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        }
+        ,
+        {            
+                "type" : "Transfer",               
+                "header" : "Chuyển tiền", 
+                "headervi" : "Chuyển tiền", 
+                "headeren" : "Chuyển tiền", 
+                "name" : "Chuyển tiền định kỳ" , 
+                "namevi" : "Chuyển tiền định kỳ" , 
+                "nameen" : "Chuyển tiền định kỳ" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "Transfer",               
+                "header" : "Chuyển tiền", 
+                "headervi" : "Chuyển tiền", 
+                "headeren" : "Chuyển tiền", 
+                "name" : "Chuyển tiền theo lô" , 
+                "namevi" : "Chuyển tiền theo lô" , 
+                "nameen" : "Chuyển tiền theo lô" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "Transfer",               
+                "header" : "Chuyển tiền", 
+                "headervi" : "Chuyển tiền", 
+                "headeren" : "Chuyển tiền", 
+                "name" : "Bán ngoại tệ" , 
+                "namevi" : "Bán ngoại tệ" , 
+                "nameen" : "Bán ngoại tệ" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "TTHD",               
+                "header" : "Thanh toán trực tuyến", 
+                "headervi" : "Thanh toán trực tuyến", 
+                "headeren" : "Thanh toán trực tuyến", 
+                "name" : "Nạp tiền điện thoại" , 
+                "namevi" : "Nạp tiền điện thoại" , 
+                "nameen" : "Nạp tiền điện thoại" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "TTHD",               
+                "header" : "Thanh toán trực tuyến", 
+                "headervi" : "Thanh toán trực tuyến", 
+                "headeren" : "Thanh toán trực tuyến", 
+                "name" : "Thanh toán hóa đơn viễn thông" , 
+                "namevi" : "Thanh toán hóa đơn viễn thông" , 
+                "nameen" : "Thanh toán hóa đơn viễn thông" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "TTHD",               
+                "header" : "Thanh toán trực tuyến", 
+                "headervi" : "Thanh toán trực tuyến", 
+                "headeren" : "Thanh toán trực tuyến", 
+                "name" : "TTHĐ nước" , 
+                "namevi" : "TTHĐ nước" , 
+                "nameen" : "TTHĐ nước" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "TTHD",               
+                "header" : "Thanh toán trực tuyến", 
+                "headervi" : "Thanh toán trực tuyến", 
+                "headeren" : "Thanh toán trực tuyến", 
+                "name" : "TTHĐ điện" , 
+                "namevi" : "TTHĐ điện" ,  
+                "nameen" : "TTHĐ điện" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "TTHD",               
+                "header" : "Thanh toán trực tuyến", 
+                "headervi" : "Thanh toán trực tuyến", 
+                "headeren" : "Thanh toán trực tuyến", 
+                "name" : "Thanh toán thuế (thuế đường bộ, thuế đất)" , 
+                "namevi" : "Thanh toán thuế (thuế đường bộ, thuế đất)" , 
+                "nameen" : "Thanh toán thuế (thuế đường bộ, thuế đất)" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "TTHD",               
+                "header" : "Thanh toán trực tuyến", 
+                "headervi" : "Thanh toán trực tuyến", 
+                "headeren" : "Thanh toán trực tuyến", 
+                "name" : "Thu hộ tài chính tiêu dùng (AEON)" , 
+                "namevi" : "Thu hộ tài chính tiêu dùng (AEON)" , 
+                "nameen" : "Thu hộ tài chính tiêu dùng (AEON)" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "TTHD",               
+                "header" : "Thanh toán trực tuyến", 
+                "headervi" : "Thanh toán trực tuyến", 
+                "headeren" : "Thanh toán trực tuyến", 
+                "name" : "TT bằng QR" , 
+                "namevi" : "TT bằng QR" , 
+                "nameen" : "TT bằng QR" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "TTHD",               
+                "header" : "Thanh toán trực tuyến", 
+                "headervi" : "Thanh toán trực tuyến", 
+                "headeren" : "Thanh toán trực tuyến", 
+                "name" : "TTHĐ tự động" , 
+                "namevi" :  "TTHĐ tự động" , 
+                "nameen" :  "TTHĐ tự động" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "TTHD",               
+                "header" : "Thanh toán trực tuyến", 
+                "headervi" : "Thanh toán trực tuyến", 
+                "headeren" : "Thanh toán trực tuyến", 
+                "name" : "Thanh toán nhanh" , 
+                "namevi" : "Thanh toán nhanh" , 
+                "nameen" : "Thanh toán nhanh" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "THE",               
+                "header" : "Dịch vụ thẻ", 
+                "headervi" : "Dịch vụ thẻ", 
+                "headeren" : "Dịch vụ thẻ", 
+                "name" : "Truy vấn thông tin thẻ" , 
+                "namevi" : "Truy vấn thông tin thẻ" ,  
+                "nameen" : "Truy vấn thông tin thẻ" ,  
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "THE",               
+                "header" : "Dịch vụ thẻ", 
+                "headervi" : "Dịch vụ thẻ", 
+                "headeren" : "Dịch vụ thẻ", 
+                "name" : "Kích hoạt/khóa thẻ" , 
+                "namevi" : "Kích hoạt/khóa thẻ" ,  
+                "nameen" : "Kích hoạt/khóa thẻ" ,
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "THE",               
+                "header" : "Dịch vụ thẻ", 
+                "headervi" : "Dịch vụ thẻ", 
+                "headeren" : "Dịch vụ thẻ", 
+                "name" : "Đăng ký mở thẻ online" , 
+                "namevi" : "Đăng ký mở thẻ online" , 
+                "nameen" : "Đăng ký mở thẻ online" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "THE",               
+                "header" : "Dịch vụ thẻ", 
+                "headervi" : "Dịch vụ thẻ", 
+                "headeren" : "Dịch vụ thẻ", 
+                "name" : "Lịch sử giao dịch thẻ" , 
+                "namevi" : "Lịch sử giao dịch thẻ" , 
+                "nameen" : "Lịch sử giao dịch thẻ" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        },
+        {            
+                "type" : "THE",               
+                "header" : "Dịch vụ thẻ", 
+                "headervi" : "Dịch vụ thẻ", 
+                "headeren" : "Dịch vụ thẻ", 
+                "name" : "Rút tiền bằng QR (trên máy ADM)" , 
+                "namevi" : "Rút tiền bằng QR (trên máy ADM)" , 
+                "nameen" : "Rút tiền bằng QR (trên máy ADM)" , 
+                "img" : "/assets/img/transfer.jpg",
+                "click" : ""
+        }
 ]

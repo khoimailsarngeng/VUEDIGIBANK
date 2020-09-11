@@ -2,7 +2,7 @@
   <div id="FrontLayout">
     <q-layout view="hHh lpr fFf">
       <q-header elevated class="bg-primary text-white">
-        <q-bar style="padding-left:3%;padding-right:1%;height: 40px;">
+        <!-- <q-bar style="padding-left:3%;padding-right:1%;height: 40px;">
           <div class="cursor-pointer text-center" style="padding-right:10px;font-size:13px">
             <span
               :style="
@@ -48,12 +48,17 @@
               </q-fab-action>
             </q-fab>
           </div>
-        </q-bar>
-        <q-toolbar class="bg-white" style="border-bottom:2px solid #17479D">
-          <q-toolbar-title class="text-black" @click="$router.push('/')">
-            <img v-if="!mobileMode" src="/assets/img/Final_new.jpg" height="100%" width="220px" />
-            <img v-else src="/assets/img/Final_new.jpg" height="50px" width="180px" />
+        </q-bar> -->
+        <q-toolbar class="bg-white">
+          <img @click="$router.push('/')" src="/images/icon/Asset 2@4x.png" class="q-pa-sm" height="60px" width="130px" />
+          <q-toolbar-title
+            :class="$store.state.language.language === 'la' ? 'text-black q-font-20' : 'text-black q-font-15'"
+            v-if="!mobileMode && window.width > 1024"
+            @click="$router.push('/')"
+          >
+            {{ $t('LVB') }}
           </q-toolbar-title>
+
           <q-space />
           <q-btn-dropdown v-if="!mobileMode" class="text-black" stretch flat dropdown-icon="none" to="/">
             <template v-slot:label>
@@ -97,6 +102,40 @@
               </div>
             </template>
           </q-btn-dropdown>
+          <q-btn-dropdown v-if="!mobileMode" stretch flat icon="language" :label="$t('SelectLanguage')" class="text-black">
+            <q-list>
+              <q-item clickable v-close-popup @click="lang = 'la'">
+                <q-item-section avatar>
+                  <q-avatar style="width:25px;height:25px">
+                    <img src="../assets/Flag/la.png" />
+                  </q-avatar>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>ພາສາລາວ</q-item-label>
+                </q-item-section>
+              </q-item>
+              <q-item clickable v-close-popup @click="lang = 'vi'">
+                <q-item-section avatar>
+                  <q-avatar style="width:25px;height:25px">
+                    <img src="/assets/Flag/vi.png" width="40px" height="40px" />
+                  </q-avatar>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Việt Nam</q-item-label>
+                </q-item-section>
+              </q-item>
+              <q-item clickable v-close-popup @click="lang = 'en'">
+                <q-item-section avatar>
+                  <q-avatar style="width:25px;height:25px">
+                    <img src="/assets/Flag/en.png" width="40px" height="40px" />
+                  </q-avatar>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>English</q-item-label>
+                </q-item-section>
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
           <q-btn color="black" v-if="mobileMode" dense flat round icon="apps" @click="left = !left" />
         </q-toolbar>
       </q-header>
@@ -131,7 +170,6 @@
               </q-item>
             </q-list>
           </q-expansion-item>
-
           <q-separator />
           <q-expansion-item
             group="somegroup"
@@ -141,11 +179,56 @@
             expand-icon="none"
             @click="$router.push('/FAQs')"
           ></q-expansion-item>
+          <q-separator />
+          <q-expansion-item group="somegroup" icon="language" :label="$t('SelectLanguage')" header-class="text-purple">
+            <q-list>
+              <q-item clickable v-close-popup @click="changelanguage('la')">
+                <q-item-section avatar>
+                  <q-avatar style="width:25px;height:25px">
+                    <img src="../assets/Flag/la.png" />
+                  </q-avatar>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>ພາສາລາວ</q-item-label>
+                </q-item-section>
+              </q-item>
+              <q-item clickable v-close-popup @click="changelanguage('vi')">
+                <q-item-section avatar>
+                  <q-avatar style="width:25px;height:25px">
+                    <img src="/assets/Flag/vi.png" width="40px" height="40px" />
+                  </q-avatar>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Việt Nam</q-item-label>
+                </q-item-section>
+              </q-item>
+              <q-item clickable v-close-popup @click="changelanguage('en')">
+                <q-item-section avatar>
+                  <q-avatar style="width:25px;height:25px">
+                    <img src="/assets/Flag/en.png" width="40px" height="40px" />
+                  </q-avatar>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>English</q-item-label>
+                </q-item-section>
+              </q-item>
+            </q-list>
+          </q-expansion-item>
         </q-list>
       </q-drawer>
       <q-page-container>
-        <router-view />
-
+        <div
+          :style="mobileMode ? '' : vheight"
+          :class="$q.screen.name === 'xs' || $q.screen.name === 'sm' ? 'page-home-container-mobile' : 'page-home-container'"
+        >
+          <router-view />
+        </div>
+        <div :class="$q.screen.name === 'xs' || $q.screen.name === 'sm' ? 'page-home-container-mobile' : 'page-home-container'">
+          <hr />
+          <div class="text-h7 text-center">
+            Copyright © 2020 LaoVietBank . All Rights Reserved.
+          </div>
+        </div>
         <q-page-sticky position="bottom-right" :offset="[18, 18]">
           <q-btn v-if="!dialog" @click="dialog = !dialog" round color="primary" icon="chat" size="lg"> </q-btn>
           <q-card :style="mobileMode ? 'width: 330px;' : 'width:100%'" v-if="dialog">
@@ -199,7 +282,8 @@ export default {
       lang: this.$i18n.locale,
       left: false,
       dialog: false,
-      position: 'bottom'
+      position: 'bottom',
+      vheight: ''
     };
   },
   watch: {
@@ -211,6 +295,10 @@ export default {
       if (!val) {
         this.left = false;
       }
+    },
+    bbwidth(val) {
+      var a = this.window.height;
+      this.vheight = 'height:' + a + 'px';
     }
   },
   methods: {
@@ -218,11 +306,22 @@ export default {
     open(val) {
       this.position = val;
       this.dialog = !this.dialog;
+    },
+    changelanguage(val) {
+      this.lang = val;
+      this.left = !this.left;
     }
   },
   computed: {
     ...mapState('mobileMode', ['mobileMode']),
-    ...mapState('mobileMode', ['window'])
+    ...mapState('mobileMode', ['window']),
+    bbwidth() {
+      return this.window.height;
+    },
+    bodyheight() {
+      var a = this.window.height;
+      return 'height:' + a + 'px';
+    }
   }
 };
 </script>
@@ -247,5 +346,13 @@ a:hover {
   min-height: 56px;
   max-height: 56px;
   max-width: 192px;
+}
+.page-home-container {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+.page-home-container-mobile {
+  margin-right: 2%;
+  margin-left: 2%;
 }
 </style>

@@ -1,69 +1,93 @@
 [
     {
         "type" : "Individual",
-        "name" : "ໂອນເງີນ",
-        "namevi" : "Chuyển khoản",
-        "nameen" : "Transfer money" ,
+        "name" : "Quản lý tài chính",
+        "namevi" : "Quản lý tài chính",
+        "nameen" : "Quản lý tài chính" ,
         "img" : "/assets/img/Bill.jpg",
+        "click" : "Financial"
+    },
+    {
+        "type" : "Individual",
+        "name" : "Chuyển tiền",
+        "namevi" : "Chuyển tiền",
+        "nameen" : "Chuyển tiền" ,
+        "img" : "/assets/img/transfer.jpg",
         "click" : "Transfer"
     },
     {
         "type" : "Individual",
-        "name" : "ຊຳລະໃບບິນຕ່າງໆ",
-        "namevi" : "Thanh toán hóa đơn",
-        "nameen" : "Bill Payment" ,
-        "img" : "/assets/img/transfer.jpg",
-        "click" : "Bill"
-    },
-    {
-        "type" : "Individual",
-        "name" : "ຊຳລະໃບບິນໂທລະຄົມມະນາຄົມ",
-        "namevi" : "Thanh toán hóa đơn viễn thông",
-        "nameen" : "Telecomunication Bill Payment" ,
+        "name" : "Thanh toán trực tuyến",
+        "namevi" : "Thanh toán trực tuyến",
+        "nameen" : "Thanh toán trực tuyến" ,
         "img" : "/assets/img/telecomunication.png",
-        "click" : "Telecome"
+        "click" : "TTHD"
     },
     {
         "type" : "Individual",
-        "name" : "ຈ່າຍສິນເຊື່ອຕ່າງໆ",
-        "namevi" : "Thủ hộ tài chính tiêu dùng",
-        "nameen" : "Leasing payment" ,
+        "name" : "Dịch vụ thẻ",
+        "namevi" : "Dịch vụ thẻ",
+        "nameen" : "Dịch vụ thẻ" ,
         "img" : "/assets/img/leasing.jpg",
-        "click" : "Leasing"
+        "click" : "THE"
+    },
+    {
+        "type" : "Individual",
+        "name" : "Tiết kiệm trực tuyến",
+        "namevi" : "Tiết kiệm trực tuyến",
+        "nameen" : "Tiết kiệm trực tuyến" ,
+        "img" : "/assets/img/leasing.jpg",
+        "click" : "TKTT"
+    },
+    {
+        "type" : "Individual",
+        "name" : "Dịch vụ khách hàng",
+        "namevi" : "Dịch vụ khách hàng",
+        "nameen" : "Dịch vụ khách hàng" ,
+        "img" : "/assets/img/leasing.jpg",
+        "click" : "Service"
     },
 
 
 
     {
         "type" : "Corporate",
-        "name" : "ໂອນເງີນ",
-        "namevi" : "Chuyển khoản",
-        "nameen" : "Transfer money" ,
+        "name" : "Quản lý tài chính",
+        "namevi" : "Quản lý tài chính",
+        "nameen" : "Quản lý tài chính" ,
         "img" : "/assets/img/Bill.jpg",
-        "click" : "Transfer"
+        "click" : ""
     },
     {
         "type" : "Corporate",
-        "name" : "ຊຳລະໃບບິນຕ່າງໆ",
-        "namevi" : "Thanh toán hóa đơn",
-        "nameen" : "Bill Payment" ,
+        "name" : "Chuyển tiền",
+        "namevi" : "Chuyển tiền",
+        "nameen" : "Chuyển tiền" ,
         "img" : "/assets/img/transfer.jpg",
-        "click" : "Bill"
+        "click" : ""
     },
     {
         "type" : "Corporate",
-        "name" : "ຊຳລະໃບບິນໂທລະຄົມມະນາຄົມ",
-        "namevi" : "Thanh toán hóa đơn viễn thông",
-        "nameen" : "Telecomunication Bill Payment" ,
+        "name" : "Thanh toán lương",
+        "namevi" : "Thanh toán lương",
+        "nameen" : "Thanh toán lương" ,
         "img" : "/assets/img/telecomunication.png",
-        "click" : "Telecome"
+        "click" : ""
     },
     {
         "type" : "Corporate",
-        "name" : "ຈ່າຍສິນເຊື່ອຕ່າງໆ",
-        "namevi" : "Thủ hộ tài chính tiêu dùng",
-        "nameen" : "Leasing payment" ,
+        "name" : "Thanh toán trực tuyến",
+        "namevi" : "Thanh toán trực tuyến",
+        "nameen" : "Thanh toán trực tuyến" ,
         "img" : "/assets/img/leasing.jpg",
-        "click" : "Leasing"
+        "click" : ""
+    },
+    {
+        "type" : "Corporate",
+        "name" : "Dịch vụ khách hàng",
+        "namevi" : "Dịch vụ khách hàng",
+        "nameen" : "Dịch vụ khách hàng" ,
+        "img" : "/assets/img/leasing.jpg",
+        "click" : ""
     }
 ]

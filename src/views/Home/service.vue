@@ -13,9 +13,11 @@
     </q-bar>
     <div class="q-pa-md">
       <div class="row q-col-gutter-xs">
-        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-4" v-for="(item, index) in returnData" :key="index">
+        <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3" v-for="(item, index) in returnData" :key="index">
           <q-card :class="mobileMode ? 'text-center my-card-mobile' : 'text-center my-card'" @click="$router.push(`/transfermoney/${item.click}`)">
-            <img :height="mobileMode ? '80px' : '200px'" :src="item.img" />
+            <q-card-section text-center>
+              <img :width="mobileMode ? '60px' : '120px'" :height="mobileMode ? '60px' : '120px'" :src="item.img" />
+            </q-card-section>
             <q-card-section class="q-pt-xs">
               <span :class="mobileMode ? 'text-h7' : 'text-h6'">{{
                 $store.state.language.language === 'en' ? item.name : $store.state.language.language === 'vi' ? item.name : item.name
@@ -44,10 +46,10 @@ export default {
 </script>
 <style scoped>
 .my-card {
-  height: 250px;
+  height: 275px;
 }
 
 .my-card-mobile {
-  height: 130px;
+  height: 150px;
 }
 </style>

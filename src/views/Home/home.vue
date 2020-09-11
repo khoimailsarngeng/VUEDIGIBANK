@@ -1,161 +1,17 @@
 <template>
   <div>
-    <q-carousel
-      swipeable
-      animated
-      v-model="slide"
-      infinite
-      autoplay
-      :height="$q.screen.name === 'xs' ? '200px' : $q.screen.name === 'sm' ? '250px' : $q.screen.name === 'md' ? '300px' : '400px'"
-      :thumbnails="mobileMode ? false : true"
-    >
-      <q-carousel-slide
-        style="background-size: 100% 100%;"
-        :name="1"
-        :img-src="mobileMode ? '/assets/img/8x4m-DigiBank final_resize.jpg' : '/assets/img/8x4m-DigiBank final.jpg'"
-      />
-      <q-carousel-slide
-        style="background-size: 100% 100%;"
-        :name="2"
-        :img-src="mobileMode ? '/assets/img/bg-app-individual-after-login_resize.jpg' : '/assets/img/bg-app-individual-after-login.jpg'"
-      />
-      <q-carousel-slide style="background-size: 100% 100%;" :name="3" :img-src="mobileMode ? '/assets/img/5_resize.jpg' : '/assets/img/5.jpg'" />
-      <template v-slot:control>
-        <q-carousel-control
-          :style="mobileMode ? 'margin: 25px;' : ''"
-          :position="mobileMode ? 'bottom-right' : 'bottom-right'"
-          :offset="mobileMode ? [50, 100] : [100, 100]"
-          class="q-gutter-xs"
-          v-if="slide == 2"
-        >
-          <q-card flat bordered class="my-card bg-transparent" style="border:0">
-            <q-card-section>
-              <div class="row items-center no-wrap">
-                <div class="col">
-                  <div :class="mobileMode ? 'text-h7' : 'text-h5'">
-                    <span class="text-yellow">Laovietbank</span>&nbsp; <span class="text-red">Digital</span>&nbsp;
-                    <span class="text-blue">Banking</span>
-                  </div>
-                  <div class="text-h7 text-black">ໃຫ້ຊິວິດທ່ານສະດວກຂື້ນ</div>
-                  <span class="text-h7 text-black">ສະດວກ ປອດໄພ ວ່ອງໄວ ທັນໃຈ ຕ້ອງ ທະນາຄານຮ່ວມທຸລະກິດລາວຫວຽດ</span>
-                </div>
-              </div>
-            </q-card-section>
-          </q-card>
-        </q-carousel-control>
-      </template>
-    </q-carousel>
-    <div class="q-pa-md">
-      <div class="row q-col-gutter-md cls-production">
-        <div :style="mobileMode ? 'width:50%' : 'width:50%'">
-          <q-card class="bg-custom-card text-center">
-            <q-card-section class="q-pb-none">
-              <img
-                src="/assets/img/Generalperson.png"
-                :style="mobileMode ? 'width:50px;height:50px' : 'width:90px;height:90px'"
-                @click="$router.push('/individual')"
-              />
-            </q-card-section>
-            <q-card-section class="q-pt-none">
-              <span :class="mobileMode ? 'q-font-11' : 'text-h6'">{{ $t('Individualcustomer') }}</span> <br />
-              <q-btn
-                :size="mobileMode ? ($store.state.language.language === 'la' ? 'sm' : 'xs') : 'md'"
-                @click="$router.push('/individual')"
-                class="q-mt-xs"
-                push
-                color="primary"
-                :label="$t('InfoIndividualcustomer')"
-              />
-            </q-card-section>
-          </q-card>
-        </div>
-        <!-- <q-separator vertical color="primary" /> -->
-
-        <div :style="mobileMode ? 'width:50%' : 'width:50%'">
-          <q-card class="bg-custom-card text-center">
-            <q-card-section class="q-pb-none">
-              <img
-                src="/assets/img/Website_Planner-512.png"
-                :style="mobileMode ? 'width:50px;height:50px' : 'width:90px;height:90px'"
-                @click="$router.push('/corporate')"
-              />
-            </q-card-section>
-            <q-card-section class="q-pt-none">
-              <span :class="mobileMode ? 'q-font-11' : 'text-h6'">{{ $t('Corporatecustomer') }}</span> <br />
-              <q-btn
-                :size="mobileMode ? ($store.state.language.language === 'la' ? 'sm' : 'xs') : 'md'"
-                @click="$router.push('/corporate')"
-                class="q-mt-xs"
-                push
-                color="primary"
-                :label="$t('InfoCorporatecustomer')"
-              />
-            </q-card-section>
-          </q-card>
-        </div>
-      </div>
-    </div>
+    <partadvertise v-if="showad" />
+    <part1 />
+    <part2 />
+    <part3 />
+    <part4 />
+    <part5 />
+    <part6 />
     <!-- ----------------- -->
 
-    <div class="q-pa-sm">
-      <q-carousel swipeable animated v-model="slide1" height="350px" infinite autoplay>
-        <q-carousel-slide :name="1" img-src="/assets/img/background_IB_CN.jpeg" />
-        <template v-slot:control>
-          <q-carousel-control :style="mobileMode ? 'margin: 50px;' : 'margin: 100px;'" position="bottom-right" :offset="[100, 100]" class="q-gutter-xs">
-            <q-card flat bordered class="my-card bg-transparent" style="border:0">
-              <q-card-section>
-                <div class="row items-center">
-                  <div class="col">
-                    <div :class="mobileMode ? 'text-h6' : 'text-h5'">
-                      <span class="text-yellow">Laovietbank</span>&nbsp; <span class="text-red">Digital</span>&nbsp;
-                      <span class="text-blue">Banking</span>
-                    </div>
-                    <span :class="mobileMode ? 'text-h7 text-black' : 'text-h6 text-black'">A smart banking app for mobile devices</span>
-                    <br />
-                    <p class="text-sm text-black" style="white-space:pre-wrap">
-                      A smart app that helps customers bank with LVB Digibank anytime, anywhere,
-                      <br />compatible with operating systems including iOS, Android, Windows Phone <br />and working on all 3G/WIFI/GPRS-connected electronic
-                      devices.
-                    </p>
-                  </div>
-                </div>
-              </q-card-section>
-            </q-card>
-          </q-carousel-control>
-        </template>
-      </q-carousel>
-    </div>
-
     <!------>
-    <div class="q-pa-sm">
-      <q-carousel swipeable animated v-model="slide1" height="350px" infinite autoplay>
-        <q-carousel-slide :name="1" img-src="/assets/img/background_IB_CN.jpeg" />
-        <template v-slot:control>
-          <q-carousel-control :style="mobileMode ? 'margin: 50px;' : 'margin: 100px;'" position="bottom-left" :offset="[100, 100]" class="q-gutter-xs">
-            <q-card flat bordered class="my-card bg-transparent" style="border:0">
-              <q-card-section>
-                <div class="row items-center">
-                  <div class="col">
-                    <div :class="mobileMode ? 'text-h6' : 'text-h5'">
-                      <span class="text-yellow">Laovietbank</span>&nbsp; <span class="text-red">Digital</span>&nbsp;
-                      <span class="text-blue">Banking</span>
-                    </div>
-                    <span :class="mobileMode ? 'text-h7 text-black' : 'text-h6 text-black'">A smart banking app for mobile devices</span>
-                    <br />
-                    <p class="text-sm text-black" style="white-space:pre-wrap">
-                      A smart app that helps customers bank with LVB Digibank anytime, anywhere,
-                      <br />compatible with operating systems including iOS, Android, Windows Phone <br />and working on all 3G/WIFI/GPRS-connected electronic
-                      devices.
-                    </p>
-                  </div>
-                </div>
-              </q-card-section>
-            </q-card>
-          </q-carousel-control>
-        </template>
-      </q-carousel>
-    </div>
-    <div class="q-pa-sm">
+
+    <!-- <div class="q-pa-sm">
       <q-card class="q-pa-lg" flat bordered v-if="!mobileMode">
         <q-card-section class="text-center">
           <span class="text-h4">Laoviet bank CARD</span>
@@ -254,26 +110,35 @@
           </q-carousel>
         </q-card-section>
       </q-card>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
 import { mapState } from 'vuex';
+import part1 from '../../components/home/part1component.vue';
+import part2 from '../../components/home/part2component.vue';
+import part3 from '../../components/home/part3component.vue';
+import part4 from '../../components/home/part4component.vue';
+import part5 from '../../components/home/part5component.vue';
+import part6 from '../../components/home/part6component.vue';
+import partadvertise from '../../components/home/partavertise.vue';
 export default {
+  components: {
+    part1,
+    part2,
+    part3,
+    part4,
+    part5,
+    part6,
+    partadvertise
+  },
   data() {
     return {
-      slide: 1,
-      slide1: 1,
-      slide2: 2,
-      autoplay: true,
-      tab: 'alarms'
+      showad: false
     };
   },
   computed: {
     ...mapState('mobileMode', ['mobileMode'])
-  },
-  watch: {
-    mobileMode(val) {}
   }
 };
 </script>

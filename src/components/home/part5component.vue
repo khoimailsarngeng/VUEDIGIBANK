@@ -16,9 +16,9 @@
               <q-btn
                 @click="
                   detectDevice === 'I'
-                    ? Download('https://apps.apple.com/us/app/laovietbank-smart-banking/id1183297233')
+                    ? Download('https://apps.apple.com/la/app/laovietbank-smart-banking/id1183297233')
                     : etectDevice === 'A'
-                    ? Download('https://play.google.com/store/apps/details?id=com.lvb.retail&hl=th')
+                    ? Download('https://play.google.com/store/apps/details?id=com.lvb.retail')
                     : Download(
                         'https://www.google.com/search?ei=LOxaX_fmBfqW4-EP6Oek6A8&q=laovietbank+smart+baking&oq=laovietbank+smart+baking&gs_lcp=CgZwc3ktYWIQAzIECAAQE1CjOlj_QWDXRWgAcAB4AIABggGIAeADkgEDMC40mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwj3rM_xkeDrAhV6yzgGHegzCf0Q4dUDCA0&uact=5'
                       )
@@ -49,9 +49,9 @@
               <q-btn
                 @click="
                   detectDevice === 'I'
-                    ? Download('https://apps.apple.com/us/app/laovietbank-smart-banking/id1183297233')
+                    ? Download('https://apps.apple.com/la/app/laovietbank-corporate-banking/id1185365945')
                     : etectDevice === 'A'
-                    ? Download('https://play.google.com/store/apps/details?id=com.lvb.retail&hl=th')
+                    ? Download('https://play.google.com/store/apps/details?id=com.lvb.corp')
                     : Download(
                         'https://www.google.com/search?ei=LOxaX_fmBfqW4-EP6Oek6A8&q=laovietbank+smart+baking&oq=laovietbank+smart+baking&gs_lcp=CgZwc3ktYWIQAzIECAAQE1CjOlj_QWDXRWgAcAB4AIABggGIAeADkgEDMC40mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwj3rM_xkeDrAhV6yzgGHegzCf0Q4dUDCA0&uact=5'
                       )

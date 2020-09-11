@@ -2,7 +2,7 @@
   <div>
     <div class="row q-col-gutter-xs text-center">
       <div class="col-xs-12">
-        <img src="/assets/img/Final_new.jpg" :width="mobileMode ? '50%' : '60%'" height="100%" alt />
+        <img src="/assets/img/Logo-LVBDigiBank.png" :width="mobileMode ? '50%' : '60%'" height="100%" alt />
       </div>
       <div class="col-xs-12"><span class="q-font-25">FOR CORPORATE</span><br /></div>
     </div>

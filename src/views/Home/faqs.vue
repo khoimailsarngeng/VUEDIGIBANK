@@ -42,14 +42,16 @@
             switch-toggle-side
             :expand-icon="smartbanking ? 'remove_circle_outline' : 'control_point'"
             :header-class="smartbanking ? 'bg-primary text-white' : ''"
-            label="Laoviet Digibank Smartbanking"
+            label="I.	Giới thiệu LVB Digibank"
           >
             <q-card>
               <q-card-section>
-                <q-expansion-item switch-toggle-side header-class="bg-grey-2" label="What is Laoviet Digital Banking?" expand-icon="help">
+                <q-expansion-item switch-toggle-side header-class="bg-grey-2" label="1.	LVB Digibank là gì?" expand-icon="help">
                   <q-card>
                     <q-card-section>
-                      Answer
+                      LVB DigiBank là dịch vụ ngân hàng số của Laovietbank cho phép khách hàng cá nhân, doanh nghiệp thực hiện các giao dịch ngân hàng mọi lúc,
+                      mọi nơi thông qua các phương tiện kỹ thuật số: ĐTDĐ, máy tính để bàn, máy tính bảng mà không phải đến ngân hàng. LaoVietBank Digital
+                      Banking gồm 2 phiên bản dành cho khách hàng cá nhân và khách hàng doanh nghiệp.
                     </q-card-section>
                   </q-card>
                 </q-expansion-item>
@@ -58,16 +60,22 @@
                   header-class="bg-grey-2"
                   :label="
                     $store.state.language.language === 'en'
-                      ? 'Features of Laoviet Digital Banking'
+                      ? '2.	LVB Digibank cung cấp cho tôi những tiện ích gì? '
                       : $store.state.language.language === 'vi'
-                      ? 'Các tính năng của dịch vụ  Laoviet Digital banking  ?'
-                      : 'ການບໍລິການຂອງ Laoviet Digital banking ມີຄຸນລັກສະນະຫຍັງແດ່?'
+                      ? '2.	LVB Digibank cung cấp cho tôi những tiện ích gì? '
+                      : '2.	LVB Digibank cung cấp cho tôi những tiện ích gì? '
                   "
                   expand-icon="help"
                 >
                   <q-card>
                     <q-card-section>
-                      Answer
+                      LVB Digibank mang lại cho khách hàng rất nhiều tiện ích với tính năng All in One : (1) Tất cả nhu cầu khách hàng sẽ được đáp ứng chỉ bằng
+                      việc sử dụng LVB DigiBank từ các nhu cầu gia đình như nộp tiền điện, tiền nước, nộp thuế đất đến các nhu cầu cá nhân như thanh toán tiền
+                      điện thoại, náp thẻ, nộp thuế đường bộ, mua bảo hiểm và sau này sẽ có mua vé máy bay, vé xem phim,... tất cả chỉ cần dùng LVB DigiBank là
+                      đầy đủ; (2) LVB DigiBank của chúng ta dành cho tất cả khách hàng gồm cá nhân, doanh nghiệp, tổ chức khác chỉ duy nhất một sản phẩm LVB
+                      DigiBank; (3) Khách hàng chỉ cần đăng ký 1 lần, ghi nhớ 1 USer và Password cho tất cả các thiết bị, từ Điện thoại, máy tính, máy tính để
+                      bàn... (4) Đặc biệt là Miễn phí hoàn toàn (ALL FREE): Khách hàng không phải trả bất cứ phí gì kể cả phí chuyển tiền liên ngân hàng (trong
+                      ít nhất 1 năm đầu sử dụng).
                     </q-card-section>
                   </q-card>
                 </q-expansion-item>
@@ -76,16 +84,17 @@
                   header-class="bg-grey-2"
                   :label="
                     $store.state.language.language === 'en'
-                      ? 'Can I use my username and password to log in to Laoviet Digital Banking application on different devices?'
+                      ? '3.	LVB Digibank có thể phục vụ 24/7 hay không?'
                       : $store.state.language.language === 'vi'
-                      ? 'Tôi có thể dùng tên đăng nhập và mật khẩu để đăng nhập ứng dụng Laoviet Digital banking trên các thiết bị khác nhau không?'
-                      : 'ຂ້ອຍສາມາດໃຊ້ຊື່ຜູ້ໃຊ້ແລະລະຫັດຜ່ານເຂົ້າສູ່ລະບົບແອັບ Laoviet Digital banking ໃນອຸປະກອນຕ່າງກັນບໍ?'
+                      ? '3.	LVB Digibank có thể phục vụ 24/7 hay không?'
+                      : '3.	LVB Digibank có thể phục vụ 24/7 hay không?'
                   "
                   expand-icon="help"
                 >
                   <q-card>
                     <q-card-section>
-                      Answer
+                      Có, khách hàng có thể truy cập vào hệ thống LVB Digibank 24/7 và thực hiện các giao dịch và quản lý tài chính thông qua các thiết bị kết
+                      nối mạng Internet ở bất cứ mọi nơi.
                     </q-card-section>
                   </q-card>
                 </q-expansion-item>
@@ -94,17 +103,81 @@
                   header-class="bg-grey-2"
                   :label="
                     $store.state.language.language === 'en'
-                      ? 'Will the service be locked if I enter the wrong password? I forgot the password of BIDV Smart banking service, what should I do??'
+                      ? '4.	Nếu tôi đi nước ngoài tôi có thể dùng LVB Digibank không?'
                       : $store.state.language.language === 'vi'
-                      ? 'Tôi nhập sai mật khẩu thì có bị khóa dịch vụ không? Tôi quên mật khẩu dịch vụ BIDV Smart banking, tôi phải làm thế nào?'
-                      : 'ບໍລິການຈະຖືກລັອກບໍ່ຖ້າຂ້ອຍໃສ່ລະຫັດຜ່ານທີ່ບໍ່ຖືກຕ້ອງ? ຂ້ອຍລືມລະຫັດຜ່ານຂອງບໍລິການທະນາຄານ BIDV Smart, ຂ້ອຍຄວນເຮັດແນວໃດ?'
+                      ? '4.	Nếu tôi đi nước ngoài tôi có thể dùng LVB Digibank không?'
+                      : '4.	Nếu tôi đi nước ngoài tôi có thể dùng LVB Digibank không?'
                   "
                   expand-icon="help"
                 >
                   <q-card>
-                    <q-card-section>
-                      Answer
-                    </q-card-section>
+                    <q-card-section> </q-card-section>
+                  </q-card>
+                </q-expansion-item>
+                <q-expansion-item
+                  switch-toggle-side
+                  header-class="bg-grey-2"
+                  :label="
+                    $store.state.language.language === 'en'
+                      ? '5.	Ai có thể sử dụng LVB Digibank?'
+                      : $store.state.language.language === 'vi'
+                      ? '5.	Ai có thể sử dụng LVB Digibank?'
+                      : '5.	Ai có thể sử dụng LVB Digibank?'
+                  "
+                  expand-icon="help"
+                >
+                  <q-card>
+                    <q-card-section> </q-card-section>
+                  </q-card>
+                </q-expansion-item>
+              </q-card-section>
+            </q-card>
+          </q-expansion-item>
+
+          <q-expansion-item
+            v-model="smartbanking1"
+            switch-toggle-side
+            :expand-icon="smartbanking1 ? 'remove_circle_outline' : 'control_point'"
+            :header-class="smartbanking1 ? 'bg-primary text-white' : ''"
+            label="II.	Đăng ký dịch vụ LVB Digibank"
+          >
+            <q-card>
+              <q-card-section>
+                <q-expansion-item switch-toggle-side header-class="bg-grey-2" label="1.	Làm gì để đăng ký sử dụng LVB DigiBank?" expand-icon="help">
+                  <q-card>
+                    <q-card-section> </q-card-section>
+                  </q-card>
+                </q-expansion-item>
+                <q-expansion-item
+                  switch-toggle-side
+                  header-class="bg-grey-2"
+                  :label="
+                    $store.state.language.language === 'en'
+                      ? '2.	Khi tôi muốn ngừng sử dụng LVB Digibank tôi cần làm gì?'
+                      : $store.state.language.language === 'vi'
+                      ? '2.	Khi tôi muốn ngừng sử dụng LVB Digibank tôi cần làm gì?'
+                      : '2.	Khi tôi muốn ngừng sử dụng LVB Digibank tôi cần làm gì?'
+                  "
+                  expand-icon="help"
+                >
+                  <q-card>
+                    <q-card-section> </q-card-section>
+                  </q-card>
+                </q-expansion-item>
+                <q-expansion-item
+                  switch-toggle-side
+                  header-class="bg-grey-2"
+                  :label="
+                    $store.state.language.language === 'en'
+                      ? '3.	Tôi muốn sử dụng lại LVB DigiBank tôi cần làm gì?'
+                      : $store.state.language.language === 'vi'
+                      ? '3.	Tôi muốn sử dụng lại LVB DigiBank tôi cần làm gì?'
+                      : '3.	Tôi muốn sử dụng lại LVB DigiBank tôi cần làm gì?'
+                  "
+                  expand-icon="help"
+                >
+                  <q-card>
+                    <q-card-section> </q-card-section>
                   </q-card>
                 </q-expansion-item>
               </q-card-section>
@@ -121,7 +194,8 @@ export default {
   data() {
     return {
       slide: 1,
-      smartbanking: false
+      smartbanking: false,
+      smartbanking1: false
     };
   },
   computed: {

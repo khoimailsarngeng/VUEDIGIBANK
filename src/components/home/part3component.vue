@@ -3,7 +3,7 @@
     <div class="q-pa-sm q-mt-lg bg-grey-1">
       <div class="row q-col-gutter-xs" v-if="$q.screen.name == 'xs'">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center q-pt-lg">
-          <img src="/assets/img/Final_new.jpg" width="100%" height="100px" alt />
+          <img src="/assets/img/Logo-LVBDigiBank.png" width="100%" height="100px" alt />
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center q-pt-lg">
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center'">
@@ -15,7 +15,7 @@
       </div>
       <div class="row q-col-gutter-xs" v-else>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center q-pt-lg">
-          <img src="/assets/img/Final_new.jpg" height="100px" alt />
+          <img src="/assets/img/Logo-LVBDigiBank.png" height="100px" alt />
         </div>
         <div :class="$q.screen.name === 'xs' ? 'col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center' : 'col-xs-12 col-sm-6 col-md-6 col-lg-6 text-left q-pt-lg'">
           <span class="text-primary q-font-22">Phí đăng ký dịch vụ</span> <br />

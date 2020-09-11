@@ -14,6 +14,15 @@
             <q-card-section class="q-pt-none">
               <span :class="mobileMode ? 'q-font-11' : 'text-h6'">{{ $t('Individualcustomer') }}</span> <br />
               <q-btn
+                @click="
+                  detectDevice === 'I'
+                    ? Download('https://apps.apple.com/us/app/laovietbank-smart-banking/id1183297233')
+                    : etectDevice === 'A'
+                    ? Download('https://play.google.com/store/apps/details?id=com.lvb.retail&hl=th')
+                    : Download(
+                        'https://www.google.com/search?ei=LOxaX_fmBfqW4-EP6Oek6A8&q=laovietbank+smart+baking&oq=laovietbank+smart+baking&gs_lcp=CgZwc3ktYWIQAzIECAAQE1CjOlj_QWDXRWgAcAB4AIABggGIAeADkgEDMC40mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwj3rM_xkeDrAhV6yzgGHegzCf0Q4dUDCA0&uact=5'
+                      )
+                "
                 size="sm"
                 color="green"
                 icon="cloud_download"
@@ -38,6 +47,15 @@
             <q-card-section class="q-pt-none">
               <span :class="mobileMode ? 'q-font-11' : 'text-h6'">{{ $t('Corporatecustomer') }}</span> <br />
               <q-btn
+                @click="
+                  detectDevice === 'I'
+                    ? Download('https://apps.apple.com/us/app/laovietbank-smart-banking/id1183297233')
+                    : etectDevice === 'A'
+                    ? Download('https://play.google.com/store/apps/details?id=com.lvb.retail&hl=th')
+                    : Download(
+                        'https://www.google.com/search?ei=LOxaX_fmBfqW4-EP6Oek6A8&q=laovietbank+smart+baking&oq=laovietbank+smart+baking&gs_lcp=CgZwc3ktYWIQAzIECAAQE1CjOlj_QWDXRWgAcAB4AIABggGIAeADkgEDMC40mAEAoAEBqgEHZ3dzLXdpesABAQ&sclient=psy-ab&ved=0ahUKEwj3rM_xkeDrAhV6yzgGHegzCf0Q4dUDCA0&uact=5'
+                      )
+                "
                 size="sm"
                 color="green"
                 icon="cloud_download"
@@ -54,10 +72,25 @@
 </template>
 <script>
 import { mapState } from 'vuex';
+import { isAndroid, isIOS } from 'mobile-device-detect';
 export default {
   computed: {
     ...mapState('mobileMode', ['mobileMode']),
-    ...mapState('mobileMode', ['window'])
+    ...mapState('mobileMode', ['window']),
+    detectDevice() {
+      if (isAndroid) {
+        return 'A';
+      } else if (isIOS) {
+        return 'I';
+      } else {
+        return 'W';
+      }
+    }
+  },
+  methods: {
+    Download(val) {
+      window.open(val, '_blank');
+    }
   }
 };
 </script>

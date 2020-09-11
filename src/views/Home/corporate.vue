@@ -8,13 +8,13 @@
     </div>
     <div class="q-pa-md">
       <div class="row q-col-gutter-xs">
-        <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3" v-for="(item, index) in returnData" :key="index">
+        <div class="col-xs-4 col-sm-3 col-md-4 col-lg-4" v-for="(item, index) in returnData" :key="index">
           <q-card :class="mobileMode ? 'text-center my-card-mobile' : 'text-center my-card'" @click="$router.push(`/service/${item.click}/2`)">
             <q-card-section text-center>
               <img :width="mobileMode ? '60px' : '120px'" :height="mobileMode ? '60px' : '120px'" src="/assets/img/transfer.jpg" />
             </q-card-section>
             <q-card-section class="q-pt-xs">
-              <span :class="mobileMode ? 'text-h7' : 'text-h6'">{{
+              <span :class="mobileMode ? 'q-font-13' : 'q-font-18'">{{
                 $store.state.language.language === 'en' ? item.nameen : $store.state.language.language === 'vi' ? item.namevi : item.name
               }}</span>
             </q-card-section>
@@ -40,11 +40,20 @@ export default {
 };
 </script>
 <style scoped>
-.my-card {
+/* .my-card {
   height: 230px;
 }
 
 .my-card-mobile {
   height: 150px;
+} */
+
+.q-card {
+  /* -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12); */
+  box-shadow: none;
+  border-radius: 4px;
+  vertical-align: top;
+  background: #fff;
+  position: relative;
 }
 </style>

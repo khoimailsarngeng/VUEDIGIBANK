@@ -9,10 +9,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div v-for="(item, index) in returnData" :key="index">
-            <span class="text-h6 text-bold">{{ item.name }}</span
-            ><br />
-            <img :src="item.img" alt="" style="width:100%" />
-            <br />
+            <div class="text-h6 text-bold" v-html="item.desc"></div>
           </div>
         </div>
       </div>

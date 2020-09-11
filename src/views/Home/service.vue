@@ -19,7 +19,7 @@
               <img :width="mobileMode ? '60px' : '120px'" :height="mobileMode ? '60px' : '120px'" :src="item.img" />
             </q-card-section>
             <q-card-section class="q-pt-xs">
-              <span :class="mobileMode ? 'q-font-13' : 'text-h6'">{{
+              <span :class="mobileMode ? 'q-font-13' : 'q-font-18'">{{
                 $store.state.language.language === 'en' ? item.name : $store.state.language.language === 'vi' ? item.name : item.name
               }}</span>
             </q-card-section>
@@ -36,26 +36,36 @@ export default {
   computed: {
     ...mapState('mobileMode', ['mobileMode']),
     returnData() {
-      console.log(datajson);
-      if (this.$route.params.serviceType === 1) {
-        return datajson.Individual.filter(q => {
-          return q.type == this.$route.params.serviceType;
+      if (this.$route.params.type === 1 || this.$route.params.type === '1') {
+        var aa = datajson.Individual.filter(q => {
+          return q.type === this.$route.params.serviceType;
         });
+        return aa;
       } else {
         return datajson.Corporate.filter(q => {
-          return q.type == this.$route.params.serviceType;
+          return q.type === this.$route.params.serviceType;
         });
       }
     }
-  }
+  },
+  mounted() {}
 };
 </script>
 <style scoped>
-.my-card {
+/* .my-card {
   height: 275px;
 }
 
 .my-card-mobile {
   height: 150px;
+} */
+
+.q-card {
+  /* -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12); */
+  box-shadow: none;
+  border-radius: 4px;
+  vertical-align: top;
+  background: #fff;
+  position: relative;
 }
 </style>

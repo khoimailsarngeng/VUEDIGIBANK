@@ -66,7 +66,18 @@
                         "nameen" : "Chuyển tiền quốc tế" , 
                         "img" : "/assets/img/transfer.jpg",
                         "click" : "Transfer2"
-                },            
+                },
+                {            
+                        "type" : "Transfer",               
+                        "header" : "Chuyển tiền", 
+                        "headervi" : "Chuyển tiền", 
+                        "headeren" : "Chuyển tiền", 
+                        "name" : "Chuyển tiền quốc tế" , 
+                        "namevi" : "Chuyển tiền quốc tế" , 
+                        "nameen" : "Chuyển tiền quốc tế" , 
+                        "img" : "/assets/img/transfer.jpg",
+                        "click" : "Transfer2"
+                },               
                 {            
                         "type" : "Transfer",               
                         "header" : "Chuyển tiền", 
@@ -76,8 +87,9 @@
                         "namevi" : "Chuyển tiền nhanh đến NH, ví điện tử" , 
                         "nameen" : "Chuyển tiền nhanh đến NH, ví điện tử" ,  
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : "Transfer3"
-                },
+                        "click" : ""
+                }
+                ,
                 {            
                         "type" : "Transfer",               
                         "header" : "Chuyển tiền", 
@@ -87,7 +99,7 @@
                         "namevi" : "Chuyển tiền số điện thoại" , 
                         "nameen" : "Chuyển tiền số điện thoại" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : "Transfer4"
+                        "click" : ""
                 }
                 ,
                 {            
@@ -99,7 +111,7 @@
                         "namevi" : "Chuyển tiền định kỳ" , 
                         "nameen" : "Chuyển tiền định kỳ" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : "Transfer5"
+                        "click" : ""
                 },
                 {            
                         "type" : "Transfer",               
@@ -110,7 +122,7 @@
                         "namevi" : "Chuyển tiền theo lô" , 
                         "nameen" : "Chuyển tiền theo lô" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : "Transfer6"
+                        "click" : ""
                 },
                 {            
                         "type" : "Transfer",               
@@ -132,7 +144,7 @@
                         "namevi" : "Nạp tiền điện thoại" , 
                         "nameen" : "Nạp tiền điện thoại" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : "TTHD"
+                        "click" : ""
                 },
                 {            
                         "type" : "TTHD",               
@@ -459,7 +471,7 @@
                         "namevi" : "Chuyển tiền số điện thoại" , 
                         "nameen" : "Chuyển tiền số điện thoại" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : "Transfer4"
+                        "click" : ""
                 }
                 ,
                 {            
@@ -471,7 +483,7 @@
                         "namevi" : "Chuyển tiền định kỳ" , 
                         "nameen" : "Chuyển tiền định kỳ" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : "Transfer5"
+                        "click" : ""
                 },
                 {            
                         "type" : "Transfer",               
@@ -482,7 +494,7 @@
                         "namevi" : "Chuyển tiền theo lô" , 
                         "nameen" : "Chuyển tiền theo lô" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : "Transfer6"
+                        "click" : ""
                 },
                 {            
                         "type" : "Transfer",               

@@ -77,49 +77,5 @@
                 "imgvi" : "/assets/img/ND_ThanhToanNuoc_TV.jpg",
                 "imgen" : "/assets/img/ChuyenTien1_TL.jpg",
                 "desc" : "<p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:107%;font-size:15px;text-align:justify;'><strong><em><span style='font-size:17px;line-height:107%;'>Chuyển tiền nhanh đến NH, v&iacute; điện tử&nbsp;</span></em></strong><strong><em><span style='font-size:17px;line-height:107%;'>qua LVB DigiBank</span></em></strong><span style='font-size:17px;line-height:107%;'>&nbsp;l&agrave;&nbsp;</span><span style='font-size:17px;line-height:107%;'>Dịch vụ cho ph&eacute;p kh&aacute;ch h&agrave;ng thực hiện giao dịch chuyển tiền online cho người nhận tiền c&oacute; t&agrave;i khoản tại ng&acirc;n h&agrave;ng hoăc v&iacute; điện tử tại c&aacute;c đối t&aacute;c của LaoVietBank 24/7</span><span style='font-size:17px;line-height:107%;'>.</span></p> <ul style='list-style-type: disc;'> <li><strong><span style=''>K&ecirc;nh giao dịch:</span></strong><span style=''>&nbsp;Internet Banking, Mobile Banking</span></li> <li><strong><span style='font-size:17px;'>Loại đồng tiền:</span></strong><strong><span style='font-size:13.0pt;'>&nbsp;</span></strong><span style=''>LAK</span></li> <li><strong><span style='line-height:107%;'>Lợi &iacute;ch của kh&aacute;ch h&agrave;ng khi sử dụng dịch vụ:</span></strong></li> </ul> <ul style='list-style-type: undefined;margin-left:26px;'> <li><span style='line-height:107%;font-size:13.5pt;'>C&aacute;c bước thực hiện đơn gian</span></li> <li><span style='line-height:107%;font-size:13.5pt;'>Thanh to&aacute;n nhanh ch&oacute;ng&nbsp;</span></li> <li><span style='line-height:107%;font-size:13.5pt;'>Tiết kiệm được thời gian</span></li> <li><span style='line-height:107%;font-size:13.5pt;'>An to&agrave;n khi thực hiện giao dịch.</span></li> <li><span style='line-height:107%;font-size:13.5pt;'>Kh&ocirc;ng thu ph&iacute; giao dịch</span></li> </ul>"
-        },
-        {
-                "header" : "Chuyển tiền số điện thoại", 
-                "type" : "Transfer4" , 
-                "name" : "Chuyển tiền số điện thoại", 
-                "namevi" : "Chuyển tiền số điện thoại", 
-                "nameen" : "Chuyển tiền số điện thoại", 
-                "img" : "/assets/img/ChuyenTien1_TL.jpg",
-                "imgvi" : "/assets/img/ND_ThanhToanNuoc_TV.jpg",
-                "imgen" : "/assets/img/ChuyenTien1_TL.jpg",
-                "desc" : "<p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:0cm;line-height:normal;font-size:15px;text-align:justify;text-indent:36.0pt;'><strong><em><span style='font-size:17px;'>Chuyển tiền số điện thoại</span></em></strong><strong><em><span style='font-size:17px;'>&nbsp;qua LVB DigiBank</span></em></strong><span style='font-size:17px;'>&nbsp;l&agrave; một dịch vụ cho ph&eacute;p kh&aacute;ch h&agrave;ng chuyển tiền từ t&agrave;i khoản tiền gửi mở tại LaoVietBank cho người nhận tiền c&oacute; số diện thoại hợp lệ v&agrave; số điện thoại n&agrave;y được đăng k&yacute; sử dụng&nbsp;</span><span style='font-size:17px;'>LVB DigiBank</span><span style='font-size:17px;'>.</span></p> <ul style='list-style-type: disc;margin-left:44px;'> <li><strong><span style=''>K&ecirc;nh giao dịch:</span></strong><span style=''>&nbsp;Mobile Banking</span></li> <li><strong><span style='font-size:13.5pt;'>Tiện &iacute;ch dịch vụ:&nbsp;</span></strong><span style='font-size:13.5pt;'>Kh&aacute;ch h&agrave;ng c&oacute; thể thực hiện chuyển khoản</span><span style=''>&nbsp;cho người nhận m&agrave; kh&ocirc;ng cần nhập số TK (kh&ocirc;ng cần nhớ số TK).</span></li> <li><strong><span style='line-height:107%;'>Lợi &iacute;ch của kh&aacute;ch h&agrave;ng khi sử dụng dịch vụ:</span></strong></li> </ul> <ul style='list-style-type: undefined;margin-left:26px;'> <li><span style='line-height:107%;'>C&aacute;c bước thực hiện đơn gian</span></li> <li><span style='line-height:107%;'>Thanh to&aacute;n nhanh ch&oacute;ng&nbsp;</span></li> <li><span style='line-height:107%;font-size:13.5pt;'>Tiết kiệm được thời gian</span></li> <li><span style='line-height:107%;'>An to&agrave;n khi thực hiện giao dịch.</span></li> <li><span style='line-height:107%;font-size:13.5pt;'>Kh&ocirc;ng thu ph&iacute; giao dịch</span></li> </ul>"
-        },
-        {
-                "header" : "Chuyển tiền định kỳ", 
-                "type" : "Transfer5" , 
-                "name" : "Chuyển tiền định kỳ", 
-                "namevi" : "Chuyển tiền định kỳ", 
-                "nameen" : "Chuyển tiền định kỳ", 
-                "img" : "/assets/img/ChuyenTien1_TL.jpg",
-                "imgvi" : "/assets/img/ND_ThanhToanNuoc_TV.jpg",
-                "imgen" : "/assets/img/ChuyenTien1_TL.jpg",
-                "desc" : "<p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:107%;font-size:15px'><strong><em><span style='font-size:17px;line-height:107%;'>Chuyển tiền định kỳ</span></em></strong><strong><span style='font-size:17px;line-height:107%;'>&nbsp;</span></strong><strong><em><span style='font-size:17px;line-height:107%;'>qua LVB DigiBank</span></em></strong><strong><em><span style='font-size:17px;line-height:107%;'>&nbsp;</span></em></strong><span style='font-size:17px;line-height:107%;'>cho ph&eacute;p kh&aacute;ch h&agrave;ng lập lệnh giao dịch cho người hưởng c&oacute; t&agrave;i khoản tại LaoViertBank với ng&agrave;y hiệu lực theo 01 chu kỳ nhất định (ng&agrave;y/lần/)</span></p> <ul style='list-style-type: disc;margin-left:44px;'> <li><strong><span style=''>K&ecirc;nh giao dịch:</span></strong><span style=''>&nbsp;Internet Banking</span></li> <li><strong><span style='font-size:13.5pt;'>Tiện &iacute;ch dịch vụ:&nbsp;</span></strong><span style='font-size:13.5pt;'>Kh&aacute;ch h&agrave;ng c&oacute; thể thực hiện chuyển khoản</span><span style=''>&nbsp;cho nhiều người nhận trong c&ugrave;ng một l&uacute;c.</span></li> <li><strong><span style='line-height:107%;'>Lợi &iacute;ch của kh&aacute;ch h&agrave;ng khi sử dụng dịch vụ:</span></strong></li> </ul> <ul style='list-style-type: undefined;margin-left:26px;'> <li><span style='line-height:107%;'>C&aacute;c bước thực hiện đơn gian</span></li> <li><span style='line-height:107%;'>Thanh to&aacute;n nhanh ch&oacute;ng&nbsp;</span></li> <li><span style='line-height:107%;font-size:13.5pt;'>Tiết kiệm được thời gian</span></li> <li><span style='line-height:107%;'>An to&agrave;n khi thực hiện giao dịch.</span></li> <li><span style='line-height:107%;font-size:13.5pt;'>Kh&ocirc;ng thu ph&iacute; giao dịch</span></li> </ul>"
-        },
-        {
-                "header" : "Chuyển tiền theo lô", 
-                "type" : "Transfer6" , 
-                "name" : "Chuyển tiền theo lô",  
-                "namevi" : "Chuyển tiền theo lô", 
-                "nameen" : "Chuyển tiền theo lô", 
-                "img" : "/assets/img/ChuyenTien1_TL.jpg",
-                "imgvi" : "/assets/img/ND_ThanhToanNuoc_TV.jpg",
-                "imgen" : "/assets/img/ChuyenTien1_TL.jpg",
-                "desc" : "<p style='margin-top:0cm;margin-right:0cm;margin-bottom:.0001pt;margin-left:36.0pt;line-height:107%;font-size:15px;'><strong><em><span style='font-size:17px;line-height:107%;'>Chuyển tiền theo l&ocirc;</span></em></strong><span style='font-size:17px;line-height:107%;'>&nbsp;</span><strong><em><span style='font-size:17px;line-height:107%;'>qua LVB DigiBank</span></em></strong><strong><em><span style='font-size:17px;line-height:107%;'>&nbsp;</span></em></strong><span style='font-size:17px;line-height:107%;'>cho ph&eacute;p kh&aacute;ch h&agrave;ng thực hiện chuyển tiền theo một danh s&aacute;ch (l&ocirc;) đến nhiều t&agrave;i khoản của người thụ thưởng trong LaoVietBank tại c&ugrave;ng một thời điểm.</span></p> <ul style='list-style-type: disc;margin-left:44px;'> <li><strong><span style=''>K&ecirc;nh giao dịch:</span></strong><span style=''>&nbsp;Internet Banking</span></li> <li><strong><span style='font-size:13.5pt;'>Tiện &iacute;ch dịch vụ:&nbsp;</span></strong><span style='font-size:13.5pt;'>Kh&aacute;ch h&agrave;ng c&oacute; thể thực hiện chuyển khoản</span><span style=''>&nbsp;cho nhiều người nhận trong c&ugrave;ng một l&uacute;c.</span></li> <li><strong><span style='line-height:107%;'>Lợi &iacute;ch của kh&aacute;ch h&agrave;ng khi sử dụng dịch vụ:</span></strong></li> </ul> <ul style='list-style-type: undefined;margin-left:26px;'> <li><span style='line-height:107%;'>C&aacute;c bước thực hiện đơn gian</span></li> <li><span style='line-height:107%;'>Thanh to&aacute;n nhanh ch&oacute;ng&nbsp;</span></li> <li><span style='line-height:107%;font-size:13.5pt;'>Tiết kiệm được thời gian</span></li> <li><span style='line-height:107%;'>An to&agrave;n khi thực hiện giao dịch.</span></li> <li><span style='line-height:107%;font-size:13.5pt;'>Kh&ocirc;ng thu ph&iacute; giao dịch</span></li> </ul>"
-        },
-        {
-                "header" : "Nạp tiền điện thoại", 
-                "type" : "TTHD" , 
-                "name" : "Nạp tiền điện thoại", 
-                "namevi" : "Nạp tiền điện thoại", 
-                "nameen" : "Nạp tiền điện thoại", 
-                "img" : "/assets/img/ChuyenTien1_TL.jpg",
-                "imgvi" : "/assets/img/ND_ThanhToanNuoc_TV.jpg",
-                "imgen" : "/assets/img/ChuyenTien1_TL.jpg",
-                "desc" : "Nạp tiền điện thoại qua LVB DigiBank là dịch vụ cho phép khách hàng nạp tieeefn vào số điện thoại trả trước, SIM net của các nhà cung cấp dịch vụ Viễn thông tại Lào."
         }
 ]

@@ -229,7 +229,7 @@
             Copyright © 2020 LaoVietBank . All Rights Reserved.
           </div>
         </div>
-        <q-page-sticky position="bottom-right" :offset="[18, 18]">
+        <!-- <q-page-sticky position="bottom-right" :offset="[18, 18]">
           <q-btn v-if="!dialog" @click="dialog = !dialog" round color="primary" icon="chat" size="lg"> </q-btn>
           <q-card :style="mobileMode ? 'width: 330px;' : 'width:100%'" v-if="dialog">
             <q-toolbar class="bg-primary glossy text-white">
@@ -269,7 +269,7 @@
               <q-btn size="lg" color="primary" unelevated label="Submit" class="full-width" />
             </q-card-section>
           </q-card>
-        </q-page-sticky>
+        </q-page-sticky> -->
       </q-page-container>
     </q-layout>
   </div>

@@ -1,36 +1,151 @@
 <template>
-  <div>
-    <div class="q-pa-sm q-mt-lg bg-grey-1">
-      <div class="row q-col-gutter-xs" v-if="$q.screen.name == 'xs'">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center q-pt-lg">
-          <img src="/assets/img/Logo-LVBDigiBank.png" width="100%" height="100px" alt="" />
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
-          <span class="text-primary q-font-22">Cách đăng ký sử dụng dịch vụ</span> <br />
-          Đăng ký sử dụng dịch vụ LVB DigiBank bằng: Khách hàng đến đăng ký tại tất cả các điểm giao dịch của LaoVietBank Cài đặt ứng dụng bằng download (App
-          Store và Google Play hoặc vào website: www.laovietbank.com.la) Sử dụng dịch vụ
-        </div>
-      </div>
-      <div class="row q-col-gutter-xs" v-else-if="$q.screen.name == 'sm'">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-left q-pt-lg">
-          <span class="text-primary q-font-22">Cách đăng ký sử dụng dịch vụ</span> <br />
-          Đăng ký sử dụng dịch vụ LVB DigiBank bằng: Khách hàng đến đăng ký tại tất cả các điểm giao dịch của LaoVietBank Cài đặt ứng dụng bằng download (App
-          Store và Google Play hoặc vào website: www.laovietbank.com.la) Sử dụng dịch vụ
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center q-pt-lg">
-          <img src="/assets/img/Logo-LVBDigiBank.png" height="100px" alt />
-        </div>
-      </div>
-      <div class="row q-col-gutter-xs" v-else>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left q-pt-lg">
-          <span class="text-primary q-font-22">Cách đăng ký sử dụng dịch vụ</span> <br />
-          Đăng ký sử dụng dịch vụ LVB DigiBank bằng: Khách hàng đến đăng ký tại tất cả các điểm giao dịch của LaoVietBank Cài đặt ứng dụng bằng download (App
-          Store và Google Play hoặc vào website: www.laovietbank.com.la) Sử dụng dịch vụ
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center q-pt-lg">
-          <img src="/assets/img/Logo-LVBDigiBank.png" height="100px" alt="" />
-        </div>
-      </div>
+  <div class="bg-part4" :style="mobileMode ? 'height: 370px' : window.width >= 1600 ? 'height: 500px' : 'height: 450px'">
+    <div class="slide-pro">
+      <ul>
+        <li>
+          <a>
+            <span class="product-thumb">
+              <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
+            </span>
+            <h6 class="text-white">Đến ngần hàng đăng ký</h6>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="product-thumb">
+              <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
+            </span>
+            <h6 class="text-white">Cài đặt ứng dụng</h6>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="product-thumb">
+              <img src="/assets/img/icon-web-login.svg" alt="Login/sử dụng" />
+            </span>
+            <h6 class="text-white">Login/sử dụng</h6>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
+<script>
+import { mapState } from 'vuex';
+export default {
+  data() {
+    return {
+      slide: 1
+    };
+  },
+
+  computed: {
+    ...mapState('mobileMode', ['mobileMode']),
+    ...mapState('mobileMode', ['window'])
+  }
+};
+</script>
+<style scoped>
+.bg-part4 {
+  background-color: #17479b;
+  width: 100%;
+  position: relative;
+  display: block;
+  float: left;
+  padding: 50px 5%;
+  margin: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.slide-pro {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  margin: 30px 0;
+}
+.slide-pro ul {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  list-style: none;
+}
+
+.product-thumb {
+  width: calc(100vh / 3.5);
+  height: calc(100vh / 3.5);
+  max-width: 300px;
+  max-height: 300px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+.product-thumb::before {
+  content: '';
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  border: solid 10px #0a3d94;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.product-thumb::after {
+  content: '';
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border: 1px solid #17479b;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.product-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.slide-pro li {
+  max-width: calc(100vh / 3.5);
+  height: auto;
+  display: inline-block;
+  margin: 0 3% 30px 3%;
+  position: relative;
+  vertical-align: top;
+}
+.slide-pro a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.slide-pro a:hover .product-thumb {
+  box-shadow: inset 0 0 40px rgb(13 58 220 / 20%);
+  border-width: 5px;
+}
+
+.slide-pro a:hover img {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+</style>

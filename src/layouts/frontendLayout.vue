@@ -217,17 +217,15 @@
         </q-list>
       </q-drawer>
       <q-page-container>
-        <div
+        <!-- <div
           :style="mobileMode ? '' : vheight"
           :class="$q.screen.name === 'xs' || $q.screen.name === 'sm' ? 'page-home-container-mobile' : 'page-home-container'"
-        >
-          <router-view />
-        </div>
-        <div :class="$q.screen.name === 'xs' || $q.screen.name === 'sm' ? 'page-home-container-mobile' : 'page-home-container'">
-          <hr />
-          <div class="text-h7 text-center">
-            Copyright © 2020 LaoVietBank . All Rights Reserved.
-          </div>
+        > -->
+        <router-view />
+        <!-- </div> -->
+
+        <div class="footer">
+          <img src="/assets/img/footer.jpg" style="height:60px;width:100%;margin-bottom: -6px" />
         </div>
         <!-- <q-page-sticky position="bottom-right" :offset="[18, 18]">
           <q-btn v-if="!dialog" @click="dialog = !dialog" round color="primary" icon="chat" size="lg"> </q-btn>
@@ -283,7 +281,8 @@ export default {
       left: false,
       dialog: false,
       position: 'bottom',
-      vheight: ''
+      vheight: '',
+      slide: 1
     };
   },
   watch: {

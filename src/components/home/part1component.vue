@@ -25,8 +25,8 @@
             "
           >
             <q-card-section>
-              <span class="text-primary text-h4">LVB DigiBank là gì?</span> <br />
-              <p class="q-font-18">
+              <span :class="mobileMode ? 'text-primary text-h6' : 'text-primary text-h4'">LVB DigiBank là gì?</span> <br />
+              <p :class="mobileMode ? 'q-font-15' : 'q-font-18'">
                 Dịch vụ ngân hàng số của Laovietbank cho phép khách hàng cá nhân, <br />
                 doanh nghiệp thực hiện các giao dịch ngân hàng mọi lúc, <br />
                 mọi nơi thông qua các phương tiện kỹ thuật số: ĐTDĐ, máy tính để bàn, <br />

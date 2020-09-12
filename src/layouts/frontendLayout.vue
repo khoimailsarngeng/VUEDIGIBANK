@@ -225,7 +225,10 @@
         <!-- </div> -->
 
         <div class="footer">
-          <img src="/assets/img/footer.jpg" style="height:60px;width:100%;margin-bottom: -6px" />
+          <img
+            :src="mobileMode ? '/assets/img/footer-mb.png' : '/assets/img/footer.jpg'"
+            :style="mobileMode ? 'height:33px;width:100%;margin-bottom: -6px' : 'height:50px;width:100%;margin-bottom: -6px'"
+          />
         </div>
         <!-- <q-page-sticky position="bottom-right" :offset="[18, 18]">
           <q-btn v-if="!dialog" @click="dialog = !dialog" round color="primary" icon="chat" size="lg"> </q-btn>

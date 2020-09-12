@@ -25,8 +25,8 @@
             "
           >
             <q-card-section>
-              <span class="text-primary text-h4">Phí dịch vụ</span> <br />
-              <p class="q-font-18">
+              <span :class="mobileMode ? 'text-primary text-h6' : 'text-primary text-h4'">Phí dịch vụ</span> <br />
+              <p :class="mobileMode ? 'q-font-15' : 'q-font-18'">
                 Khách hàng mới đăng ký dịch vụ LVB DigiBank được miến tất cả phí sử dụng dịch vụ như: phí thường niên, chuyển tiền trong hệ thống, chuyển tiền
                 liên ngân hàng, chuyển tiền quốc tế, chuyển tiên 24/7.
               </p>

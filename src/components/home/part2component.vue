@@ -14,8 +14,8 @@
         <q-carousel-control :position="mobileMode ? 'left' : 'left'" class="q-gutter-xs text-left text-black">
           <q-card flat bordered class="my-card bg-transparent" :style="mobileMode ? 'border:0;margin-top:10px' : 'border:0;margin-top:150px;'">
             <q-card-section>
-              <span class="text-primary text-h4">Tiền ích của LVB DigiBank</span> <br />
-              <p class="q-font-18">
+              <span :class="mobileMode ? 'text-primary text-h6' : 'text-primary text-h4'">Tiền ích của LVB DigiBank</span> <br />
+              <p :class="mobileMode ? 'q-font-15' : 'q-font-18'">
                 - Khách hàng cá nhân, Doanh nghiệp và các tổ chức
                 <br />-  Có tất cả các dịch ngân hàng <br />
                 -  Chỉ sử dụng 01 User cho các thiết bị mà có kết nối mạng Internet

@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-part4" :style="mobileMode ? 'height: 370px' : window.width >= 1600 ? 'height: 500px' : 'height: 450px'">
-    <div class="slide-pro">
+  <div class="bg-part4" :style="mobileMode ? 'height: 400px' : window.width >= 1600 ? 'height: 500px' : 'height: 450px'">
+    <div class="slide-pro" v-if="!mobileMode">
       <ul>
         <li>
           <a>
@@ -28,6 +28,36 @@
         </li>
       </ul>
     </div>
+    <div class="slide-pro-mobile" v-else>
+      <q-carousel swipeable animated v-model="slide" infinite transition-prev="scale" transition-next="scale" control-color="white" navigation>
+        <q-carousel-slide :name="1">
+          <q-card-section>
+            <a>
+              <span class="product-thumb">
+                <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
+              </span>
+            </a>
+            <h6 class="text-white">Đến ngần hàng đăng ký</h6>
+          </q-card-section>
+        </q-carousel-slide>
+        <q-carousel-slide :name="2">
+          <a>
+            <span class="product-thumb">
+              <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
+            </span>
+            <h6 class="text-white">Cài đặt ứng dụng</h6>
+          </a>
+        </q-carousel-slide>
+        <q-carousel-slide :name="3">
+          <a>
+            <span class="product-thumb">
+              <img src="/assets/img/icon-web-login.svg" alt="Login/sử dụng" />
+            </span>
+            <h6 class="text-white">Login/sử dụng</h6>
+          </a>
+        </q-carousel-slide>
+      </q-carousel>
+    </div>
   </div>
 </template>
 <script>
@@ -46,6 +76,12 @@ export default {
 };
 </script>
 <style scoped>
+.q-carousel__control {
+  bottom: 60px !important;
+}
+.q-carousel {
+  background-color: transparent;
+}
 .bg-part4 {
   background-color: #17479b;
   width: 100%;
@@ -65,6 +101,13 @@ export default {
   display: block;
   position: relative;
   margin: 30px 0;
+}
+.slide-pro-mobile {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  margin: -50px 0;
 }
 .slide-pro ul {
   width: 100%;

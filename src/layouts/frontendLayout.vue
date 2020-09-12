@@ -50,7 +50,19 @@
           </div>
         </q-bar> -->
         <q-toolbar class="bg-white">
-          <img @click="$router.push('/')" src="/images/icon/Asset 2@4x.png" class="q-pa-sm" height="60px" width="130px" />
+          <img
+            @click="$router.push('/')"
+            :src="
+              $store.state.language.language === 'la'
+                ? '/assets/img/individual/LVB-logo-lao.svg'
+                : $store.state.language.language === 'vi'
+                ? '/assets/img/individual/LVB-logo-viet.svg'
+                : '/assets/img/individual/LVB-logo-eng.svg'
+            "
+            class="q-pa-sm"
+            height="60px"
+            width="130px"
+          />
           <q-toolbar-title
             :class="$store.state.language.language === 'la' ? 'text-black q-font-20' : 'text-black q-font-15'"
             v-if="!mobileMode && window.width > 1024"
@@ -224,12 +236,6 @@
         <router-view />
         <!-- </div> -->
 
-        <div class="footer">
-          <img
-            :src="mobileMode ? '/assets/img/footer-mb.png' : '/assets/img/footer.jpg'"
-            :style="mobileMode ? 'height:33px;width:100%;margin-bottom: -6px' : 'height:50px;width:100%;margin-bottom: -6px'"
-          />
-        </div>
         <!-- <q-page-sticky position="bottom-right" :offset="[18, 18]">
           <q-btn v-if="!dialog" @click="dialog = !dialog" round color="primary" icon="chat" size="lg"> </q-btn>
           <q-card :style="mobileMode ? 'width: 330px;' : 'width:100%'" v-if="dialog">

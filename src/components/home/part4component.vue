@@ -21,7 +21,7 @@
         <li>
           <a>
             <span class="product-thumb">
-              <img src="/assets/img/icon-web-login.svg" alt="Login/sử dụng" />
+              <img src="/assets/img/icon-web-login.svg" alt="Login: www.laovietbank.com.la" />
             </span>
             <h6 class="text-white">Login/sử dụng</h6>
           </a>

@@ -1,6 +1,9 @@
 <template>
   <div :class="mobileMode ? 'bg-part5-mobile' : 'bg-part5'">
     <div class="q-pa-md">
+      <div :class="mobileMode ? 'text-h6 text-center' : 'text-h5 text-center'" :style="mobileMode ? '' : 'padding-top: 503px;'">
+        Chi tiết về LVB Digibank
+      </div>
       <div class="row q-col-gutter-md cls-production">
         <div :style="mobileMode ? 'width:50%' : 'width:50%;padding-left: 25%;'" class="text-center">
           <q-card-section class="q-pb-none">
@@ -11,7 +14,7 @@
             />
           </q-card-section>
           <q-card-section class="q-pt-none">
-            <span :class="mobileMode ? 'q-font-11' : 'text-h6'">{{ $t('Individualcustomer') }}</span> <br />
+            <span :class="mobileMode ? 'q-font-16' : 'text-h6'">{{ $t('Individualcustomer') }}</span> <br />
             <a
               :style="mobileMode ? (detectDevice === 'A' ? 'display:none' : '') : ''"
               href="https://apps.apple.com/la/app/laovietbank-smart-banking/id1183297233"
@@ -24,7 +27,7 @@
             <a
               href="https://ebank.laovietbank.com.la/IBSRetail/Request?&dse_sessionId=G9UpnSXiqZAk9zo-3KmX5eq&dse_applicationId=-1&dse_pageId=1&dse_operationName=retailIndexProc&dse_errorPage=error_page.jsp&dse_processorState=initial&dse_nextEventName=start"
             >
-              <img :src="mobileMode ? '/assets/img/bt-web-login-mb.svg' : '/assets/img/bt-web-login.svg'" height="35px" />
+              <img src="/assets/img/bt-web-login-mb.svg" height="35px" />
             </a>
           </q-card-section>
         </div>
@@ -38,7 +41,7 @@
             />
           </q-card-section>
           <q-card-section class="q-pt-none">
-            <span :class="mobileMode ? 'q-font-11' : 'text-h6'">{{ $t('Corporatecustomer') }}</span> <br />
+            <span :class="mobileMode ? 'q-font-16' : 'text-h6'">{{ $t('Corporatecustomer') }}</span> <br />
             <a
               :style="mobileMode ? (detectDevice === 'A' ? 'display:none' : '') : ''"
               href="https://apps.apple.com/la/app/laovietbank-corporate-banking/id1185365945"
@@ -51,7 +54,7 @@
             <a
               href="https://ebank.laovietbank.com.la/IBSCorporate/Request?&dse_sessionId=twMxgl8Piv_NqzmeAW_i1uc&dse_applicationId=-1&dse_pageId=1&dse_operationName=corpIndexProc&dse_errorPage=error_page.jsp&dse_processorState=initial&dse_nextEventName=start"
             >
-              <img :src="mobileMode ? '/assets/img/bt-web-login-mb.svg' : '/assets/img/bt-web-login.svg'" height="35px" />
+              <img src="/assets/img/bt-web-login-mb.svg" height="35px" />
             </a>
           </q-card-section>
         </div>
@@ -88,10 +91,11 @@ export default {
   background-image: url('/assets/img/bg-digital.png');
   background-repeat: no-repeat;
   height: 800px;
+  background-size: cover;
 }
 .bg-part5-mobile {
   background-image: url('/assets/img/bg-digital.png');
   background-repeat: no-repeat;
-  height: 700px;
+  height: 650px;
 }
 </style>

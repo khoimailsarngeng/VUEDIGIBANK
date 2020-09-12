@@ -4,7 +4,7 @@
         "name" : "Quản lý tài chính",
         "namevi" : "Quản lý tài chính",
         "nameen" : "Quản lý tài chính" ,
-        "img" : "/assets/img/Bill.jpg",
+        "img" : "/assets/img/individual/icon-web-account-manager.svg",
         "click" : "Financial"
     },
     {
@@ -12,7 +12,7 @@
         "name" : "Chuyển tiền",
         "namevi" : "Chuyển tiền",
         "nameen" : "Chuyển tiền" ,
-        "img" : "/assets/img/transfer.jpg",
+        "img" : "/assets/img/individual/icon-web-transfer.svg",
         "click" : "Transfer"
     },
     {
@@ -20,7 +20,7 @@
         "name" : "Thanh toán trực tuyến",
         "namevi" : "Thanh toán trực tuyến",
         "nameen" : "Thanh toán trực tuyến" ,
-        "img" : "/assets/img/telecomunication.png",
+        "img" : "/assets/img/individual/icon-web-bill-payment.svg",
         "click" : "TTHD"
     },
     {
@@ -28,7 +28,7 @@
         "name" : "Dịch vụ thẻ",
         "namevi" : "Dịch vụ thẻ",
         "nameen" : "Dịch vụ thẻ" ,
-        "img" : "/assets/img/leasing.jpg",
+        "img" : "/assets/img/individual/icon-web-card.svg",
         "click" : "THE"
     },
     {
@@ -36,7 +36,7 @@
         "name" : "Tiết kiệm trực tuyến",
         "namevi" : "Tiết kiệm trực tuyến",
         "nameen" : "Tiết kiệm trực tuyến" ,
-        "img" : "/assets/img/leasing.jpg",
+        "img" : "/assets/img/individual/icon-web-saving.svg",
         "click" : "TKTT"
     },
     {
@@ -44,7 +44,7 @@
         "name" : "Dịch vụ khách hàng",
         "namevi" : "Dịch vụ khách hàng",
         "nameen" : "Dịch vụ khách hàng" ,
-        "img" : "/assets/img/leasing.jpg",
+        "img" : "/assets/img/individual/icon-web-services.svg",
         "click" : "Service"
     },
 

@@ -42,7 +42,7 @@
                         "name" : "Chuyển tiền trong hệ thống" , 
                         "namevi" : "Chuyển tiền trong hệ thống" , 
                         "nameen" : "Chuyển tiền trong hệ thống" , 
-                        "img" : "/assets/img/transfer.jpg",
+                        "img" : "/assets/img/how-long-does-it-take-to-transfer-money-1200.jpeg",
                         "click" : "Transfer"
                 },
                 {            
@@ -52,9 +52,9 @@
                         "headeren" : "Chuyển tiền", 
                         "name" : "Chuyển tiền ngoài hệ thống" , 
                         "namevi" : "Chuyển tiền ngoài hệ thống" , 
-                        "nameen" : "Chuyển tiền ngoài hệ thống" , 
-                        "img" : "/assets/img/transfer.jpg",
-                        "click" : "Transfer1"
+                        "nameen" : "Chuyển tiền ngoài hệ thống" ,                         
+                        "img" : "/assets/img/how-long-does-it-take-to-transfer-money-1200.jpeg",
+                        "click" : "Transfer2"
                 },
                 {            
                         "type" : "Transfer",               
@@ -64,7 +64,7 @@
                         "name" : "Chuyển tiền quốc tế" , 
                         "namevi" : "Chuyển tiền quốc tế" , 
                         "nameen" : "Chuyển tiền quốc tế" , 
-                        "img" : "/assets/img/transfer.jpg",
+                        "img" : "/assets/img/how-long-does-it-take-to-transfer-money-1200.jpeg",
                         "click" : "Transfer2"
                 },            
                 {            
@@ -75,7 +75,7 @@
                         "name" : "Chuyển tiền nhanh đến NH, ví điện tử" , 
                         "namevi" : "Chuyển tiền nhanh đến NH, ví điện tử" , 
                         "nameen" : "Chuyển tiền nhanh đến NH, ví điện tử" ,  
-                        "img" : "/assets/img/transfer.jpg",
+                        "img" : "/assets/img/how-long-does-it-take-to-transfer-money-1200.jpeg",
                         "click" : "Transfer3"
                 },
                 {            
@@ -86,7 +86,7 @@
                         "name" : "Chuyển tiền số điện thoại" , 
                         "namevi" : "Chuyển tiền số điện thoại" , 
                         "nameen" : "Chuyển tiền số điện thoại" , 
-                        "img" : "/assets/img/transfer.jpg",
+                        "img" : "/assets/img/how-long-does-it-take-to-transfer-money-1200.jpeg",
                         "click" : "Transfer4"
                 }
                 ,
@@ -98,7 +98,7 @@
                         "name" : "Chuyển tiền định kỳ" , 
                         "namevi" : "Chuyển tiền định kỳ" , 
                         "nameen" : "Chuyển tiền định kỳ" , 
-                        "img" : "/assets/img/transfer.jpg",
+                        "img" : "/assets/img/how-long-does-it-take-to-transfer-money-1200.jpeg",
                         "click" : "Transfer5"
                 },
                 {            
@@ -109,7 +109,7 @@
                         "name" : "Chuyển tiền theo lô" , 
                         "namevi" : "Chuyển tiền theo lô" , 
                         "nameen" : "Chuyển tiền theo lô" , 
-                        "img" : "/assets/img/transfer.jpg",
+                        "img" : "/assets/img/how-long-does-it-take-to-transfer-money-1200.jpeg",
                         "click" : "Transfer6"
                 },
                 {            
@@ -120,8 +120,8 @@
                         "name" : "Bán ngoại tệ" , 
                         "namevi" : "Bán ngoại tệ" , 
                         "nameen" : "Bán ngoại tệ" , 
-                        "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "img" : "/assets/img/how-long-does-it-take-to-transfer-money-1200.jpeg",
+                        "click" : "Transfer7"
                 },
                 {            
                         "type" : "TTHD",               
@@ -131,7 +131,7 @@
                         "name" : "Nạp tiền điện thoại" , 
                         "namevi" : "Nạp tiền điện thoại" , 
                         "nameen" : "Nạp tiền điện thoại" , 
-                        "img" : "/assets/img/transfer.jpg",
+                        "img" : "/assets/img/online-gaming-merchant-account.png",
                         "click" : "TTHD"
                 },
                 {            
@@ -139,33 +139,11 @@
                         "header" : "Thanh toán trực tuyến", 
                         "headervi" : "Thanh toán trực tuyến", 
                         "headeren" : "Thanh toán trực tuyến", 
-                        "name" : "Thanh toán hóa đơn viễn thông" , 
-                        "namevi" : "Thanh toán hóa đơn viễn thông" , 
-                        "nameen" : "Thanh toán hóa đơn viễn thông" , 
-                        "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
-                },
-                {            
-                        "type" : "TTHD",               
-                        "header" : "Thanh toán trực tuyến", 
-                        "headervi" : "Thanh toán trực tuyến", 
-                        "headeren" : "Thanh toán trực tuyến", 
-                        "name" : "TTHĐ nước" , 
-                        "namevi" : "TTHĐ nước" , 
-                        "nameen" : "TTHĐ nước" , 
-                        "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
-                },
-                {            
-                        "type" : "TTHD",               
-                        "header" : "Thanh toán trực tuyến", 
-                        "headervi" : "Thanh toán trực tuyến", 
-                        "headeren" : "Thanh toán trực tuyến", 
-                        "name" : "TTHĐ điện" , 
-                        "namevi" : "TTHĐ điện" ,  
-                        "nameen" : "TTHĐ điện" , 
-                        "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "name" : "Thanh toán hóa đơn (viễn thông, điện, nước)" , 
+                        "namevi" :"Thanh toán hóa đơn (viễn thông, điện, nước)" , 
+                        "nameen" : "Thanh toán hóa đơn (viễn thông, điện, nước)" , 
+                        "img" : "/assets/img/telecomunication.png",
+                        "click" : "TTHD1"
                 },
                 {            
                         "type" : "TTHD",               
@@ -175,8 +153,8 @@
                         "name" : "Thanh toán thuế (thuế đường bộ, thuế đất)" , 
                         "namevi" : "Thanh toán thuế (thuế đường bộ, thuế đất)" , 
                         "nameen" : "Thanh toán thuế (thuế đường bộ, thuế đất)" , 
-                        "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "img" : "/assets/img/road.jpg",
+                        "click" : "TTHD2"
                 },
                 {            
                         "type" : "TTHD",               
@@ -186,30 +164,30 @@
                         "name" : "Thu hộ tài chính tiêu dùng (AEON)" , 
                         "namevi" : "Thu hộ tài chính tiêu dùng (AEON)" , 
                         "nameen" : "Thu hộ tài chính tiêu dùng (AEON)" , 
-                        "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "img" : "/assets/img/aeon.jpg",
+                        "click" : "TTHD5"
                 },
                 {            
                         "type" : "TTHD",               
                         "header" : "Thanh toán trực tuyến", 
                         "headervi" : "Thanh toán trực tuyến", 
                         "headeren" : "Thanh toán trực tuyến", 
-                        "name" : "TT bằng QR" , 
-                        "namevi" : "TT bằng QR" , 
-                        "nameen" : "TT bằng QR" , 
-                        "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "name" : "Thanh toán bằng QR" , 
+                        "namevi" : "Thanh toán bằng QR" ,  
+                        "nameen" : "Thanh toán bằng QR" , 
+                        "img" : "/assets/img/QrATM.jpg",
+                        "click" : "TTHD4"
                 },
                 {            
                         "type" : "TTHD",               
                         "header" : "Thanh toán trực tuyến", 
                         "headervi" : "Thanh toán trực tuyến", 
                         "headeren" : "Thanh toán trực tuyến", 
-                        "name" : "TTHĐ tự động" , 
-                        "namevi" :  "TTHĐ tự động" , 
-                        "nameen" :  "TTHĐ tự động" , 
-                        "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "name" : "Thanh toán hóa đơn tự động" , 
+                        "namevi" :  "Thanh toán hóa đơn tự động" , 
+                        "nameen" :  "Thanh toán hóa đơn tự động" , 
+                        "img" : "/assets/img/automatic-payment-for-credit-card-bills.jpg",
+                        "click" : "TTHD3"
                 },
                 {            
                         "type" : "TTHD",               
@@ -219,8 +197,8 @@
                         "name" : "Thanh toán nhanh" , 
                         "namevi" : "Thanh toán nhanh" , 
                         "nameen" : "Thanh toán nhanh" , 
-                        "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "img" : "/assets/img/lu-instant-payments-1x1.webp",
+                        "click" : "TTHD6"
                 },
                 {            
                         "type" : "THE",               
@@ -231,7 +209,7 @@
                         "namevi" : "Truy vấn thông tin thẻ" ,  
                         "nameen" : "Truy vấn thông tin thẻ" ,  
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "THE"
                 },
                 {            
                         "type" : "THE",               
@@ -242,7 +220,7 @@
                         "namevi" : "Kích hoạt/khóa thẻ" ,  
                         "nameen" : "Kích hoạt/khóa thẻ" ,
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "THE1"
                 },
                 {            
                         "type" : "THE",               
@@ -253,7 +231,7 @@
                         "namevi" : "Đăng ký mở thẻ online" , 
                         "nameen" : "Đăng ký mở thẻ online" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "THE2"
                 },
                 {            
                         "type" : "THE",               
@@ -264,7 +242,7 @@
                         "namevi" : "Lịch sử giao dịch thẻ" , 
                         "nameen" : "Lịch sử giao dịch thẻ" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "THE3"
                 },
                 {            
                         "type" : "THE",               
@@ -275,7 +253,7 @@
                         "namevi" : "Rút tiền bằng QR (trên máy ADM)" , 
                         "nameen" : "Rút tiền bằng QR (trên máy ADM)" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "THE4"
                 },        
                 {            
                         "type" : "TKTT",               
@@ -286,7 +264,7 @@
                         "namevi" : "Gửi tiền tiết kiệm" , 
                         "nameen" : "Gửi tiền tiết kiệm" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "TKTT"
                 },        
                 {            
                         "type" : "TKTT",               
@@ -297,7 +275,7 @@
                         "namevi" : "Tất toán sổ tiết kiệm" , 
                         "nameen" : "Tất toán sổ tiết kiệm" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "TKTT1"
                 },        
                 {            
                         "type" : "TKTT",               
@@ -308,7 +286,7 @@
                         "namevi" : "Xem lịch sử giao dịch" , 
                         "nameen" : "Xem lịch sử giao dịch" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "TKTT2"
                 },        
                 {            
                         "type" : "Service",               
@@ -319,7 +297,7 @@
                         "namevi" : "Xem vị trí ATM/CN và PGD" , 
                         "nameen" : "Xem vị trí ATM/CN và PGD" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "Service"
                 },        
                 {            
                         "type" : "Service",               
@@ -330,7 +308,7 @@
                         "namevi" : "Xem tỷ giá, công cụ quy đổi" , 
                         "nameen" : "Xem tỷ giá, công cụ quy đổi" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "Service1"
                 },        
                 {            
                         "type" : "Service",               
@@ -341,7 +319,7 @@
                         "namevi" : "Xem lãi suất" , 
                         "nameen" : "Xem lãi suất" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "Service2"
                 },        
                 {            
                         "type" : "Service",               
@@ -352,7 +330,7 @@
                         "namevi" : "Đăng ký sản phẩm dịch vụ" , 
                         "nameen" : "Đăng ký sản phẩm dịch vụ" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "Service3"
                 },        
                 {            
                         "type" : "Service",               
@@ -363,7 +341,7 @@
                         "namevi" : "Đặt  lịch hẹn" , 
                         "nameen" : "Đặt  lịch hẹn" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "Service4"
                 }  ,     
                 {            
                         "type" : "Service",               
@@ -374,7 +352,7 @@
                         "namevi" : "Nhận thông báo của khách hàng" , 
                         "nameen" : "Nhận thông báo của khách hàng" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "Service5"
                 }
         ],
 
@@ -493,7 +471,7 @@
                         "namevi" : "Bán ngoại tệ" , 
                         "nameen" : "Bán ngoại tệ" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "Transfer7"
                 },
                 {            
                         "type" : "TTL",               
@@ -504,7 +482,7 @@
                         "namevi" : "Thanh toán lương" , 
                         "nameen" : "Thanh toán lương" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "TTL"
                 },
                 {            
                         "type" : "TTL",               
@@ -515,7 +493,7 @@
                         "namevi" : "Phê duyệt trả lương" , 
                         "nameen" : "Phê duyệt trả lương" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "TTL1"
                 },
                 {            
                         "type" : "TTHD",               
@@ -525,7 +503,7 @@
                         "name" : "Thanh toán hóa đơn viễn thông" , 
                         "namevi" : "Thanh toán hóa đơn viễn thông" , 
                         "nameen" : "Thanh toán hóa đơn viễn thông" , 
-                        "img" : "/assets/img/transfer.jpg",
+                        "img" : "/assets/img/telecomunication.png",
                         "click" : ""
                 },
                 {            
@@ -533,10 +511,10 @@
                         "header" : "Thanh toán trực tuyến", 
                         "headervi" : "Thanh toán trực tuyến", 
                         "headeren" : "Thanh toán trực tuyến", 
-                        "name" : "TTHĐ nước" , 
-                        "namevi" : "TTHĐ nước" , 
-                        "nameen" : "TTHĐ nước" , 
-                        "img" : "/assets/img/transfer.jpg",
+                        "name" : "Thanh toán hóa đơn nước" , 
+                        "namevi" : "Thanh toán hóa đơn nước" , 
+                        "nameen" : "Thanh toán hóa đơn nước" , 
+                        "img" : "/assets/img/water.jpg",
                         "click" : ""
                 },
                 {            
@@ -544,10 +522,10 @@
                         "header" : "Thanh toán trực tuyến", 
                         "headervi" : "Thanh toán trực tuyến", 
                         "headeren" : "Thanh toán trực tuyến", 
-                        "name" : "TTHĐ điện" , 
-                        "namevi" : "TTHĐ điện" ,  
-                        "nameen" : "TTHĐ điện" , 
-                        "img" : "/assets/img/transfer.jpg",
+                        "name" : "Thanh toán hóa đơn điện" , 
+                        "namevi" : "Thanh toán hóa đơn điện" ,  
+                        "nameen" : "Thanh toán hóa đơn điện" , 
+                        "img" : "/assets/img/electricity.jpg",
                         "click" : ""
                 },
                 {            
@@ -566,10 +544,10 @@
                         "header" : "Thanh toán trực tuyến", 
                         "headervi" : "Thanh toán trực tuyến", 
                         "headeren" : "Thanh toán trực tuyến", 
-                        "name" : "TTHĐ tự động" , 
-                        "namevi" : "TTHĐ tự động" , 
-                        "nameen" : "TTHĐ tự động" , 
-                        "img" : "/assets/img/transfer.jpg",
+                        "name" : "Thanh toán thuế tự động" , 
+                        "namevi" : "Thanh toán thuế tự động" , 
+                        "nameen" : "Thanh toán thuế tự động" , 
+                        "img" : "/assets/img/automatic-payment-for-credit-card-bills.jpg",
                         "click" : ""
                 },
                 {            
@@ -580,7 +558,7 @@
                         "name" : "Thanh toán nhanh" , 
                         "namevi" : "Thanh toán nhanh" , 
                         "nameen" : "Thanh toán nhanh" , 
-                        "img" : "/assets/img/transfer.jpg",
+                        "img" : "/assets/img/lu-instant-payments-1x1.webp",
                         "click" : ""
                 },       
                 {            

@@ -35,7 +35,7 @@
     </q-carousel>
     <div class="q-pa-md">
       <div class="text-h5">Frequently asked questions</div>
-      <div class="q-pa-md" style="max-width: 100%">
+      <div :class="mobileMode ? '' : 'q-pa-md'" style="max-width: 100%">
         <q-list bordered class="rounded-borders">
           <q-expansion-item
             v-model="smartbanking"

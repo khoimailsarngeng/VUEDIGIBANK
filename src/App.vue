@@ -60,7 +60,8 @@ body {
   margin: 0;
   padding: 0;
   overflow: auto;
-  font-family: 'Roboto', sans-serif, 'Phetsarath OT' !important;
+  font-family: 'Roboto', sans-serif, 'KillALLA' !important;
+  height: 100%;
 }
 
 a:hover {

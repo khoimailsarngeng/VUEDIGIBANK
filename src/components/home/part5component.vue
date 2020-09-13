@@ -14,7 +14,8 @@
             />
           </q-card-section>
           <q-card-section class="q-pt-none">
-            <span :class="mobileMode ? 'q-font-16' : 'text-h6'">{{ $t('Individualcustomer') }}</span> <br />
+            <span :class="mobileMode ? ($store.state.language.language === 'vi' ? 'q-font-13' : 'q-font-16') : 'text-h6'">{{ $t('Individualcustomer') }}</span>
+            <br />
             <a
               :style="mobileMode ? (detectDevice === 'A' ? 'display:none' : '') : ''"
               href="https://apps.apple.com/la/app/laovietbank-smart-banking/id1183297233"
@@ -41,7 +42,8 @@
             />
           </q-card-section>
           <q-card-section class="q-pt-none">
-            <span :class="mobileMode ? 'q-font-16' : 'text-h6'">{{ $t('Corporatecustomer') }}</span> <br />
+            <span :class="mobileMode ? ($store.state.language.language === 'vi' ? 'q-font-13' : 'q-font-16') : 'text-h6'">{{ $t('Corporatecustomer') }}</span>
+            <br />
             <a
               :style="mobileMode ? (detectDevice === 'A' ? 'display:none' : '') : ''"
               href="https://apps.apple.com/la/app/laovietbank-corporate-banking/id1185365945"

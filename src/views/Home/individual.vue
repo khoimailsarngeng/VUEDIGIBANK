@@ -1,19 +1,49 @@
 <template>
   <div class="bg-img-individual" :style="`height:${window.height}px`">
-    <div class="row q-col-gutter-xs text-center q-mt-md">
-      <div :class="mobileMode ? 'col-xs-12 text-center q-pr-lg q-pt-lg' : 'col-xs-12 text-right q-pr-lg q-pt-lg'">
-        <img src="/assets/img/Logo-LVBDigiBank.png" :width="mobileMode ? '40%' : '20%'" height="100%" alt />
+    <div class="row q-col-gutter-xs q-mt-md">
+      <div
+        :class="mobileMode ? 'col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left q-pl-lg q-pt-lg' : 'col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left q-pl-lg q-pt-lg'"
+      >
+        <q-btn
+          icon="skip_previous"
+          @click="$router.go(-1)"
+          color="white"
+          text-color="black"
+          :label="$t('Back')"
+          :style="mobileMode ? 'font-size:12px' : 'font-size:14px'"
+        />
+      </div>
+      <div
+        :class="
+          mobileMode ? 'col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center q-pr-xs q-pt-lg' : 'col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right q-pr-lg q-pt-lg'
+        "
+      >
+        <img src="/assets/img/Logo-LVBDigiBank.png" :width="mobileMode ? '60%' : '30%'" height="100%" alt />
       </div>
     </div>
     <div :class="mobileMode ? 'q-pa-xl' : 'individual'">
-      <div class="row q-col-gutter-xs">
+      <div v-if="!mobileMode" class="row q-col-gutter-xs">
         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4" v-for="(item, index) in returnData" :key="index">
           <q-card
-            id="cls-individual"
+            :id="mobileMode ? '' : 'cls-individual'"
             :class="mobileMode ? 'text-center my-card-mobile' : 'text-center my-card'"
             @click="$router.push(`/service/${item.click}/1`)"
           >
             <q-card-section class="product-thumb" text-center>
+              <img :width="mobileMode ? '100px' : '170px'" :height="mobileMode ? '100px' : '170px'" :src="item.img" />
+            </q-card-section>
+            <q-card-section class="q-pt-xs">
+              <span :class="mobileMode ? 'q-font-15' : 'q-font-18'">{{
+                $store.state.language.language === 'en' ? item.nameen : $store.state.language.language === 'vi' ? item.namevi : item.name
+              }}</span>
+            </q-card-section>
+          </q-card>
+        </div>
+      </div>
+      <div v-else class="row q-col-gutter-xs">
+        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4" v-for="(item, index) in returnData" :key="index">
+          <q-card :class="mobileMode ? 'text-center my-card-mobile' : 'text-center my-card'" @click="$router.push(`/service/${item.click}/1`)">
+            <q-card-section text-center>
               <img :width="mobileMode ? '100px' : '170px'" :height="mobileMode ? '100px' : '170px'" :src="item.img" />
             </q-card-section>
             <q-card-section class="q-pt-xs">
@@ -61,17 +91,18 @@ export default {
   vertical-align: top;
   background: transparent;
   position: relative;
+  cursor: pointer;
 }
 #cls-individual:hover img {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
-.bg-img-individual {
+/* .bg-img-individual {
   margin-top: -15px;
   background-image: url('/assets/img/bg-indivudual.png');
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 .product-thumb {
   width: calc(100vh / 3.5);
   height: calc(100vh / 3.5);

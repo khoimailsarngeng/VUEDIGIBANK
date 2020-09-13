@@ -56,11 +56,16 @@ export default {
   src: url('./assets/fonts/NotoSerifLao-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: RobotoGanger;
+  src: url('./assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow: auto;
-  font-family: 'Roboto', sans-serif, 'KillALLA' !important;
+  font-family: 'RobotoGanger', sans-serif, 'KillALLA' !important;
   height: 100%;
 }
 

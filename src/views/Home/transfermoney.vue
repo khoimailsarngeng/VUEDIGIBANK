@@ -3,10 +3,10 @@
     class="bg-img-individual"
     :style="
       mobileMode
-        ? `height:${window.height + 100}px;margin-top:0px`
+        ? `height:${window.height + 150}px;margin-top:0px`
         : returnData.length > 7
         ? 'height: 100%;;margin-top:0px'
-        : `height:${window.height + 100}px;margin-top:0px`
+        : `height:${window.height + 150}px;margin-top:0px`
     "
   >
     <q-carousel
@@ -23,22 +23,15 @@
     <!-- <img :src="returnData[0].img" height="300px" width="100%"> -->
     <div :style="mobileMode ? 'padding:24px 5px' : 'padding:24px 24px'">
       <q-bar class="bg-transparent text-black" style="border-bottom:1px solid #4d4d4d;padding-bottom: 20px;">
-        <span :class="mobileMode ? 'text-h7' : 'text-h5'">{{ returnData[0].header }}</span>
+        <span :class="mobileMode ? 'q-font-16 text-bold text-primary' : 'text-h5'">{{ returnData[0].header }}</span>
         <q-space />
-        <q-btn
-          @click="$router.go(-1)"
-          color="white"
-          text-color="black"
-          :label="$t('Back')"
-          icon="skip_previous"
-          :style="mobileMode ? 'font-size:12px' : 'font-size:14px'"
-        />
+        <q-btn @click="$router.go(-1)" color="white" text-color="black" :label="$t('Back')" icon="skip_previous" v-if="window.width > 500" />
       </q-bar>
-      <div :style="mobileMode ? 'padding: 0px 12px' : 'padding:24px 24px'">
+      <div :style="mobileMode ? 'padding: 0px 12px' : window.width <= 1366 ? 'padding:0px 24px' : 'padding:24px 24px'">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div v-for="(item, index) in returnData" :key="index">
-              <div class="text-h6 text-bold" v-html="item.desc" style="font-family : 'Times New Roman'"></div>
+            <div :class="mobileMode ? 'q-pt-md' : ''" v-for="(item, index) in returnData" :key="index">
+              <div :class="mobileMode ? 'text-h7' : 'text-h6'" v-html="item.desc"></div>
             </div>
           </div>
         </div>

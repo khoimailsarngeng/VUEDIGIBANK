@@ -1,7 +1,10 @@
 <template>
   <div :class="mobileMode ? 'bg-part5-mobile' : 'bg-part5'">
     <div class="q-pa-md">
-      <div :class="mobileMode ? 'text-h6 text-center' : 'text-h5 text-center'" :style="mobileMode ? '' : 'padding-top: 503px;'">
+      <div
+        :class="mobileMode ? 'text-h6 text-center' : 'text-h5 text-center'"
+        :style="mobileMode ? '' : window.width === 1366 ? 'padding-top: 455px;' : 'padding-top: 503px;'"
+      >
         Chi tiết về LVB Digibank
       </div>
       <div class="row q-col-gutter-md cls-production">

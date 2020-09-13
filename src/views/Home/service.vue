@@ -1,5 +1,10 @@
 <template>
-  <div class="bg-img-individual" :style="mobileMode ? `height:${window.height + 100}px` : returnData.length > 8 ? '' : `height:${window.height}px`">
+  <div
+    class="bg-img-individual"
+    :style="
+      mobileMode ? (returnData.length >= 6 ? 'height:100%' : `height:${window.height + 150}px`) : returnData.length > 8 ? '' : `height:${window.height + 150}px`
+    "
+  >
     <div class="row q-col-gutter-xs q-mt-md">
       <div
         :class="mobileMode ? 'col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left q-pl-lg q-pt-lg' : 'col-xs-4 col-sm-4 col-md-4 col-lg-4 text-left q-pl-lg q-pt-lg'"

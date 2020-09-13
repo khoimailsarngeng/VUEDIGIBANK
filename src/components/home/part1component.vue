@@ -19,8 +19,10 @@
             :style="
               mobileMode
                 ? 'border:0;margin-top:10px'
-                : window.width <= 1366
-                ? 'border:0;margin-top:150px;margin-left: 40pc;'
+                : window.width === 1366
+                ? 'border:0;margin-top:80px;margin-left: 40pc;'
+                : window.width < 1366
+                ? 'border:0;margin-top:50px;margin-left: 40pc;'
                 : 'border:0;margin-top:150px;margin-left: 50pc;'
             "
           >

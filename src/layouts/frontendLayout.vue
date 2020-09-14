@@ -64,7 +64,7 @@
             width="130px"
           />
           <q-toolbar-title
-            :class="$store.state.language.language === 'la' ? 'q-font-20' : 'q-font-13'"
+            :class="window.width > 1366 ? 'q-font-16' : $store.state.language.language === 'la' ? 'q-font-20' : 'q-font-13'"
             v-if="!mobileMode && window.width > 1024"
             @click="$router.push('/')"
             :style="window.width === 1366 ? 'padding: 0;color:#17479b' : 'color:#17479b'"

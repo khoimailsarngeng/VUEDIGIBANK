@@ -32,15 +32,18 @@
             <a
               :style="mobileMode ? (detectDevice === 'A' ? 'display:none' : '') : ''"
               href="https://apps.apple.com/la/app/laovietbank-smart-banking/id1183297233"
+              target="_blank"
             >
               <img src="/assets/img/bt-web-appstore.svg" height="35px" />
             </a>
-            <a :style="mobileMode ? (detectDevice === 'I' ? 'display:none' : '') : ''" href="https://play.google.com/store/apps/details?id=com.lvb.retail">
+            <a
+              :style="mobileMode ? (detectDevice === 'I' ? 'display:none' : '') : ''"
+              href="https://play.google.com/store/apps/details?id=com.lvb.retail"
+              target="_blank"
+            >
               <img src="/assets/img/bt-web-playstore.svg" height="35px" />
             </a>
-            <a
-              href="https://ebank.laovietbank.com.la/IBSRetail/Request?&dse_sessionId=G9UpnSXiqZAk9zo-3KmX5eq&dse_applicationId=-1&dse_pageId=1&dse_operationName=retailIndexProc&dse_errorPage=error_page.jsp&dse_processorState=initial&dse_nextEventName=start"
-            >
+            <a href="https://www.laovietbank.com.la/" target="_blank">
               <img src="/assets/img/bt-login-18.svg" height="35px" />
             </a>
           </q-card-section>
@@ -70,15 +73,18 @@
             <a
               :style="mobileMode ? (detectDevice === 'A' ? 'display:none' : '') : ''"
               href="https://apps.apple.com/la/app/laovietbank-corporate-banking/id1185365945"
+              target="_blank"
             >
               <img src="/assets/img/bt-web-appstore.svg" height="35px" />
             </a>
-            <a :style="mobileMode ? (detectDevice === 'I' ? 'display:none' : '') : ''" href="https://play.google.com/store/apps/details?id=com.lvb.corp">
+            <a
+              :style="mobileMode ? (detectDevice === 'I' ? 'display:none' : '') : ''"
+              href="https://play.google.com/store/apps/details?id=com.lvb.corp"
+              target="_blank"
+            >
               <img src="/assets/img/bt-web-playstore.svg" height="35px" />
             </a>
-            <a
-              href="https://ebank.laovietbank.com.la/IBSCorporate/Request?&dse_sessionId=twMxgl8Piv_NqzmeAW_i1uc&dse_applicationId=-1&dse_pageId=1&dse_operationName=corpIndexProc&dse_errorPage=error_page.jsp&dse_processorState=initial&dse_nextEventName=start"
-            >
+            <a href="https://www.laovietbank.com.la/" target="_blank">
               <img src="/assets/img/bt-login-18.svg" height="35px" />
             </a>
           </q-card-section>

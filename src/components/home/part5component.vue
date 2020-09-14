@@ -2,7 +2,7 @@
   <div :class="mobileMode ? 'bg-part5-mobile' : 'bg-part5'">
     <div class="q-pa-md">
       <div
-        :class="mobileMode ? 'text-h6 text-center' : 'text-h5 text-center'"
+        :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h5 text-center text-primary text-bold'"
         :style="mobileMode ? '' : window.width === 1366 ? 'padding-top: 455px;' : window.width > 1366 ? 'padding-top: 490px;' : 'padding-top: 503px;'"
       >
         Chi tiết về LVB Digibank
@@ -17,7 +17,17 @@
             />
           </q-card-section>
           <q-card-section class="q-pt-none" :style="mobileMode ? 'padding: 0px;' : ''">
-            <span :class="mobileMode ? ($store.state.language.language === 'vi' ? 'q-font-12' : 'q-font-16') : 'text-h6'">{{ $t('Individualcustomer') }}</span>
+            <span
+              style="color:#17479b;font-weight: bold"
+              :class="
+                mobileMode
+                  ? $store.state.language.language === 'vi'
+                    ? 'q-font-12 text-lvbdigibank'
+                    : 'q-font-16 text-lvbdigibank'
+                  : 'text-h6 text-lvbdigibank'
+              "
+              >{{ $t('Individualcustomer') }}</span
+            >
             <br />
             <a
               :style="mobileMode ? (detectDevice === 'A' ? 'display:none' : '') : ''"
@@ -45,7 +55,17 @@
             />
           </q-card-section>
           <q-card-section class="q-pt-none" :style="mobileMode ? 'padding: 0px;' : ''">
-            <span :class="mobileMode ? ($store.state.language.language === 'vi' ? 'q-font-12' : 'q-font-16') : 'text-h6'">{{ $t('Corporatecustomer') }}</span>
+            <span
+              style="color:#17479b;font-weight: bold"
+              :class="
+                mobileMode
+                  ? $store.state.language.language === 'vi'
+                    ? 'q-font-12 text-lvbdigibank'
+                    : 'q-font-16 text-lvbdigibank'
+                  : 'text-h6 text-lvbdigibank'
+              "
+              >{{ $t('Corporatecustomer') }}</span
+            >
             <br />
             <a
               :style="mobileMode ? (detectDevice === 'A' ? 'display:none' : '') : ''"

@@ -8,9 +8,10 @@
           icon="skip_previous"
           @click="$router.go(-1)"
           color="white"
-          text-color="black"
+          text-color="primary"
           :label="$t('Back')"
           :style="mobileMode ? 'font-size:12px' : 'font-size:14px'"
+          class="text-bold"
         />
       </div>
       <div
@@ -33,7 +34,7 @@
               <img :width="mobileMode ? '100px' : '170px'" :height="mobileMode ? '100px' : '170px'" :src="item.img" />
             </q-card-section>
             <q-card-section class="q-pt-xs">
-              <span :class="mobileMode ? 'q-font-15' : 'q-font-18'">{{
+              <span style="color:#17479b" :class="mobileMode ? 'q-font-14 text-bold' : 'q-font-18 text-bold'">{{
                 $store.state.language.language === 'en' ? item.nameen : $store.state.language.language === 'vi' ? item.namevi : item.name
               }}</span>
             </q-card-section>
@@ -47,7 +48,7 @@
               <img :width="mobileMode ? '100px' : '170px'" :height="mobileMode ? '100px' : '170px'" :src="item.img" />
             </q-card-section>
             <q-card-section class="q-pt-xs">
-              <span :class="mobileMode ? 'q-font-15' : 'q-font-18'">{{
+              <span style="color:#17479b" :class="mobileMode ? 'q-font-14 text-bold' : 'q-font-18 text-bold'">{{
                 $store.state.language.language === 'en' ? item.nameen : $store.state.language.language === 'vi' ? item.namevi : item.name
               }}</span>
             </q-card-section>

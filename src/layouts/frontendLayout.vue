@@ -64,16 +64,16 @@
             width="130px"
           />
           <q-toolbar-title
-            :class="$store.state.language.language === 'la' ? 'text-black q-font-20' : 'text-black q-font-13'"
+            :class="$store.state.language.language === 'la' ? 'q-font-20' : 'q-font-13'"
             v-if="!mobileMode && window.width > 1024"
             @click="$router.push('/')"
-            :style="window.width === 1366 ? 'padding: 0' : ''"
+            :style="window.width === 1366 ? 'padding: 0;color:#17479b' : 'color:#17479b'"
           >
             {{ $t('LVB') }}
           </q-toolbar-title>
 
           <q-space />
-          <q-btn-dropdown v-if="!mobileMode" class="text-black" stretch flat dropdown-icon="none" to="/">
+          <q-btn-dropdown v-if="!mobileMode" class="text-lvbdibank" stretch flat dropdown-icon="none" to="/">
             <template v-slot:label>
               <div class="row items-center no-wrap">
                 <q-icon size="sm" left name="account_balance" />
@@ -81,7 +81,7 @@
               </div>
             </template>
           </q-btn-dropdown>
-          <q-btn-dropdown v-if="!mobileMode" class="text-black" stretch flat>
+          <q-btn-dropdown v-if="!mobileMode" class="text-lvbdibank" stretch flat>
             <template v-slot:label>
               <div class="row items-center no-wrap">
                 <q-icon size="sm" left name="dashboard" />
@@ -107,7 +107,7 @@
               </q-item>
             </q-list>
           </q-btn-dropdown>
-          <q-btn-dropdown to="/FAQs" v-if="!mobileMode" class="text-black" stretch flat dropdown-icon="none">
+          <q-btn-dropdown to="/FAQs" v-if="!mobileMode" class="text-lvbdibank" stretch flat dropdown-icon="none">
             <template v-slot:label>
               <div class="row items-center no-wrap">
                 <q-icon size="sm" left name="forum" />
@@ -115,9 +115,9 @@
               </div>
             </template>
           </q-btn-dropdown>
-          <q-btn-dropdown v-if="!mobileMode" stretch flat icon="language" :label="$t('SelectLanguage')" class="text-black">
+          <q-btn-dropdown v-if="!mobileMode" stretch flat icon="language" :label="$t('SelectLanguage')" class="text-lvbdibank">
             <q-list>
-              <q-item clickable v-close-popup @click="lang = 'la'">
+              <q-item clickable v-close-popup @click="lang = 'la'" class="text-lvbdibank">
                 <q-item-section avatar>
                   <q-avatar style="width:25px;height:25px">
                     <img src="../assets/Flag/la.png" />
@@ -127,7 +127,7 @@
                   <q-item-label>ພາສາລາວ</q-item-label>
                 </q-item-section>
               </q-item>
-              <q-item clickable v-close-popup @click="lang = 'vi'">
+              <q-item clickable v-close-popup @click="lang = 'vi'" class="text-lvbdibank">
                 <q-item-section avatar>
                   <q-avatar style="width:25px;height:25px">
                     <img src="/assets/Flag/vi.png" width="40px" height="40px" />
@@ -137,7 +137,7 @@
                   <q-item-label>Việt Nam</q-item-label>
                 </q-item-section>
               </q-item>
-              <q-item clickable v-close-popup @click="lang = 'en'">
+              <q-item clickable v-close-popup @click="lang = 'en'" class="text-lvbdibank">
                 <q-item-section avatar>
                   <q-avatar style="width:25px;height:25px">
                     <img src="/assets/Flag/en.png" width="40px" height="40px" />
@@ -363,5 +363,9 @@ a:hover {
 .page-home-container-mobile {
   margin-right: 2%;
   margin-left: 2%;
+}
+.text-lvbdibank {
+  color: #17479b;
+  font-weight: bold;
 }
 </style>

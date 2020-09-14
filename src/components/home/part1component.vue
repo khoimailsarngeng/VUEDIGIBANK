@@ -28,8 +28,8 @@
             "
           >
             <q-card-section>
-              <span :class="mobileMode ? 'text-primary text-h6' : 'text-primary text-h4'">LVB DigiBank là gì?</span> <br />
-              <p :class="mobileMode ? 'q-font-15 text-justify' : 'q-font-18 text-justify'">
+              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">Giớ thiệu LVB DigiBank</span> <br />
+              <p :class="mobileMode ? 'q-font-15 text-justify text-primary ' : 'q-font-18 text-justify text-primary '">
                 LVB DigiBank là dịch vụ Ngân hàng số của Ngân hàng liên doanh Lào Việt,
                 <br />
                 LVB DigiBank cho phép người dùng (bao gồm cả cá nhân và doanh nghiệp) sử dụng điện thoại, máy tính bảng, máy tính xách tay và máy tính để bàn...

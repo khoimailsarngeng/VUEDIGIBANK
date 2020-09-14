@@ -29,17 +29,19 @@
             "
           >
             <q-card-section>
-              <span :class="mobileMode ? 'text-primary text-h6' : 'text-primary text-h4'">Phí dịch vụ</span> <br />
-              <p :class="mobileMode ? 'q-font-15' : 'q-font-16 text-justify'">
-                - Người dùng LVB DigiBank (gồm cả Cá nhân và Doanh nghiệp) được miễn hoàn toàn mọi loại phí đăng, phí duy trì và sử dụng.
+              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">Phí dịch vụ</span> <br />
+              <p :class="mobileMode ? 'q-font-15 text-primary' : 'q-font-16 text-justify text-primary'">
+                <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> Người dùng LVB DigiBank (gồm cả Cá nhân và Doanh nghiệp) được miễn hoàn
+                toàn mọi loại phí đăng, phí duy trì và sử dụng.
                 <br />
-                - LaoVietBank hiện đang áp dụng chính sách miễn phí nhiều dịch vụ thực hiện trên LVB DigiBank như: Miễn phí chuyển tiền nội bộ; miễn phí thanh
-                toán nhiều loại hóa đơn... Một số dịch vụ gồm Chuyển tiền quốc tế, chuyển tiền Liên ngân hàng có thu phí với mức phí tốt nhất thị trường. Chi
-                tiết phí có TẠI ĐÂY. <br />
-                - Riêng với khách hàng mới đăng ký sử dụng LVB DigiBank kể từ 01/10/2020 sẽ được áp dụng chính sách MIỄN PHÍ HOÀN TOÀN: Khách hàng được miễn phí
-                hoàn toàn mọi loại giao dịch trên LVB DigiBank gồm cả Phí Thanh toán quốc tế, Phí chuyển tiền nội địa liên ngân hàng... <br />
-                - Khách hàng còn được hưởng nhiều chính sách ưu đã khác như triết khấu khi mua hàng bằng quyets QR-Pay, triết khấu khi thanh toán Hóa đơn...
-                theo quy định từng thời kỳ.
+                <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> LaoVietBank hiện đang áp dụng chính sách miễn phí nhiều dịch vụ thực hiện
+                trên LVB DigiBank như: Miễn phí chuyển tiền nội bộ; miễn phí thanh toán nhiều loại hóa đơn... Một số dịch vụ gồm Chuyển tiền quốc tế, chuyển
+                tiền Liên ngân hàng có thu phí với mức phí tốt nhất thị trường. Chi tiết phí có TẠI ĐÂY. <br />
+                <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> Riêng với khách hàng mới đăng ký sử dụng LVB DigiBank kể từ 01/10/2020 sẽ
+                được áp dụng chính sách MIỄN PHÍ HOÀN TOÀN: Khách hàng được miễn phí hoàn toàn mọi loại giao dịch trên LVB DigiBank gồm cả Phí Thanh toán quốc
+                tế, Phí chuyển tiền nội địa liên ngân hàng... <br />
+                <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> Khách hàng còn được hưởng nhiều chính sách ưu đã khác như triết khấu khi
+                mua hàng bằng quyets QR-Pay, triết khấu khi thanh toán Hóa đơn... theo quy định từng thời kỳ.
               </p>
             </q-card-section>
           </q-card>

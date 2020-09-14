@@ -12,14 +12,16 @@
         <q-btn
           @click="$router.go(-1)"
           color="white"
-          text-color="black"
+          text-color="primary"
           :label="$t('Back')"
           icon="skip_previous"
           :style="mobileMode ? 'font-size:12px' : 'font-size:14px'"
+          class="text-bold"
+          :size="mobileMode ? 'sm' : 'md'"
         />
       </div>
       <div :class="mobileMode ? 'col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center q-pt-lg' : 'col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center q-pt-lg'">
-        <span :class="mobileMode ? 'q-font-18' : 'q-font-28'">{{
+        <span style="color: #17479b" :class="mobileMode ? 'q-font-18 text-bold' : 'q-font-26 text-bold'">{{
           $store.state.language.language === 'en'
             ? returnData[0].headeren
             : $store.state.language.language === 'vi'
@@ -46,7 +48,7 @@
             </q-img> -->
             <img :src="item.img" height="150px" />
             <q-card-section style="height: 68px;">
-              <div class="q-font-15 text-bold q-mt-sm q-mb-xs">
+              <div class="q-font-15 text-bold q-mt-sm q-mb-xs" style="color:#17479b">
                 {{ $store.state.language.language === 'en' ? item.name : $store.state.language.language === 'vi' ? item.name : item.name }}
               </div>
               <!-- <div class="text-caption text-grey">
@@ -55,7 +57,7 @@
             </q-card-section>
             <q-card-actions>
               <q-space />
-              <q-btn color="grey" flat dense icon="" label="Read moare.." @click="$router.push(`/transfermoney/${item.click}`)" />
+              <q-btn color="green" flat dense icon="" label="Read moare.." @click="$router.push(`/transfermoney/${item.click}`)" />
             </q-card-actions>
           </q-card>
         </div>

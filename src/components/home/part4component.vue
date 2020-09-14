@@ -11,7 +11,7 @@
           </a>
         </li>
         <li>
-          <a href="www.laovietbank.com.la" target="_blank">
+          <a href="https://www.laovietbank.com.la/" target="_blank">
             <span class="product-thumb">
               <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
             </span>
@@ -41,7 +41,7 @@
           </q-card-section>
         </q-carousel-slide>
         <q-carousel-slide :name="2">
-          <a href="www.laovietbank.com.la" target="_blank">
+          <a href="https://www.laovietbank.com.la/" target="_blank">
             <span class="product-thumb">
               <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
             </span>

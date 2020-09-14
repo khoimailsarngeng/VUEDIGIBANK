@@ -44,7 +44,7 @@
         "name" : "Xác thực bằng Vân tay và SmartOTP",
         "namevi" : "Xác thực bằng Vân tay và SmartOTP",
         "nameen" : "Xác thực bằng Vân tay và SmartOTP",
-        "img" : "/assets/img/unnamed.png",
+        "img" : "/assets/img/icon-smart-otp-01.svg",
         "click" : "SmartOTP"
     },
     {
@@ -104,7 +104,7 @@
         "name" : "Xác thực bằng Vân tay và SmartOTP",
         "namevi" : "Xác thực bằng Vân tay và SmartOTP",
         "nameen" : "Xác thực bằng Vân tay và SmartOTP",
-        "img" : "/assets/img/unnamed.png",
+        "img" : "/assets/img/icon-smart-otp-01.svg",
         "click" : "SmartOTP"
     },
     {

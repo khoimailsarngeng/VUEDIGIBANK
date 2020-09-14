@@ -9,7 +9,8 @@
       :height="mobileMode ? '370px' : window.width >= 1600 ? '750px' : '600px'"
       :thumbnails="mobileMode ? false : false"
     >
-      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-patuxay.png' : '/assets/img/bg-patuxay-2.png'" />
+      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-patuxay-3.png' : '/assets/img/bg-patuxay-3.png'" />
+
       <template v-slot:control>
         <q-carousel-control :position="mobileMode ? 'right' : 'right'" class="q-gutter-xs text-left text-black">
           <q-card
@@ -28,15 +29,19 @@
           >
             <q-card-section>
               <span :class="mobileMode ? 'text-primary text-h6' : 'text-primary text-h4'">LVB DigiBank là gì?</span> <br />
-              <p :class="mobileMode ? 'q-font-15' : 'q-font-18'">
-                Dịch vụ ngân hàng số của Laovietbank cho phép khách hàng cá nhân, <br />
-                doanh nghiệp thực hiện các giao dịch ngân hàng mọi lúc, <br />
-                mọi nơi thông qua các phương tiện kỹ thuật số: ĐTDĐ, máy tính để bàn, <br />
-                máy tính bảng mà không phải đến ngân hàng. <br />
-                LaoVietBank Digital Banking gồm 2 phiên bản dành cho khách hàng cá nhân và khách hàng doanh nghiệp.
+              <p :class="mobileMode ? 'q-font-15 text-justify' : 'q-font-18 text-justify'">
+                LVB DigiBank là dịch vụ Ngân hàng số của Ngân hàng liên doanh Lào Việt,
+                <br />
+                LVB DigiBank cho phép người dùng (bao gồm cả cá nhân và doanh nghiệp) sử dụng điện thoại, máy tính bảng, máy tính xách tay và máy tính để bàn...
+                <br />
+                tự mình thực hiện đa dạng các giao dịch ngân hàng thông qua Ứng dụng LVB DigiBank trên điện thoại, máy tính bảng và thông qua webite
+                <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
               </p>
             </q-card-section>
           </q-card>
+        </q-carousel-control>
+        <q-carousel-control v-if="!mobileMode" :position="'top-right'" class="q-gutter-xs text-right">
+          <img src="/assets/img/Logo-LVBDigiBank.png" style="width:200px;height:50px" alt />
         </q-carousel-control>
       </template>
     </q-carousel>

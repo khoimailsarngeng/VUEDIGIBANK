@@ -9,7 +9,8 @@
                         "namevi" : "Xem thông tin tài khoản (CA, Saving, Loan)" , 
                         "nameen" : "Xem thông tin tài khoản (CA, Saving, Loan)" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : "CA"
+                        "click" : "CA",
+                        "desc" : ""
                 },
                 {            
                         "type" : "Financial",               
@@ -504,7 +505,7 @@
                         "namevi" : "Thanh toán hóa đơn viễn thông" , 
                         "nameen" : "Thanh toán hóa đơn viễn thông" , 
                         "img" : "/assets/img/telecomunication.png",
-                        "click" : ""
+                        "click" : "TTHD1"
                 },
                 {            
                         "type" : "TTHD",               

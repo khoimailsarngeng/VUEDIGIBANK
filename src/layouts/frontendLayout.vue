@@ -64,9 +64,10 @@
             width="130px"
           />
           <q-toolbar-title
-            :class="$store.state.language.language === 'la' ? 'text-black q-font-20' : 'text-black q-font-15'"
+            :class="$store.state.language.language === 'la' ? 'text-black q-font-20' : 'text-black q-font-13'"
             v-if="!mobileMode && window.width > 1024"
             @click="$router.push('/')"
+            :style="window.width === 1366 ? 'padding: 0' : ''"
           >
             {{ $t('LVB') }}
           </q-toolbar-title>

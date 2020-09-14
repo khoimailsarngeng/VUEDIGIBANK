@@ -1,0 +1,268 @@
+[    
+    {            
+            "type" : "Financial",               
+            "header" : "Quản lý tài chính", 
+            "headervi" : "Quản lý tài chính", 
+            "headeren" : "Quản lý tài chính", 
+            "name" : "Xem thông tin tài khoản (CA, Saving, Loan)" , 
+            "namevi" : "Xem thông tin tài khoản (CA, Saving, Loan)" , 
+            "nameen" : "Xem thông tin tài khoản (CA, Saving, Loan)" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "CA"
+    },
+    {            
+            "type" : "Financial",               
+            "header" : "Quản lý tài chính", 
+            "headervi" : "Quản lý tài chính", 
+            "headeren" : "Quản lý tài chính", 
+            "name" : "Quản lý lịch sử dòng tiền" , 
+            "namevi" : "Quản lý lịch sử dòng tiền" , 
+            "nameen" : "Quản lý lịch sử dòng tiền" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "LCGD"
+    },
+    {            
+            "type" : "Financial",               
+            "header" : "Quản lý tài chính", 
+            "headervi" : "Quản lý tài chính", 
+            "headeren" : "Quản lý tài chính", 
+            "name" : "Phân cấp thẩm quyền truy cập" , 
+            "namevi" : "Phân cấp thẩm quyền truy cập" , 
+            "nameen" : "Phân cấp thẩm quyền truy cập" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "DSTKTH"
+    },
+    {            
+        "type" : "Financial",               
+        "header" : "Quản lý tài chính", 
+        "headervi" : "Quản lý tài chính", 
+        "headeren" : "Quản lý tài chính", 
+        "name" : "Quản lý hạn mức giao dịch" , 
+        "namevi" : "Quản lý hạn mức giao dịch" , 
+        "nameen" : "Quản lý hạn mức giao dịch" , 
+        "img" : "/assets/img/transfer.jpg",
+        "click" : "DSTKTH"
+    },
+    {            
+        "type" : "Financial",               
+        "header" : "Quản lý tài chính", 
+        "headervi" : "Quản lý tài chính", 
+        "headeren" : "Quản lý tài chính", 
+        "name" : "Phân cấp phê duyệt giao dịch" , 
+        "namevi" : "Phân cấp phê duyệt giao dịch" , 
+        "nameen" : "Phân cấp phê duyệt giao dịch" , 
+        "img" : "/assets/img/transfer.jpg",
+        "click" : "DSTKTH"
+    },
+    {            
+        "type" : "Financial",               
+        "header" : "Quản lý tài chính", 
+        "headervi" : "Quản lý tài chính", 
+        "headeren" : "Quản lý tài chính", 
+        "name" : "Quản lý thông tin đối tác – Danh sách người hưởng" , 
+        "namevi" : "Quản lý thông tin đối tác – Danh sách người hưởng" , 
+        "nameen" : "Quản lý thông tin đối tác – Danh sách người hưởng" , 
+        "img" : "/assets/img/transfer.jpg",
+        "click" : "DSTKTH"
+    },
+    {            
+            "type" : "Transfer",               
+            "header" : "Chuyển tiền", 
+            "headervi" : "Chuyển tiền", 
+            "headeren" : "Chuyển tiền", 
+            "name" : "Chuyển tiền trong hệ thống" , 
+            "namevi" : "Chuyển tiền trong hệ thống" , 
+            "nameen" : "Chuyển tiền trong hệ thống" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "Transfer"
+    },
+    {            
+            "type" : "Transfer",               
+            "header" : "Chuyển tiền", 
+            "headervi" : "Chuyển tiền", 
+            "headeren" : "Chuyển tiền", 
+            "name" : "Chuyển tiền ngoài hệ thống" , 
+            "namevi" : "Chuyển tiền ngoài hệ thống" , 
+            "nameen" : "Chuyển tiền ngoài hệ thống" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "Transfer1"
+    },
+    {            
+            "type" : "Transfer",               
+            "header" : "Chuyển tiền", 
+            "headervi" : "Chuyển tiền", 
+            "headeren" : "Chuyển tiền", 
+            "name" : "Chuyển tiền quốc tế" , 
+            "namevi" : "Chuyển tiền quốc tế" , 
+            "nameen" : "Chuyển tiền quốc tế" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "Transfer2"
+    },
+    {            
+            "type" : "Transfer",               
+            "header" : "Chuyển tiền", 
+            "headervi" : "Chuyển tiền", 
+            "headeren" : "Chuyển tiền", 
+            "name" : "Chuyển tiền số điện thoại" , 
+            "namevi" : "Chuyển tiền số điện thoại" , 
+            "nameen" : "Chuyển tiền số điện thoại" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "Transfer4"
+    }
+    ,
+    {            
+            "type" : "Transfer",               
+            "header" : "Chuyển tiền", 
+            "headervi" : "Chuyển tiền", 
+            "headeren" : "Chuyển tiền", 
+            "name" : "Chuyển tiền định kỳ" , 
+            "namevi" : "Chuyển tiền định kỳ" , 
+            "nameen" : "Chuyển tiền định kỳ" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "Transfer5"
+    },
+    {            
+            "type" : "Transfer",               
+            "header" : "Chuyển tiền", 
+            "headervi" : "Chuyển tiền", 
+            "headeren" : "Chuyển tiền", 
+            "name" : "Chuyển tiền theo lô" , 
+            "namevi" : "Chuyển tiền theo lô" , 
+            "nameen" : "Chuyển tiền theo lô" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "Transfer6"
+    },
+    {            
+            "type" : "Transfer",               
+            "header" : "Chuyển tiền", 
+            "headervi" : "Chuyển tiền", 
+            "headeren" : "Chuyển tiền", 
+            "name" : "Bán ngoại tệ" , 
+            "namevi" : "Bán ngoại tệ" , 
+            "nameen" : "Bán ngoại tệ" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "Transfer7"
+    },
+    {            
+            "type" : "TTL",               
+            "header" : "Thanh toán lương", 
+            "headervi" : "Thanh toán lương", 
+            "headeren" : "Thanh toán lương", 
+            "name" : "Thanh toán lương" , 
+            "namevi" : "Thanh toán lương" , 
+            "nameen" : "Thanh toán lương" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "TTL"
+    },
+    {            
+            "type" : "TTL",               
+            "header" : "Thanh toán lương", 
+            "headervi" : "Thanh toán lương", 
+            "headeren" : "Thanh toán lương", 
+            "name" : "Phê duyệt trả lương" , 
+            "namevi" : "Phê duyệt trả lương" , 
+            "nameen" : "Phê duyệt trả lương" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "TTL1"
+    },
+    {            
+            "type" : "TTHD",               
+            "header" : "Thanh toán trực tuyến", 
+            "headervi" : "Thanh toán trực tuyến", 
+            "headeren" : "Thanh toán trực tuyến", 
+            "name" : "Thanh toán hóa đơn viễn thông" , 
+            "namevi" : "Thanh toán hóa đơn viễn thông" , 
+            "nameen" : "Thanh toán hóa đơn viễn thông" , 
+            "img" : "/assets/img/telecomunication.png",
+            "click" : "TTHD1"
+    },
+    {            
+            "type" : "TTHD",               
+            "header" : "Thanh toán trực tuyến", 
+            "headervi" : "Thanh toán trực tuyến", 
+            "headeren" : "Thanh toán trực tuyến", 
+            "name" : "Thanh toán hóa đơn nước" , 
+            "namevi" : "Thanh toán hóa đơn nước" , 
+            "nameen" : "Thanh toán hóa đơn nước" , 
+            "img" : "/assets/img/water.jpg",
+            "click" : ""
+    },
+    {            
+            "type" : "TTHD",               
+            "header" : "Thanh toán trực tuyến", 
+            "headervi" : "Thanh toán trực tuyến", 
+            "headeren" : "Thanh toán trực tuyến", 
+            "name" : "Thanh toán hóa đơn điện" , 
+            "namevi" : "Thanh toán hóa đơn điện" ,  
+            "nameen" : "Thanh toán hóa đơn điện" , 
+            "img" : "/assets/img/electricity.jpg",
+            "click" : ""
+    },
+    {            
+            "type" : "TTHD",               
+            "header" : "Thanh toán trực tuyến", 
+            "headervi" : "Thanh toán trực tuyến", 
+            "headeren" : "Thanh toán trực tuyến", 
+            "name" : "Thanh toán thuế (thuế đường bộ, thuế đất)" , 
+            "namevi" : "Thanh toán thuế (thuế đường bộ, thuế đất)" , 
+            "nameen" : "Thanh toán thuế (thuế đường bộ, thuế đất)" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : ""
+    },
+    {            
+            "type" : "TTHD",               
+            "header" : "Thanh toán trực tuyến", 
+            "headervi" : "Thanh toán trực tuyến", 
+            "headeren" : "Thanh toán trực tuyến", 
+            "name" : "Thanh toán thuế tự động" , 
+            "namevi" : "Thanh toán thuế tự động" , 
+            "nameen" : "Thanh toán thuế tự động" , 
+            "img" : "/assets/img/automatic-payment-for-credit-card-bills.jpg",
+            "click" : ""
+    },
+    {            
+            "type" : "TTHD",               
+            "header" : "Thanh toán trực tuyến", 
+            "headervi" : "Thanh toán trực tuyến", 
+            "headeren" : "Thanh toán trực tuyến", 
+            "name" : "Thanh toán nhanh" , 
+            "namevi" : "Thanh toán nhanh" , 
+            "nameen" : "Thanh toán nhanh" , 
+            "img" : "/assets/img/lu-instant-payments-1x1.webp",
+            "click" : ""
+    },       
+    {            
+        "type" : "SmartOTP",               
+        "header" : "Xác thực bằng Vân tay và SmartOTP", 
+        "headervi" : "Xác thực bằng Vân tay và SmartOTP", 
+        "headeren" : "Xác thực bằng Vân tay và SmartOTP", 
+        "name" : "Truy cập bằng vân tay" , 
+        "namevi" : "Truy cập bằng vân tay" , 
+        "nameen" : "Truy cập bằng vân tay" , 
+        "img" : "/assets/img/transfer.jpg",
+        "click" : "SmartOTP"
+    },   
+
+    {            
+        "type" : "SmartOTP",               
+        "header" : "Xác thực bằng Vân tay và SmartOTP", 
+        "headervi" : "Xác thực bằng Vân tay và SmartOTP", 
+        "headeren" : "Xác thực bằng Vân tay và SmartOTP", 
+        "name" : "Xác thực giao dịch bằng SmartOTP" , 
+        "namevi" : "Xác thực giao dịch bằng SmartOTP" , 
+        "nameen" : "Xác thực giao dịch bằng SmartOTP" , 
+        "img" : "/assets/img/transfer.jpg",
+        "click" : "SmartOTP1"
+    },
+    {            
+            "type" : "Service",               
+            "header" : "Dịch vụ khách hàng", 
+            "headervi" : "Dịch vụ khách hàng", 
+            "headeren" : "Dịch vụ khách hàng", 
+            "name" : "Xem vị trí ATM/CN và PGD" , 
+            "namevi" : "Xem vị trí ATM/CN và PGD" , 
+            "nameen" : "Xem vị trí ATM/CN và PGD" , 
+            "img" : "/assets/img/transfer.jpg",
+            "click" : "Service"
+    }
+]

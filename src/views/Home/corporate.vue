@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-img-corporate" :style="`height:${window.height}px`">
+  <div class="bg-img-corporate" :style="returnData.length > 7 ? `height:100%` : `height:${window.height + 150}px`">
     <div class="row q-col-gutter-xs text-center q-mt-md">
       <div
         :class="mobileMode ? 'col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left q-pl-lg q-pt-lg' : 'col-xs-6 col-sm-6 col-md-6 col-lg-6 text-left q-pl-lg q-pt-lg'"
@@ -21,7 +21,7 @@
         <img src="/assets/img/Logo-LVBDigiBank.png" :width="mobileMode ? '60%' : '30%'" height="100%" alt />
       </div>
     </div>
-    <div :class="mobileMode ? 'q-pa-xl' : 'corporate'">
+    <div :class="mobileMode ? 'q-pa-sm' : 'corporate'">
       <div v-if="!mobileMode" class="row q-col-gutter-xs">
         <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4" v-for="(item, index) in returnData" :key="index">
           <q-card

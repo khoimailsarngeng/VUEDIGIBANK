@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-part4" :style="mobileMode ? 'height: 400px' : window.width >= 1600 ? 'height: 500px' : 'height: 450px'">
+  <div class="bg-part4" :style="mobileMode ? 'height: 385px' : window.width >= 1600 ? 'height: 500px' : 'height: 450px'">
     <div class="slide-pro" v-if="!mobileMode">
       <ul>
         <li>
-          <a>
+          <a href="https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html" target="_blank">
             <span class="product-thumb">
               <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
             </span>
@@ -11,7 +11,7 @@
           </a>
         </li>
         <li>
-          <a>
+          <a href="www.laovietbank.com.la" target="_blank">
             <span class="product-thumb">
               <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
             </span>
@@ -23,7 +23,7 @@
             <span class="product-thumb">
               <img src="/assets/img/icon-web-login.svg" alt="Login: www.laovietbank.com.la" />
             </span>
-            <h6 class="text-white">Login/sử dụng</h6>
+            <h6 class="text-white">Login vào sử dụng dịch vụ</h6>
           </a>
         </li>
       </ul>
@@ -32,7 +32,7 @@
       <q-carousel swipeable animated v-model="slide" infinite transition-prev="scale" transition-next="scale" control-color="white" navigation>
         <q-carousel-slide :name="1">
           <q-card-section>
-            <a>
+            <a href="https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html" target="_blank">
               <span class="product-thumb">
                 <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
               </span>
@@ -41,7 +41,7 @@
           </q-card-section>
         </q-carousel-slide>
         <q-carousel-slide :name="2">
-          <a>
+          <a href="www.laovietbank.com.la" target="_blank">
             <span class="product-thumb">
               <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
             </span>
@@ -53,7 +53,7 @@
             <span class="product-thumb">
               <img src="/assets/img/icon-web-login.svg" alt="Login/sử dụng" />
             </span>
-            <h6 class="text-white">Login/sử dụng</h6>
+            <h6 class="text-white">Login vào sử dụng dịch vụ</h6>
           </a>
         </q-carousel-slide>
       </q-carousel>
@@ -83,7 +83,7 @@ export default {
   background-color: transparent;
 }
 .bg-part4 {
-  background-color: #17479b;
+  background-color: #0aa9f3;
   width: 100%;
   position: relative;
   display: block;
@@ -139,7 +139,7 @@ export default {
   position: absolute;
   left: -10px;
   top: -10px;
-  border: solid 10px #0a3d94;
+  border: solid 10px #1c86b8;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   z-index: -1;
@@ -152,7 +152,7 @@ export default {
   position: absolute;
   left: 10px;
   top: 10px;
-  border: 1px solid #17479b;
+  border: 1px solid #0aa9f3;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }

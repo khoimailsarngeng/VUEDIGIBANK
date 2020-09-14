@@ -43,7 +43,7 @@
                         "namevi" : "Chuyển tiền trong hệ thống" , 
                         "nameen" : "Chuyển tiền trong hệ thống" , 
                         "img" : "/assets/img/transfer.jpg",
-                        "click" : ""
+                        "click" : "Transfer"
                 },
                 {            
                         "type" : "Transfer",               

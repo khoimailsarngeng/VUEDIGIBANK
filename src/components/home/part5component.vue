@@ -11,13 +11,13 @@
         <div :style="mobileMode ? 'width:50%' : 'width:50%;padding-left: 25%;'" class="text-center">
           <q-card-section class="q-pb-none">
             <img
-              src="/assets/img/Generalperson.png"
+              src="/assets/img/icon-user-individual.svg"
               :style="mobileMode ? 'width:80px;height:80px' : 'width:150px;height:150px'"
               @click="$router.push('/individual')"
             />
           </q-card-section>
-          <q-card-section class="q-pt-none">
-            <span :class="mobileMode ? ($store.state.language.language === 'vi' ? 'q-font-13' : 'q-font-16') : 'text-h6'">{{ $t('Individualcustomer') }}</span>
+          <q-card-section class="q-pt-none" :style="mobileMode ? 'padding: 0px;' : ''">
+            <span :class="mobileMode ? ($store.state.language.language === 'vi' ? 'q-font-12' : 'q-font-16') : 'text-h6'">{{ $t('Individualcustomer') }}</span>
             <br />
             <a
               :style="mobileMode ? (detectDevice === 'A' ? 'display:none' : '') : ''"
@@ -31,7 +31,7 @@
             <a
               href="https://ebank.laovietbank.com.la/IBSRetail/Request?&dse_sessionId=G9UpnSXiqZAk9zo-3KmX5eq&dse_applicationId=-1&dse_pageId=1&dse_operationName=retailIndexProc&dse_errorPage=error_page.jsp&dse_processorState=initial&dse_nextEventName=start"
             >
-              <img src="/assets/img/bt-web-login-mb.svg" height="35px" />
+              <img src="/assets/img/bt-login-18.svg" height="35px" />
             </a>
           </q-card-section>
         </div>
@@ -39,13 +39,13 @@
         <div :style="mobileMode ? 'width:50%' : 'width:50%;padding-right: 25%;'" class="text-center">
           <q-card-section class="q-pb-none">
             <img
-              src="/assets/img/Website_Planner-512.png"
+              src="/assets/img/icon-user-business.svg"
               :style="mobileMode ? 'width:80px;height:80px' : 'width:150px;height:150px'"
               @click="$router.push('/corporate')"
             />
           </q-card-section>
-          <q-card-section class="q-pt-none">
-            <span :class="mobileMode ? ($store.state.language.language === 'vi' ? 'q-font-13' : 'q-font-16') : 'text-h6'">{{ $t('Corporatecustomer') }}</span>
+          <q-card-section class="q-pt-none" :style="mobileMode ? 'padding: 0px;' : ''">
+            <span :class="mobileMode ? ($store.state.language.language === 'vi' ? 'q-font-12' : 'q-font-16') : 'text-h6'">{{ $t('Corporatecustomer') }}</span>
             <br />
             <a
               :style="mobileMode ? (detectDevice === 'A' ? 'display:none' : '') : ''"
@@ -59,7 +59,7 @@
             <a
               href="https://ebank.laovietbank.com.la/IBSCorporate/Request?&dse_sessionId=twMxgl8Piv_NqzmeAW_i1uc&dse_applicationId=-1&dse_pageId=1&dse_operationName=corpIndexProc&dse_errorPage=error_page.jsp&dse_processorState=initial&dse_nextEventName=start"
             >
-              <img src="/assets/img/bt-web-login-mb.svg" height="35px" />
+              <img src="/assets/img/bt-login-18.svg" height="35px" />
             </a>
           </q-card-section>
         </div>

@@ -41,12 +41,30 @@
     },
     {
         "type" : "Individual",
-        "name" : "Dịch vụ khách hàng",
-        "namevi" : "Dịch vụ khách hàng",
-        "nameen" : "Dịch vụ khách hàng" ,
+        "name" : "Xác thực bằng Vân tay và SmartOTP",
+        "namevi" : "Xác thực bằng Vân tay và SmartOTP",
+        "nameen" : "Xác thực bằng Vân tay và SmartOTP",
+        "img" : "/assets/img/leasing.jpg",
+        "click" : "SmartOTP"
+    },
+    {
+        "type" : "Individual",
+        "name" : "Mua bán ngoại tệ Online",
+        "namevi" : "Mua bán ngoại tệ Online",
+        "nameen" : "Mua bán ngoại tệ Online",
+        "img" : "/assets/img/leasing.jpg",
+        "click" : "Online"
+    },
+    {
+        "type" : "Individual",
+        "name" : "Tiện ích người dùng",
+        "namevi" : "Tiện ích người dùng",
+        "nameen" : "Tiện ích người dùng",
         "img" : "/assets/img/individual/icon-web-services.svg",
         "click" : "Service"
     },
+
+
 
     {
         "type" : "Corporate",
@@ -74,17 +92,26 @@
     },
     {
         "type" : "Corporate",
-        "name" : "Thanh toán trực tuyến",
-        "namevi" : "Thanh toán trực tuyến",
-        "nameen" : "Thanh toán trực tuyến" ,
+        "name" : "Thanh toán hóa đơn trực tuyến",
+        "namevi" : "Thanh toán hóa đơn trực tuyến",
+        "nameen" : "Thanh toán hóa đơn trực tuyến",
         "img" : "/assets/img/individual/icon-web-bill-payment.svg",
         "click" : "TTHD"
     },
+    
     {
         "type" : "Corporate",
-        "name" : "Dịch vụ khách hàng",
-        "namevi" : "Dịch vụ khách hàng",
-        "nameen" : "Dịch vụ khách hàng" ,
+        "name" : "Xác thực bằng Vân tay và SmartOTP",
+        "namevi" : "Xác thực bằng Vân tay và SmartOTP",
+        "nameen" : "Xác thực bằng Vân tay và SmartOTP",
+        "img" : "/assets/img/individual/icon-web-services.svg",
+        "click" : "SmartOTP"
+    },
+    {
+        "type" : "Corporate",
+        "name" : "Tiện ích người dùng",
+        "namevi" : "Tiện ích người dùng",
+        "nameen" : "Tiện ích người dùng",
         "img" : "/assets/img/individual/icon-web-services.svg",
         "click" : "Service"
     }

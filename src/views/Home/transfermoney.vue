@@ -3,10 +3,10 @@
     class="bg-img-individual"
     :style="
       mobileMode
-        ? `height:${window.height + 150}px;margin-top:0px`
+        ? `height:${window.height + 170}px;margin-top:0px`
         : returnData.length > 7
         ? 'height: 100%;;margin-top:0px'
-        : `height:${window.height + 150}px;margin-top:0px`
+        : `height:${window.height + 170}px;margin-top:0px`
     "
   >
     <q-carousel
@@ -27,7 +27,7 @@
         <q-space />
         <q-btn @click="$router.go(-1)" color="white" text-color="black" :label="$t('Back')" icon="skip_previous" v-if="window.width > 500" />
       </q-bar>
-      <div :style="mobileMode ? 'padding: 0px 12px' : window.width <= 1366 ? 'padding:0px 24px' : 'padding:24px 24px'">
+      <div :style="mobileMode ? 'padding: 0px 12px' : window.width <= 1366 ? 'padding:10px 24px' : 'padding:24px 24px'">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div :class="mobileMode ? 'q-pt-md' : ''" v-for="(item, index) in returnData" :key="index">

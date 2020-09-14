@@ -39,14 +39,19 @@
       <div class="row q-col-gutter-xs">
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3" v-for="(item, index) in returnData" :key="index">
           <q-card class="my-card full-height" flat bordered>
+            <!-- <q-img :src="item.img" height="150px">
+              <div class="absolute-bottom">
+                <div class="text-subtitle2">{{ $store.state.language.language === 'en' ? item.name : $store.state.language.language === 'vi' ? item.name : item.name }}</div>
+              </div>
+            </q-img> -->
             <img :src="item.img" height="150px" />
-            <q-card-section>
-              <div class="q-font-16 text-bold q-mt-sm q-mb-xs">
+            <q-card-section style="height: 68px;">
+              <div class="q-font-15 text-bold q-mt-sm q-mb-xs">
                 {{ $store.state.language.language === 'en' ? item.name : $store.state.language.language === 'vi' ? item.name : item.name }}
               </div>
               <!-- <div class="text-caption text-grey">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </div> -->
+              </div> -->
             </q-card-section>
             <q-card-actions>
               <q-space />
@@ -77,18 +82,20 @@
 <script>
 import { mapState } from 'vuex';
 import datajson from '../../../public/Data/data_service.json';
+import IndividualData from '../../../public/Data/individual.json';
+import CorporateData from '../../../public/Data/corporate.json';
 export default {
   computed: {
     ...mapState('mobileMode', ['mobileMode']),
     ...mapState('mobileMode', ['window']),
     returnData() {
       if (this.$route.params.type === 1 || this.$route.params.type === '1') {
-        var aa = datajson.Individual.filter(q => {
+        var aa = IndividualData.filter(q => {
           return q.type === this.$route.params.serviceType;
         });
         return aa;
       } else {
-        return datajson.Corporate.filter(q => {
+        return CorporateData.filter(q => {
           return q.type === this.$route.params.serviceType;
         });
       }

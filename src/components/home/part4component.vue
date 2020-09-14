@@ -1,5 +1,6 @@
 <template>
   <div class="bg-part4" :style="mobileMode ? 'height: 385px' : window.width >= 1600 ? 'height: 500px' : 'height: 450px'">
+    <div class="col-xs-12 text-h5 text-bold text-white" v-if="!mobileMode">Đăng kí dịch vụ</div>
     <div class="slide-pro" v-if="!mobileMode">
       <ul>
         <li>

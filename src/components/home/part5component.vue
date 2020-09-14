@@ -5,7 +5,7 @@
         :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h5 text-center text-primary text-bold'"
         :style="mobileMode ? '' : window.width === 1366 ? 'padding-top: 455px;' : window.width > 1366 ? 'padding-top: 490px;' : 'padding-top: 503px;'"
       >
-        Chi tiết về LVB Digibank
+        Chi tiết về LVB DigiBank
       </div>
       <div class="row q-col-gutter-md cls-production">
         <div :style="mobileMode ? 'width:50%' : 'width:50%;padding-left: 25%;'" class="text-center">

@@ -30,7 +30,7 @@
           >
             <q-card-section>
               <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">Phí dịch vụ</span> <br />
-              <p :class="mobileMode ? 'q-font-15 text-primary' : 'q-font-16 text-justify text-primary'">
+              <p :class="mobileMode ? 'q-font-15 text-primary' : 'q-font-20 text-justify text-primary'" style="margin-top: 10px;">
                 <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> Người dùng LVB DigiBank (gồm cả Cá nhân và Doanh nghiệp) được miễn hoàn
                 toàn mọi loại phí đăng, phí duy trì và sử dụng.
                 <br />

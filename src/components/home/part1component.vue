@@ -28,13 +28,12 @@
             "
           >
             <q-card-section>
-              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">Giớ thiệu LVB DigiBank</span> <br />
-              <p :class="mobileMode ? 'q-font-15 text-justify text-primary ' : 'q-font-18 text-justify text-primary '">
-                LVB DigiBank là dịch vụ Ngân hàng số của Ngân hàng liên doanh Lào Việt,
+              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">Giới thiệu LVB DigiBank</span> <br />
+              <p :class="mobileMode ? 'q-font-15 text-justify text-primary ' : 'q-font-20 text-justify text-primary '" style="margin-top: 10px;">
+                LVB DigiBank là dịch vụ Ngân hàng số của Ngân hàng liên doanh Lào Việt.
                 <br />
-                LVB DigiBank cho phép người dùng (bao gồm cả cá nhân và doanh nghiệp) sử dụng điện thoại, máy tính bảng, máy tính xách tay và máy tính để bàn...
-                <br />
-                tự mình thực hiện đa dạng các giao dịch ngân hàng thông qua Ứng dụng LVB DigiBank trên điện thoại, máy tính bảng và thông qua webite
+                LVB DigiBank cho phép khách hàng cá nhân và doanh nghiệp sử dụng điện thoại, máy tính bảng, máy tính xách tay và máy tính để bàn... tự mình thực
+                hiện đa dạng các giao dịch ngân hàng thông qua Ứng dụng LVB DigiBank trên điện thoại, máy tính bảng và thông qua webite
                 <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
               </p>
             </q-card-section>

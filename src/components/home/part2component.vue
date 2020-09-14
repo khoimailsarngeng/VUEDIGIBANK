@@ -25,15 +25,15 @@
             <q-card-section>
               <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">Tiện ích của LVB DigiBank - All In One</span>
               <br />
-              <p :class="mobileMode ? 'q-font-15 text-justify text-primary ' : 'q-font-16 text-justify text-primary '">
+              <p :class="mobileMode ? 'q-font-15 text-justify text-primary ' : 'q-font-20 text-justify text-primary '" style="margin-top: 10px;">
                 <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> Tất cả các dịch vụ ngân hàng đa dạng đều được thực hiện bằng LVB DigiBank,
                 <br />
                 bởi chính Khách hàng. Các dịch vụ phổ biến như: Thanh toán hóa đơn; <br />
-                chuyển tiền trong nước và quốc tế, quản lý tài chính, mua bán ngoại tệ, gửi tiền tiết kiệm online…; <br />
+                chuyển tiền trong nước và quốc tế, quản lý tài chính, mua bán ngoại tệ, gửi tiền tiết kiệm online… <br />
                 Với LVB DigiBank, khách hàng không cần phải đến giao dịch tại quầy. <br />
                 <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> Chỉ sử dụng 01 User, sau 01 lần đăng ký, Khách hàng truy cập và sử dụng
-                LVB DigiBank trên tất các thiết bị có kết nối Internet; <br />
-                Khách hàng không còn phải nhớ nhiều User, nhiều mật khẩu. <br />
+                LVB DigiBank trên tất <br />
+                các thiết bị có kết nối Internet. Khách hàng không còn phải nhớ nhiều User, nhiều mật khẩu. <br />
                 <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> LVB DigiBank là ngân hàng số trọn gói cho các Cá nhân, các Doanh nghiệp và
                 các tổ chức khác; <br />
                 Khách hàng sẽ không còn phải nhớ tên nhiều dịch vụ, không còn cần cài đặt nhiều ứng dụng khác nữa. <br />

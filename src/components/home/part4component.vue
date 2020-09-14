@@ -1,6 +1,6 @@
 <template>
   <div class="bg-part4" :style="mobileMode ? 'height: 385px' : window.width >= 1600 ? 'height: 500px' : 'height: 450px'">
-    <div class="col-xs-12 text-h5 text-bold text-white" v-if="!mobileMode">Đăng kí dịch vụ</div>
+    <div class="col-xs-12 text-h4 text-bold text-white" v-if="!mobileMode">Đăng kí dịch vụ</div>
     <div class="slide-pro" v-if="!mobileMode">
       <ul>
         <li>
@@ -8,7 +8,7 @@
             <span class="product-thumb">
               <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
             </span>
-            <h6 class="text-white">Đến ngần hàng đăng ký</h6>
+            <h6 class="text-white">Đến ngân hàng đăng ký</h6>
           </a>
         </li>
         <li>
@@ -16,7 +16,10 @@
             <span class="product-thumb">
               <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
             </span>
-            <h6 class="text-white">Cài đặt ứng dụng</h6>
+            <h6 class="text-white">
+              Cài đặt hoặc truy cập <br />
+              trực tiếp ứng dụng
+            </h6>
           </a>
         </li>
         <li>
@@ -24,7 +27,7 @@
             <span class="product-thumb">
               <img src="/assets/img/icon-web-login.svg" alt="Login: www.laovietbank.com.la" />
             </span>
-            <h6 class="text-white">Login vào sử dụng dịch vụ</h6>
+            <h6 class="text-white">Truy cập sử dụng dịch vụ</h6>
           </a>
         </li>
       </ul>
@@ -46,7 +49,10 @@
             <span class="product-thumb">
               <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
             </span>
-            <h6 class="text-white">Cài đặt ứng dụng</h6>
+            <h6 class="text-white">
+              Cài đặt hoặc truy cập <br />
+              trực tiếp ứng dụng
+            </h6>
           </a>
         </q-carousel-slide>
         <q-carousel-slide :name="3">
@@ -54,7 +60,7 @@
             <span class="product-thumb">
               <img src="/assets/img/icon-web-login.svg" alt="Login/sử dụng" />
             </span>
-            <h6 class="text-white">Login vào sử dụng dịch vụ</h6>
+            <h6 class="text-white">Truy cập sử dụng dịch vụ</h6>
           </a>
         </q-carousel-slide>
       </q-carousel>

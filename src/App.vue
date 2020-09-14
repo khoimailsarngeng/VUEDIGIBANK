@@ -65,7 +65,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: auto;
-  font-family: 'RobotoGanger', sans-serif, 'KillALLA' !important;
+  font-family: 'Arial, Helvetica, sans-serif', 'KillALLA' !important;
   height: 100%;
 }
 

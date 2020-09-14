@@ -9,11 +9,12 @@
       </div>
       <div class="row q-col-gutter-md cls-production">
         <div :style="mobileMode ? 'width:50%' : 'width:50%;padding-left: 25%;'" class="text-center">
-          <q-card-section class="q-pb-none">
+          <q-card-section class="q-pb-none icon-custom">
             <img
               src="/assets/img/icon-user-individual.svg"
               :style="mobileMode ? 'width:80px;height:80px' : window.width > 1366 ? 'width:130px;height:130px' : 'width:150px;height:150px'"
               @click="$router.push('/individual')"
+              :title="$t('Individualcustomer')"
             />
           </q-card-section>
           <q-card-section class="q-pt-none" :style="mobileMode ? 'padding: 0px;' : ''">
@@ -34,14 +35,14 @@
               href="https://apps.apple.com/la/app/laovietbank-smart-banking/id1183297233"
               target="_blank"
             >
-              <img src="/assets/img/bt-web-appstore.svg" height="35px" />
+              <img src="/assets/img/bt-web-appstore.svg" height="35px" title="Download App by App Store" />
             </a>
             <a
               :style="mobileMode ? (detectDevice === 'I' ? 'display:none' : '') : ''"
               href="https://play.google.com/store/apps/details?id=com.lvb.retail"
               target="_blank"
             >
-              <img src="/assets/img/bt-web-playstore.svg" height="35px" />
+              <img src="/assets/img/bt-web-playstore.svg" height="35px" title="Download App by Google Play" />
             </a>
             <a href="https://www.laovietbank.com.la/" target="_blank">
               <img src="/assets/img/bt-login-18.svg" height="35px" />
@@ -50,11 +51,12 @@
         </div>
 
         <div :style="mobileMode ? 'width:50%' : 'width:50%;padding-right: 25%;'" class="text-center">
-          <q-card-section class="q-pb-none">
+          <q-card-section class="q-pb-none icon-custom">
             <img
               src="/assets/img/icon-user-business.svg"
               :style="mobileMode ? 'width:80px;height:80px' : window.width > 1366 ? 'width:130px;height:130px' : 'width:150px;height:150px'"
               @click="$router.push('/corporate')"
+              :title="$t('Corporatecustomer')"
             />
           </q-card-section>
           <q-card-section class="q-pt-none" :style="mobileMode ? 'padding: 0px;' : ''">
@@ -75,14 +77,14 @@
               href="https://apps.apple.com/la/app/laovietbank-corporate-banking/id1185365945"
               target="_blank"
             >
-              <img src="/assets/img/bt-web-appstore.svg" height="35px" />
+              <img src="/assets/img/bt-web-appstore.svg" height="35px" title="Download App by App Store" />
             </a>
             <a
               :style="mobileMode ? (detectDevice === 'I' ? 'display:none' : '') : ''"
               href="https://play.google.com/store/apps/details?id=com.lvb.corp"
               target="_blank"
             >
-              <img src="/assets/img/bt-web-playstore.svg" height="35px" />
+              <img src="/assets/img/bt-web-playstore.svg" height="35px" title="Download App by Google Play" />
             </a>
             <a href="https://www.laovietbank.com.la/" target="_blank">
               <img src="/assets/img/bt-login-18.svg" height="35px" />
@@ -128,5 +130,10 @@ export default {
   background-image: url('/assets/img/bg-digital.png');
   background-repeat: no-repeat;
   height: 650px;
+}
+
+.icon-custom:hover img {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }
 </style>

@@ -9,7 +9,7 @@
               <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">Ngân hàng liên doanh Lào Viet</span>&nbsp;
 
               <br />
-              <span :class="mobileMode ? 'text-h7 text-white' : 'text-h7'">
+              <span :class="mobileMode ? 'text-h7 text-white' : 'text-h6'">
                 44 Lanexang, Chanthabouly, Thủ đô Viêng Chăn
                 <br />
                 Tel/whatsApp: +856 20 52220222 <br />

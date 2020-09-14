@@ -3,7 +3,7 @@
     <div class="q-pa-md">
       <div
         :class="mobileMode ? 'text-h6 text-center' : 'text-h5 text-center'"
-        :style="mobileMode ? '' : window.width === 1366 ? 'padding-top: 455px;' : 'padding-top: 503px;'"
+        :style="mobileMode ? '' : window.width === 1366 ? 'padding-top: 455px;' : window.width > 1366 ? 'padding-top: 490px;' : 'padding-top: 503px;'"
       >
         Chi tiết về LVB Digibank
       </div>
@@ -12,7 +12,7 @@
           <q-card-section class="q-pb-none">
             <img
               src="/assets/img/icon-user-individual.svg"
-              :style="mobileMode ? 'width:80px;height:80px' : 'width:150px;height:150px'"
+              :style="mobileMode ? 'width:80px;height:80px' : window.width > 1366 ? 'width:130px;height:130px' : 'width:150px;height:150px'"
               @click="$router.push('/individual')"
             />
           </q-card-section>
@@ -40,7 +40,7 @@
           <q-card-section class="q-pb-none">
             <img
               src="/assets/img/icon-user-business.svg"
-              :style="mobileMode ? 'width:80px;height:80px' : 'width:150px;height:150px'"
+              :style="mobileMode ? 'width:80px;height:80px' : window.width > 1366 ? 'width:130px;height:130px' : 'width:150px;height:150px'"
               @click="$router.push('/corporate')"
             />
           </q-card-section>

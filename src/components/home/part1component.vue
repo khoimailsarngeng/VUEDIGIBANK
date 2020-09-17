@@ -9,7 +9,7 @@
       :height="mobileMode ? (window.width < 500 ? '570px' : '400px') : window.width >= 1600 ? '750px' : '600px'"
       :thumbnails="mobileMode ? false : false"
     >
-      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-patuxay-3.png' : '/assets/img/bg-patuxay-3.png'" />
+      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-patuxay-4.png' : '/assets/img/bg-patuxay-4.png'" />
 
       <template v-slot:control>
         <q-carousel-control :position="mobileMode ? 'right' : 'right'" class="q-gutter-xs text-left text-black">

@@ -14,7 +14,8 @@
                 <br />
                 Tel/whatsApp: +856 20 52220222 <br />
                 Hotline: 1440 <br />
-                Website: www.laovietbank.com.la – Fanpage: facebook.com/laovietbank
+                Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
+                <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
               </span>
             </q-card-section>
           </q-card>

@@ -38,7 +38,7 @@
               </p> -->
               <p
                 class="q-font-20 text-justify text-primary "
-                style="line-height: 2; margin-top: 10px;color: #17479b !important;text-align: justify; text-indent: 36pt;"
+                style="line-height: 1.5; margin-top: 10px;color: #17479b !important;text-align: justify; text-indent: 36pt;"
               >
                 LVB DigiBank là dịch vụ Ngân hàng số của Ngân hàng liên doanh Lào Việt. <br data-v-650b6db8="" />
                 LVB DigiBank cho phép khách hàng cá nhân và doanh nghiệp sử dụng điện thoại, máy tính bảng, máy tính để bàn và máy tính xách tay để thực hiện đa

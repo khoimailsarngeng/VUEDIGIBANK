@@ -24,6 +24,8 @@
                 ? 'border:0;margin-top:60px;margin-left: 33pc;padding-right: 50px;'
                 : window.width < 1366
                 ? 'border:0;margin-top:50px;margin-left: 40pc;padding-right: 147px;'
+                : window.width > 1600
+                ? 'border:0;margin-top:100px;margin-left: 40pc;padding-right: 300px;'
                 : 'border:0;margin-top:100px;margin-left: 40pc;padding-right: 170px;'
             "
           >

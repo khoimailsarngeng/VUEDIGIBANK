@@ -12,7 +12,7 @@
       <q-carousel-slide
         style="background-size: 100% 100%;"
         :name="1"
-        :img-src="mobileMode ? '/assets/img/bg-mobile-with-app.png' : '/assets/img/bg-mobile-with-app.png'"
+        :img-src="mobileMode ? '/assets/img/bg-mobile-with-app-2.jpg' : '/assets/img/bg-mobile-with-app-2.jpg'"
       />
       <template v-slot:control>
         <q-carousel-control :position="mobileMode ? 'left' : 'left'" class="q-gutter-xs text-left text-black">
@@ -24,8 +24,8 @@
               mobileMode
                 ? 'padding:5px;border:0;margin-top:0px'
                 : window.width <= 1366
-                ? 'border:0;margin-top:50px;padding-right:550px'
-                : 'border:0;margin-top:150px;padding-right:650px'
+                ? 'border:0;margin-top:50px;padding-right:615px'
+                : 'border:0;margin-top:150px;padding-right:700px'
             "
           >
             <q-card-section>

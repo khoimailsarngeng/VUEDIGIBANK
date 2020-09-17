@@ -271,9 +271,9 @@
             "header" : "Tiết kiệm trực tuyến", 
             "headervi" : "Tiết kiệm trực tuyến", 
             "headeren" : "Tiết kiệm trực tuyến", 
-            "name" : "Xem lịch sử giao dịch" , 
-            "namevi" : "Xem lịch sử giao dịch" , 
-            "nameen" : "Xem lịch sử giao dịch" , 
+            "name" : "Xem lịch sử giao dịch tiền gửi" , 
+            "namevi" : "Xem lịch sử giao dịch tiền gửi" , 
+            "nameen" : "Xem lịch sử giao dịch tiền gửi" , 
             "img" : "/assets/img/transfer.jpg",
             "click" : "TKTT2"
     },      
@@ -341,9 +341,9 @@
             "header" : "Tiện ích người dùng", 
             "headervi" : "Tiện ích người dùng", 
             "headeren" : "Tiện ích người dùng", 
-            "name" : "Xem lãi suất" , 
-            "namevi" : "Xem lãi suất" , 
-            "nameen" : "Xem lãi suất" , 
+            "name" : "Xem lãi suất, công cụ tính lãi" , 
+            "namevi" : "Xem lãi suất, công cụ tính lãi" , 
+            "nameen" : "Xem lãi suất, công cụ tính lãi" , 
             "img" : "/assets/img/transfer.jpg",
             "click" : "Service2"
     },        
@@ -357,27 +357,5 @@
             "nameen" : "Đăng ký sản phẩm dịch vụ" , 
             "img" : "/assets/img/transfer.jpg",
             "click" : "Service3"
-    },        
-    {            
-            "type" : "Service",               
-            "header" : "Tiện ích người dùng", 
-            "headervi" : "Tiện ích người dùng", 
-            "headeren" : "Tiện ích người dùng", 
-            "name" : "Đặt  lịch hẹn" , 
-            "namevi" : "Đặt  lịch hẹn" , 
-            "nameen" : "Đặt  lịch hẹn" , 
-            "img" : "/assets/img/transfer.jpg",
-            "click" : "Service4"
-    }  ,     
-    {            
-            "type" : "Service",               
-            "header" : "Tiện ích người dùng", 
-            "headervi" : "Tiện ích người dùng", 
-            "headeren" : "Tiện ích người dùng", 
-            "name" : "Nhận thông báo của khách hàng" , 
-            "namevi" : "Nhận thông báo của khách hàng" , 
-            "nameen" : "Nhận thông báo của khách hàng" , 
-            "img" : "/assets/img/transfer.jpg",
-            "click" : "Service5"
     }
 ]

@@ -2,8 +2,8 @@
   <div :class="mobileMode ? 'bg-part5-mobile' : 'bg-part5'">
     <div class="q-pa-md">
       <div
-        :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h5 text-center text-primary text-bold'"
-        :style="mobileMode ? '' : window.width === 1366 ? 'padding-top: 455px;' : window.width > 1366 ? 'padding-top: 490px;' : 'padding-top: 503px;'"
+        :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h4 text-center text-primary text-bold'"
+        :style="mobileMode ? '' : window.width === 1366 ? 'padding-top: 440px;' : window.width > 1366 ? 'padding-top: 470px;' : 'padding-top: 503px;'"
       >
         Chi tiết về LVB DigiBank
       </div>
@@ -44,8 +44,8 @@
             >
               <img src="/assets/img/bt-web-playstore.svg" height="35px" title="Download App by Google Play" />
             </a>
-            <a href="https://www.laovietbank.com.la/" target="_blank">
-              <img src="/assets/img/bt-login-18.svg" height="35px" />
+            <a href="https://ebank.laovietbank.com.la/IBSRetail" target="_blank">
+              <img src="/assets/img/bt-login.svg" height="35px" />
             </a>
           </q-card-section>
         </div>
@@ -86,8 +86,8 @@
             >
               <img src="/assets/img/bt-web-playstore.svg" height="35px" title="Download App by Google Play" />
             </a>
-            <a href="https://www.laovietbank.com.la/" target="_blank">
-              <img src="/assets/img/bt-login-18.svg" height="35px" />
+            <a href="https://ebank.laovietbank.com.la/IBSCorporate" target="_blank">
+              <img src="/assets/img/bt-login.svg" height="35px" />
             </a>
           </q-card-section>
         </div>
@@ -135,5 +135,8 @@ export default {
 .icon-custom:hover img {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
+}
+.text-primary {
+  color: #17479b !important;
 }
 </style>

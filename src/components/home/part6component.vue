@@ -1,15 +1,15 @@
 <template>
   <div class="contact-footer">
-    <q-carousel swipeable animated v-model="slide" infinite autoplay :height="mobileMode ? '370px' : '800px'" :thumbnails="mobileMode ? false : false">
+    <q-carousel swipeable animated v-model="slide" infinite autoplay :height="mobileMode ? '370px' : '550px'" :thumbnails="mobileMode ? false : false">
       <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-footer.jpg' : '/assets/img/bg-footer.jpg'" />
       <template v-slot:control>
         <q-carousel-control :position="mobileMode ? 'top' : 'top'" class="q-gutter-xs text-center">
-          <q-card flat bordered class="my-card bg-transparent full-width" style="border:0;width">
+          <q-card flat bordered class="my-card bg-transparent full-width q-mt-md" style="border:0;width">
             <q-card-section>
-              <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">Ngân hàng liên doanh Lào Viet</span>&nbsp;
+              <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">NGÂN HÀNG LIÊN DOANH LÀO VIỆT</span>&nbsp;
 
               <br />
-              <span :class="mobileMode ? 'text-h7 text-white' : 'text-h6'">
+              <span :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
                 44 Lanexang, Chanthabouly, Thủ đô Viêng Chăn
                 <br />
                 Tel/whatsApp: +856 20 52220222 <br />
@@ -66,5 +66,9 @@ export default {
   padding-top: 12px;
   color: #ffffff;
   font-size: 16px;
+}
+.text-white {
+  color: #17479d !important;
+  font-weight: bold;
 }
 </style>

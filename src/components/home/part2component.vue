@@ -6,7 +6,7 @@
       v-model="slide"
       infinite
       autoplay
-      :height="mobileMode ? '690px' : window.width >= 1600 ? '750px' : '600px'"
+      :height="mobileMode ? (window.width < 500 ? '1000px' : '420px') : window.width >= 1600 ? '750px' : '600px'"
       :thumbnails="mobileMode ? false : false"
     >
       <q-carousel-slide
@@ -20,12 +20,45 @@
             flat
             bordered
             class="my-card bg-transparent"
-            :style="mobileMode ? 'padding:5px;border:0;margin-top:0px' : window.width <= 1366 ? 'border:0;margin-top:50px;' : 'border:0;margin-top:150px;'"
+            :style="
+              mobileMode
+                ? 'padding:5px;border:0;margin-top:0px'
+                : window.width <= 1366
+                ? 'border:0;margin-top:50px;padding-right:550px'
+                : 'border:0;margin-top:150px;padding-right:650px'
+            "
           >
             <q-card-section>
               <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">Tiện ích của LVB DigiBank - All In One</span>
               <br />
-              <p :class="mobileMode ? 'q-font-15 text-justify text-primary ' : 'q-font-20 text-justify text-primary '" style="margin-top: 10px;">
+              <p style="margin: 10px 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify; text-indent: 36pt;">
+                <span style="font-size:20px;line-height:107%;color:#17479B"
+                  >Tất cả c&aacute;c dịch vụ ng&acirc;n h&agrave;ng đa dạng được thực hiện bằng LVB DigiBank, bởi ch&iacute;nh Kh&aacute;ch h&agrave;ng.
+                  C&aacute;c dịch vụ phổ biến như: Thanh to&aacute;n h&oacute;a đơn; chuyển tiền trong nước v&agrave; quốc tế, quản l&yacute; t&agrave;i
+                  ch&iacute;nh, mua b&aacute;n ngoại tệ, gửi tiền tiết kiệm &hellip; Với LVB DigiBank, kh&aacute;ch h&agrave;ng kh&ocirc;ng cần phải đến
+                  ng&acirc;n h&agrave;ng.&nbsp;</span
+                >
+              </p>
+              <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify; text-indent: 36pt;">
+                <span style="font-size:20px;line-height:107%;color:#17479B"
+                  >Chỉ sử dụng 01 User, sau 01 lần đăng k&yacute;, Kh&aacute;ch h&agrave;ng truy cập LVB DigiBank tr&ecirc;n c&aacute;c thiết bị c&oacute; kết
+                  nối Internet m&agrave; kh&ocirc;ng c&ograve;n phải nhớ nhiều User, nhiều mật khẩu.</span
+                >
+              </p>
+              <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify; text-indent: 36pt;">
+                <span style="font-size:20px;line-height:107%;color:#17479B"
+                  >LVB DigiBank l&agrave; ng&acirc;n h&agrave;ng số trọn g&oacute;i cho C&aacute; nh&acirc;n, Doanh nghiệp v&agrave; tổ chức kh&aacute;c.
+                  Kh&aacute;ch h&agrave;ng sẽ kh&ocirc;ng cần c&agrave;i đặt nhiều ứng dụng.</span
+                >
+              </p>
+              <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify; text-indent: 36pt;">
+                <span style="font-size:20px;line-height:107%;color:#17479B"
+                  >X&aacute;c thực th&ocirc;ng minh, nhanh ch&oacute;ng v&agrave; an to&agrave;n với SmartOTP; đăng nhập v&agrave; x&aacute;c thực bằng
+                  khu&ocirc;n mặt, dấu v&acirc;n tay gi&uacute;p cuộc sống trở n&ecirc;n dễ d&agrave;ng hơn bao giờ hết.</span
+                >
+              </p>
+
+              <!-- <p :class="mobileMode ? 'q-font-15 text-justify text-primary ' : 'q-font-20 text-justify text-primary '" style="margin-top: 10px;">
                 <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> Tất cả các dịch vụ ngân hàng đa dạng đều được thực hiện bằng LVB DigiBank,
                 <br />
                 bởi chính Khách hàng. Các dịch vụ phổ biến như: Thanh toán hóa đơn; <br />
@@ -40,7 +73,7 @@
                 <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> Xác thực thông minh, nhanh chóng và an toàn bằng tính năng SmartOTP;
                 <br />
                 đăng nhập và xác thực bằng dấu vân tay giúp cuộc sống trở nên dễ dàng hơn bao giờ hết.
-              </p>
+              </p> -->
             </q-card-section>
           </q-card>
         </q-carousel-control>
@@ -118,3 +151,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.text-primary {
+  color: #17479b !important;
+}
+</style>

@@ -24,7 +24,7 @@ export default {
       this.deviceCheck(true);
       this.SET_WINDOW_RESIZE();
     } else {
-      if (window.innerWidth < 1000) {
+      if (window.innerWidth < 1025) {
         this.deviceCheck(true);
         this.SET_WINDOW_RESIZE();
       } else {
@@ -35,7 +35,7 @@ export default {
   },
   mounted() {
     window.addEventListener('resize', () => {
-      if (window.innerWidth < 1000) {
+      if (window.innerWidth < 1025) {
         this.SET_WINDOW_RESIZE();
         this.deviceCheck(true);
       } else {
@@ -65,7 +65,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: auto;
-  font-family: 'Arial, Helvetica, sans-serif', 'KillALLA' !important;
+  font-family: 'RobotoGanger', 'sans-serif', 'KillALLA' !important;
   height: 100%;
 }
 

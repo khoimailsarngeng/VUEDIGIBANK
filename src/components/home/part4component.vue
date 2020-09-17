@@ -3,7 +3,7 @@
     <div class="col-xs-12 text-h4 text-bold text-primary" v-if="!mobileMode">Đăng kí dịch vụ</div>
     <div class="slide-pro" v-if="!mobileMode">
       <ul>
-        <li style="width:230px;margin:0 8% 30px 1%" :class="window.height > 635 ? 'li1' : 'li'">
+        <li style="width:230px;margin:0 8% 30px 1%" :class="window.height > 635 ? 'li' : 'li'">
           <a href="https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html" target="_blank">
             <span class="product-thumb">
               <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
@@ -21,7 +21,7 @@
             />
           </a>
         </li>
-        <li style="width:350px;margin:0 0% 30px 1%" :class="window.height > 635 ? 'li1' : 'li'">
+        <li :style="window.width > 1366 ? 'width:350px;margin:0 0% 30px 5%' : 'width:350px;margin:0 0% 30px 1%'" :class="window.height > 635 ? 'li' : 'li'">
           <a href="https://www.laovietbank.com.la/" target="_blank">
             <span class="product-thumb">
               <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
@@ -39,7 +39,7 @@
             />
           </a>
         </li>
-        <li :class="window.height > 635 ? 'li1' : 'li'">
+        <li :class="window.height > 635 ? 'li' : 'li'">
           <a>
             <span class="product-thumb">
               <img src="/assets/img/icon-web-login.svg" alt="Login: www.laovietbank.com.la" />

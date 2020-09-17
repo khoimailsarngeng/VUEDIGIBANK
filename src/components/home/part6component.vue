@@ -68,8 +68,8 @@ export default {
   color: #ffffff;
   font-size: 16px;
 }
-.text-white {
+/* .text-white {
   color: #17479d !important;
   font-weight: bold;
-}
+} */
 </style>

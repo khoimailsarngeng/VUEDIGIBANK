@@ -91,7 +91,7 @@
             <q-list style="min-width:250px">
               <q-item clickable v-close-popup to="/individual">
                 <q-item-section style="margin-right: -140px;">
-                  <img src="assets/img/Generalperson.png" style="width:30px;height:30px" />
+                  <img src="assets/img/icon-user-individual.svg" style="width:30px;height:30px" />
                 </q-item-section>
                 <q-item-section>
                   <q-item-label class="text-h7">{{ $t('Individualcustomer') }}</q-item-label>
@@ -99,7 +99,7 @@
               </q-item>
               <q-item clickable v-close-popup to="/corporate">
                 <q-item-section style="margin-right: -140px;">
-                  <img src="assets/img/Website_Planner-512.png" style="width:30px;height:30px" />
+                  <img src="assets/img/icon-user-business.svg" style="width:30px;height:30px" />
                 </q-item-section>
                 <q-item-section>
                   <q-item-label class="text-h7">{{ $t('Corporatecustomer') }}</q-item-label>

@@ -7,7 +7,7 @@
             "name" : "ເບິ່ງຂໍ້ມູນບັນຊີ (ບັນຊີກະແສລາຍວັນ, ຝາກປະຫຍັດ, ເງິນກູ້)" , 
             "namevi" : "Xem thông tin tài khoản (CA, Saving, Loan)" , 
             "nameen" : "Xem thông tin tài khoản (CA, Saving, Loan)" , 
-            "img" : "/assets/img/transfer.jpg",
+            "img" : "/assets/img/layer2/Quản-lý-tài-chính-1.jpg",
             "click" : "CA",
             "desc" : ""
     },
@@ -19,7 +19,7 @@
             "name" : "ເບິ່ງການເຄື່ອນໄຫວບັນຊີ" , 
             "namevi" : "Lịch sử giao dịch" , 
             "nameen" : "Lịch sử giao dịch" , 
-            "img" : "/assets/img/transfer.jpg",
+            "img" : "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
             "click" : "LCGD"
     },
     {            
@@ -30,7 +30,7 @@
             "name" : "ລາຍຊື່ບັນຊີຜູ້ຮັບ" , 
             "namevi" : "Danh sách tài khoản thụ hưởng" , 
             "nameen" : "Danh sách tài khoản thụ hưởng" , 
-            "img" : "/assets/img/transfer.jpg",
+            "img" : "/assets/img/layer2/Quản-lý-tài-chính-3.jpg",
             "click" : "DSTKTH"
     },
 

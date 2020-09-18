@@ -18,8 +18,7 @@
               unelevated
               rounded
               color="primary"
-              label="Danh sách điểm giao dịch"
-              icon-right="send"
+              label="Danh sách điểm giao dịch >"
             />
           </a>
         </li>
@@ -40,8 +39,7 @@
               unelevated
               rounded
               color="primary"
-              label="Tài liệu hướng dẫn"
-              icon-right="send"
+              label="Tài liệu hướng dẫn >"
             />
           </a>
         </li>
@@ -52,7 +50,7 @@
             </span>
             <br />
             <span class="text-primary q-font-20">{{ $store.state.language.language === 'la' ? `Login ເຂົ້ານໍາໃຊ້ບໍລິການ` : 'Truy cập sử dụng dịch vụ' }}</span>
-            <q-btn class="q-font-12" unelevated rounded color="primary" label="Hướng dẫn Login" icon-right="send" />
+            <q-btn class="q-font-12" unelevated rounded color="primary" label="Hướng dẫn Login >" />
           </a>
         </li>
       </ul>
@@ -115,7 +113,7 @@ export default {
   background-color: transparent;
 }
 .bg-part4-mobile {
-  background-color: #79a2ea;
+  background-color: #70c7ff;
   width: 100%;
   position: relative;
   display: block;
@@ -128,7 +126,7 @@ export default {
   text-align: center;
 }
 .bg-part4 {
-  background-color: #79a2ea;
+  background-color: #70c7ff;
   width: 100%;
   position: relative;
   display: block;
@@ -201,7 +199,7 @@ export default {
   position: absolute;
   left: -10px;
   top: -10px;
-  border: solid 10px #1c86b8;
+  border: solid 10px #17479b;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   z-index: -1;
@@ -214,7 +212,7 @@ export default {
   position: absolute;
   left: 10px;
   top: 10px;
-  border: 1px solid #0aa9f3;
+  border: 1px solid #17479b;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
@@ -241,7 +239,7 @@ export default {
   position: absolute;
   left: -10px;
   top: -10px;
-  border: solid 10px #1c86b8;
+  border: solid 10px #17479b;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   z-index: -1;
@@ -254,7 +252,7 @@ export default {
   position: absolute;
   left: 10px;
   top: 10px;
-  border: 1px solid #0aa9f3;
+  border: 1px solid #17479b;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }

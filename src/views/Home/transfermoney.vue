@@ -6,7 +6,7 @@
         ? `height:${window.height + 170}px;margin-top:0px`
         : window.width <= 1366
         ? `height:${window.height + 500}px;margin-top:0px`
-        : `height:${window.height + 300}px;margin-top:0px`
+        : `height:${window.height + 600}px;margin-top:0px`
     "
   >
     <q-carousel
@@ -23,7 +23,7 @@
     <!-- <img :src="returnData[0].img" height="300px" width="100%"> -->
     <div :style="mobileMode ? 'padding:24px 5px' : 'padding:24px 24px'">
       <q-bar class="bg-transparent text-primary" style="border-bottom:1px solid #4d4d4d;padding-bottom: 20px;">
-        <span :class="mobileMode ? 'q-font-16 text-bold text-primary' : 'text-h5'">
+        <span :class="mobileMode ? 'q-font-16 text-bold' : 'text-h5'" style="color: #17479b">
           {{
             $store.state.language.language === 'en' ? returnData[0].nameen : $store.state.language.language === 'vi' ? returnData[0].namevi : returnData[0].name
           }}
@@ -36,8 +36,10 @@
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div :class="mobileMode ? 'q-pt-md' : ''" v-for="(item, index) in returnData" :key="index">
               <div
-                :style="mobileMode ? 'padding-right: 34px;margin-left: -44px;text-align: justify;' : 'padding-right: 50px'"
-                :class="mobileMode ? 'text-h7 text-primary' : 'text-h6 text-primary'"
+                :style="
+                  mobileMode ? 'padding-right: 34px;margin-left: 0px;text-align: justify;color:#17479b' : 'padding-right: 50px;color:#17479b;line-height:2'
+                "
+                :class="mobileMode ? 'text-h7' : 'text-h6'"
                 v-html="
                   $store.state.language.language === 'en'
                     ? returnData[0].descen
@@ -75,11 +77,18 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style>
 .text-primary {
   color: #17479b !important;
 }
-ul {
-  margin-top: 0px !important;
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -5px;
+}
+ul.dashed > li:before {
+  content: '- ';
+  text-indent: -5px;
 }
 </style>

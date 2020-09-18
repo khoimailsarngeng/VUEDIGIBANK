@@ -1,7 +1,7 @@
 <template>
   <div class="contact-footer">
     <q-carousel swipeable animated v-model="slide" infinite autoplay :height="mobileMode ? '370px' : '550px'" :thumbnails="mobileMode ? false : false">
-      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-footer.jpg' : '/assets/img/bg-footer.jpg'" />
+      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-footer-2.jpg' : '/assets/img/bg-footer-2.jpg'" />
       <template v-slot:control>
         <q-carousel-control :position="mobileMode ? 'top' : 'top'" class="q-gutter-xs text-center">
           <q-card flat bordered class="my-card bg-transparent full-width q-mt-md" style="border:0;width">
@@ -81,8 +81,8 @@ export default {
   color: #ffffff;
   font-size: 16px;
 }
-/* .text-white {
+.text-white {
   color: #17479d !important;
   font-weight: bold;
-} */
+}
 </style>

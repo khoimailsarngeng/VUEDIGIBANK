@@ -9,7 +9,11 @@
       :height="mobileMode ? (window.width < 500 ? '570px' : '400px') : window.width >= 1600 ? '750px' : '600px'"
       :thumbnails="mobileMode ? false : false"
     >
-      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-patuxay-4.jpg' : '/assets/img/bg-patuxay-4.jpg'" />
+      <q-carousel-slide
+        style="background-size: 100% 100%;"
+        :name="1"
+        :img-src="mobileMode ? '/assets/img/bg-patuxay-4_1.jpg' : '/assets/img/bg-patuxay-4_1.jpg'"
+      />
 
       <template v-slot:control>
         <q-carousel-control :position="mobileMode ? 'right' : 'right'" class="q-gutter-xs text-left text-black">
@@ -21,11 +25,11 @@
               mobileMode
                 ? 'border:0;margin-top:10px'
                 : window.width === 1366
-                ? 'border:0;margin-top:60px;margin-left: 33pc;padding-right: 50px;'
+                ? 'border:0;margin-top:60px;margin-left: 33pc;padding-right: 99px;'
                 : window.width < 1366
                 ? 'border:0;margin-top:50px;margin-left: 40pc;padding-right: 147px;'
-                : window.width > 1600
-                ? 'border:0;margin-top:100px;margin-left: calc(30% - 0px); padding-right: calc(10% - 0px);'
+                : window.width >= 1600
+                ? 'border:0;margin-top:100px;margin-left: calc(45% + 5px); padding-right: calc(10% - 0px);'
                 : 'border:0;margin-top:100px;margin-left: calc(40% - 0px); padding-right: calc(10% - 0px);'
             "
           >
@@ -65,28 +69,6 @@
         </q-carousel-control>
       </template>
     </q-carousel>
-
-    <!-- <div class="slide-pro">
-      <div class="q-pa-sm q-mt-xs">
-      <div class="row q-col-gutter-xs">
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center q-pt-lg">
-          <img src="/assets/img/Logo-LVBDigiBank.png" :width="mobileMode ? '80%' : ''" height="100px" alt="" />
-        </div>
-        <div
-          :class="
-            $q.screen.name === 'sm' || $q.screen.name === 'xs'
-              ? 'col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center'
-              : 'col-xs-12 col-sm-12 col-md-6 col-lg-6 text-left q-pt-lg'
-          "
-        >
-          <span class="text-primary q-font-22">LVB DigiBank là gì?</span> <br />
-          Dịch vụ ngân hàng số của Laovietbank cho phép khách hàng cá nhân, doanh nghiệp thực hiện các giao dịch ngân hàng mọi lúc, mọi nơi thông qua các phương
-          tiện kỹ thuật số: ĐTDĐ, máy tính để bàn, máy tính bảng mà không phải đến ngân hàng. LaoVietBank Digital Banking gồm 2 phiên bản dành cho khách hàng cá
-          nhân và khách hàng doanh nghiệp.
-        </div>
-      </div>
-    </div>
-    </div> -->
   </div>
 </template>
 <script>

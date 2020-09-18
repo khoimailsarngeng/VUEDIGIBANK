@@ -54,7 +54,7 @@
             "namevi" : "Chuyển tiền ngoài hệ thống" , 
             "nameen" : "Chuyển tiền ngoài hệ thống" ,                         
             "img" : "/assets/img/how-long-does-it-take-to-transfer-money-1200.jpeg",
-            "click" : "Transfer2"
+            "click" : "Transfer1"
     },
     {            
             "type" : "Transfer",               

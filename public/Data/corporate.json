@@ -196,7 +196,7 @@
             "namevi" : "Thanh toán thuế tự động" , 
             "nameen" : "Thanh toán thuế tự động" , 
             "img" : "/assets/img/automatic-payment-for-credit-card-bills.jpg",
-            "click" : "TTHD3"
+            "click" : "TTHD5"
     },
     {            
             "type" : "TTHD",               

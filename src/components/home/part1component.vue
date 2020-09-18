@@ -25,12 +25,15 @@
                 : window.width < 1366
                 ? 'border:0;margin-top:50px;margin-left: 40pc;padding-right: 147px;'
                 : window.width > 1600
-                ? 'border:0;margin-top:100px;margin-left: 40pc;padding-right: 300px;'
-                : 'border:0;margin-top:100px;margin-left: 40pc;padding-right: 170px;'
+                ? 'border:0;margin-top:100px;margin-left: calc(30% - 0px); padding-right: calc(10% - 0px);'
+                : 'border:0;margin-top:100px;margin-left: calc(40% - 0px); padding-right: calc(10% - 0px);'
             "
           >
-            <q-card-section>
-              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">Giới thiệu LVB DigiBank</span> <br />
+            <q-card-section :style="window.width > 1600 ? 'width: 80%;' : ''">
+              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
+                >{{ $store.state.language.language === 'la' ? `ແນະນໍາກ່ຽວກັບ LVB DigiBank` : `Giới thiệu LVB DigiBank` }}
+              </span>
+              <br />
               <!-- <p :class="mobileMode ? 'q-font-15 text-justify text-primary ' : 'q-font-20 text-justify text-primary '" style="margin-top: 10px;">
                 LVB DigiBank là dịch vụ Ngân hàng số của Ngân hàng liên doanh Lào Việt.
                 <br />
@@ -39,13 +42,20 @@
                 <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
               </p> -->
               <p
+                v-if="$store.state.language.language === 'la'"
                 class="q-font-20 text-justify text-primary "
-                style="line-height: 1.5; margin-top: 10px;color: #17479b !important;text-align: justify; text-indent: 36pt;"
+                style="line-height: 1.5; margin-top: 10px;color: #17479b !important;text-align: justify"
               >
+                LVB DigiBank ແມ່ນການບໍລິການທະນາຄານດີຈີຕ້ອນຂອງທະນາຄານຮ່ວມທຸລະກິດລາວຫວຽດ.
+                <br />
+                LVB DigiBank ອະນຸຍາດໃຫ້ລູກຄ້າບຸກຄົນ ແລະ ນິຕິບຸກຄົນ ທີ່ນໍາໃຊ້ໂທລະສັບມືຖື, ແທັບເລັດ, ຄອມພິວເຕີຕັ້ງ ໂຕະ ແລະ ແລັບທັອບ
+                ປະຕິບັດບັນດາທຸລະກຳຂອງທະນາຄານຜ່ານ LVB DigiBank Application ແລະ ຜ່ານຊ່ອງທາງ webite: <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
+              </p>
+              <p class="q-font-20 text-justify text-primary " style="line-height: 1.5; margin-top: 10px;color: #17479b !important;text-align: justify" v-else>
                 LVB DigiBank là dịch vụ Ngân hàng số của Ngân hàng liên doanh Lào Việt. <br data-v-650b6db8="" />
                 LVB DigiBank cho phép khách hàng cá nhân và doanh nghiệp sử dụng điện thoại, máy tính bảng, máy tính để bàn và máy tính xách tay để thực hiện đa
                 dạng các giao dịch ngân hàng thông qua Ứng dụng LVB DigiBank và thông qua webite
-                <a data-v-650b6db8="" href="www.laovietbank.com.la">www.laovietbank.com.la</a>
+                <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
               </p>
             </q-card-section>
           </q-card>

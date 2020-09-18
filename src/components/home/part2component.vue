@@ -24,13 +24,37 @@
               mobileMode
                 ? 'padding:5px;border:0;margin-top:0px'
                 : window.width <= 1366
-                ? 'border:0;margin-top:50px;padding-right:615px'
-                : 'border:0;margin-top:150px;padding-right:700px'
+                ? 'border:0;margin-top:30px;padding-right:615px'
+                : 'border:0;margin-top:2%; padding-right: calc(100% - 700px);'
             "
           >
-            <q-card-section>
-              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">Tiện ích của LVB DigiBank - All In One</span>
+            <q-card-section v-if="$store.state.language.language === 'la'">
+              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
+                >{{ $store.state.language.language === 'la' ? `ຄຸນປະໂຫຍດຂອງ LVB DigiBank - All In One` : `Tiện ích của LVB DigiBank - All In One` }}
+              </span>
               <br />
+              <br />
+              <div style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 20px; text-align: justify;color:#17479b">
+                <p style="margin: 0 0 0px;">
+                  ບັນດາບໍລິການທະນາຄານທີ່ຫຼາກຫຼາຍໄດ້ປະຕິບັດເທິງ LVB DigiBank, ດ້ວຍຕົວລູກຄ້າເອງ. ບໍລິການທີ່ໄດ້ຮັບການນິຍົມຊົມໃຊ້ເຊັ່ນ: ຊໍາລະໃບບິນ;
+                  ໂອນເງິນພາຍໃນປະເທດ ແລະ ຕ່າງປະເທດ, ຄຸ້ມຄອງການເງິນ, ຊື້ຂາຍເງິນຕາ, ເງິນຝາກປະຫຍັດ...ນໍາໃຊ້ LVB DigiBank, ລູກຄ້າບໍ່ຈໍາເປັນຕ້ອງເຂົາມາທະນາຄານ.
+                </p>
+                <p style="margin: 0 0 0px;">
+                  ນໍາໃຊ້ພຽງແຕ່ 01 User, ພາຍຫລັງລົງທະບຽນຄັ້ງດຽວ, ລູກຄ້າເຂົ້າສູ່ລະບົບ LVB DigiBank ຜ່ານບັນດາອຸປະກອນທີ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ
+                  ໂດຍທີ່ບໍ່ຕ້ອງຈື່ຫຼາຍ User, ຫຼາຍລະຫັດຜ່ານ.
+                </p>
+                <p style="margin: 0 0 0px;">
+                  LVB DigiBank ແມ່ນທະນາຄານດີຈີຕ້ອນແບບຄົບຊຸດສຳລັບລູກຄ້າບຸກຄົນ, ນິຕິບຸກຄົນ ແລະ ອົງການຈັດຕັ້ງອຶື່ນຯ. ລູກຄ້າຈະບໍ່ຈໍາເປັນຕ້ອງຕິດຕັ້ງຫລາຍ Application.
+                </p>
+                <p style="margin: 0 0 0px;">
+                  ການຢັ້ງຢືນທີ່ແບບສະຫຼາດ, ວ່ອງໄວ ແລະ ປອດໄພດ້ວຍ SmartOTP; ເຂົ້າລະບົບ ແລະ ຢັ້ງຢືນດ້ວຍໃບໜ້າ, ລາຍນິ້ວມື ຊ່ວຍໃຫ້ຊີວິດງ່າຍຂື້ນກວ່າເກົ່າ.
+                </p>
+              </div>
+            </q-card-section>
+            <q-card-section v-else>
+              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
+                >{{ $store.state.language.language === 'la' ? `ຄຸນປະໂຫຍດຂອງ LVB DigiBank - All In One` : `Tiện ích của LVB DigiBank - All In One` }}
+              </span>
               <p style="margin: 22px  0cm 8pt; line-height: 2; font-size: 15px; text-align: justify;">
                 <span style="font-size:20px;line-height:107%;color:#17479B"
                   >Tất cả c&aacute;c dịch vụ ng&acirc;n h&agrave;ng đa dạng được thực hiện bằng LVB DigiBank, bởi ch&iacute;nh Kh&aacute;ch h&agrave;ng.
@@ -57,23 +81,6 @@
                   khu&ocirc;n mặt, dấu v&acirc;n tay gi&uacute;p cuộc sống trở n&ecirc;n dễ d&agrave;ng hơn bao giờ hết.</span
                 >
               </p>
-
-              <!-- <p :class="mobileMode ? 'q-font-15 text-justify text-primary ' : 'q-font-20 text-justify text-primary '" style="margin-top: 10px;">
-                <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> Tất cả các dịch vụ ngân hàng đa dạng đều được thực hiện bằng LVB DigiBank,
-                <br />
-                bởi chính Khách hàng. Các dịch vụ phổ biến như: Thanh toán hóa đơn; <br />
-                chuyển tiền trong nước và quốc tế, quản lý tài chính, mua bán ngoại tệ, gửi tiền tiết kiệm online… <br />
-                Với LVB DigiBank, khách hàng không cần phải đến giao dịch tại quầy. <br />
-                <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> Chỉ sử dụng 01 User, sau 01 lần đăng ký, Khách hàng truy cập và sử dụng
-                LVB DigiBank trên tất <br />
-                các thiết bị có kết nối Internet. Khách hàng không còn phải nhớ nhiều User, nhiều mật khẩu. <br />
-                <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> LVB DigiBank là ngân hàng số trọn gói cho các Cá nhân, các Doanh nghiệp và
-                các tổ chức khác; <br />
-                Khách hàng sẽ không còn phải nhớ tên nhiều dịch vụ, không còn cần cài đặt nhiều ứng dụng khác nữa. <br />
-                <img height="18px" src="/assets/img/icon-bullet-champa.svg" alt="" /> Xác thực thông minh, nhanh chóng và an toàn bằng tính năng SmartOTP;
-                <br />
-                đăng nhập và xác thực bằng dấu vân tay giúp cuộc sống trở nên dễ dàng hơn bao giờ hết.
-              </p> -->
             </q-card-section>
           </q-card>
         </q-carousel-control>

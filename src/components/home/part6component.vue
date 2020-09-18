@@ -5,7 +5,20 @@
       <template v-slot:control>
         <q-carousel-control :position="mobileMode ? 'top' : 'top'" class="q-gutter-xs text-center">
           <q-card flat bordered class="my-card bg-transparent full-width q-mt-md" style="border:0;width">
-            <q-card-section>
+            <q-card-section v-if="$store.state.language.language === 'la'">
+              <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">ທະນາຄານຮ່ວມທຸລະກິດລາວຫວຽດ</span>&nbsp;
+
+              <br />
+              <span :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
+                44 ຖະໜົນລ້ານຊ້າງ, ເມືອງ ຈັນທະບູລີ, ນະຄອນຫຼວງວຽງຈັນ
+                <br />
+                ໂທຣ/whatsApp: +856 20 52220222 <br />
+                Hotline: 1440 <br />
+                Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
+                <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
+              </span>
+            </q-card-section>
+            <q-card-section v-else>
               <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">NGÂN HÀNG LIÊN DOANH LÀO VIỆT</span>&nbsp;
 
               <br />

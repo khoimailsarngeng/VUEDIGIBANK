@@ -49,7 +49,7 @@
             <img :src="item.img" height="150px" />
             <q-card-section style="height: 68px;">
               <div class="q-font-15 text-bold q-mt-sm q-mb-xs" style="color:#17479b">
-                {{ $store.state.language.language === 'en' ? item.name : $store.state.language.language === 'vi' ? item.name : item.name }}
+                {{ $store.state.language.language === 'en' ? item.nameen : $store.state.language.language === 'vi' ? item.namevi : item.name }}
               </div>
               <!-- <div class="text-caption text-grey">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

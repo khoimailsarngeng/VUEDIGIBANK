@@ -1,7 +1,7 @@
 [
     {
         "type" : "Individual",
-        "name" : "Quản lý tài chính",
+        "name" : "ຄຸ້ມຄອງການເງິນ",
         "namevi" : "Quản lý tài chính",
         "nameen" : "Quản lý tài chính" ,
         "img" : "/assets/img/individual/icon-web-account-manager.svg",
@@ -9,7 +9,7 @@
     },
     {
         "type" : "Individual",
-        "name" : "Chuyển tiền",
+        "name" : "ໂອນເງິນ",
         "namevi" : "Chuyển tiền",
         "nameen" : "Chuyển tiền" ,
         "img" : "/assets/img/individual/icon-web-transfer.svg",
@@ -17,7 +17,7 @@
     },
     {
         "type" : "Individual",
-        "name" : "Thanh toán trực tuyến",
+        "name" : "ຊໍາລະໃບບິນອອນລາຍ",
         "namevi" : "Thanh toán trực tuyến",
         "nameen" : "Thanh toán trực tuyến" ,
         "img" : "/assets/img/individual/icon-web-bill-payment.svg",
@@ -25,7 +25,7 @@
     },
     {
         "type" : "Individual",
-        "name" : "Dịch vụ thẻ",
+        "name" : "ບໍລິການບັດ",
         "namevi" : "Dịch vụ thẻ",
         "nameen" : "Dịch vụ thẻ" ,
         "img" : "/assets/img/individual/icon-web-card.svg",
@@ -33,7 +33,7 @@
     },
     {
         "type" : "Individual",
-        "name" : "Tiết kiệm trực tuyến",
+        "name" : "ເງິນຝາກອອນລາຍ",
         "namevi" : "Tiết kiệm trực tuyến",
         "nameen" : "Tiết kiệm trực tuyến" ,
         "img" : "/assets/img/individual/icon-web-saving.svg",
@@ -41,7 +41,7 @@
     },
     {
         "type" : "Individual",
-        "name" : "Xác thực bằng Vân tay và SmartOTP",
+        "name" : "ລົງທະບຽນ/ຢັ້ງຢືນທຸລະກຳດ້ວຍລາຍນິ້ວມື ແລະ  SmartOTP",
         "namevi" : "Xác thực bằng Vân tay và SmartOTP",
         "nameen" : "Xác thực bằng Vân tay và SmartOTP",
         "img" : "/assets/img/icon-smart-otp-01.svg",
@@ -49,7 +49,7 @@
     },
     {
         "type" : "Individual",
-        "name" : "Mua bán ngoại tệ Online",
+        "name" : "ຊື້ຂາຍເງິນຕາ Online",
         "namevi" : "Mua bán ngoại tệ Online",
         "nameen" : "Mua bán ngoại tệ Online",
         "img" : "/assets/img/icon-online-exchange-01.svg",
@@ -57,7 +57,7 @@
     },
     {
         "type" : "Individual",
-        "name" : "Tiện ích người dùng",
+        "name" : "ຄຸນປະໂຫຍດຂອງຜູ້ນໍາໃຊ້",
         "namevi" : "Tiện ích người dùng",
         "nameen" : "Tiện ích người dùng",
         "img" : "/assets/img/individual/icon-web-services.svg",
@@ -68,7 +68,7 @@
 
     {
         "type" : "Corporate",
-        "name" : "Quản lý tài chính",
+        "name" : "ຄຸ້ມຄອງການເງິນ",
         "namevi" : "Quản lý tài chính",
         "nameen" : "Quản lý tài chính" ,
         "img" : "/assets/img/individual/icon-web-account-manager.svg",
@@ -76,7 +76,7 @@
     },
     {
         "type" : "Corporate",
-        "name" : "Chuyển tiền",
+        "name" : "ໂອນເງິນ",
         "namevi" : "Chuyển tiền",
         "nameen" : "Chuyển tiền" ,
         "img" : "/assets/img/individual/icon-web-transfer.svg",
@@ -84,7 +84,7 @@
     },
     {
         "type" : "Corporate",
-        "name" : "Thanh toán lương",
+        "name" : "ຊໍາລະເງິນເດືອນ",
         "namevi" : "Thanh toán lương",
         "nameen" : "Thanh toán lương" ,
         "img" : "/assets/img/icon-web-salary.svg",
@@ -92,7 +92,7 @@
     },
     {
         "type" : "Corporate",
-        "name" : "Thanh toán hóa đơn trực tuyến",
+        "name" : "ຊໍາລະໃບບິນອອນລາຍ",
         "namevi" : "Thanh toán hóa đơn trực tuyến",
         "nameen" : "Thanh toán hóa đơn trực tuyến",
         "img" : "/assets/img/individual/icon-web-bill-payment.svg",
@@ -101,7 +101,7 @@
     
     {
         "type" : "Corporate",
-        "name" : "Xác thực bằng Vân tay và SmartOTP",
+        "name" : "ລົງທະບຽນ/ຢັ້ງຢືນທຸລະກຳດ້ວຍລາຍນິ້ວມື ແລະ  SmartOTP",
         "namevi" : "Xác thực bằng Vân tay và SmartOTP",
         "nameen" : "Xác thực bằng Vân tay và SmartOTP",
         "img" : "/assets/img/icon-smart-otp-01.svg",
@@ -109,7 +109,7 @@
     },
     {
         "type" : "Corporate",
-        "name" : "Tiện ích người dùng",
+        "name" : "ຄຸນປະໂຫຍດຂອງຜູ້ນໍາໃຊ້",
         "namevi" : "Tiện ích người dùng",
         "nameen" : "Tiện ích người dùng",
         "img" : "/assets/img/individual/icon-web-services.svg",

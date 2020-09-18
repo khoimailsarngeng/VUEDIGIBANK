@@ -23,18 +23,28 @@
     <!-- <img :src="returnData[0].img" height="300px" width="100%"> -->
     <div :style="mobileMode ? 'padding:24px 5px' : 'padding:24px 24px'">
       <q-bar class="bg-transparent text-primary" style="border-bottom:1px solid #4d4d4d;padding-bottom: 20px;">
-        <span :class="mobileMode ? 'q-font-16 text-bold text-primary' : 'text-h5'">{{ returnData[0].header }}</span>
+        <span :class="mobileMode ? 'q-font-16 text-bold text-primary' : 'text-h5'">
+          {{
+            $store.state.language.language === 'en' ? returnData[0].nameen : $store.state.language.language === 'vi' ? returnData[0].namevi : returnData[0].name
+          }}
+        </span>
         <q-space />
         <q-btn @click="$router.go(-1)" color="white" text-color="primary" :label="$t('Back')" icon="skip_previous" v-if="window.width > 500" />
       </q-bar>
-      <div :style="mobileMode ? 'padding: 0px 12px' : window.width <= 1366 ? 'padding:10px 24px' : 'padding:24px 24px'">
+      <div :style="mobileMode ? 'padding: 0px 12px' : window.width <= 1366 ? 'padding:20px 24px' : 'padding:24px 24px'">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div :class="mobileMode ? 'q-pt-md' : ''" v-for="(item, index) in returnData" :key="index">
               <div
                 :style="mobileMode ? 'padding-right: 34px;margin-left: -44px;text-align: justify;' : 'padding-right: 50px'"
                 :class="mobileMode ? 'text-h7 text-primary' : 'text-h6 text-primary'"
-                v-html="item.desc"
+                v-html="
+                  $store.state.language.language === 'en'
+                    ? returnData[0].descen
+                    : $store.state.language.language === 'vi'
+                    ? returnData[0].descvi
+                    : returnData[0].desc
+                "
               ></div>
             </div>
           </div>
@@ -68,5 +78,8 @@ export default {
 <style scoped>
 .text-primary {
   color: #17479b !important;
+}
+ul {
+  margin-top: 0px !important;
 }
 </style>

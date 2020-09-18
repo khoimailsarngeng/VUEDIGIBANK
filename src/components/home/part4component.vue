@@ -9,7 +9,9 @@
               <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
             </span>
             <br />
-            <span class="text-primary q-font-20">Đến ngân hàng đăng ký</span>
+            <span class="text-primary q-font-20">{{
+              $store.state.language.language === 'la' ? 'ລູກຄ້າເຂົ້າມາລົງທະບຽນຢູ່ທີ່ບັນດາຈຸດບໍລິການຂອງ LaoVietBank' : 'Đến ngân hàng đăng ký'
+            }}</span>
             <q-btn
               @click="window.open('https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html', '_blank')"
               class="q-font-12"
@@ -27,7 +29,11 @@
               <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
             </span>
             <br />
-            <span class="text-primary q-font-20">Cài đặt ứng dụng/ Truy cập website</span>
+            <span class="text-primary q-font-20">{{
+              $store.state.language.language === 'la'
+                ? 'ຕິດຕັ້ງ App ດ້ວຍການດາວໂຫລດ (App Store ແລະ Google Play ຫຼື ເຂົ້າຜ່ານ website: www.laovietbank.com.la)'
+                : 'Cài đặt ứng dụng/ Truy cập website'
+            }}</span>
             <q-btn
               @click="window.open('https://www.laovietbank.com.la/', '_blank')"
               class="q-font-12"
@@ -45,7 +51,7 @@
               <img src="/assets/img/icon-web-login.svg" alt="Login: www.laovietbank.com.la" />
             </span>
             <br />
-            <span class="text-primary q-font-20">Truy cập sử dụng dịch vụ</span>
+            <span class="text-primary q-font-20">{{ $store.state.language.language === 'la' ? `Login ເຂົ້ານໍາໃຊ້ບໍລິການ` : 'Truy cập sử dụng dịch vụ' }}</span>
             <q-btn class="q-font-12" unelevated rounded color="primary" label="Hướng dẫn Login" icon-right="send" />
           </a>
         </li>

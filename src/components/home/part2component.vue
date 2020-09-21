@@ -12,7 +12,7 @@
       <q-carousel-slide
         style="background-size: 100% 100%;"
         :name="1"
-        :img-src="mobileMode ? '/assets/img/bg-mobile-with-app-2_1.jpg' : '/assets/img/bg-mobile-with-app-2_1.jpg'"
+        :img-src="mobileMode ? '/assets/img/bg-mobile-app.jpg' : '/assets/img/bg-mobile-app.jpg'"
       />
       <template v-slot:control>
         <q-carousel-control :position="mobileMode ? 'left' : 'left'" class="q-gutter-xs text-left text-black">
@@ -24,20 +24,22 @@
               mobileMode
                 ? 'padding:5px;border:0;margin-top:0px'
                 : window.width <= 1366
-                ? 'border:0;margin-top:30px;padding-right:615px'
-                : 'border:0;margin-top:2%; padding-right: calc(100% - 700px);'
+                ? 'border:0;margin-top:5px;padding-right:453px'
+                : 'border:0;margin-top:6%; padding-right: calc(100% - 700px);'
             "
           >
             <q-card-section v-if="$store.state.language.language === 'la'">
               <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
-                >{{ $store.state.language.language === 'la' ? `ຄຸນປະໂຫຍດຂອງ LVB DigiBank - All In One` : `Tiện ích của LVB DigiBank - All In One` }}
+                >ຄຸນປະໂຫຍດຂອງ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> - All In One
               </span>
               <br />
               <br />
               <div style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 20px; text-align: justify;color:#17479b">
                 <p style="margin: 0 0 0px;">
-                  ບັນດາບໍລິການທະນາຄານທີ່ຫຼາກຫຼາຍໄດ້ປະຕິບັດເທິງ LVB DigiBank, ດ້ວຍຕົວລູກຄ້າເອງ. ບໍລິການທີ່ໄດ້ຮັບການນິຍົມຊົມໃຊ້ເຊັ່ນ: ຊໍາລະໃບບິນ;
-                  ໂອນເງິນພາຍໃນປະເທດ ແລະ ຕ່າງປະເທດ, ຄຸ້ມຄອງການເງິນ, ຊື້ຂາຍເງິນຕາ, ເງິນຝາກປະຫຍັດ...ນໍາໃຊ້ LVB DigiBank, ລູກຄ້າບໍ່ຈໍາເປັນຕ້ອງເຂົາມາທະນາຄານ.
+                  ບັນດາບໍລິການທະນາຄານທີ່ຫຼາກຫຼາຍໄດ້ປະຕິບັດເທິງ <span class="text-primary text-bold"> LVB </span
+                  ><span class="text-red text-bold"> DigiBank </span>, ດ້ວຍຕົວລູກຄ້າເອງ. ບໍລິການທີ່ໄດ້ຮັບການນິຍົມຊົມໃຊ້ເຊັ່ນ: ຊໍາລະໃບບິນ; ໂອນເງິນພາຍໃນປະເທດ ແລະ
+                  ຕ່າງປະເທດ, ຄຸ້ມຄອງການເງິນ, ຊື້ຂາຍເງິນຕາ, ເງິນຝາກປະຫຍັດ...ນໍາໃຊ້ <span class="text-primary text-bold"> LVB </span
+                  ><span class="text-red text-bold"> DigiBank </span>, ລູກຄ້າບໍ່ຈໍາເປັນຕ້ອງເຂົາມາທະນາຄານ.
                 </p>
                 <p style="margin: 0 0 0px;">
                   ນໍາໃຊ້ພຽງແຕ່ 01 User, ພາຍຫລັງລົງທະບຽນຄັ້ງດຽວ, ລູກຄ້າເຂົ້າສູ່ລະບົບ LVB DigiBank ຜ່ານບັນດາອຸປະກອນທີ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ
@@ -53,7 +55,7 @@
             </q-card-section>
             <q-card-section v-else>
               <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
-                >{{ $store.state.language.language === 'la' ? `ຄຸນປະໂຫຍດຂອງ LVB DigiBank - All In One` : `Tiện ích của LVB DigiBank - All In One` }}
+                >Tiện ích của <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> - All In One
               </span>
               <p style="margin: 22px  0cm 8pt; line-height: 2; font-size: 15px; text-align: justify;">
                 <span style="font-size:20px;line-height:107%;color:#17479B"

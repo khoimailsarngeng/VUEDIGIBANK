@@ -1,16 +1,131 @@
 <template>
-  <div :class="mobileMode ? 'bg-part4-mobile' : 'bg-part4'" :style="mobileMode ? 'height: 385px' : window.width <= 1366 ? 'height: 425px' : 'height: 430px'">
-    <div class="col-xs-12 text-h4 text-bold text-primary" v-if="!mobileMode">Đăng kí dịch vụ</div>
+  <div>
+    <q-carousel
+      swipeable
+      animated
+      v-model="slide"
+      infinite
+      autoplay
+      :height="
+        mobileMode ? (window.width < 500 ? '1000px' : '450px') : window.width >= 1600 ? '500px' : $store.state.language.language === 'la' ? '500px' : '500px'
+      "
+      :thumbnails="mobileMode ? false : false"
+    >
+      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-register.jpg' : '/assets/img/bg-register.jpg'" />
+      <template v-slot:control>
+        <q-carousel-control position="top" class="text-center q-pt-xl">
+          <div class="col-xs-12 text-h4 text-bold text-primary" v-if="!mobileMode">
+            Đăng kí dịch vụ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+          </div>
+          <div class="slide-pro" v-if="!mobileMode">
+            <ul>
+              <li style="width:230px;margin:0 8% 30px 0%" :class="window.height > 635 ? 'li' : 'li'">
+                <a href="https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html" target="_blank">
+                  <span class="product-thumb">
+                    <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
+                  </span>
+                  <br />
+                  <span class="text-primary q-font-20">{{
+                    $store.state.language.language === 'la' ? 'ລູກຄ້າເຂົ້າມາ LaoVietBank' : 'Đến ngân hàng đăng ký'
+                  }}</span>
+                  <q-btn
+                    @click="window.open('https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html', '_blank')"
+                    class="q-font-12"
+                    unelevated
+                    rounded
+                    color="primary"
+                    label="Danh sách điểm giao dịch >"
+                  />
+                </a>
+              </li>
+              <li
+                :style="
+                  window.width > 1366
+                    ? 'width:350px;margin:0 0% 30px 0%'
+                    : window.width <= 1366
+                    ? 'width:350px;margin:0 0% 30px -2%'
+                    : 'width:350px;margin:0 0% 30px 0%'
+                "
+                :class="window.height > 635 ? 'li' : 'li'"
+              >
+                <a href="https://www.laovietbank.com.la/" target="_blank">
+                  <span class="product-thumb">
+                    <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
+                  </span>
+                  <br />
+                  <span class="text-primary q-font-20">{{ $store.state.language.language === 'la' ? 'ຕິດຕັ້ງ App ' : 'Cài đặt ứng dụng' }}</span
+                  ><br />
+                  <q-btn
+                    @click="window.open('https://www.laovietbank.com.la/', '_blank')"
+                    class="q-font-12"
+                    unelevated
+                    rounded
+                    color="primary"
+                    label="Tài liệu hướng dẫn >"
+                  />
+                </a>
+              </li>
+              <li :class="window.height > 635 ? 'li' : 'li'">
+                <a>
+                  <span class="product-thumb">
+                    <img src="/assets/img/icon-web-login.svg" alt="Login: www.laovietbank.com.la" />
+                  </span>
+                  <br />
+                  <span class="text-primary q-font-20">{{
+                    $store.state.language.language === 'la' ? `Login ເຂົ້ານໍາໃຊ້ບໍລິການ` : 'Truy cập sử dụng dịch vụ'
+                  }}</span>
+                  <q-btn class="q-font-12" unelevated rounded color="primary" label="Hướng dẫn Login >" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="slide-pro-mobile" v-if="mobileMode">
+            <q-carousel swipeable animated v-model="slide" infinite transition-prev="scale" transition-next="scale" control-color="white" navigation>
+              <q-carousel-slide :name="1">
+                <q-card-section>
+                  <a href="https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html" target="_blank">
+                    <span class="product-thumb-mobile">
+                      <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
+                    </span>
+                  </a>
+                  <h6 class="text-white">Đến ngần hàng đăng ký</h6>
+                </q-card-section>
+              </q-carousel-slide>
+              <q-carousel-slide :name="2">
+                <a href="https://www.laovietbank.com.la/" target="_blank">
+                  <span class="product-thumb-mobile">
+                    <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
+                  </span>
+                  <h6 class="text-white">
+                    Cài đặt hoặc truy cập
+                    <br />trực tiếp ứng dụng
+                  </h6>
+                </a>
+              </q-carousel-slide>
+              <q-carousel-slide :name="3">
+                <a>
+                  <span class="product-thumb-mobile">
+                    <img src="/assets/img/icon-web-login.svg" alt="Login/sử dụng" />
+                  </span>
+                  <h6 class="text-primary">Truy cập sử dụng dịch vụ</h6>
+                </a>
+              </q-carousel-slide>
+            </q-carousel>
+          </div>
+        </q-carousel-control>
+      </template>
+    </q-carousel>
+    <!-- <div class="col-xs-12 text-h4 text-bold text-primary" v-if="!mobileMode">Đăng kí dịch vụ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span></div>
     <div class="slide-pro" v-if="!mobileMode">
       <ul>
-        <li style="width:230px;margin:0 8% 30px 1%" :class="window.height > 635 ? 'li' : 'li'">
+        <li style="width:230px;margin:0 8% 30px 0%" :class="window.height > 635 ? 'li' : 'li'">
           <a href="https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html" target="_blank">
             <span class="product-thumb">
               <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
             </span>
             <br />
             <span class="text-primary q-font-20">{{
-              $store.state.language.language === 'la' ? 'ລູກຄ້າເຂົ້າມາລົງທະບຽນຢູ່ທີ່ບັນດາຈຸດບໍລິການຂອງ LaoVietBank' : 'Đến ngân hàng đăng ký'
+              $store.state.language.language === 'la' ? 'ລູກຄ້າເຂົ້າມາ LaoVietBank' : 'Đến ngân hàng đăng ký'
             }}</span>
             <q-btn
               @click="window.open('https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html', '_blank')"
@@ -22,7 +137,7 @@
             />
           </a>
         </li>
-        <li :style="window.width > 1366 ? 'width:350px;margin:0 0% 30px 5%' : 'width:350px;margin:0 0% 30px 1%'" :class="window.height > 635 ? 'li' : 'li'">
+        <li :style="window.width > 1366 ? 'width:350px;margin:0 0% 30px 0%' : 'width:350px;margin:0 0% 30px 1%'" :class="window.height > 635 ? 'li' : 'li'">
           <a href="https://www.laovietbank.com.la/" target="_blank">
             <span class="product-thumb">
               <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
@@ -30,9 +145,9 @@
             <br />
             <span class="text-primary q-font-20">{{
               $store.state.language.language === 'la'
-                ? 'ຕິດຕັ້ງ App ດ້ວຍການດາວໂຫລດ (App Store ແລະ Google Play ຫຼື ເຂົ້າຜ່ານ website: www.laovietbank.com.la)'
-                : 'Cài đặt ứng dụng/ Truy cập website'
-            }}</span>
+                ? 'ຕິດຕັ້ງ App '
+                : 'Cài đặt ứng dụng'
+            }}</span><br>
             <q-btn
               @click="window.open('https://www.laovietbank.com.la/', '_blank')"
               class="q-font-12"
@@ -87,7 +202,7 @@
           </a>
         </q-carousel-slide>
       </q-carousel>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -113,7 +228,7 @@ export default {
   background-color: transparent;
 }
 .bg-part4-mobile {
-  background-color: #70c7ff;
+  background-image: url('/assets/img/bg-register.jpg');
   width: 100%;
   position: relative;
   display: block;
@@ -126,12 +241,12 @@ export default {
   text-align: center;
 }
 .bg-part4 {
-  background-color: #70c7ff;
+  background-image: url('/assets/img/bg-register.jpg');
   width: 100%;
   position: relative;
   display: block;
   float: left;
-  padding: 25px 0%;
+  padding: 80px 0%;
   margin: 0;
   background-position: center center;
   background-repeat: no-repeat;
@@ -143,7 +258,8 @@ export default {
   height: auto;
   display: block;
   position: relative;
-  margin: 30px 0;
+  margin: 60px 0;
+  text-align: center;
 }
 .slide-pro-mobile {
   width: 100%;
@@ -272,7 +388,7 @@ export default {
   width: 226px;
   height: auto;
   display: inline-block;
-  margin: 0 8% 30px 8%;
+  margin: 0 5% 30px 8%;
   position: relative;
   vertical-align: top;
 }
@@ -281,7 +397,7 @@ export default {
   max-width: 225px;
   height: auto;
   display: inline-block;
-  margin: 0 8% 28px 8%;
+  margin: 0 5% 28px 8%;
   position: relative;
   vertical-align: top;
 }

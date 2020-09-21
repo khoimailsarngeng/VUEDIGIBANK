@@ -1,32 +1,38 @@
 <template>
   <div class="contact-footer">
-    <q-carousel swipeable animated v-model="slide" infinite autoplay :height="mobileMode ? '370px' : '550px'" :thumbnails="mobileMode ? false : false">
-      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-footer-2.jpg' : '/assets/img/bg-footer-2.jpg'" />
+    <q-carousel
+      swipeable
+      animated
+      v-model="slide"
+      infinite
+      autoplay
+      :height="mobileMode ? '370px' : window.width >= 1600 ? '750px' : '600px'"
+      :thumbnails="mobileMode ? false : false"
+    >
+      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-tower-lvb.jpg' : '/assets/img/bg-tower-lvb.jpg'" />
       <template v-slot:control>
         <q-carousel-control :position="mobileMode ? 'top' : 'top'" class="q-gutter-xs text-center">
           <q-card flat bordered class="my-card bg-transparent full-width q-mt-md" style="border:0;width">
-            <q-card-section v-if="$store.state.language.language === 'la'">
+            <q-card-section v-if="$store.state.language.language === 'la'" style="line-height: 3;">
               <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">ທະນາຄານຮ່ວມທຸລະກິດລາວຫວຽດ</span>&nbsp;
 
               <br />
-              <span :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
+              <span style="line-height: 3.5rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
                 44 ຖະໜົນລ້ານຊ້າງ, ເມືອງ ຈັນທະບູລີ, ນະຄອນຫຼວງວຽງຈັນ
                 <br />
-                ໂທຣ/whatsApp: +856 20 52220222 <br />
-                Hotline: 1440 <br />
+                <span class="telinfo">ໂທຣ/whatsApp: +856 20 52220222 </span> <span class="hotline">Hotline: 1440</span> <br />
                 Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
                 <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
               </span>
             </q-card-section>
-            <q-card-section v-else>
+            <q-card-section style="line-height: 3;" v-else>
               <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">NGÂN HÀNG LIÊN DOANH LÀO VIỆT</span>&nbsp;
 
               <br />
-              <span :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
+              <span style="line-height: 3rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
                 44 Lanexang, Chanthabouly, Thủ đô Viêng Chăn
                 <br />
-                Tel/whatsApp: +856 20 52220222 <br />
-                Hotline: 1440 <br />
+                <span class="telinfo">Tel/whatsApp: +856 20 52220222</span> <span style="margin-left: -8px;" class="hotline">Hotline: 1440 </span> <br />
                 Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
                 <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
               </span>
@@ -65,6 +71,29 @@ export default {
 };
 </script>
 <style scoped>
+.hotline {
+  padding-top: 14px;
+  padding-right: 15px;
+  padding-bottom: 14px;
+  background: #ffffff;
+  color: red;
+  padding-left: 10px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top: 1px solid #17479b;
+  border-bottom: 1px solid #17479b;
+  border-right: 1px solid #17479b;
+}
+.telinfo {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  background: #17479b;
+  color: #ffffff;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
 .cls-text-hotline {
   background-color: #17479d;
   padding: 7px;

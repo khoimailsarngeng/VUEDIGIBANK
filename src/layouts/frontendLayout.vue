@@ -229,7 +229,7 @@
           </q-expansion-item>
         </q-list>
       </q-drawer>
-      <q-page-container>
+      <q-page-container class="main">
         <!-- <div
           :style="mobileMode ? '' : vheight"
           :class="$q.screen.name === 'xs' || $q.screen.name === 'sm' ? 'page-home-container-mobile' : 'page-home-container'"
@@ -367,5 +367,9 @@ a:hover {
 .text-lvbdibank {
   color: #17479b;
   font-weight: bold;
+}
+.main {
+  padding-right: 10%;
+  padding-left: 10%;
 }
 </style>

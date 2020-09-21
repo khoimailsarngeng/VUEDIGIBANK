@@ -11,11 +11,7 @@
       "
       :thumbnails="mobileMode ? false : false"
     >
-      <q-carousel-slide
-        style="background-size: 100% 100%;"
-        :name="1"
-        :img-src="mobileMode ? '/assets/img/bg-thatluang-draw.png' : '/assets/img/bg-thatluang-draw.png'"
-      />
+      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-thatluang.jpg' : '/assets/img/bg-thatluang.jpg'" />
       <template v-slot:control>
         <q-carousel-control :position="mobileMode ? 'right' : 'right'" class="q-gutter-xs text-left text-black">
           <q-card
@@ -26,12 +22,14 @@
               mobileMode
                 ? 'padding:5px;border:0;margin-top:0px'
                 : window.width <= 1366
-                ? 'border:0;margin-top:20px;margin-left: 40pc;padding-right: 19px;'
-                : 'border:0;margin-top:2%;margin-left: 50pc;padding-right: 42px;'
+                ? 'border:0;margin-top:15px;margin-left: 24pc;padding-right: 0px;'
+                : 'border:0;margin-top:2%;margin-left: 35pc;padding-right: 15px;'
             "
           >
             <q-card-section v-if="$store.state.language.language === 'la'" :style="window.width > 1600 ? 'width: 80%;' : ''">
-              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">ຄ່າທຳນຽມບໍລິການ</span>
+              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
+                >ຄ່າທຳນຽມບໍລິການ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span></span
+              >
               <br />
               <div style="margin: 22px 0cm 8pt; line-height: 2; font-size: 20px; text-align: justify;color:#17479b">
                 <p style="margin: 0 0 0px;">
@@ -56,7 +54,9 @@
               </div>
             </q-card-section>
             <q-card-section v-else :style="window.width > 1600 ? 'width: 80%;' : ''">
-              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">Phí dịch vụ</span>
+              <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
+                >Phí dịch vụ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span></span
+              >
               <br />
               <p style="margin: 22px 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
                 <span style="font-size:20px;line-height:107%;color:#17479B">
@@ -68,7 +68,8 @@
                 <span style="font-size:20px;line-height:107%;color:#17479B">
                   LaoVietBank hiện &aacute;p dụng ch&iacute;nh s&aacute;ch miễn ph&iacute; nhiều dịch vụ thực hiện tr&ecirc;n LVB DigiBank như: Miễn ph&iacute;
                   chuyển tiền nội bộ; miễn ph&iacute; thanh to&aacute;n h&oacute;a đơn... Chuyển tiền quốc tế, chuyển tiền Li&ecirc;n ng&acirc;n h&agrave;ng
-                  c&oacute; thu ph&iacute; với mức ph&iacute; tốt nhất thị trường. Chi tiết ph&iacute; c&oacute; TẠI Đ&Acirc;Y.
+                  c&oacute; thu ph&iacute; với mức ph&iacute; tốt nhất thị trường. Chi tiết ph&iacute; c&oacute;
+                  <a target="_blank" href="https://www.laovietbank.com.la/">TẠI Đ&Acirc;Y</a>.
                 </span>
               </p>
               <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">

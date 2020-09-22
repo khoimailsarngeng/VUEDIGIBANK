@@ -23,22 +23,105 @@
       v-model="slide"
       infinite
       autoplay
-      :height="mobileMode ? (window.width < 500 ? '570px' : '400px') : window.width >= 1600 ? '750px' : '600px'"
+      :height="mobileMode ? (window.width < 500 ? '570px' : '400px') : `${(window.width * 684) / 1920}px`"
       :thumbnails="mobileMode ? false : false"
     >
-      <q-carousel-slide
+      <!-- <q-carousel-slide
         style="background-size: 100% 100%;"
         :name="1"
         :img-src="mobileMode ? '/assets/img/bg-section1-content.jpg' : '/assets/img/bg-section1-content.jpg'"
-      />
-      <!-- <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-section1.jpg' : '/assets/img/bg-section1.jpg'" /> -->
-      <!-- 
+      /> -->
+      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-section-1.png' : '/assets/img/bg-section-1.png'" />
+
       <template v-slot:control>
-        <q-carousel-control :position="mobileMode ? 'top' : 'left'">
+        <!-- <q-carousel-control v-if="!mobileMode" :position="mobileMode ? 'top' : 'left'">
           <img src="/assets/img/laptop-mobile.png" :style="window.width === 1366 ? 'height: 335px;margin-top: 100px;' : 'height: 335px;margin-top: 28%;'" />
-        </q-carousel-control>
-        <q-carousel-control :position="mobileMode ? 'right' : 'right'" class="q-gutter-xs text-left text-black">
-          <q-card
+        </q-carousel-control> -->
+        <q-carousel-control :position="mobileMode ? 'center' : 'center'" class="full-height full-width">
+          <div class="row">
+            <div
+              class="col-4"
+              :style="
+                mobileMode
+                  ? 'padding:0;border:0;margin-top:0px'
+                  : window.width <= 1366
+                  ? 'border:0;margin-top:0px;position: relative;padding-left: 30px;'
+                  : `border:0;margin-top:6%;position: relative;padding-left: 100px;`
+              "
+            >
+              <img
+                src="/assets/img/laptop-mobile.png"
+                width="100%"
+                alt=""
+                style="position: absolute;
+                top: 50%;
+                transform: translate(0, -30%);"
+              />
+            </div>
+            <div
+              :class="window.width <= 1366 ? 'col-7 q-pt-md' : 'col-7 q-pt-md q-pr-xl'"
+              :style="
+                mobileMode
+                  ? 'padding:5px;border:0;margin-top:0px'
+                  : window.width <= 1366
+                  ? 'border:0;margin-top:6%;padding-left: 30px;'
+                  : window.width === 1600
+                  ? `border:0;margin-top:6%;padding-left: 150px;`
+                  : `border:0;margin-top:6%;padding-left: 250px;`
+              "
+            >
+              <q-card-section>
+                <span v-if="$store.state.language.language === 'la'" :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">
+                  ແນະນໍາກ່ຽວກັບ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+                </span>
+                <span v-if="$store.state.language.language === 'vi'" :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">
+                  Giới thiệu <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+                </span>
+                <span v-if="$store.state.language.language === 'en'" :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'">
+                  Introduction of <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+                </span>
+                <br />
+                <p
+                  v-if="$store.state.language.language === 'la'"
+                  class="q-font-20 text-justify text-primary "
+                  style="line-height: 1.5; margin-top: 26px;color: #17479b !important;text-align: justify"
+                >
+                  <span class="text-primary text-bold"> LVB</span
+                  ><span class="text-red text-bold"> DigiBank </span> ແມ່ນການບໍລິການທະນາຄານດີຈີຕ້ອນຂອງທະນາຄານຮ່ວມທຸລະກິດລາວຫວຽດ.
+                  <br />
+                  LVB DigiBank ອະນຸຍາດໃຫ້ລູກຄ້າບຸກຄົນ ແລະ ນິຕິບຸກຄົນ ທີ່ນໍາໃຊ້ໂທລະສັບມືຖື, ແທັບເລັດ, ຄອມພິວເຕີຕັ້ງ ໂຕະ ແລະ ແລັບທັອບ
+                  ປະຕິບັດບັນດາທຸລະກຳຂອງທະນາຄານຜ່ານ LVB DigiBank Application ແລະ ຜ່ານຊ່ອງທາງ webite: <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
+                </p>
+                <p
+                  class="q-font-20 text-justify text-primary "
+                  style="line-height: 1.5; margin-top: 26px;color: #17479b !important;text-align: justify"
+                  v-if="$store.state.language.language === 'vi'"
+                >
+                  <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> là dịch vụ Ngân hàng số của Ngân hàng liên
+                  doanh Lào Việt.
+                </p>
+                <p
+                  class="q-font-20 text-justify text-primary "
+                  style="line-height: 1.5; margin-top: 10px;color: #17479b !important;text-align: justify"
+                  v-if="$store.state.language.language === 'vi'"
+                >
+                  LVB DigiBank cho phép khách hàng cá nhân và doanh nghiệp sử dụng điện thoại, máy tính bảng, máy tính để bàn và máy tính xách tay để thực hiện
+                  đa dạng các giao dịch ngân hàng thông qua Ứng dụng LVB DigiBank và thông qua webite
+                  <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
+                </p>
+                <p
+                  class="q-font-20 text-justify text-primary "
+                  style="line-height: 1.5; margin-top: 10px;color: #17479b !important;text-align: justify"
+                  v-if="$store.state.language.language === 'en'"
+                >
+                  <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>is digital banking services of LaoVietBank.
+                  LVB DigiBank allows individuals and corporates to access banking services of LaoVietBank on mobile phones, tablets, destops and laptops by LVB
+                  DigiBank application or on website: <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
+                </p>
+              </q-card-section>
+            </div>
+          </div>
+          <!-- <q-card
             flat
             bordered
             class="my-card bg-transparent text-justify"
@@ -50,7 +133,7 @@
                 : window.width < 1366
                 ? 'border:0;margin-top:50px;margin-left: 40pc;padding-right: 1%;'
                 : window.width >= 1600
-                ? 'border:0;margin-top:100px;margin-left: calc(45% + 5px); padding-right: calc(5% - 0px);'
+                ? 'border:0;margin-top:80px;margin-left: calc(45% + 5px); padding-right: calc(5% - 0px);'
                 : 'border:0;margin-top:100px;margin-left: calc(40% - 0px); padding-right: calc(10% - 0px);'
             "
           >
@@ -65,7 +148,7 @@
               <p
                 v-if="$store.state.language.language === 'la'"
                 class="q-font-20 text-justify text-primary "
-                style="line-height: 1.5; margin-top: 10px;color: #17479b !important;text-align: justify"
+                style="line-height: 1.5; margin-top: 26px;color: #17479b !important;text-align: justify"
               >
                 <span class="text-primary text-bold"> LVB</span
                 ><span class="text-red text-bold"> DigiBank </span> ແມ່ນການບໍລິການທະນາຄານດີຈີຕ້ອນຂອງທະນາຄານຮ່ວມທຸລະກິດລາວຫວຽດ.
@@ -76,7 +159,7 @@
               </p>
               <p
                 class="q-font-20 text-justify text-primary "
-                style="line-height: 1.5; margin-top: 10px;color: #17479b !important;text-align: justify"
+                style="line-height: 1.5; margin-top: 26px;color: #17479b !important;text-align: justify"
                 v-if="$store.state.language.language === 'vi' || $store.state.language.language === 'en'"
               >
                 <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> là dịch vụ Ngân hàng số của Ngân hàng liên
@@ -94,9 +177,13 @@
           </q-card>
         </q-carousel-control>
         <q-carousel-control v-if="!mobileMode" :position="'top-right'" class="q-gutter-xs text-right">
-          <img src="/assets/img/Logo-LVBDigiBank.svg" style="width:50%" alt />
+          <img src="/assets/img/Logo-LVBDigiBank.svg" style="width:200px" alt />
+        </q-carousel-control> -->
         </q-carousel-control>
-      </template> -->
+        <q-carousel-control v-if="!mobileMode" :position="'top-right'" class="q-gutter-xs text-right" style="margin-top: 30px;margin-right:40px">
+          <img src="/assets/img/Logo-LVBDigiBank.svg" style="width:200px" alt />
+        </q-carousel-control>
+      </template>
     </q-carousel>
   </div>
 </template>

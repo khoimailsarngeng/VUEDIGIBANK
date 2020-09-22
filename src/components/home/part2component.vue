@@ -1,5 +1,5 @@
 <template>
-  <div class="spacepartonhome">
+  <div>
     <q-carousel
       swipeable
       animated
@@ -12,11 +12,128 @@
       <q-carousel-slide
         style="background-size: 100% 100%;"
         :name="1"
-        :img-src="mobileMode ? '/assets/img/bg-mobile-app-content.jpg' : '/assets/img/bg-mobile-app-content.jpg'"
+        :img-src="mobileMode ? '/assets/img/bg-mobile-app.png' : '/assets/img/bg-mobile-app.png'"
       />
-      <!-- <template v-slot:control>
-        <q-carousel-control :position="mobileMode ? 'left' : 'left'" class="q-gutter-xs text-left text-black">
-          <q-card
+      <template v-slot:control>
+        <q-carousel-control :position="mobileMode ? 'center' : 'center'" class="full-height full-width">
+          <div class="row">
+            <div
+              :class="window.width <= 1366 ? 'col-7 q-pt-md' : 'col-7 q-pt-md'"
+              :style="window.width <= 1366 ? '' : 'padding-left:80px;padding-right: 80px;margin-top:6%'"
+            >
+              <q-card-section style="margin-left: 30px;" v-if="$store.state.language.language === 'la'">
+                <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
+                  >ຄຸນປະໂຫຍດຂອງ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> - All In One
+                </span>
+                <br />
+                <br />
+                <div style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 20px; text-align: justify;color:#17479b">
+                  <p style="margin: 0 0 0px;">
+                    <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> ບັນດາບໍລິການທະນາຄານທີ່ຫຼາກຫຼາຍໄດ້ປະຕິບັດເທິງ
+                    <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>, ດ້ວຍຕົວລູກຄ້າເອງ.
+                    ບໍລິການທີ່ໄດ້ຮັບການນິຍົມຊົມໃຊ້ເຊັ່ນ: ຊໍາລະໃບບິນ; ໂອນເງິນພາຍໃນປະເທດ ແລະ ຕ່າງປະເທດ, ຄຸ້ມຄອງການເງິນ, ຊື້ຂາຍເງິນຕາ, ເງິນຝາກປະຫຍັດ...ນໍາໃຊ້
+                    <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>, ລູກຄ້າບໍ່ຈໍາເປັນຕ້ອງເຂົາມາທະນາຄານ.
+                  </p>
+                  <p style="margin: 0 0 0px;">
+                    <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> ນໍາໃຊ້ພຽງແຕ່ 01 User, ພາຍຫລັງລົງທະບຽນຄັ້ງດຽວ,
+                    ລູກຄ້າເຂົ້າສູ່ລະບົບ LVB DigiBank ຜ່ານບັນດາອຸປະກອນທີ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ ໂດຍທີ່ບໍ່ຕ້ອງຈື່ຫຼາຍ User, ຫຼາຍລະຫັດຜ່ານ.
+                  </p>
+                  <p style="margin: 0 0 0px;">
+                    <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> LVB DigiBank
+                    ແມ່ນທະນາຄານດີຈີຕ້ອນແບບຄົບຊຸດສຳລັບລູກຄ້າບຸກຄົນ, ນິຕິບຸກຄົນ ແລະ ອົງການຈັດຕັ້ງອຶື່ນຯ. ລູກຄ້າຈະບໍ່ຈໍາເປັນຕ້ອງຕິດຕັ້ງຫລາຍ Application.
+                  </p>
+                  <p style="margin: 0 0 0px;">
+                    <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> ການຢັ້ງຢືນທີ່ແບບສະຫຼາດ, ວ່ອງໄວ ແລະ ປອດໄພດ້ວຍ
+                    SmartOTP; ເຂົ້າລະບົບ ແລະ ຢັ້ງຢືນດ້ວຍໃບໜ້າ, ລາຍນິ້ວມື ຊ່ວຍໃຫ້ຊີວິດງ່າຍຂື້ນກວ່າເກົ່າ.
+                  </p>
+                </div>
+              </q-card-section>
+              <q-card-section v-if="$store.state.language.language === 'vi'" style="margin-left: 30px;">
+                <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
+                  >Tiện ích của <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> - All In One
+                </span>
+
+                <p style="margin: 22px  0cm 8pt; line-height: 2; font-size: 15px; text-align: justify;">
+                  <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" />
+                  <span style="font-size:20px;line-height:107%;color:#17479B"
+                    >Tất cả c&aacute;c dịch vụ ng&acirc;n h&agrave;ng đa dạng được thực hiện bằng LVB DigiBank, bởi ch&iacute;nh Kh&aacute;ch h&agrave;ng.
+                    C&aacute;c dịch vụ phổ biến như: Thanh to&aacute;n h&oacute;a đơn; chuyển tiền trong nước v&agrave; quốc tế, quản l&yacute; t&agrave;i
+                    ch&iacute;nh, mua b&aacute;n ngoại tệ, gửi tiền tiết kiệm &hellip; Với LVB DigiBank, kh&aacute;ch h&agrave;ng kh&ocirc;ng cần phải đến
+                    ng&acirc;n h&agrave;ng.&nbsp;</span
+                  >
+                </p>
+                <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
+                  <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" />
+                  <span style="font-size:20px;line-height:107%;color:#17479B"
+                    >Chỉ sử dụng 01 User, sau 01 lần đăng k&yacute;, Kh&aacute;ch h&agrave;ng truy cập LVB DigiBank tr&ecirc;n c&aacute;c thiết bị c&oacute; kết
+                    nối Internet m&agrave; kh&ocirc;ng c&ograve;n phải nhớ nhiều User, nhiều mật khẩu.</span
+                  >
+                </p>
+                <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
+                  <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" />
+                  <span style="font-size:20px;line-height:107%;color:#17479B"
+                    >LVB DigiBank l&agrave; ng&acirc;n h&agrave;ng số trọn g&oacute;i cho C&aacute; nh&acirc;n, Doanh nghiệp v&agrave; tổ chức kh&aacute;c.
+                    Kh&aacute;ch h&agrave;ng sẽ kh&ocirc;ng cần c&agrave;i đặt nhiều ứng dụng.</span
+                  >
+                </p>
+                <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
+                  <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" />
+                  <span style="font-size:20px;line-height:107%;color:#17479B"
+                    >X&aacute;c thực th&ocirc;ng minh, nhanh ch&oacute;ng v&agrave; an to&agrave;n với SmartOTP; đăng nhập v&agrave; x&aacute;c thực bằng
+                    khu&ocirc;n mặt, dấu v&acirc;n tay gi&uacute;p cuộc sống trở n&ecirc;n dễ d&agrave;ng hơn bao giờ hết.</span
+                  >
+                </p>
+              </q-card-section>
+              <q-card-section v-if="$store.state.language.language === 'en'" style="margin-left: 30px;">
+                <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
+                  >Utilities of <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> - All In One
+                </span>
+
+                <p style="margin: 22px  0cm 8pt; line-height: 2; font-size: 15px; text-align: justify;">
+                  <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" />
+                  <span style="font-size:20px;line-height:107%;color:#17479B"
+                    >Varieties of banking services are available on LVB DigiBank at customers’ disposal. With LVB DigiBank, customers do not need to come to the
+                    bank’s counter for ordinary services such as bill payment, domestic and international transfers, financial management, money exchange, and
+                    deposit.</span
+                  >
+                </p>
+                <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
+                  <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" />
+                  <span style="font-size:20px;line-height:107%;color:#17479B"
+                    >With just only 01 user registered, customers can access LVB DigiBank on any Internet-connected devices without needing to memorize several
+                    users and passwords. LVB DigiBank has full package services for individuals, companies and organisations. Customers do not need to install
+                    multiple applications.</span
+                  >
+                </p>
+                <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
+                  <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" />
+                  <span style="font-size:20px;line-height:107%;color:#17479B"
+                    >Smart, quick and secure verification with SmartOTP; login and verification with face, fingerprint help smoothe life than ever.</span
+                  >
+                </p>
+              </q-card-section>
+            </div>
+            <div
+              class="col-5"
+              :style="
+                mobileMode
+                  ? 'padding:5px;border:0;margin-top:0px'
+                  : window.width <= 1366
+                  ? 'border:0;margin-top:0px;position: relative;'
+                  : `border:0;margin-top:6%;position: relative;`
+              "
+            >
+              <img
+                src="/assets/img/Mobile-with-app.png"
+                width="100%"
+                alt=""
+                style="position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);"
+              />
+            </div>
+          </div>
+          <!-- <q-card
             flat
             bordered
             class="my-card bg-transparent"
@@ -24,8 +141,8 @@
               mobileMode
                 ? 'padding:5px;border:0;margin-top:0px'
                 : window.width <= 1366
-                ? 'border:0;margin-top:5px;padding-right:453px'
-                : 'border:0;margin-top:6%; padding-right: calc(100% - 700px);'
+                ? 'border:0;margin-top:5px;padding-right:455px'
+                : 'border:0;margin-top:6%; padding-right: calc(100% - 700px);padding-left : 2%'
             "
           >
             <q-card-section v-if="$store.state.language.language === 'la'">
@@ -36,20 +153,20 @@
               <br />
               <div style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 20px; text-align: justify;color:#17479b">
                 <p style="margin: 0 0 0px;">
-                  ບັນດາບໍລິການທະນາຄານທີ່ຫຼາກຫຼາຍໄດ້ປະຕິບັດເທິງ <span class="text-primary text-bold"> LVB </span
+                 <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="">  ບັນດາບໍລິການທະນາຄານທີ່ຫຼາກຫຼາຍໄດ້ປະຕິບັດເທິງ <span class="text-primary text-bold"> LVB </span
                   ><span class="text-red text-bold"> DigiBank </span>, ດ້ວຍຕົວລູກຄ້າເອງ. ບໍລິການທີ່ໄດ້ຮັບການນິຍົມຊົມໃຊ້ເຊັ່ນ: ຊໍາລະໃບບິນ; ໂອນເງິນພາຍໃນປະເທດ ແລະ
                   ຕ່າງປະເທດ, ຄຸ້ມຄອງການເງິນ, ຊື້ຂາຍເງິນຕາ, ເງິນຝາກປະຫຍັດ...ນໍາໃຊ້ <span class="text-primary text-bold"> LVB </span
                   ><span class="text-red text-bold"> DigiBank </span>, ລູກຄ້າບໍ່ຈໍາເປັນຕ້ອງເຂົາມາທະນາຄານ.
                 </p>
                 <p style="margin: 0 0 0px;">
-                  ນໍາໃຊ້ພຽງແຕ່ 01 User, ພາຍຫລັງລົງທະບຽນຄັ້ງດຽວ, ລູກຄ້າເຂົ້າສູ່ລະບົບ LVB DigiBank ຜ່ານບັນດາອຸປະກອນທີ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ
+                 <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="">  ນໍາໃຊ້ພຽງແຕ່ 01 User, ພາຍຫລັງລົງທະບຽນຄັ້ງດຽວ, ລູກຄ້າເຂົ້າສູ່ລະບົບ LVB DigiBank ຜ່ານບັນດາອຸປະກອນທີ່ມີການເຊື່ອມຕໍ່ອິນເຕີເນັດ
                   ໂດຍທີ່ບໍ່ຕ້ອງຈື່ຫຼາຍ User, ຫຼາຍລະຫັດຜ່ານ.
                 </p>
                 <p style="margin: 0 0 0px;">
-                  LVB DigiBank ແມ່ນທະນາຄານດີຈີຕ້ອນແບບຄົບຊຸດສຳລັບລູກຄ້າບຸກຄົນ, ນິຕິບຸກຄົນ ແລະ ອົງການຈັດຕັ້ງອຶື່ນຯ. ລູກຄ້າຈະບໍ່ຈໍາເປັນຕ້ອງຕິດຕັ້ງຫລາຍ Application.
+                 <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="">  LVB DigiBank ແມ່ນທະນາຄານດີຈີຕ້ອນແບບຄົບຊຸດສຳລັບລູກຄ້າບຸກຄົນ, ນິຕິບຸກຄົນ ແລະ ອົງການຈັດຕັ້ງອຶື່ນຯ. ລູກຄ້າຈະບໍ່ຈໍາເປັນຕ້ອງຕິດຕັ້ງຫລາຍ Application.
                 </p>
                 <p style="margin: 0 0 0px;">
-                  ການຢັ້ງຢືນທີ່ແບບສະຫຼາດ, ວ່ອງໄວ ແລະ ປອດໄພດ້ວຍ SmartOTP; ເຂົ້າລະບົບ ແລະ ຢັ້ງຢືນດ້ວຍໃບໜ້າ, ລາຍນິ້ວມື ຊ່ວຍໃຫ້ຊີວິດງ່າຍຂື້ນກວ່າເກົ່າ.
+                 <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="">  ການຢັ້ງຢືນທີ່ແບບສະຫຼາດ, ວ່ອງໄວ ແລະ ປອດໄພດ້ວຍ SmartOTP; ເຂົ້າລະບົບ ແລະ ຢັ້ງຢືນດ້ວຍໃບໜ້າ, ລາຍນິ້ວມື ຊ່ວຍໃຫ້ຊີວິດງ່າຍຂື້ນກວ່າເກົ່າ.
                 </p>
               </div>
             </q-card-section>
@@ -57,8 +174,9 @@
               <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
                 >Tiện ích của <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> - All In One
               </span>
+              
               <p style="margin: 22px  0cm 8pt; line-height: 2; font-size: 15px; text-align: justify;">
-                <span style="font-size:20px;line-height:107%;color:#17479B"
+                <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="">  <span style="font-size:20px;line-height:107%;color:#17479B"
                   >Tất cả c&aacute;c dịch vụ ng&acirc;n h&agrave;ng đa dạng được thực hiện bằng LVB DigiBank, bởi ch&iacute;nh Kh&aacute;ch h&agrave;ng.
                   C&aacute;c dịch vụ phổ biến như: Thanh to&aacute;n h&oacute;a đơn; chuyển tiền trong nước v&agrave; quốc tế, quản l&yacute; t&agrave;i
                   ch&iacute;nh, mua b&aacute;n ngoại tệ, gửi tiền tiết kiệm &hellip; Với LVB DigiBank, kh&aacute;ch h&agrave;ng kh&ocirc;ng cần phải đến
@@ -66,27 +184,27 @@
                 >
               </p>
               <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
-                <span style="font-size:20px;line-height:107%;color:#17479B"
+                <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt=""> <span style="font-size:20px;line-height:107%;color:#17479B"
                   >Chỉ sử dụng 01 User, sau 01 lần đăng k&yacute;, Kh&aacute;ch h&agrave;ng truy cập LVB DigiBank tr&ecirc;n c&aacute;c thiết bị c&oacute; kết
                   nối Internet m&agrave; kh&ocirc;ng c&ograve;n phải nhớ nhiều User, nhiều mật khẩu.</span
                 >
               </p>
               <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
-                <span style="font-size:20px;line-height:107%;color:#17479B"
+                <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt=""> <span style="font-size:20px;line-height:107%;color:#17479B"
                   >LVB DigiBank l&agrave; ng&acirc;n h&agrave;ng số trọn g&oacute;i cho C&aacute; nh&acirc;n, Doanh nghiệp v&agrave; tổ chức kh&aacute;c.
                   Kh&aacute;ch h&agrave;ng sẽ kh&ocirc;ng cần c&agrave;i đặt nhiều ứng dụng.</span
                 >
               </p>
               <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
-                <span style="font-size:20px;line-height:107%;color:#17479B"
+                <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt=""> <span style="font-size:20px;line-height:107%;color:#17479B"
                   >X&aacute;c thực th&ocirc;ng minh, nhanh ch&oacute;ng v&agrave; an to&agrave;n với SmartOTP; đăng nhập v&agrave; x&aacute;c thực bằng
                   khu&ocirc;n mặt, dấu v&acirc;n tay gi&uacute;p cuộc sống trở n&ecirc;n dễ d&agrave;ng hơn bao giờ hết.</span
                 >
               </p>
             </q-card-section>
-          </q-card>
+          </q-card> -->
         </q-carousel-control>
-      </template> -->
+      </template>
     </q-carousel>
     <!-- <div class="q-pa-sm q-mt-lg bg-grey-1">
       <div class="row q-col-gutter-xs" v-if="$q.screen.name == 'xs'">

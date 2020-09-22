@@ -369,7 +369,7 @@ a:hover {
   font-weight: bold;
 }
 .main {
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 </style>

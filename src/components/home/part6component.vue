@@ -20,19 +20,36 @@
               <span style="line-height: 3.5rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
                 44 ຖະໜົນລ້ານຊ້າງ, ເມືອງ ຈັນທະບູລີ, ນະຄອນຫຼວງວຽງຈັນ
                 <br />
-                <span class="telinfo">ໂທຣ/whatsApp: +856 20 52220222 </span> <span class="hotline">Hotline: 1440</span> <br />
+                <span style="margin-right: -5px;" class="telinfo"
+                  ><a style="color: #ffffff" href="tel:+856 20 52220222">ໂທຣ/whatsApp: +856 20 52220222</a></span
+                >
+                <span class="hotline">Hotline: 1440</span> <br />
                 Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
                 <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
               </span>
             </q-card-section>
-            <q-card-section style="line-height: 3;" v-else>
+            <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'vi'">
               <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">NGÂN HÀNG LIÊN DOANH LÀO VIỆT</span>&nbsp;
 
               <br />
               <span style="line-height: 3rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
                 44 Lanexang, Chanthabouly, Thủ đô Viêng Chăn
                 <br />
-                <span class="telinfo">Tel/whatsApp: +856 20 52220222</span> <span style="margin-left: -8px;" class="hotline">Hotline: 1440 </span> <br />
+                <span class="telinfo"><a style="color: #ffffff" href="tel:+856 20 52220222">Tel/whatsApp: +856 20 52220222</a></span>
+                <span style="margin-left: -8px;" class="hotline">Hotline: 1440 </span> <br />
+                Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
+                <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
+              </span>
+            </q-card-section>
+            <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'en'">
+              <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">Lao Viet Joint Venture Bank</span>&nbsp;
+
+              <br />
+              <span style="line-height: 3rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
+                44 Lanexang, Chanthabouly, Vientiane Capital, Lao PDR.
+                <br />
+                <span class="telinfo"><a style="color: #ffffff" href="tel:+856 20 52220222">Tel/whatsApp: +856 20 52220222</a></span>
+                <span style="margin-left: -8px;" class="hotline">Hotline: 1440 </span> <br />
                 Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
                 <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
               </span>
@@ -41,13 +58,13 @@
         </q-carousel-control>
       </template>
     </q-carousel>
-    <div v-if="mobileMode" class="footer">
+    <!-- <div v-if="mobileMode" class="footer">
       <img
         :src="mobileMode ? '/assets/img/footer-mb.png' : '/assets/img/footer.jpg'"
         :style="mobileMode ? 'height:33px;width:100%;margin-bottom: -6px' : 'height:50px;width:100%;margin-bottom: -6px'"
       />
-    </div>
-    <div v-else class="footer-web">
+    </div> -->
+    <div class="footer-web">
       <span>
         Copyright © 2020 LaoVietBank
         <img src="/assets/img/icon-www.svg" height="16px" />laovietbank.com.la <img src="/assets/img/icon-facebook.svg" height="16px" /> LaoVietBank

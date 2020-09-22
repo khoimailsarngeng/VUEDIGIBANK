@@ -89,7 +89,7 @@
           </q-card>
         </q-carousel-control>
         <q-carousel-control v-if="!mobileMode" :position="'top-right'" class="q-gutter-xs text-right">
-          <img src="/assets/img/Logo-LVBDigiBank.png" style="width:277px;height:60px" alt />
+          <img src="/assets/img/Logo-LVBDigiBank.png" style="width:277px" alt />
         </q-carousel-control>
       </template>
     </q-carousel>

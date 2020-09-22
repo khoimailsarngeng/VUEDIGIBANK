@@ -6,7 +6,7 @@
       v-model="slide"
       infinite
       autoplay
-      :height="mobileMode ? (window.width < 500 ? '1000px' : '420px') : window.width >= 1600 ? '750px' : '600px'"
+      :height="mobileMode ? (window.width < 500 ? '1000px' : '420px') : window.width >= 1600 ? '750px' : '650px'"
       :thumbnails="mobileMode ? false : false"
     >
       <q-carousel-slide

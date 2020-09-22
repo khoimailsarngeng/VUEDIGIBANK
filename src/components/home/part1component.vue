@@ -26,8 +26,13 @@
       :height="mobileMode ? (window.width < 500 ? '570px' : '400px') : window.width >= 1600 ? '750px' : '600px'"
       :thumbnails="mobileMode ? false : false"
     >
-      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-section1.jpg' : '/assets/img/bg-section1.jpg'" />
-
+      <q-carousel-slide
+        style="background-size: 100% 100%;"
+        :name="1"
+        :img-src="mobileMode ? '/assets/img/bg-section1-content.jpg' : '/assets/img/bg-section1-content.jpg'"
+      />
+      <!-- <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-section1.jpg' : '/assets/img/bg-section1.jpg'" /> -->
+      <!-- 
       <template v-slot:control>
         <q-carousel-control :position="mobileMode ? 'top' : 'left'">
           <img src="/assets/img/laptop-mobile.png" :style="window.width === 1366 ? 'height: 335px;margin-top: 100px;' : 'height: 335px;margin-top: 28%;'" />
@@ -43,7 +48,7 @@
                 : window.width === 1366
                 ? 'border:0;margin-top:60px;margin-left: 33pc;padding-right: 1%;'
                 : window.width < 1366
-                ? 'border:0;margin-top:50px;margin-left: 40pc;padding-right: 147px;'
+                ? 'border:0;margin-top:50px;margin-left: 40pc;padding-right: 1%;'
                 : window.width >= 1600
                 ? 'border:0;margin-top:100px;margin-left: calc(45% + 5px); padding-right: calc(5% - 0px);'
                 : 'border:0;margin-top:100px;margin-left: calc(40% - 0px); padding-right: calc(10% - 0px);'
@@ -89,9 +94,9 @@
           </q-card>
         </q-carousel-control>
         <q-carousel-control v-if="!mobileMode" :position="'top-right'" class="q-gutter-xs text-right">
-          <img src="/assets/img/Logo-LVBDigiBank.png" style="width:277px" alt />
+          <img src="/assets/img/Logo-LVBDigiBank.svg" style="width:50%" alt />
         </q-carousel-control>
-      </template>
+      </template> -->
     </q-carousel>
   </div>
 </template>

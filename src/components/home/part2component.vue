@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="spacepartonhome">
     <q-carousel
       swipeable
       animated
@@ -12,9 +12,9 @@
       <q-carousel-slide
         style="background-size: 100% 100%;"
         :name="1"
-        :img-src="mobileMode ? '/assets/img/bg-mobile-app.jpg' : '/assets/img/bg-mobile-app.jpg'"
+        :img-src="mobileMode ? '/assets/img/bg-mobile-app-content.jpg' : '/assets/img/bg-mobile-app-content.jpg'"
       />
-      <template v-slot:control>
+      <!-- <template v-slot:control>
         <q-carousel-control :position="mobileMode ? 'left' : 'left'" class="q-gutter-xs text-left text-black">
           <q-card
             flat
@@ -86,7 +86,7 @@
             </q-card-section>
           </q-card>
         </q-carousel-control>
-      </template>
+      </template> -->
     </q-carousel>
     <!-- <div class="q-pa-sm q-mt-lg bg-grey-1">
       <div class="row q-col-gutter-xs" v-if="$q.screen.name == 'xs'">

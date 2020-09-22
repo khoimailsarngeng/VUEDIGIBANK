@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-footer">
+  <div class="contact-footer spacepartonhome">
     <q-carousel
       swipeable
       animated

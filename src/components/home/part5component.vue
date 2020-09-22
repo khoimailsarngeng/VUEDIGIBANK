@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="spacepartonhome">
     <q-carousel
       swipeable
       animated

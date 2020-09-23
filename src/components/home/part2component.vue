@@ -156,7 +156,7 @@
               : lang == 'vi'
               ? '800px'
               : lang == 'la'
-              ? '750px'
+              ? '780px'
               : '790px'
             : `${(window.width * 684) / 1920}px`
         "

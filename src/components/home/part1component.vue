@@ -111,7 +111,7 @@
               </div>
             </div>
           </q-carousel-control>
-          <q-carousel-control v-if="!mobileMode" :position="'top-right'" class="q-gutter-xs text-right" style="margin-top: 30px;margin-right:40px">
+          <q-carousel-control :position="'top-right'" class="q-gutter-xs text-right" style="margin-top: 30px;margin-right:40px">
             <img src="/assets/img/Logo-LVBDigiBank.svg" style="width:250px" alt />
           </q-carousel-control>
         </template>

@@ -168,7 +168,7 @@
               : lang == 'vi'
               ? '550px'
               : lang == 'la'
-              ? '650px'
+              ? '550px'
               : '550px'
             : `${(window.width * 684) / 1920}px`
         "
@@ -188,7 +188,7 @@
                     >ຄ່າທຳນຽມບໍລິການ <br /><span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span></span
                   >
                   <br />
-                  <div style="margin: 22px 0cm 8pt; line-height: 2; font-size: 20px; text-align: justify;color:#17479b">
+                  <div style="margin: 22px 0cm 8pt; line-height: 2; font-size: 18px; text-align: justify;color:#17479b">
                     <p style="margin: 0 0 0px;">
                       <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> ຜູ້ຊົມໃຊ້ LVB DigiBank (ລວມມີ ບຸກຄົນ ແລະ
                       ນິຕິບຸກຄົນ) ໄດ້ຮັບການຍົກເວັ້ນທຸກຄ່າທຳນຽມລົງທະບຽນ, ຄ່າທຳນຽມນໍາໃຊ້ປະຈໍາເດືອນ.

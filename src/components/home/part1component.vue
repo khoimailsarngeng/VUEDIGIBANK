@@ -128,8 +128,8 @@
           mobileMode
             ? window.width < 600
               ? $store.state.language.language === 'la' || $store.state.language.language === 'en'
-                ? '600px'
-                : '650px'
+                ? '650px'
+                : '750px'
               : '700px'
             : `${(window.width * 684) / 1920}px`
         "
@@ -143,7 +143,10 @@
         <template v-slot:control>
           <q-carousel-control :position="mobileMode ? 'top' : 'top'">
             <div class="column">
-              <div class="col col-md-12">
+              <div class="col col-md-12 text-center q-pa-lg">
+                <img src="/assets/img/Logo-LVBDigiBank.svg" width="220px" alt="" />
+              </div>
+              <div class="col col-md-12 q-pl-lg">
                 <img src="/assets/img/laptop-mobile.png" width="100%" alt="" />
               </div>
               <div class="col col-md-12">
@@ -169,7 +172,7 @@
                   <br />
                   <p
                     v-if="$store.state.language.language === 'la'"
-                    class="q-font-20 text-justify text-primary "
+                    class="q-font-18 text-justify text-primary "
                     style="line-height: 1.5; margin-top: 26px;color: #17479b !important;text-align: justify"
                   >
                     <span class="text-primary text-bold"> LVB</span

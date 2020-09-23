@@ -156,8 +156,8 @@
               : lang == 'vi'
               ? '800px'
               : lang == 'la'
-              ? '850px'
-              : '810px'
+              ? '750px'
+              : '790px'
             : `${(window.width * 684) / 1920}px`
         "
         :thumbnails="mobileMode ? false : false"
@@ -180,7 +180,7 @@
                   </span>
                   <br />
                   <br />
-                  <div style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 20px; text-align: justify;color:#17479b">
+                  <div style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 18px; text-align: justify;color:#17479b">
                     <p style="margin: 0 0 0px;">
                       <img style="margin-left: -25px;" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> ບັນດາບໍລິການທະນາຄານທີ່ຫຼາກຫຼາຍໄດ້ປະຕິບັດເທິງ
                       LVB DigiBank, ດ້ວຍຕົວລູກຄ້າເອງ. ບໍລິການທີ່ໄດ້ຮັບການນິຍົມຊົມໃຊ້ເຊັ່ນ: ຊໍາລະໃບບິນ; ໂອນເງິນພາຍໃນປະເທດ ແລະ ຕ່າງປະເທດ, ຄຸ້ມຄອງການເງິນ,

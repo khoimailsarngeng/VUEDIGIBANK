@@ -582,7 +582,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped>
 .q-carousel__control {
   bottom: 60px !important;
 }

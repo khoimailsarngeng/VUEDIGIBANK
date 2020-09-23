@@ -130,7 +130,7 @@
               ? $store.state.language.language === 'la' || $store.state.language.language === 'en'
                 ? '650px'
                 : '750px'
-              : '700px'
+              : '950px'
             : `${(window.width * 684) / 1920}px`
         "
         :thumbnails="mobileMode ? false : false"

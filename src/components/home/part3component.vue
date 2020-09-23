@@ -161,15 +161,15 @@
           mobileMode
             ? show
               ? lang == 'la'
-                ? '1150px'
+                ? '900px'
                 : lang == 'vi'
-                ? '1000px'
+                ? '900px'
                 : '950px'
               : lang == 'vi'
-              ? '550px'
+              ? '520px'
               : lang == 'la'
               ? '560px'
-              : '550px'
+              : '490px'
             : `${(window.width * 684) / 1920}px`
         "
         :thumbnails="mobileMode ? false : false"

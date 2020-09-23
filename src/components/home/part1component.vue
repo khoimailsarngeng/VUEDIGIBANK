@@ -112,7 +112,7 @@
             </div>
           </q-carousel-control>
           <q-carousel-control :position="'top-right'" class="q-gutter-xs text-right" style="margin-top: 30px;margin-right:40px">
-            <img src="/assets/img/Logo-LVBDigiBank.svg" style="width:250px" alt />
+            <img src="/assets/img/logo-LVBDigiBank.svg" style="width:250px" alt />
           </q-carousel-control>
         </template>
       </q-carousel>
@@ -144,7 +144,7 @@
           <q-carousel-control :position="mobileMode ? 'top' : 'top'">
             <div class="column">
               <div class="col col-md-12 text-center q-pa-lg">
-                <img src="/assets/img/Logo-LVBDigiBank.svg" width="220px" alt="" />
+                <img src="/assets/img/logo-LVBDigiBank.svg" width="220px" alt="" />
               </div>
               <div class="col col-md-12 q-pl-lg">
                 <img src="/assets/img/laptop-mobile.png" width="100%" alt="" />

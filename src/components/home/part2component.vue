@@ -154,10 +154,10 @@
                 ? '1300px'
                 : '1250px'
               : lang == 'vi'
-              ? '800px'
+              ? '820px'
               : lang == 'la'
               ? '780px'
-              : '790px'
+              : '820px'
             : `${(window.width * 684) / 1920}px`
         "
         :thumbnails="mobileMode ? false : false"

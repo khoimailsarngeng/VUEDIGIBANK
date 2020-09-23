@@ -45,7 +45,7 @@
           mobileMode ? 'col-xs-4 col-sm-4 col-md-4 col-lg-4 text-center q-pr-xs q-pt-lg' : 'col-xs-4 col-sm-4 col-md-4 col-lg-4 text-right q-pr-lg q-pt-lg'
         "
       >
-        <img src="/assets/img/Logo-LVBDigiBank.svg" :width="mobileMode ? '100px' : '220px'" :height="mobileMode ? '30px' : ''" alt />
+        <img src="/assets/img/logo-LVBDigiBank.svg" :width="mobileMode ? '100px' : '220px'" :height="mobileMode ? '30px' : ''" alt />
       </div>
     </div>
     <div :class="mobileMode ? 'q-pa-sm' : 'individual'">

@@ -1,44 +1,187 @@
 <template>
   <div style="margin-top:10px">
-    <q-carousel
-      swipeable
-      animated
-      v-model="slide"
-      infinite
-      autoplay
-      :height="
-        mobileMode ? (window.width < 500 ? '1000px' : '450px') : window.width >= 1600 ? '500px' : $store.state.language.language === 'la' ? '500px' : '500px'
-      "
-      :thumbnails="mobileMode ? false : false"
-    >
-      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-register.jpg' : '/assets/img/bg-register.jpg'" />
-      <template v-slot:control>
-        <q-carousel-control position="top" class="text-center q-pt-xl">
-          <div class="col-xs-12 text-h4 text-bold text-primary" v-if="!mobileMode && $store.state.language.language === 'vi'">
-            Đăng kí dịch vụ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
-          </div>
-          <div class="col-xs-12 text-h4 text-bold text-primary" v-if="!mobileMode && $store.state.language.language === 'la'">
-            ລົງທະບຽນ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
-          </div>
-          <div class="col-xs-12 text-h4 text-bold text-primary" v-if="!mobileMode && $store.state.language.language === 'en'">
-            Registration <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
-          </div>
-          <div class="slide-pro" v-if="!mobileMode">
-            <ul>
-              <li style="width:230px;margin:0 8% 30px 0%" :class="window.height > 635 ? 'li' : 'li'">
-                <a
-                  :href="
+    <div v-if="!mobileMode">
+      <q-carousel
+        swipeable
+        animated
+        v-model="slide"
+        infinite
+        autoplay
+        :height="
+          mobileMode ? (window.width < 500 ? '400px' : '550px') : window.width >= 1600 ? '500px' : $store.state.language.language === 'la' ? '500px' : '500px'
+        "
+        :thumbnails="mobileMode ? false : false"
+      >
+        <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/bg-register.jpg' : '/assets/img/bg-register.jpg'" />
+        <template v-slot:control>
+          <q-carousel-control position="top" class="text-center q-pt-xl">
+            <div v-if="!mobileMode">
+              <div class="col-xs-12 text-h4 text-bold text-primary" v-if="$store.state.language.language === 'vi'">
+                Đăng kí dịch vụ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+              </div>
+              <div class="col-xs-12 text-h4 text-bold text-primary" v-if="$store.state.language.language === 'la'">
+                ລົງທະບຽນ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+              </div>
+              <div class="col-xs-12 text-h4 text-bold text-primary" v-if="$store.state.language.language === 'en'">
+                Registration <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+              </div>
+            </div>
+
+            <div class="slide-pro" v-if="!mobileMode">
+              <ul>
+                <li style="width:230px;margin:0 8% 30px 0%" :class="window.height > 635 ? 'li' : 'li'">
+                  <a
+                    :href="
+                      $store.state.language.language === 'la'
+                        ? 'https://www.laovietbank.com.la/la/page/ສ-ານ-ກງານໃຫຍ-ສາຂາ-ສ-ນ-ໃຫ-ບ-ລ-ການ.html'
+                        : $store.state.language.language === 'vi'
+                        ? 'https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html'
+                        : 'https://www.laovietbank.com.la/en_US/page/head-office-branch-transaction.html'
+                    "
+                    target="_blank"
+                  >
+                    <span class="product-thumb">
+                      <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
+                    </span>
+                    <br />
+                    <span class="text-primary q-font-20">{{
+                      $store.state.language.language === 'la'
+                        ? 'ລູກຄ້າເຂົ້າມາ LaoVietBank'
+                        : $store.state.language.language === 'vi'
+                        ? 'Đến ngân hàng đăng ký'
+                        : 'Customers register '
+                    }}</span>
+                    <q-btn
+                      @click="
+                        $store.state.language.language === 'la'
+                          ? window.open('https://www.laovietbank.com.la/la/page/ສ-ານ-ກງານໃຫຍ-ສາຂາ-ສ-ນ-ໃຫ-ບ-ລ-ການ.html', '_blank')
+                          : $store.state.language.language === 'vi'
+                          ? window.open('https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html', '_blank')
+                          : window.open('https://www.laovietbank.com.la/en_US/page/head-office-branch-transaction.html', '_blank')
+                      "
+                      class="q-font-12"
+                      unelevated
+                      rounded
+                      color="primary"
+                      :label="
+                        $store.state.language.language === 'la'
+                          ? 'ເຄືອຂ່າຍຂໍ້ມູນຂ່າວສານ >'
+                          : $store.state.language.language === 'vi'
+                          ? 'Danh sách điểm giao dịch >'
+                          : 'Branchs network >'
+                      "
+                    />
+                  </a>
+                </li>
+                <li
+                  :style="
+                    window.width > 1366
+                      ? 'width:350px;margin:0 0% 30px 0%'
+                      : window.width <= 1366
+                      ? 'width:350px;margin:0 0% 30px -2%'
+                      : 'width:350px;margin:0 0% 30px 0%'
+                  "
+                  :class="window.height > 635 ? 'li' : 'li'"
+                >
+                  <a
+                    :href="
+                      $store.state.language.language === 'la'
+                        ? 'https://www.laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_Tieng%20Lao.pdf'
+                        : 'https://laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_TiengViet.pdf'
+                    "
+                    target="_blank"
+                  >
+                    <span class="product-thumb">
+                      <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
+                    </span>
+                    <br />
+                    <span class="text-primary q-font-20">{{
+                      $store.state.language.language === 'la'
+                        ? 'ຕິດຕັ້ງ App '
+                        : $store.state.language.language === 'vi'
+                        ? 'Cài đặt ứng dụng/Truy cập website'
+                        : 'Install application'
+                    }}</span
+                    ><br />
+                    <q-btn
+                      @click="
+                        $store.state.language.language === 'la'
+                          ? window.open('https://www.laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_Tieng%20Lao.pdf', '_blank')
+                          : window.open('https://laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_TiengViet.pdf', '_blank')
+                      "
+                      class="q-font-12"
+                      unelevated
+                      rounded
+                      color="primary"
+                      :label="
+                        $store.state.language.language === 'la'
+                          ? 'ຄູ່ມືເອກະສານ >'
+                          : $store.state.language.language === 'vi'
+                          ? 'Tài liệu hướng dẫn >'
+                          : 'Document guide >'
+                      "
+                    />
+                  </a>
+                </li>
+                <li :class="window.height > 635 ? 'li' : 'li'">
+                  <a>
+                    <span class="product-thumb">
+                      <img src="/assets/img/icon-web-login.svg" alt="Login: www.laovietbank.com.la" />
+                    </span>
+                    <br />
+                    <span class="text-primary q-font-20">{{
+                      $store.state.language.language === 'la'
+                        ? `Login ເຂົ້ານໍາໃຊ້ບໍລິການ`
+                        : $store.state.language.language === 'vi'
+                        ? 'Truy cập sử dụng dịch vụ'
+                        : 'Login to use services'
+                    }}</span>
+                    <q-btn
+                      class="q-font-12"
+                      unelevated
+                      rounded
+                      color="primary"
+                      :label="
+                        $store.state.language.language === 'la'
+                          ? 'ຄູ່ມືເຂົ້າສູ່ລະບົບ >'
+                          : $store.state.language.language === 'vi'
+                          ? 'Hướng dẫn Login >'
+                          : 'Guide login >'
+                      "
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="slide-pro-mobile" style="position: absolute;
+                top: 50%;
+                transform: translate(0, -20%);" v-if="mobileMode">
+            <div v-if="mobileMode">
+              <div class="col-xs-12 text-h6 text-bold text-primary" v-if="$store.state.language.language === 'vi'">
+              Đăng kí dịch vụ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+              </div>
+              <div class="col-xs-12 text-h6 text-bold text-primary" v-if="$store.state.language.language === 'la'">
+                ລົງທະບຽນ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+              </div>
+              <div class="col-xs-12 text-h6 text-bold text-primary" v-if="$store.state.language.language === 'en'">
+                Registration <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+              </div>
+            </div>
+            <q-carousel style="overflow: hidden;" arrows swipeable animated v-model="slide1" infinite transition-prev="scale" transition-next="scale">
+              <q-carousel-slide :name="1">
+                <q-card-section>
+                  <a :href="
                     $store.state.language.language === 'la'
                       ? 'https://www.laovietbank.com.la/la/page/ສ-ານ-ກງານໃຫຍ-ສາຂາ-ສ-ນ-ໃຫ-ບ-ລ-ການ.html'
                       : $store.state.language.language === 'vi'
                       ? 'https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html'
                       : 'https://www.laovietbank.com.la/en_US/page/head-office-branch-transaction.html'
                   "
-                  target="_blank"
-                >
-                  <span class="product-thumb">
-                    <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
-                  </span>
+                  target="_blank">
+                    <span class="product-thumb-mobile">
+                      <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
+                    </span>                    
+                  </a>   
                   <br />
                   <span class="text-primary q-font-20">{{
                     $store.state.language.language === 'la'
@@ -46,7 +189,7 @@
                       : $store.state.language.language === 'vi'
                       ? 'Đến ngân hàng đăng ký'
                       : 'Customers register '
-                  }}</span>
+                  }}</span><br>
                   <q-btn
                     @click="
                       $store.state.language.language === 'la'
@@ -66,31 +209,21 @@
                         ? 'Danh sách điểm giao dịch >'
                         : 'Branchs network >'
                     "
-                  />
-                </a>
-              </li>
-              <li
-                :style="
-                  window.width > 1366
-                    ? 'width:350px;margin:0 0% 30px 0%'
-                    : window.width <= 1366
-                    ? 'width:350px;margin:0 0% 30px -2%'
-                    : 'width:350px;margin:0 0% 30px 0%'
-                "
-                :class="window.height > 635 ? 'li' : 'li'"
-              >
-                <a
-                  :href="
+                  />         
+                </q-card-section>
+              </q-carousel-slide>
+              <q-carousel-slide :name="2">
+                <a :href="
                     $store.state.language.language === 'la'
                       ? 'https://www.laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_Tieng%20Lao.pdf'
                       : 'https://laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_TiengViet.pdf'
                   "
-                  target="_blank"
-                >
-                  <span class="product-thumb">
+                  target="_blank">
+                  <span class="product-thumb-mobile">
                     <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
-                  </span>
-                  <br />
+                  </span>                  
+                </a>
+                <br />
                   <span class="text-primary q-font-20">{{
                     $store.state.language.language === 'la'
                       ? 'ຕິດຕັ້ງ App '
@@ -117,21 +250,21 @@
                         : 'Document guide >'
                     "
                   />
-                </a>
-              </li>
-              <li :class="window.height > 635 ? 'li' : 'li'">
+              </q-carousel-slide>
+              <q-carousel-slide :name="3">
                 <a>
-                  <span class="product-thumb">
-                    <img src="/assets/img/icon-web-login.svg" alt="Login: www.laovietbank.com.la" />
-                  </span>
-                  <br />
+                  <span class="product-thumb-mobile">
+                    <img src="/assets/img/icon-web-login.svg" alt="Login/sử dụng" />
+                  </span>                  
+                </a>
+                <br>  
                   <span class="text-primary q-font-20">{{
                     $store.state.language.language === 'la'
                       ? `Login ເຂົ້ານໍາໃຊ້ບໍລິການ`
                       : $store.state.language.language === 'vi'
                       ? 'Truy cập sử dụng dịch vụ'
                       : 'Login to use services'
-                  }}</span>
+                  }}</span> <br>
                   <q-btn
                     class="q-font-12"
                     unelevated
@@ -144,135 +277,293 @@
                         ? 'Hướng dẫn Login >'
                         : 'Guide login >'
                     "
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="slide-pro-mobile" v-if="mobileMode">
-            <q-carousel swipeable animated v-model="slide" infinite transition-prev="scale" transition-next="scale" control-color="white" navigation>
-              <q-carousel-slide :name="1">
-                <q-card-section>
-                  <a href="https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html" target="_blank">
-                    <span class="product-thumb-mobile">
+                  />    
+              </q-carousel-slide>
+            </q-carousel>
+          </div> -->
+          </q-carousel-control>
+        </template>
+      </q-carousel>
+    </div>
+    <div v-if="mobileMode">
+      <q-carousel
+        swipeable
+        animated
+        v-model="slide"
+        infinite
+        autoplay
+        :height="mobileMode ? '1010px' : window.width >= 1600 ? '500px' : $store.state.language.language === 'la' ? '500px' : '500px'"
+        :thumbnails="mobileMode ? false : false"
+      >
+        <q-carousel-slide
+          style="background-size: 100% 100%;"
+          :name="1"
+          :img-src="mobileMode ? '/assets/img/mb-bg-section4.png' : '/assets/img/mb-bg-section4.png'"
+        />
+        <template v-slot:control>
+          <q-carousel-control position="top" class="text-center q-pt-lg">
+            <div>
+              <div class="col-xs-12 text-h5 text-bold text-primary" v-if="$store.state.language.language === 'vi'">
+                Đăng kí dịch vụ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+              </div>
+              <div class="col-xs-12 text-h5 text-bold text-primary" v-if="$store.state.language.language === 'la'">
+                ລົງທະບຽນ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+              </div>
+              <div class="col-xs-12 text-h5 text-bold text-primary" v-if="$store.state.language.language === 'en'">
+                Registration <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+              </div>
+            </div>
+            <div class="slide-pro" style="margin-top: 40px">
+              <ul style="padding-left: 0px">
+                <li class="q-pb-lg">
+                  <a
+                    :href="
+                      $store.state.language.language === 'la'
+                        ? 'https://www.laovietbank.com.la/la/page/ສ-ານ-ກງານໃຫຍ-ສາຂາ-ສ-ນ-ໃຫ-ບ-ລ-ການ.html'
+                        : $store.state.language.language === 'vi'
+                        ? 'https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html'
+                        : 'https://www.laovietbank.com.la/en_US/page/head-office-branch-transaction.html'
+                    "
+                    target="_blank"
+                  >
+                    <span class="product-thumb">
                       <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
                     </span>
+                    <br />
+                    <span class="text-primary q-font-20">{{
+                      $store.state.language.language === 'la'
+                        ? 'ລູກຄ້າເຂົ້າມາ LaoVietBank'
+                        : $store.state.language.language === 'vi'
+                        ? 'Đến ngân hàng đăng ký'
+                        : 'Customers register '
+                    }}</span
+                    ><br />
+                    <q-btn
+                      @click="
+                        $store.state.language.language === 'la'
+                          ? window.open('https://www.laovietbank.com.la/la/page/ສ-ານ-ກງານໃຫຍ-ສາຂາ-ສ-ນ-ໃຫ-ບ-ລ-ການ.html', '_blank')
+                          : $store.state.language.language === 'vi'
+                          ? window.open('https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html', '_blank')
+                          : window.open('https://www.laovietbank.com.la/en_US/page/head-office-branch-transaction.html', '_blank')
+                      "
+                      class="q-font-12"
+                      unelevated
+                      rounded
+                      color="primary"
+                      :label="
+                        $store.state.language.language === 'la'
+                          ? 'ເຄືອຂ່າຍຂໍ້ມູນຂ່າວສານ >'
+                          : $store.state.language.language === 'vi'
+                          ? 'Danh sách điểm giao dịch >'
+                          : 'Branchs network >'
+                      "
+                    />
                   </a>
-                  <h6 class="text-white">Đến ngần hàng đăng ký</h6>
+                </li>
+                <li class="q-pb-lg">
+                  <a
+                    :href="
+                      $store.state.language.language === 'la'
+                        ? 'https://www.laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_Tieng%20Lao.pdf'
+                        : 'https://laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_TiengViet.pdf'
+                    "
+                    target="_blank"
+                  >
+                    <span class="product-thumb">
+                      <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
+                    </span>
+                    <br />
+                    <span class="text-primary q-font-20">{{
+                      $store.state.language.language === 'la'
+                        ? 'ຕິດຕັ້ງ App '
+                        : $store.state.language.language === 'vi'
+                        ? 'Cài đặt ứng dụng/Truy cập website'
+                        : 'Install application'
+                    }}</span
+                    ><br />
+                    <q-btn
+                      @click="
+                        $store.state.language.language === 'la'
+                          ? window.open('https://www.laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_Tieng%20Lao.pdf', '_blank')
+                          : window.open('https://laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_TiengViet.pdf', '_blank')
+                      "
+                      class="q-font-12"
+                      unelevated
+                      rounded
+                      color="primary"
+                      :label="
+                        $store.state.language.language === 'la'
+                          ? 'ຄູ່ມືເອກະສານ >'
+                          : $store.state.language.language === 'vi'
+                          ? 'Tài liệu hướng dẫn >'
+                          : 'Document guide >'
+                      "
+                    />
+                  </a>
+                </li>
+                <li class="q-pb-lg">
+                  <a>
+                    <span class="product-thumb">
+                      <img src="/assets/img/icon-web-login.svg" alt="Login: www.laovietbank.com.la" />
+                    </span>
+                    <br />
+                    <span class="text-primary q-font-20">{{
+                      $store.state.language.language === 'la'
+                        ? `Login ເຂົ້ານໍາໃຊ້ບໍລິການ`
+                        : $store.state.language.language === 'vi'
+                        ? 'Truy cập sử dụng dịch vụ'
+                        : 'Login to use services'
+                    }}</span>
+                    <br />
+                    <q-btn
+                      class="q-font-12"
+                      unelevated
+                      rounded
+                      color="primary"
+                      :label="
+                        $store.state.language.language === 'la'
+                          ? 'ຄູ່ມືເຂົ້າສູ່ລະບົບ >'
+                          : $store.state.language.language === 'vi'
+                          ? 'Hướng dẫn Login >'
+                          : 'Guide login >'
+                      "
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="slide-pro-mobile" style="position: absolute;
+                top: 50%;
+                transform: translate(0, -20%);" v-if="mobileMode">
+            <div v-if="mobileMode">
+              <div class="col-xs-12 text-h6 text-bold text-primary" v-if="$store.state.language.language === 'vi'">
+              Đăng kí dịch vụ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+              </div>
+              <div class="col-xs-12 text-h6 text-bold text-primary" v-if="$store.state.language.language === 'la'">
+                ລົງທະບຽນ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+              </div>
+              <div class="col-xs-12 text-h6 text-bold text-primary" v-if="$store.state.language.language === 'en'">
+                Registration <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+              </div>
+            </div>
+            <q-carousel style="overflow: hidden;" arrows swipeable animated v-model="slide1" infinite transition-prev="scale" transition-next="scale">
+              <q-carousel-slide :name="1">
+                <q-card-section>
+                  <a :href="
+                    $store.state.language.language === 'la'
+                      ? 'https://www.laovietbank.com.la/la/page/ສ-ານ-ກງານໃຫຍ-ສາຂາ-ສ-ນ-ໃຫ-ບ-ລ-ການ.html'
+                      : $store.state.language.language === 'vi'
+                      ? 'https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html'
+                      : 'https://www.laovietbank.com.la/en_US/page/head-office-branch-transaction.html'
+                  "
+                  target="_blank">
+                    <span class="product-thumb-mobile">
+                      <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
+                    </span>                    
+                  </a>   
+                  <br />
+                  <span class="text-primary q-font-20">{{
+                    $store.state.language.language === 'la'
+                      ? 'ລູກຄ້າເຂົ້າມາ LaoVietBank'
+                      : $store.state.language.language === 'vi'
+                      ? 'Đến ngân hàng đăng ký'
+                      : 'Customers register '
+                  }}</span><br>
+                  <q-btn
+                    @click="
+                      $store.state.language.language === 'la'
+                        ? window.open('https://www.laovietbank.com.la/la/page/ສ-ານ-ກງານໃຫຍ-ສາຂາ-ສ-ນ-ໃຫ-ບ-ລ-ການ.html', '_blank')
+                        : $store.state.language.language === 'vi'
+                        ? window.open('https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html', '_blank')
+                        : window.open('https://www.laovietbank.com.la/en_US/page/head-office-branch-transaction.html', '_blank')
+                    "
+                    class="q-font-12"
+                    unelevated
+                    rounded
+                    color="primary"
+                    :label="
+                      $store.state.language.language === 'la'
+                        ? 'ເຄືອຂ່າຍຂໍ້ມູນຂ່າວສານ >'
+                        : $store.state.language.language === 'vi'
+                        ? 'Danh sách điểm giao dịch >'
+                        : 'Branchs network >'
+                    "
+                  />         
                 </q-card-section>
               </q-carousel-slide>
               <q-carousel-slide :name="2">
-                <a href="https://www.laovietbank.com.la/" target="_blank">
+                <a :href="
+                    $store.state.language.language === 'la'
+                      ? 'https://www.laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_Tieng%20Lao.pdf'
+                      : 'https://laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_TiengViet.pdf'
+                  "
+                  target="_blank">
                   <span class="product-thumb-mobile">
                     <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
-                  </span>
-                  <h6 class="text-white">
-                    Cài đặt hoặc truy cập
-                    <br />trực tiếp ứng dụng
-                  </h6>
+                  </span>                  
                 </a>
+                <br />
+                  <span class="text-primary q-font-20">{{
+                    $store.state.language.language === 'la'
+                      ? 'ຕິດຕັ້ງ App '
+                      : $store.state.language.language === 'vi'
+                      ? 'Cài đặt ứng dụng/Truy cập website'
+                      : 'Install application'
+                  }}</span
+                  ><br />
+                  <q-btn
+                    @click="
+                      $store.state.language.language === 'la'
+                        ? window.open('https://www.laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_Tieng%20Lao.pdf', '_blank')
+                        : window.open('https://laovietbank.com.la/files/img_SanPhamDichVu/Huong_Dan_Su_Dung_MB_Retail_FN_TiengViet.pdf', '_blank')
+                    "
+                    class="q-font-12"
+                    unelevated
+                    rounded
+                    color="primary"
+                    :label="
+                      $store.state.language.language === 'la'
+                        ? 'ຄູ່ມືເອກະສານ >'
+                        : $store.state.language.language === 'vi'
+                        ? 'Tài liệu hướng dẫn >'
+                        : 'Document guide >'
+                    "
+                  />
               </q-carousel-slide>
               <q-carousel-slide :name="3">
                 <a>
                   <span class="product-thumb-mobile">
                     <img src="/assets/img/icon-web-login.svg" alt="Login/sử dụng" />
-                  </span>
-                  <h6 class="text-primary">Truy cập sử dụng dịch vụ</h6>
+                  </span>                  
                 </a>
+                <br>  
+                  <span class="text-primary q-font-20">{{
+                    $store.state.language.language === 'la'
+                      ? `Login ເຂົ້ານໍາໃຊ້ບໍລິການ`
+                      : $store.state.language.language === 'vi'
+                      ? 'Truy cập sử dụng dịch vụ'
+                      : 'Login to use services'
+                  }}</span> <br>
+                  <q-btn
+                    class="q-font-12"
+                    unelevated
+                    rounded
+                    color="primary"
+                    :label="
+                      $store.state.language.language === 'la'
+                        ? 'ຄູ່ມືເຂົ້າສູ່ລະບົບ >'
+                        : $store.state.language.language === 'vi'
+                        ? 'Hướng dẫn Login >'
+                        : 'Guide login >'
+                    "
+                  />    
               </q-carousel-slide>
             </q-carousel>
-          </div>
-        </q-carousel-control>
-      </template>
-    </q-carousel>
-    <!-- <div class="col-xs-12 text-h4 text-bold text-primary" v-if="!mobileMode">Đăng kí dịch vụ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span></div>
-    <div class="slide-pro" v-if="!mobileMode">
-      <ul>
-        <li style="width:230px;margin:0 8% 30px 0%" :class="window.height > 635 ? 'li' : 'li'">
-          <a href="https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html" target="_blank">
-            <span class="product-thumb">
-              <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
-            </span>
-            <br />
-            <span class="text-primary q-font-20">{{
-              $store.state.language.language === 'la' ? 'ລູກຄ້າເຂົ້າມາ LaoVietBank' : 'Đến ngân hàng đăng ký'
-            }}</span>
-            <q-btn
-              @click="window.open('https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html', '_blank')"
-              class="q-font-12"
-              unelevated
-              rounded
-              color="primary"
-              label="Danh sách điểm giao dịch >"
-            />
-          </a>
-        </li>
-        <li :style="window.width > 1366 ? 'width:350px;margin:0 0% 30px 0%' : 'width:350px;margin:0 0% 30px 1%'" :class="window.height > 635 ? 'li' : 'li'">
-          <a href="https://www.laovietbank.com.la/" target="_blank">
-            <span class="product-thumb">
-              <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
-            </span>
-            <br />
-            <span class="text-primary q-font-20">{{
-              $store.state.language.language === 'la'
-                ? 'ຕິດຕັ້ງ App '
-                : 'Cài đặt ứng dụng'
-            }}</span><br>
-            <q-btn
-              @click="window.open('https://www.laovietbank.com.la/', '_blank')"
-              class="q-font-12"
-              unelevated
-              rounded
-              color="primary"
-              label="Tài liệu hướng dẫn >"
-            />
-          </a>
-        </li>
-        <li :class="window.height > 635 ? 'li' : 'li'">
-          <a>
-            <span class="product-thumb">
-              <img src="/assets/img/icon-web-login.svg" alt="Login: www.laovietbank.com.la" />
-            </span>
-            <br />
-            <span class="text-primary q-font-20">{{ $store.state.language.language === 'la' ? `Login ເຂົ້ານໍາໃຊ້ບໍລິການ` : 'Truy cập sử dụng dịch vụ' }}</span>
-            <q-btn class="q-font-12" unelevated rounded color="primary" label="Hướng dẫn Login >" />
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="slide-pro-mobile" v-if="mobileMode">
-      <q-carousel swipeable animated v-model="slide" infinite transition-prev="scale" transition-next="scale" control-color="white" navigation>
-        <q-carousel-slide :name="1">
-          <q-card-section>
-            <a href="https://www.laovietbank.com.la/vi/page/tru-so-chinh-chi-nhanh-pgd.html" target="_blank">
-              <span class="product-thumb-mobile">
-                <img src="/assets/img/icon-web-bank.svg" alt="Đến ngần hàng đăng ký" />
-              </span>
-            </a>
-            <h6 class="text-white">Đến ngần hàng đăng ký</h6>
-          </q-card-section>
-        </q-carousel-slide>
-        <q-carousel-slide :name="2">
-          <a href="https://www.laovietbank.com.la/" target="_blank">
-            <span class="product-thumb-mobile">
-              <img src="/assets/img/icon-web-download.svg" alt="Cài đặt ứng dụng" />
-            </span>
-            <h6 class="text-white">
-              Cài đặt hoặc truy cập
-              <br />trực tiếp ứng dụng
-            </h6>
-          </a>
-        </q-carousel-slide>
-        <q-carousel-slide :name="3">
-          <a>
-            <span class="product-thumb-mobile">
-              <img src="/assets/img/icon-web-login.svg" alt="Login/sử dụng" />
-            </span>
-            <h6 class="text-primary">Truy cập sử dụng dịch vụ</h6>
-          </a>
-        </q-carousel-slide>
+          </div> -->
+          </q-carousel-control>
+        </template>
       </q-carousel>
-    </div> -->
+    </div>
   </div>
 </template>
 <script>
@@ -280,7 +571,8 @@ import { mapState } from 'vuex';
 export default {
   data() {
     return {
-      slide: 1
+      slide: 1,
+      slide1: 1
     };
   },
 
@@ -290,12 +582,12 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style>
 .q-carousel__control {
   bottom: 60px !important;
 }
 .q-carousel {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .bg-part4-mobile {
   background-image: url('/assets/img/bg-register.jpg');
@@ -348,8 +640,6 @@ export default {
 }
 
 .product-thumb {
-  /* width: calc(100vh / 3.5);
-  height: calc(100vh / 3.5); */
   max-width: 180px;
   max-height: 180px;
   display: block;
@@ -366,8 +656,8 @@ export default {
 .product-thumb-mobile {
   /* width: calc(100vh / 3.5);
   height: calc(100vh / 3.5); */
-  max-width: 230px;
-  max-height: 230px;
+  max-width: 180px;
+  max-height: 180px;
   display: block;
   position: relative;
   margin: 0 auto;
@@ -492,5 +782,9 @@ export default {
 
 .text-primary {
   color: #17479b !important;
+}
+
+.scroll {
+  overflow: hidden !important;
 }
 </style>

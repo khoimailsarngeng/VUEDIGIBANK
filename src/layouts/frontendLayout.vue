@@ -64,10 +64,10 @@
             width="130px"
           />
           <q-toolbar-title
-            :class="window.width > 1366 ? 'q-font-16' : $store.state.language.language === 'la' ? 'q-font-20' : 'q-font-13'"
+            :class="window.width > 1366 ? 'q-font-20 text-bold' : $store.state.language.language === 'la' ? 'q-font-20 text-bold' : 'q-font-13 text-bold'"
             v-if="!mobileMode && window.width > 1024"
             @click="$router.push('/')"
-            :style="window.width === 1366 ? 'padding: 0;color:#17479b' : 'color:#17479b'"
+            :style="window.width === 1366 ? 'padding: 0;color:#17479b' : 'padding: 0;color:#17479b'"
           >
             {{ $t('LVB') }}
           </q-toolbar-title>
@@ -229,7 +229,7 @@
           </q-expansion-item>
         </q-list>
       </q-drawer>
-      <q-page-container class="main">
+      <q-page-container :class="mobileMode ? '' : 'main'">
         <!-- <div
           :style="mobileMode ? '' : vheight"
           :class="$q.screen.name === 'xs' || $q.screen.name === 'sm' ? 'page-home-container-mobile' : 'page-home-container'"

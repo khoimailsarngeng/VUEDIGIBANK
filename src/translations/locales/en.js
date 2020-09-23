@@ -42,9 +42,9 @@ export default {
   Service: 'Service',
   Contact: 'Contact',
   Individualcustomer: 'Individual Customer',
-  Corporatecustomer: 'Corporate Customer',
+  Corporatecustomer: 'Business Customer',
   InfoIndividualcustomer: 'Individual Customer infomation',
-  InfoCorporatecustomer: 'Corporate Customer infomation',
+  InfoCorporatecustomer: 'Business Customer infomation',
   LVB: 'LAO VIET JOINT VENTURE BANK',
   LVB1: 'BRIDGE OF SUCCESS',
   SelectLanguage: 'Select lanaguage'

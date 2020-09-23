@@ -29,7 +29,7 @@
           }}
         </span>
         <q-space />
-        <q-btn @click="$router.go(-1)" color="white" text-color="primary" :label="$t('Back')" icon="skip_previous" v-if="window.width > 500" />
+        <q-btn @click="$router.go(-1)" color="white" text-color="primary" :label="$t('Back')" icon="skip_previous" />
       </q-bar>
       <div :style="mobileMode ? 'padding: 0px 12px' : window.width <= 1366 ? 'padding:20px 24px' : 'padding:24px 24px'">
         <div class="row">

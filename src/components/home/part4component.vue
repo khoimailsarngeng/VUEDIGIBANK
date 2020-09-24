@@ -292,7 +292,17 @@
         v-model="slide"
         infinite
         autoplay
-        :height="mobileMode ? '1010px' : window.width >= 1600 ? '500px' : $store.state.language.language === 'la' ? '500px' : '500px'"
+        :height="
+          mobileMode
+            ? window.width <= 320
+              ? '1050px'
+              : '1010px'
+            : window.width >= 1600
+            ? '500px'
+            : $store.state.language.language === 'la'
+            ? '500px'
+            : '500px'
+        "
         :thumbnails="mobileMode ? false : false"
       >
         <q-carousel-slide
@@ -301,7 +311,7 @@
           :img-src="mobileMode ? '/assets/img/mb-bg-section4.png' : '/assets/img/mb-bg-section4.png'"
         />
         <template v-slot:control>
-          <q-carousel-control position="top" class="text-center q-pt-lg">
+          <q-carousel-control position="top" class="text-center q-pt-xl">
             <div>
               <div class="col-xs-12 text-h5 text-bold text-primary" v-if="$store.state.language.language === 'vi'">
                 Đăng kí dịch vụ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>

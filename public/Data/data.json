@@ -4,51 +4,51 @@
                 "type": "CA",
                 "name": "ເບິ່ງຂໍ້ມູນບັນຊີ (ບັນຊີກະແສລາຍວັນ, ຝາກປະຫຍັດ, ເງິນກູ້)",
                 "namevi": "Xem thông tin tài khoản (CA, Saving, Loan)",
-                "nameen": "Xem thông tin tài khoản (CA, Saving, Loan)",
+                "nameen": "Accounts (CA, Saving, Loan)",
                 "img": "/assets/img/layer2/Quản-lý-tài-chính-1.jpg",
                 "imgvi": "/assets/img/layer2/Quản-lý-tài-chính-1.jpg",
                 "imgen":"/assets/img/layer2/Quản-lý-tài-chính-1.jpg",
                 "desc": "ອະນຸຍາດລູກຄ້າຄົ້ນຫາບັນດາບັນຊີທີ່ມີປະຈຸບັນ. ລາຍການກຸ່ມບັນຊີລວມມີ: ບັນຊີກະແສລາຍວັນ, ບັນຊີຝາກປະຫຍັດມີກຳນົດ, ບັນຊີຝາກປະຫຍັດບໍ່ມີກຳນົດ , ບັນຊີເງິນກູ້ທີ່ເປີດຢູ່ LaoVietBank. ",
                 "descvi": "Cho phép khách hàng xem thông tin của các tài khoản tiền tiền gửi, tài khoản thanh toán, tài khoản tiền vay đã mở tại LaoVietBank.",
-                "descen": "Cho phép khách hàng xem thông tin của các tài khoản tiền tiền gửi, tài khoản thanh toán, tài khoản tiền vay đã mở tại LaoVietBank."
-        },
+                "descen": "Allows customers to navigate their accounts which include current account, term deposit account, savings account, loan account; and also allows customers to manage cash flows on the accounts. "
+        },        
         {
                 "header": "Lịch sử giao dịch",
                 "type": "LCGD",
                 "name": "ເບິ່ງການເຄື່ອນໄຫວບັນຊີ",
                 "namevi": "Lịch sử giao dịch",
-                "nameen": "Lịch sử giao dịch",
+                "nameen": "Transaction history",
                 "img": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
                 "imgvi": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
                 "imgen": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
                 "desc": "ອະນຸຍາດໃຫ້ລູກຄ້າເບິ່ງການເຄື່ອນໄຫວບັນຊີທັງໝົດຂອງລູກຄ້າ ເຊັ່ນ:: ລາຍການໂອນເງິນ, ຊໍາລະໃບບິນ, QR Pay..., ລູກຄ້າສາມາດຄົ້ນຫາການເຄື່ອນໄຫວບັນຊີໃນໄລຍະເວລາ 12 ເດືອນ.",
                 "descvi": "Cho phép khách hàng xem lại lịch sử giao dịch của các tài khoản tiền tiền gửi, tài khoản thanh toán, tài khoản tiền vay đã mở tại LaoVietBank.",
-                "descen": ""
-        },
+                "descen": "Allows customers to see history of their all transactions such as money transfer, bill payment, QR Pay. Customers are allowed to navigate for transactions within 12-months old."
+        },       
         {
                 "header": "Danh sách tài khoản thụ hưởng",
                 "type": "DSTKTH",
-                "name": "ລາຍຊື່ບັນຊີຜູ້ຮັບ",
-                "namevi": "Danh sách tài khoản thụ hưởng",
-                "nameen": "Danh sách tài khoản thụ hưởng",
+                "name" : "ລາຍຊື່ບັນຊີຜູ້ຮັບ" , 
+                "namevi" : "Danh sách tài khoản thụ hưởng" , 
+                "nameen" : "Beneficiary accounts" , 
                 "img": "/assets/img/layer2/Quản-lý-tài-chính-3.jpg",
                 "imgvi": "/assets/img/layer2/Quản-lý-tài-chính-3.jpg",
                 "imgen": "/assets/img/layer2/Quản-lý-tài-chính-3.jpg",
                 "desc": "ອະນຸຍາດໃຫ້ລູກຄ້າຄຸ້ມຄອງລາຍຊື່ບັນດາບັນຊີຜູ້ຮັບເງິນເພື່ອສະດວກໃນການປະຕິບັດທຸລະກຳໂອນເງິນເຊິ່ງບໍ່ຈໍາເປັນຕ້ອງຈື່ບັນຊີຜູ້ຮັບເງິນ.",
                 "descvi": "Cho phép khách hàng quản lý được các danh mục tài khoản người nhận tiền mà được khách hàng lưu trên LVB DigiBank để giúp cho khách hàng thuận tiện khi thực hiện giao dịch chuyển tiền được nhanh chón, an toàn mà không cần in lại tài khoản.",
-                "descen": ""
+                "descen": "Allows customers to manage accounts of beneficiaries to ensure convenience in making new transactions without memorizing or the need to input beneficiary’s account again."
         },
         {
                 "header": "Chuyển tiền trong hệ thống",
                 "type": "Transfer",
                 "name": "ໂອນເງິນພາຍໃນລະບົບ",
                 "namevi": "Chuyển tiền trong hệ thống LVB",
-                "nameen": "Chuyển tiền trong hệ thống LVB",
+                "nameen": "Internal transfer",
                 "img": "/assets/img/how-long-does-it-take-to-transfer-money-1200.jpeg",
                 "imgvi": "/assets/img/ND_ThanhToanNuoc_TV.jpg",
                 "imgen": "/assets/img/ChuyenTien1_TL.jpg",
                 "desc": "<p><strong><em>ໂອນເງິນພາຍໃນລະບົບຜ່ານ</em> <em>LVB DigiBank</em></strong> ອະນຸຍາດໃຫ້ລູກຄ້າໂອນເງິນຈາກບັນຊີ LaoVietBank ຫາບັນຊີອື່ນທີ່ເປີດຢູ່ LaoVietBank ໄດ້ຢ່າງວ່ອງໄວ, ໂອນໄດ້ທຸກທີ, ທຸກເວລາ.</p> <p> <span style=\"font-size: 50px\"></span> <strong>ສະກຸນເງິນນໍາໃຊ້: </strong>ກີບ, ໂດລາ, ບາດ, ດົງ</p> <p>· <strong>ຜົນປະໂຫຍດຂອງລູກຄ້າໃນເວລານໍາໃຊ້ບໍລິການ:</strong></p> <p>- ຂັ້ນຕອນການໂອນງ່າຍດາຍ</p> <p>- ປະຫຍັດເວລາ</p> <p>- ໂອນເງິນວ່ອງໄວຜ່ານຊ່ອງທາງ LVB DigiBank</p> <p>- ມີຄວາມປອດໄພໃນເວລາປະຕິບັດທຸລະກຳ</p> <p>- ບໍ່ເສຍຄ່າທຳນຽມໂອນເງິນ</p> <p>- ປະຕິບັດໄດ້ຕະຫຼອດ 24/7</p>",
-                "descen": "<p><strong><em>Chuyển tiền </em></strong><strong><em>trong hệ</em></strong><strong><em> thống</em></strong> <strong><em>qua LVB DigiBank</em></strong> cho ph&eacute;p kh&aacute;ch h&agrave;ng thực hiện chuyển tiền từ t&agrave;i khoản LaoVietBank sang t&agrave;i khoản kh&aacute;c mở tại LaoVietBank nhanh ch&oacute;ng, thực hiện mọi l&uacute;c, mọi nơi.</p> <ul style='margin-top: -10px;'> <li><strong>Loại đồng tiền:</strong> LAK, USD, THB, VNĐ</li> <li><strong>Tiện</strong><strong> &iacute;ch của kh&aacute;ch h&agrave;ng khi sử dụng dịch vụ:</strong></li> </ul> <ul class='dashed' style='margin-top: -15px;'> <li>C&aacute;c bước thực hiện đơn giản</li> <li>Tiết kiệm thời gian</li> <li>Chuyển tiền nhanh ch&oacute;ng qua k&ecirc;nh LVB DigiBank</li> <li>An to&agrave;n khi thực hiện giao dịch.</li> <li>Kh&ocirc;ng thu ph&iacute; giao dịch</li> <li>Thực hiện giao dịch 24/7</li> </ul>",
+                "descen": "<p>Allows customers to transfer money from their accounts to any account in LVB system instantly at any time and any where.</p> <ul style='margin-top: -10px;'> <li><strong>Currencies</strong><strong>:</strong> LAK, USD, THB, VNĐ</li> <li><strong>Utilities</strong><strong>:</strong></li> </ul> <ul class='dashed' style='margin-top: -15px;'> <li>Simple transaction process</li> <li>Time-economical</li> <li>Instant transfer via LVB DigiBank</li> <li>Secure</li> <li>Free of charge</li> <li>Transfer 24/7</li> </ul>",
                 "descvi": "<p><strong><em>Chuyển tiền </em></strong><strong><em>trong hệ</em></strong><strong><em> thống</em></strong> <strong><em>qua LVB DigiBank</em></strong> cho ph&eacute;p kh&aacute;ch h&agrave;ng thực hiện chuyển tiền từ t&agrave;i khoản LaoVietBank sang t&agrave;i khoản kh&aacute;c mở tại LaoVietBank nhanh ch&oacute;ng, thực hiện mọi l&uacute;c, mọi nơi.</p> <ul style='margin-top: -10px;'> <li><strong>Loại đồng tiền:</strong> LAK, USD, THB, VNĐ</li> <li><strong>Tiện</strong><strong> &iacute;ch của kh&aacute;ch h&agrave;ng khi sử dụng dịch vụ:</strong></li> </ul> <ul class='dashed' style='margin-top: -15px;'> <li>C&aacute;c bước thực hiện đơn giản</li> <li>Tiết kiệm thời gian</li> <li>Chuyển tiền nhanh ch&oacute;ng qua k&ecirc;nh LVB DigiBank</li> <li>An to&agrave;n khi thực hiện giao dịch.</li> <li>Kh&ocirc;ng thu ph&iacute; giao dịch</li> <li>Thực hiện giao dịch 24/7</li> </ul>"
         },
         {
@@ -56,12 +56,12 @@
                 "type": "Transfer1",
                 "name": "ໂອນເງິນໄປທະນາຄານອື່ນ",
                 "namevi": "Chuyển tiền ngoài hệ thống",
-                "nameen": "Chuyển tiền ngoài hệ thống",
+                "nameen": "Interbank transfer",
                 "img": "/assets/img/how-long-does-it-take-to-transfer-money-1200.jpeg",
                 "imgvi": "/assets/img/ND_ThanhToanNuoc_TV.jpg",
                 "imgen": "/assets/img/ChuyenTien1_TL.jpg",
                 "desc": "<p><strong><em>ໂອນເງິນໄປທະນາຄານອື່ນຜ່ານ</em> <em>LVB DigiBank</em></strong> ອະນຸຍາດໃຫ້ລູກຄ້າໂອນເງິນຈາກບັນຊີ LaoVietBank ຫາບັນຊີຢູ່ກັບທະນາຄານອື່ນຜ່ານ LVB Digibank.</p> <p>· <strong>ສະກຸນເງິນນໍາໃຊ້: </strong>ກີບ, ໂດລາ, ບາດ</p> <p>· <strong>ຜົນປະໂຫຍດຂອງລູກຄ້າໃນເວລານໍາໃຊ້ບໍລິການ:</strong></p> <p>- ຂັ້ນຕອນການໂອນງ່າຍດາຍ</p> <p>- ປະຫຍັດເວລາ</p> <p>- ໂອນເງິນວ່ອງໄວຜ່ານຊ່ອງທາງ LVB DigiBank</p> <p>- ມີຄວາມປອດໄພໃນເວລາປະຕິບັດທຸລະກຳ</p> <p>- ຄ່າທຳນຽມການໂອນທີ່ໜ້າສົນໃຈ (ບໍ່ມີການຈໍາແນກຕ່າງແຂວງ)</p>",
-                "descen": "<p><strong><em>Chuyển tiền ngo&agrave;i hệ thống</em></strong><strong><em> qua LVB DigiBank</em></strong> cho ph&eacute;p kh&aacute;ch h&agrave;ng thực hiện chuyển tiền từ t&agrave;i khoản LaoVietBank đến t&agrave;i khoản ng&acirc;n h&agrave;ng kh&aacute;c ngay tr&ecirc;n ứng dụng LVB Digibank.<strong>&nbsp;</strong></p> <ul style='margin-top: -10px'> <li><strong>Loại đồng tiền:</strong> LAK, USD, THB, VNĐ</li> <li><strong>Tiện</strong><strong> &iacute;ch của kh&aacute;ch h&agrave;ng khi sử dụng dịch vụ:</strong></li> </ul> <ul class='dashed' style='margin-top: -15px'> <li>C&aacute;c bước thực hiện đơn giản</li> <li>Tiết kiệm thời gian</li> <li>Chuyển tiền nhanh ch&oacute;ng qua k&ecirc;nh LVB DigiBank</li> <li>An to&agrave;n khi thực hiện giao dịch.</li> <li>Ph&iacute; dịch vụ hấp dẫn (kh&ocirc;ng ph&acirc;n biệt tỉnh)</li> </ul>",
+                "descen": "<p>Allows customers to transfer money from their account at LaoVietBank to any account at other banks via LVB DigiBank application.</p> <ul style='margin-top: -10px'> <li><strong>Currencies: </strong>LAK, USD, THB, VNĐ</li> <li><strong>Utilities</strong><strong>:</strong></li> </ul> <ul class='dashed' style='margin-top: -15px'> <li>Simple transaction process</li> <li>Time-economical</li> <li>Instant transfer via LVB DigiBank</li> <li>Secure</li> <li>Low service fee (no difference between provinces)</li> </ul>",
                 "descvi": "<p><strong><em>Chuyển tiền ngo&agrave;i hệ thống</em></strong><strong><em> qua LVB DigiBank</em></strong> cho ph&eacute;p kh&aacute;ch h&agrave;ng thực hiện chuyển tiền từ t&agrave;i khoản LaoVietBank đến t&agrave;i khoản ng&acirc;n h&agrave;ng kh&aacute;c ngay tr&ecirc;n ứng dụng LVB Digibank.<strong>&nbsp;</strong></p> <ul style='margin-top: -10px'> <li><strong>Loại đồng tiền:</strong> LAK, USD, THB, VNĐ</li> <li><strong>Tiện</strong><strong> &iacute;ch của kh&aacute;ch h&agrave;ng khi sử dụng dịch vụ:</strong></li> </ul> <ul class='dashed' style='margin-top: -15px'> <li>C&aacute;c bước thực hiện đơn giản</li> <li>Tiết kiệm thời gian</li> <li>Chuyển tiền nhanh ch&oacute;ng qua k&ecirc;nh LVB DigiBank</li> <li>An to&agrave;n khi thực hiện giao dịch.</li> <li>Ph&iacute; dịch vụ hấp dẫn (kh&ocirc;ng ph&acirc;n biệt tỉnh)</li> </ul>"
         },
         {
@@ -74,7 +74,7 @@
                 "imgvi": "/assets/img/ND_ThanhToanNuoc_TV.jpg",
                 "imgen": "/assets/img/ChuyenTien1_TL.jpg",
                 "desc": "<p><strong><em>ໂອນເງິນຕ່າງປະເທດຜ່ານ</em> <em>LVB DigiBank</em></strong> ອະນຸຍາດໃຫ້ລູກຄ້າໂອນເງິນໄປຕ່າງປະເທດໄດ້ຢ່າງວ່ອງໄວ, ປອດໄພຜ່ານລະບົບທະນາຄານ. </p> <p>· <strong>ສະກຸນເງິນນໍາໃຊ້: </strong>ໂດລາ, ດົງ, ບາດ ແລະ ເອີໂຣ</p> <p>· <strong>ຜົນປະໂຫຍດຂອງລູກຄ້າໃນເວລານໍາໃຊ້ບໍລິການ:</strong></p> <p>- ຂັ້ນຕອນການໂອນງ່າຍດາຍ</p> <p>- ປະຫຍັດເວລາລູກຄ້າບໍ່ຈໍາເປັນເຂົ້າມາທະນາຄານ</p> <p>- ໂອນເງິນວ່ອງໄວຜ່ານຊ່ອງທາງ LVB DigiBank</p> <p>- ມີຄວາມປອດໄພໃນເວລາປະຕິບັດທຸລະກຳ</p>",
-                "descen": "<p><strong><em>C</em></strong><strong><em>huyển tiền quốc tế</em></strong> <strong><em>qua LVB DigiBank</em></strong> cho ph&eacute;p kh&aacute;ch h&agrave;ng thực hiện chuyển tiền đi nước ngo&agrave;i một c&aacute;ch nhanh ch&oacute;ng, an to&agrave;n th&ocirc;ng qua hệ thống ng&acirc;n h&agrave;ng.</p> <ul style='margin-top:-10px'> <li><strong>Loại đồng tiền:</strong> USD, VND, THB v&agrave; EUR</li> <li><strong>Tiện</strong><strong> &iacute;ch của kh&aacute;ch h&agrave;ng khi sử dụng dịch vụ:</strong></li> </ul> <ul class='dashed' style='margin-top:-15px'> <li>C&aacute;c bước thực hiện đơn giản</li> <li>Tiết kiệm thời gian</li> <li>Chuyển tiền nhanh ch&oacute;ng qua k&ecirc;nh LVB DigiBank</li> <li>An to&agrave;n khi thực hiện giao dịch.</li> </ul>",
+                "descen": "<p>Allows customers to transfer money to overseas quickly and securely.</p> <ul style='margin-top: -10px'> <li><strong>Currencies</strong><strong>:</strong> USD, VND, THB v&agrave; EUR</li> <li><strong>Utilities</strong><strong>:</strong></li> </ul> <ul class='dashed' style='margin-top: -15px'> <li>Simple transaction process</li> <li>Time-economical as customers do not need to come to bank&rsquo;s counter</li> <li>Instant transfer via LVB DigiBank</li> <li>Secure</li> </ul>",
                 "descvi": "<p><strong><em>C</em></strong><strong><em>huyển tiền quốc tế</em></strong> <strong><em>qua LVB DigiBank</em></strong> cho ph&eacute;p kh&aacute;ch h&agrave;ng thực hiện chuyển tiền đi nước ngo&agrave;i một c&aacute;ch nhanh ch&oacute;ng, an to&agrave;n th&ocirc;ng qua hệ thống ng&acirc;n h&agrave;ng.</p> <ul style='margin-top:-10px'> <li><strong>Loại đồng tiền:</strong> USD, VND, THB v&agrave; EUR</li> <li><strong>Tiện</strong><strong> &iacute;ch của kh&aacute;ch h&agrave;ng khi sử dụng dịch vụ:</strong></li> </ul> <ul class='dashed' style='margin-top:-15px'> <li>C&aacute;c bước thực hiện đơn giản</li> <li>Tiết kiệm thời gian</li> <li>Chuyển tiền nhanh ch&oacute;ng qua k&ecirc;nh LVB DigiBank</li> <li>An to&agrave;n khi thực hiện giao dịch.</li> </ul>"
         },
         {
@@ -469,5 +469,86 @@
                 "desc": "<p><strong><em>ຊໍາລະໃບບິນຜ່ານ</em> <em>LVB DigiBank</em></strong> ຊ່ວຍໃຫ້ລູກຄ້າສາມາດຊໍາລະບັນດາປະເພດໃບບິນເຊັ່ນ ໃບບິນຄ່າໄຟ, ຄ່ານໍ້າ, ໂທລະຄົມມະນາຄົມ ພ້ອມກັບປະເພດໃບບິນອື່ນຯ, ພ້ອມກັນນັ້ນຍັງຊ່ວຍລູກຄ້າໃນການຕິດຕາມບັນດາຄໍາສັ່ງການຊໍາລະທີ່ໄດ້ປະຕິບັດຜ່ານມາ.</p> <p>· <strong>ຜົນປະໂຫຍດຂອງລູກຄ້າໃນເວລານໍາໃຊ້ບໍລິການ:</strong></p> <p>- ຂັ້ນຕອນງ່າຍດາຍ ແລະ ສະດວກ</p> <p>- ລູກຄ້າໄດ້ຮັບສ່ວນຫຼຸດເຖິງ 0,5%/ມູນຄ່າຊໍາລະໃບບິນໂທລະຄົມມະນາຄົມ</p> <p>- ສາມາດຊໍາລະໃບບິນຂອງຄອບຄົວ, ພີ່ນ້ອງ ແລະ ໝູ່ເພື່ອນ.</p> <p>- ຊໍາລະວ່ອງໄວ, ປອດໄພ, ສະດວກສະບາຍ</p> <p>- ບໍ່ເສຍຄ່າທຳນຽມ</p> <p>- ປະຕິບັດທຸລະກຳໄດ້ຕະຫຼອດ 24/7</p>",
                 "descen": "",
                 "descvi": "<p style=\"margin: 0in 0in 0.0001pt 0.5in; line-height: 2; text-align: justify;\"><strong><em><span style='line-height: 230%;;'>Thanh to&aacute;n h&oacute;a \u0111\u01A1n qua LVB DigiBank<\/span><\/em><\/strong><em><span style='line-height: 230%;;'>&nbsp;<\/span><\/em><span style='line-height: 230%;;'>gi&uacute;p kh&aacute;ch h&agrave;ng ch\u1EE7 \u0111\u1ED9ng thanh to&aacute;n c&aacute;c lo\u1EA1i h&oacute;a \u0111\u01A1n nh\u01B0 h&oacute;a \u0111\u01A1n \u0111i\u1EC7n, h&oacute;a \u0111\u01A1n n\u01B0\u1EDBc c&ugrave;ng nhi\u1EC1u lo\u1EA1i h&oacute;a \u0111\u01A1n kh&aacute;c, \u0111\u1ED3ng th\u1EDDi h\u1ED7 tr\u1EE3 kh&aacute;ch h&agrave;ng&nbsp;<\/span><span style='line-height: 230%;;'>theo d&otilde;i c&aacute;c l\u1EC7nh thanh to&aacute;n \u0111&atilde; th\u1EF1c hi\u1EC7n.<\/span><\/p>\r\n<ul style=\"list-style-type: disc;margin-left:0.25in;margin-top: 0px;\">\r\n    <li style=\"line-height: 2;\"><strong><span style='line-height: 230%;;'>Ti\u1EC7n<\/span><\/strong><strong><span style='line-height: 230%;;'>&nbsp;&iacute;ch c\u1EE7a kh&aacute;ch h&agrave;ng khi s\u1EED d\u1EE5ng d\u1ECBch v\u1EE5:<\/span><\/strong><\/li>\r\n<\/ul>\r\n<ul style=\"list-style-type: undefined;margin-left:0.25in;margin-top: -20px;\">\r\n    <li style=\"line-height: 2;\"><span style='line-height: 230%;;'>Th\u1EF1c hi\u1EC7n \u0111\u01A1n gi\u1EA3n v&agrave; thu\u1EADn ti\u1EC7n<\/span><\/li>\r\n    <li style=\"line-height: 2;\"><span style='line-height: 230%;;'>Kh&aacute;ch h&agrave;ng \u0111\u01B0\u1EE3c chi\u1EBFt kh\u1EA5u 0,5%\/s\u1ED1 ti\u1EC1n thanh to&aacute;n \u0111\u1ED1i v\u1EDBi h&oacute;a \u0111\u01A1n vi\u1EC5n th&ocirc;ng<\/span><\/li>\r\n    <li style=\"line-height: 2;\"><span style='line-height: 230%;;'>C&oacute; th\u1EC3 thanh to&aacute;n cho h&oacute;a \u0111\u01A1n c\u1EE7a gia \u0111&igrave;nh ho\u1EB7c cho ng\u01B0\u1EDDi th&acirc;n.<\/span><\/li>\r\n    <li style=\"line-height: 2;\"><span style='line-height: 230%;;'>Nhanh ch&oacute;ng, an to&agrave;n, ti\u1EC7n l\u1EE3i.<\/span><\/li>\r\n    <li style=\"line-height: 2;\"><span style='line-height: 230%;;'>Kh&ocirc;ng m\u1EA5t ph&iacute; d\u1ECBch v\u1EE5.<\/span><\/li>\r\n<li style=\"line-height: 2;\"><span style='line-height: 230%;;'>Th\u1EF1c hi\u1EC7n giao d\u1ECBch 24\/7<\/span><\/li>\r\n<\/ul>\r\n<p style=\"line-height: 2;\"><\/p>"
+        },
+
+
+
+        {
+                "header": "Xem thông tin tài khoản (CA, Saving, Loan)",
+                "type": "Financial",
+                "name": "ເບິ່ງຂໍ້ມູນບັນຊີ (ບັນຊີກະແສລາຍວັນ, ຝາກປະຫຍັດ, ເງິນກູ້)",
+                "namevi": "Xem thông tin tài khoản (CA, Saving, Loan)",
+                "nameen": "Accounts (CA, Saving, Loan)",
+                "img": "/assets/img/layer2/Quản-lý-tài-chính-1.jpg",
+                "imgvi": "/assets/img/layer2/Quản-lý-tài-chính-1.jpg",
+                "imgen":"/assets/img/layer2/Quản-lý-tài-chính-1.jpg",
+                "desc": "ອະນຸຍາດລູກຄ້າຄົ້ນຫາບັນດາບັນຊີທີ່ມີປະຈຸບັນ. ລາຍການກຸ່ມບັນຊີລວມມີ: ບັນຊີກະແສລາຍວັນ, ບັນຊີຝາກປະຫຍັດມີກຳນົດ, ບັນຊີຝາກປະຫຍັດບໍ່ມີກຳນົດ , ບັນຊີເງິນກູ້ທີ່ເປີດຢູ່ LaoVietBank. ",
+                "descvi": "Cho phép khách hàng tra cứu danh sách tài khoản hiện có. Danh sách các nhóm tài khoản bao gồm: Tài khoản thanh toán, tài khoản tiết kiệm có kỳ hạn, tài khoản tiết kiệm không kỳ hạn, tài khoản vay tại LaoVietBank",
+                "descen": "Allows customers to check their accounts which include current account, term deposit account, savings account, loan account at LaoVietBank."
+        },
+        {
+                "header": "Quản lý lịch sử dòng tiền",
+                "type": "Financial1",
+                "name" : "ຄຸ້ມຄອງການເຄື່ອນໄຫວກະແສເງິນ" , 
+                "namevi" : "Quản lý lịch sử dòng tiền" , 
+                "nameen" : "Cash flow history" , 
+                "img": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "imgvi": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "imgen": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "desc": "ອະນຸຍາດໃຫ້ລູກຄ້າຄຸ້ມຄອງກະແສເງິນເຂົ້າ ແລະ ອອກ ຂອງກຸ່ມບັນຊີ: ບັນຊີກະແສລາຍວັນ, ຝາກປະຫຍັດ, ເງິນກູ້ ທີ່ເປີດຢູ່ LaoVietBank.",
+                "descvi": "Cho phép Khách hàng theo dõi dòng  tiền vào và ra trên các nhóm tài khoản Tài khoản thanh toán, tài khoản tiết kiệm có kỳ hạn, tài khoản tiết kiệm không kỳ hạn, tài khoản vay tại LaoVietBank",
+                "descen": "allows customers to follow cash flows on their accounts: current account, term deposit account, savings account, loan account at LaoVietBank"
+        },
+        {
+                "header": "Phân cấp thẩm quyền truy cập",
+                "type": "Financial2",
+                "name" : "ແບ່ງສິດການເຂົ້ານໍາໃຊ້" , 
+                "namevi" : "Phân cấp thẩm quyền truy cập" , 
+                "nameen" : "Access permission setting" , 
+                "img": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "imgvi": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "imgen": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "desc": "ອະນຸຍາດໃຫ້ລູກຄ້າແບ່ງສິດການເຂົ້ານໍາໃຊ້ແຕ່ລະທຸລະກຳຕາມພາລະບົດບາດຂອງຜູ້ນໍາໃຊ້.",
+                "descvi": "Cho phép Khách hàng phân cấp thẩm quyền chức năng giao dịch theo vai trò của người sử dụng",
+                "descen": "allows customers to set up permission for users corresponding to their roles."
+        },
+        {
+                "header": "ຄຸ້ມຄອງວົງເງິນທຸລະກຳ",
+                "type": "Financial3",
+                "name" : "ຄຸ້ມຄອງວົງເງິນທຸລະກຳ" , 
+                "namevi" : "Quản lý hạn mức giao dịch" , 
+                "nameen" : "Transaction limit management" , 
+                "img": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "imgvi": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "imgen": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "desc": "ອະນຸຍາດໃຫ້ລູກຄ້າສ້າງວົງເງິນທຸລະກຳໃນແຕ່ລະຄັ້ງ, ຕາມແຕ່ລະປະເພດທຸລະກຳ, ພາຍໃນມື້. ພ້ອມກັນນັ້ນສ້າງວົງເງິນໃຫ້ແຕ່ລະຜູ້ນໍາໃຊ້, ຕາມແຕ່ລະປະເພດທຸລະກຳ,ພາຍໃນມື້. ",
+                "descvi": "Cho phép Khách hàng thiết lập hạn mức giao dịch theo từng lần, theo từng chức năng, theo ngày. Đồng thời thiết lập hạn mức theo từng người sử dụng, theo chức năng, theo từng lần giao dịch, theo hạn mức ngày.",
+                "descen": "allows customers to set up transaction limit for each time, each function and each day"
+        },
+        {
+                "header": "ແບ່ງສິດການອະນຸມັດ",
+                "type": "Financial4",
+                "name" : "ແບ່ງສິດການອະນຸມັດ" , 
+                "namevi" : "Phân cấp phê duyệt giao dịch" , 
+                "nameen" : "Transaction authorization setting" ,
+                "img": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "imgvi": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "imgen": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "desc": "ອະນຸຍາດໃຫ້ລູກຄ້າແບ່ງສິດແຕ່ລະຂັ້ນການອະນຸມັດທີ່ແຕກຕ່າງກັນ, ຊ່ວຍໃຫ້ລູກຄ້າໃນການກວດກາທຸລະກຳການເງິນໄດ້ຢ່າງປອດໄພ.",
+                "descvi": "Cho phép Khách hàng phân cấp các cấp độ duyệt khác nhau, giúp Khách hàng kiểm soát giao dịch tài chính được an toàn.",
+                "descen": "allows customers to set up different layers of authorization enabling customers to manage financial transactions securely."
+        },
+        {
+                "header": "ຄຸ້ມຄອງຂໍ້ມູນຄູ່ຮ່ວມ - ລາຍຊື່ບັນຊີຜູ້ຮັບ",
+                "type": "Financial5",
+                "name" : "ຄຸ້ມຄອງຂໍ້ມູນຄູ່ຮ່ວມ - ລາຍຊື່ບັນຊີຜູ້ຮັບ" , 
+                "namevi" : "Quản lý thông tin đối tác – Danh sách người hưởng" , 
+                "nameen" : "Information of partners – beneficiaries" , 
+                "img": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "imgvi": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "imgen": "/assets/img/layer2/Quản-lý-tài-chính-2.jpg",
+                "desc": "ອະນຸຍາດໃຫ້ລູກຄ້າຄຸ້ມຄອງລາຍຊື່ບັນດາບັນຊີຜູ້ຮັບເງິນເພື່ອສະດວກໃນການປະຕິບັດທຸລະກຳໂອນເງິນເຊິ່ງບໍ່ຈໍາເປັນຕ້ອງຈື່ບັນຊີຜູ້ຮັບເງິນ.",
+                "descvi": "Cho phép khách hàng quản lý danh sách các tài khoản người nhận tiền để thuận tiện khi thực hiện giao dịch chuyển tiền mà không cần nhập lại tài khoản người thụ hưởng.",
+                "descen": "Allows customers to manage accounts of beneficiaries to ensure convenience for further transactions of which customers do not need to input beneficiary’s account again. "
         }
 ]

@@ -149,6 +149,34 @@
               </q-item>
             </q-list>
           </q-btn-dropdown>
+          <div class="cursor-pointer" v-if="mobileMode">
+            <!-- <q-avatar size="sm" @click="lang = 'vi'">
+                <img src="/assets/Flag/vi.png" width="20px" height="20px" />
+            </q-avatar>
+            <q-avatar size="sm" @click="lang = 'la'">
+                  <img src="/assets/Flag/la.png" width="25px" height="25px" />
+            </q-avatar>
+            <q-avatar size="sm" @click="lang = 'en'">
+              <img src="/assets/Flag/en.png" width="20px" height="20px" />
+            </q-avatar> -->
+            <q-fab padding="xs" dense flat color="primary" push icon="language" direction="down">
+              <q-fab-action padding="xs">
+                <q-avatar size="md" @click="lang = 'vi'">
+                  <img src="/assets/Flag/vi.png" width="25px" height="25px" />
+                </q-avatar>
+              </q-fab-action>
+              <q-fab-action padding="xs">
+                <q-avatar size="md" @click="lang = 'la'">
+                  <img src="/assets/Flag/la.png" width="30px" height="30px" />
+                </q-avatar>
+              </q-fab-action>
+              <q-fab-action padding="xs">
+                <q-avatar size="md" @click="lang = 'en'">
+                  <img src="/assets/Flag/en.png" width="25px" height="25px" />
+                </q-avatar>
+              </q-fab-action>
+            </q-fab>
+          </div>
           <q-btn color="black" v-if="mobileMode" dense flat round icon="apps" @click="left = !left" />
         </q-toolbar>
       </q-header>

@@ -100,8 +100,10 @@
                 </div>
                 <span class="telinfo-mobile"><a style="color: #ffffff" href="https://wa.me/+856 20 52220222">ໂທຣ/whatsApp: +856 20 52220222</a></span> <br />
                 <span style="margin-left: -8px;" class="hotline-mobile"><a style="color: red" href="tel:1440">Hotline: 1440 ext 800 </a></span> <br />
-                <div style="margin-top: -11px" class="q-font-18 text-white">Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a></div>
-                <div style="margin-top: -25px;" class="q-font-18 text-white">
+                <div style="margin-top: -11px" :class="window.width <= 320 ? 'q-font-16 text-white' : 'q-font-18 text-white'">
+                  Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a>
+                </div>
+                <div style="margin-top: -25px;" :class="window.width <= 320 ? 'q-font-16 text-white' : 'q-font-18 text-white'">
                   Fanpage: <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
                 </div>
               </q-card-section>
@@ -119,8 +121,10 @@
                 </div>
                 <span class="telinfo-mobile"><a style="color: #ffffff" href="https://wa.me/+856 20 52220222">Tel/whatsApp: +856 20 52220222</a></span> <br />
                 <span style="margin-left: -8px;" class="hotline-mobile"><a style="color: red" href="tel:1440">Hotline: 1440 ext 800 </a></span> <br />
-                <div style="margin-top: -11px" class="q-font-18 text-white">Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a></div>
-                <div style="margin-top: -25px;" class="q-font-18 text-white">
+                <div style="margin-top: -11px" :class="window.width <= 320 ? 'q-font-16 text-white' : 'q-font-18 text-white'">
+                  Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a>
+                </div>
+                <div style="margin-top: -25px;" :class="window.width <= 320 ? 'q-font-16 text-white' : 'q-font-18 text-white'">
                   Fanpage: <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
                 </div>
               </q-card-section>
@@ -135,8 +139,10 @@
                 </div>
                 <span class="telinfo-mobile"><a style="color: #ffffff" href="https://wa.me/+856 20 52220222">Tel/whatsApp: +856 20 52220222</a></span> <br />
                 <span style="margin-left: -8px;" class="hotline-mobile"><a style="color: red" href="tel:1440">Hotline: 1440 ext 800 </a></span> <br />
-                <div style="margin-top: -11px" class="q-font-18 text-white">Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a></div>
-                <div style="margin-top: -25px;" class="q-font-18 text-white">
+                <div style="margin-top: -11px" :class="window.width <= 320 ? 'q-font-15 text-white' : 'q-font-18 text-white'">
+                  Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a>
+                </div>
+                <div style="margin-top: -25px;" :class="window.width <= 320 ? 'q-font-15 text-white' : 'q-font-18 text-white'">
                   Fanpage: <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
                 </div>
               </q-card-section>

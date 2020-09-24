@@ -161,15 +161,27 @@
           mobileMode
             ? show
               ? lang == 'la'
-                ? '900px'
+                ? window.width <= 320
+                  ? '1230px'
+                  : '900px'
                 : lang == 'vi'
-                ? '900px'
+                ? window.width <= 320
+                  ? '1150px'
+                  : '900px'
+                : window.width <= 320
+                ? '1150px'
                 : '950px'
               : lang == 'vi'
-              ? '520px'
+              ? window.width <= 320
+                ? '650px'
+                : '600px'
               : lang == 'la'
-              ? '560px'
-              : '490px'
+              ? window.width <= 320
+                ? '730px'
+                : '600px'
+              : window.width <= 320
+              ? '650px'
+              : '600px'
             : `${(window.width * 684) / 1920}px`
         "
         :thumbnails="mobileMode ? false : false"
@@ -194,7 +206,7 @@
                       ນິຕິບຸກຄົນ) ໄດ້ຮັບການຍົກເວັ້ນທຸກຄ່າທຳນຽມລົງທະບຽນ, ຄ່າທຳນຽມນໍາໃຊ້ປະຈໍາເດືອນ.
                     </p>
                     <p style="margin: 0 0 0px;">
-                      <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> ປະຈຸບັນ LaoVietBank
+                      <img style="margin-right: 6px;margin-left: -25px;" src="/assets/img/Champa_bullet.svg" height="16px" alt="" />ປະຈຸບັນ LaoVietBank
                       ກຳລັງນໍາໃຊ້ນະໂຍບາຍຍົກເວັ້ນຄ່າທຳນຽມບັນດາບໍລິການທີ່ປະຕີບັດຜ່ານ LVB DigiBank ເຊັ່ນ: ຍົກເວັ້ນຄ່າທຳນຽມໂອນເງິນພາຍໃນລະບົບ,
                       ຍົກເວັ້ນຄ່າທຳນຽມຊໍາລະໃບບິນຕ່າງ... ຄ່າທຳນຽມສໍາລັບໂອນເງິນຕ່າງປະເທດ, ໂອນເງິນໄປທະນາຄານອື່ນແມ່ນມີຄ່າທຳນຽມທີ່ດີທີ່ສຸດໃນຕະຫລາດ.
                       <a target="_blank" :href="linkfee">ລາຍລະອຽດຄ່າທໍານຽມ</a>.
@@ -202,13 +214,13 @@
                     <p style="margin: 0cm 0cm 0cm 0cm" class="text-center" v-if="!show">
                       <q-icon @click="show = !show" name="arrow_drop_down" color="red" style="font-size: 80px"></q-icon>
                     </p>
-                    <p style="margin: 0 0 0px;">
+                    <p v-if="show" style="margin: 0 0 0px;">
                       <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> ລູກຄ້າລົງທະບຽນນໍາໃຊ້ LVB DigiBank ຄັ້ງທຳອິດ
                       ເລີ່ມແຕ່ 01/10/2020 ຈະໄດ້ຮັບນະໂຍບາຍ <b>ຍົກເວັ້ນຄ່າທຳນຽມທັງໝົດ:</b>ລູກຄ້າໄດ້ຮັບການຍົກເວັ້ນທຸກຄ່າຄ່າທຳນຽມບໍລິການເທິງ LVB DigiBank ລວມທັງ
                       ຄ່າທຳນຽມໂອນເງິນຕ່າງປະເທດ, ຄ່າທຳນຽມໂອນໄປທະນາຄານອື່ນພາຍໃນປະເທດ...
                     </p>
 
-                    <p style="margin: 0 0 0px;">
+                    <p v-if="show" style="margin: 0 0 0px;">
                       <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> ລູກຄ້າຍັງຈະໄດ້ຮັບຫຼາກຫຼາຍນະໂຍບາຍອື່ນເຊັ່ນ
                       ຮັບສ່ວນຫຼຸດທັນທີໃນເວລາຊໍາລະຄ່າສິນຄ້າຜ່ານ QR-Pay, ສ່ວນຫຼຸດໃນເວລາຊໍາລະໃບບ... ຕາມຂໍ້ກຳນົດຂອງແຕ່ລະໄລຍະ.
                     </p>
@@ -241,7 +253,7 @@
                   <p style="margin: 0cm 0cm 0cm 0cm" class="text-center" v-if="!show">
                     <q-icon @click="show = !show" name="arrow_drop_down" color="red" style="font-size: 80px"></q-icon>
                   </p>
-                  <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
+                  <p v-if="show" style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
                     <span :style="window.width <= 1366 ? 'font-size:18px;line-height:107%;color:#17479B' : 'font-size:20px;line-height:107%;color:#17479B'">
                       <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> Kh&aacute;ch h&agrave;ng đăng k&yacute; lần đầu sử
                       dụng LVB DigiBank kể từ 01/10/2020 sẽ được &aacute;p dụng ch&iacute;nh s&aacute;ch MIỄN PH&Iacute; HO&Agrave;N TO&Agrave;N: Kh&aacute;ch
@@ -249,7 +261,7 @@
                       ph&iacute; chuyển tiền nội địa li&ecirc;n ng&acirc;n hang.
                     </span>
                   </p>
-                  <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
+                  <p v-if="show" style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
                     <span :style="window.width <= 1366 ? 'font-size:18px;line-height:107%;color:#17479B' : 'font-size:20px;line-height:107%;color:#17479B'">
                       <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> Kh&aacute;ch h&agrave;ng c&ograve;n được hưởng
                       nhiều ch&iacute;nh s&aacute;ch ưu đ&atilde;i kh&aacute;c như chiết khấu khi mua h&agrave;ng bằng QR-Pay, chiết khấu khi thanh to&aacute;n
@@ -282,14 +294,14 @@
                   <p style="margin: 0cm 0cm 0cm 0cm" class="text-center" v-if="!show">
                     <q-icon @click="show = !show" name="arrow_drop_down" color="red" style="font-size: 80px"></q-icon>
                   </p>
-                  <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
+                  <p v-if="show" style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
                     <span :style="window.width <= 1366 ? 'font-size:18px;line-height:107%;color:#17479B' : 'font-size:20px;line-height:107%;color:#17479B'">
                       <img style="margin-right: -3px;" class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> New customers with
                       initial registration for LVB DigiBank will use TOTALLY FREE services starting from 01/10/2020: Customers are charged with no fee for
                       services including international transfer, domestic interbank transfer.
                     </span>
                   </p>
-                  <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
+                  <p v-if="show" style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
                     <span
                       style="margin-right: -3px;"
                       :style="window.width <= 1366 ? 'font-size:18px;line-height:107%;color:#17479B' : 'font-size:20px;line-height:107%;color:#17479B'"

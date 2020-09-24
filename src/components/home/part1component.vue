@@ -128,7 +128,13 @@
           mobileMode
             ? window.width < 600
               ? $store.state.language.language === 'la' || $store.state.language.language === 'en'
-                ? '650px'
+                ? window.width <= 320
+                  ? $store.state.language.language === 'en'
+                    ? '750px'
+                    : '700px'
+                  : '650px'
+                : window.width <= 320
+                ? '800px'
                 : '750px'
               : '950px'
             : `${(window.width * 684) / 1920}px`

@@ -40,7 +40,7 @@
     <div :class="mobileMode ? 'q-pa-md' : 'q-pa-custom'">
       <div class="row q-col-gutter-xs">
         <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3" v-for="(item, index) in returnData" :key="index">
-          <q-card class="my-card full-height" flat bordered>
+          <q-card class="my-card full-height" flat bordered v-if="!mobileMode">
             <!-- <q-img :src="item.img" height="150px">
               <div class="absolute-bottom">
                 <div class="text-subtitle2">{{ $store.state.language.language === 'en' ? item.name : $store.state.language.language === 'vi' ? item.name : item.name }}</div>
@@ -59,6 +59,14 @@
               <q-space />
               <q-btn color="green" flat dense icon="" label="Read moare.." @click="$router.push(`/transfermoney/${item.click}`)" />
             </q-card-actions>
+          </q-card>
+          <q-card class="my-card full-height" flat bordered v-if="mobileMode">
+            <img :src="item.img" height="150px" />
+            <q-card-section>
+              <div class="q-font-15 text-bold q-mt-sm q-mb-xs" style="color:#17479b">
+                {{ $store.state.language.language === 'en' ? item.nameen : $store.state.language.language === 'vi' ? item.namevi : item.name }}
+              </div>
+            </q-card-section>
           </q-card>
         </div>
         <!-- <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3" v-for="(item, index) in returnData" :key="index">

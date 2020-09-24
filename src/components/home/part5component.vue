@@ -118,7 +118,7 @@
         v-model="slide"
         infinite
         autoplay
-        :height="mobileMode ? '600px' : window.width >= 1600 ? '500px' : $store.state.language.language === 'la' ? '500px' : '500px'"
+        :height="mobileMode ? '650px' : window.width >= 1600 ? '500px' : $store.state.language.language === 'la' ? '500px' : '500px'"
         :thumbnails="mobileMode ? false : false"
       >
         <q-carousel-slide
@@ -127,7 +127,7 @@
           :img-src="mobileMode ? '/assets/img/mb-bg-section5.png' : '/assets/img/mb-bg-section5.png'"
         />
         <template v-slot:control>
-          <q-carousel-control position="top" class="text-center">
+          <q-carousel-control position="top" class="text-center" :style="window.width <= 320 ? 'margin-top: 50px' : 'margin-top: 50px'">
             <div class="">
               <div :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h4 text-center text-primary text-bold'">
                 Chi tiết về

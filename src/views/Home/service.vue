@@ -46,7 +46,7 @@
                 <div class="text-subtitle2">{{ $store.state.language.language === 'en' ? item.name : $store.state.language.language === 'vi' ? item.name : item.name }}</div>
               </div>
             </q-img> -->
-            <img :src="item.img" height="150px" />
+            <img class="card-img-top" :src="item.img" @click="$router.push(`/transfermoney/${item.click}`)" />
             <q-card-section style="height: 68px;">
               <div class="q-font-15 text-bold q-mt-sm q-mb-xs" style="color:#17479b">
                 {{ $store.state.language.language === 'en' ? item.nameen : $store.state.language.language === 'vi' ? item.namevi : item.name }}
@@ -61,9 +61,9 @@
             </q-card-actions>
           </q-card>
           <q-card class="my-card full-height" flat bordered v-if="mobileMode">
-            <img :src="item.img" height="150px" />
-            <q-card-section>
-              <div class="q-font-15 text-bold q-mt-sm q-mb-xs" style="color:#17479b">
+            <img class="card-img-top" :src="item.img" @click="$router.push(`/transfermoney/${item.click}`)" />
+            <q-card-section @click="$router.push(`/transfermoney/${item.click}`)">
+              <div class="q-font-13 text-bold q-mt-sm q-mb-xs" style="color:#17479b">
                 {{ $store.state.language.language === 'en' ? item.nameen : $store.state.language.language === 'vi' ? item.namevi : item.name }}
               </div>
             </q-card-section>
@@ -118,6 +118,16 @@ export default {
 /* .my-card {
   height: 275px;
 } */
+
+/* [2] Transition property for smooth transformation of images */
+.my-card img {
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.my-card img:hover {
+  transform: scale(1.1);
+}
 
 .my-card-mobile {
   height: 150px;

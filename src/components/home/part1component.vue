@@ -106,7 +106,7 @@
                     <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>is digital banking services of
                     LaoVietBank. LVB DigiBank allows individuals and corporates to access banking services of LaoVietBank on mobile phones, tablets, desktops
                     and laptops by LVB DigiBank application or on website:
-                    <a href="https://www.laovietbank.com.la/en/" target="_blank">www.laovietbank.com.la</a>
+                    <a href="https://www.laovietbank.com.la/en_US/" target="_blank">www.laovietbank.com.la</a>
                   </p>
                 </q-card-section>
               </div>
@@ -214,7 +214,7 @@
                     <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>is digital banking services of
                     LaoVietBank. LVB DigiBank allows individuals and corporates to access banking services of LaoVietBank on mobile phones, tablets, desktops
                     and laptops by LVB DigiBank application or on website:
-                    <a href="https://www.laovietbank.com.la/en/" target="_blank">www.laovietbank.com.la</a>
+                    <a href="https://www.laovietbank.com.la/en_US/" target="_blank">www.laovietbank.com.la</a>
                   </p>
                 </q-card-section>
               </div>

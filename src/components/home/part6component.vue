@@ -29,8 +29,8 @@
                     ><a style="color: #ffffff" href="tel:+856 20 52220222">ໂທຣ/whatsApp: +856 20 52220222</a></span
                   >
                   <span class="hotline">Hotline: 1440 ext 800</span> <br />
-                  Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
-                  <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
+                  Website: <a href="https://www.laovietbank.com.la/la/" target="_blank">www.laovietbank.com.la</a> – Fanpage:
+                  <a href="https://www.facebook.com/LaoVietBank/" target="_blank">facebook.com/laovietbank</a>
                 </span>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'vi'">
@@ -42,8 +42,8 @@
                   <br />
                   <span class="telinfo"><a style="color: #ffffff" href="tel:+856 20 52220222">Tel/whatsApp: +856 20 52220222</a></span>
                   <span style="margin-left: -8px;" class="hotline">Hotline: 1440 ext 800 </span> <br />
-                  Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
-                  <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
+                  Website: <a href="https://www.laovietbank.com.la/vi/" target="_blank">www.laovietbank.com.la</a> – Fanpage:
+                  <a href="https://www.facebook.com/LaoVietBank/" target="_blank">facebook.com/laovietbank</a>
                 </span>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'en'">
@@ -55,8 +55,8 @@
                   <br />
                   <span class="telinfo"><a style="color: #ffffff" href="tel:+856 20 52220222">Tel/whatsApp: +856 20 52220222</a></span>
                   <span style="margin-left: -8px;" class="hotline">Hotline: 1440 ext 800 </span> <br />
-                  Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
-                  <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
+                  Website: <a href="https://www.laovietbank.com.la/en/" target="_blank">www.laovietbank.com.la</a> – Fanpage:
+                  <a href="https://www.facebook.com/LaoVietBank/" target="_blank">facebook.com/laovietbank</a>
                 </span>
               </q-card-section>
             </q-card>
@@ -101,10 +101,10 @@
                 <span class="telinfo-mobile"><a style="color: #ffffff" href="https://wa.me/+856 20 52220222">ໂທຣ/whatsApp: +856 20 52220222</a></span> <br />
                 <span style="margin-left: -8px;" class="hotline-mobile"><a style="color: red" href="tel:1440">Hotline: 1440 ext 800 </a></span> <br />
                 <div style="margin-top: -11px" :class="window.width <= 320 ? 'q-font-16 text-white' : 'q-font-18 text-white'">
-                  Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a>
+                  Website: <a href="https://www.laovietbank.com.la/la/" target="_blank">www.laovietbank.com.la</a>
                 </div>
                 <div style="margin-top: -25px;" :class="window.width <= 320 ? 'q-font-16 text-white' : 'q-font-18 text-white'">
-                  Fanpage: <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
+                  Fanpage: <a href="https://www.facebook.com/LaoVietBank/" target="_blank">facebook.com/laovietbank</a>
                 </div>
               </q-card-section>
               <q-card-section style="line-height: 3;padding: 9px" v-if="$store.state.language.language === 'vi'">
@@ -122,10 +122,10 @@
                 <span class="telinfo-mobile"><a style="color: #ffffff" href="https://wa.me/+856 20 52220222">Tel/whatsApp: +856 20 52220222</a></span> <br />
                 <span style="margin-left: -8px;" class="hotline-mobile"><a style="color: red" href="tel:1440">Hotline: 1440 ext 800 </a></span> <br />
                 <div style="margin-top: -11px" :class="window.width <= 320 ? 'q-font-16 text-white' : 'q-font-16 text-white'">
-                  Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a>
+                  Website: <a href="https://www.laovietbank.com.la/vi/" target="_blank">www.laovietbank.com.la</a>
                 </div>
                 <div style="margin-top: -25px;" :class="window.width <= 320 ? 'q-font-16 text-white' : 'q-font-16 text-white'">
-                  Fanpage: <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
+                  Fanpage: <a href="https://www.facebook.com/LaoVietBank/" target="_blank">facebook.com/laovietbank</a>
                 </div>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'en'">
@@ -140,10 +140,10 @@
                 <span class="telinfo-mobile"><a style="color: #ffffff" href="https://wa.me/+856 20 52220222">Tel/whatsApp: +856 20 52220222</a></span> <br />
                 <span style="margin-left: -8px;" class="hotline-mobile"><a style="color: red" href="tel:1440">Hotline: 1440 ext 800 </a></span> <br />
                 <div style="margin-top: -11px" :class="window.width <= 320 ? 'q-font-15 text-white' : 'q-font-16 text-white'">
-                  Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a>
+                  Website: <a href="https://www.laovietbank.com.la/en/" target="_blank">www.laovietbank.com.la</a>
                 </div>
                 <div style="margin-top: -25px;" :class="window.width <= 320 ? 'q-font-15 text-white' : 'q-font-16 text-white'">
-                  Fanpage: <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
+                  Fanpage: <a href="https://www.facebook.com/LaoVietBank/" target="_blank">facebook.com/laovietbank</a>
                 </div>
               </q-card-section>
             </q-card>
@@ -184,8 +184,8 @@
                     ><a style="color: #ffffff" href="tel:+856 20 52220222">ໂທຣ/whatsApp: +856 20 52220222</a></span
                   >
                   <span class="hotline">Hotline: 1440 ext 800</span> <br />
-                  Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
-                  <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
+                  Website: <a href="https://www.laovietbank.com.la/la/" target="_blank">www.laovietbank.com.la</a> – Fanpage:
+                  <a href="https://www.facebook.com/LaoVietBank/" target="_blank">facebook.com/laovietbank</a>
                 </span>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'vi'">
@@ -197,8 +197,8 @@
                   <br />
                   <span class="telinfo"><a style="color: #ffffff" href="tel:+856 20 52220222">Tel/whatsApp: +856 20 52220222</a></span>
                   <span style="margin-left: -8px;" class="hotline">Hotline: 1440 ext 800 </span> <br />
-                  Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
-                  <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
+                  Website: <a href="https://www.laovietbank.com.la/vi/" target="_blank">www.laovietbank.com.la</a> – Fanpage:
+                  <a href="https://www.facebook.com/LaoVietBank/" target="_blank">facebook.com/laovietbank</a>
                 </span>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'en'">
@@ -210,8 +210,8 @@
                   <br />
                   <span class="telinfo"><a style="color: #ffffff" href="tel:+856 20 52220222">Tel/whatsApp: +856 20 52220222</a></span>
                   <span style="margin-left: -8px;" class="hotline">Hotline: 1440 ext 800 </span> <br />
-                  Website: <a href="https://www.laovietbank.com.la/">www.laovietbank.com.la</a> – Fanpage:
-                  <a href="https://www.facebook.com/LaoVietBank/">facebook.com/laovietbank</a>
+                  Website: <a href="https://www.laovietbank.com.la/en/" target="_blank">www.laovietbank.com.la</a> – Fanpage:
+                  <a href="https://www.facebook.com/LaoVietBank/" target="_blank">facebook.com/laovietbank</a>
                 </span>
               </q-card-section>
             </q-card>

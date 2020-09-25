@@ -260,7 +260,7 @@
             @click="$router.push('/FAQs')"
           ></q-expansion-item>
           <q-separator />
-          <q-expansion-item group="somegroup" icon="language" :label="$t('SelectLanguage')" header-class="text-purple">
+          <!-- <q-expansion-item group="somegroup" icon="language" :label="$t('SelectLanguage')" header-class="text-purple">
             <q-list>
               <q-item clickable v-close-popup @click="changelanguage('la')">
                 <q-item-section avatar>
@@ -293,7 +293,7 @@
                 </q-item-section>
               </q-item>
             </q-list>
-          </q-expansion-item>
+          </q-expansion-item> -->
         </q-list>
       </q-drawer>
       <q-page-container :class="mobileMode ? '' : 'main'">

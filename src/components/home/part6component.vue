@@ -47,7 +47,7 @@
                 </span>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'en'">
-                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">Lao Viet Joint Venture Bank</span>&nbsp;
+                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">Lao-Viet Joint Venture Bank</span>&nbsp;
 
                 <br />
                 <span style="line-height: 3rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
@@ -129,7 +129,7 @@
                 </div>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'en'">
-                <span class="text-h6 text-white text-bold">Lao Viet Joint Venture Bank</span>
+                <span class="text-h6 text-white text-bold">Lao-Viet Joint Venture Bank</span>
                 <br />
                 <div class="q-font-18 text-white">
                   44 Lanexang, Chanthabouly,
@@ -202,7 +202,7 @@
                 </span>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'en'">
-                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">Lao Viet Joint Venture Bank</span>&nbsp;
+                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">Lao-Viet Joint Venture Bank</span>&nbsp;
 
                 <br />
                 <span style="line-height: 3rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">

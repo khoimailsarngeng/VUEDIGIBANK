@@ -183,7 +183,7 @@
               <div class="col col-md-12">
                 <img src="/assets/img/Mobile-with-app.png" width="100%" alt="" />
               </div>
-              <div class="col col-md-12">
+              <div class="col col-md-12" style="margin-top: -30px;">
                 <q-card-section v-if="$store.state.language.language === 'la'" class="text-center">
                   <span :class="mobileMode ? 'text-primary text-h5 text-bold' : 'text-primary text-h5 text-bold'"
                     >ຄຸນປະໂຫຍດຂອງ <br /><span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> - All In One

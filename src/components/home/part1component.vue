@@ -79,7 +79,7 @@
                     <br />
                     LVB DigiBank ອະນຸຍາດໃຫ້ລູກຄ້າບຸກຄົນ ແລະ ນິຕິບຸກຄົນ ທີ່ນໍາໃຊ້ໂທລະສັບມືຖື, ແທັບເລັດ, ຄອມພິວເຕີຕັ້ງ ໂຕະ ແລະ ແລັບທັອບ
                     ປະຕິບັດບັນດາທຸລະກຳຂອງທະນາຄານຜ່ານ LVB DigiBank Application ແລະ ຜ່ານຊ່ອງທາງ webite:
-                    <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
+                    <a :href="langwebsite">www.laovietbank.com.la</a>
                   </p>
                   <p
                     class="q-font-20 text-justify text-primary "
@@ -96,7 +96,7 @@
                   >
                     LVB DigiBank cho phép khách hàng cá nhân và doanh nghiệp sử dụng điện thoại, máy tính bảng, máy tính để bàn và máy tính xách tay để thực
                     hiện đa dạng các giao dịch ngân hàng thông qua Ứng dụng LVB DigiBank và thông qua webite
-                    <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
+                    <a :href="langwebsite">www.laovietbank.com.la</a>
                   </p>
                   <p
                     class="q-font-20 text-justify text-primary "
@@ -105,7 +105,7 @@
                   >
                     <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>is digital banking services of
                     LaoVietBank. LVB DigiBank allows individuals and corporates to access banking services of LaoVietBank on mobile phones, tablets, desktops
-                    and laptops by LVB DigiBank application or on website: <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
+                    and laptops by LVB DigiBank application or on website: <a :href="langwebsite">www.laovietbank.com.la</a>
                   </p>
                 </q-card-section>
               </div>
@@ -186,7 +186,7 @@
                     <br />
                     LVB DigiBank ອະນຸຍາດໃຫ້ລູກຄ້າບຸກຄົນ ແລະ ນິຕິບຸກຄົນ ທີ່ນໍາໃຊ້ໂທລະສັບມືຖື, ແທັບເລັດ, ຄອມພິວເຕີຕັ້ງ ໂຕະ ແລະ ແລັບທັອບ
                     ປະຕິບັດບັນດາທຸລະກຳຂອງທະນາຄານຜ່ານ LVB DigiBank Application ແລະ ຜ່ານຊ່ອງທາງ webite:
-                    <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
+                    <a :href="langwebsite">www.laovietbank.com.la</a>
                   </p>
                   <p
                     class="q-font-20 text-justify text-primary "
@@ -203,7 +203,7 @@
                   >
                     LVB DigiBank cho phép khách hàng cá nhân và doanh nghiệp sử dụng điện thoại, máy tính bảng, máy tính để bàn và máy tính xách tay để thực
                     hiện đa dạng các giao dịch ngân hàng thông qua Ứng dụng LVB DigiBank và thông qua webite
-                    <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
+                    <a :href="langwebsite">www.laovietbank.com.la</a>
                   </p>
                   <p
                     class="q-font-20 text-justify text-primary "
@@ -212,7 +212,7 @@
                   >
                     <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>is digital banking services of
                     LaoVietBank. LVB DigiBank allows individuals and corporates to access banking services of LaoVietBank on mobile phones, tablets, desktops
-                    and laptops by LVB DigiBank application or on website: <a href="www.laovietbank.com.la">www.laovietbank.com.la</a>
+                    and laptops by LVB DigiBank application or on website: <a :href="langwebsite">www.laovietbank.com.la</a>
                   </p>
                 </q-card-section>
               </div>
@@ -234,7 +234,10 @@ export default {
 
   computed: {
     ...mapState('mobileMode', ['mobileMode']),
-    ...mapState('mobileMode', ['window'])
+    ...mapState('mobileMode', ['window']),
+    langwebsite() {
+      return `https://www.laovietbank.com.la/${this.$store.state.language.language}`;
+    }
   }
 };
 </script>

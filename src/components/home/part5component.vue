@@ -17,7 +17,7 @@
           <q-carousel-control position="top" class="text-center q-pt-xl">
             <div class="">
               <div :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h4 text-center text-primary text-bold'">
-                Chi tiết về
+                {{ lang === 'en' ? 'Detail' : lang === 'la' ? 'ລາຍລະອຽດ' : 'Chi tiết về' }}
                 <span class="text-primary text-bold">LVB</span>
                 <span class="text-red text-bold"> DigiBank</span>
               </div>
@@ -130,7 +130,7 @@
           <q-carousel-control position="top" class="text-center" :style="window.width <= 320 ? 'margin-top: 50px' : 'margin-top: 50px'">
             <div class="">
               <div :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h4 text-center text-primary text-bold'">
-                Chi tiết về
+                {{ lang === 'en' ? 'Detail' : lang === 'la' ? 'ລາຍລະອຽດ' : 'Chi tiết về' }}
                 <span class="text-primary text-bold">LVB</span>
                 <span class="text-red text-bold"> DigiBank</span>
               </div>
@@ -321,6 +321,9 @@ export default {
       } else {
         return 'W';
       }
+    },
+    lang() {
+      return this.$store.state.language.language;
     }
   },
   methods: {

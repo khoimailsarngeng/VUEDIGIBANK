@@ -75,7 +75,7 @@ import {
   QImg,
   QMenu,
   QBanner,
-  QForm,  
+  QForm,
   QCarousel,
   QCarouselControl,
   QCarouselSlide,
@@ -83,8 +83,8 @@ import {
   QFabAction,
   QBreadcrumbs,
   QBreadcrumbsEl,
-  QFooter
-  
+  QFooter,
+  QParallax
 } from 'quasar';
 
 Vue.use(Quasar, {
@@ -153,7 +153,8 @@ Vue.use(Quasar, {
     QFabAction,
     QBreadcrumbs,
     QBreadcrumbsEl,
-    QFooter
+    QFooter,
+    QParallax
   },
   directives: {
     Ripple,

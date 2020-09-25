@@ -51,6 +51,7 @@
         </q-bar> -->
         <q-toolbar class="bg-white">
           <img
+            v-if="!mobileMode"
             @click="$router.push('/')"
             :src="
               $store.state.language.language === 'la'
@@ -63,6 +64,7 @@
             height="60px"
             width="130px"
           />
+          <img @click="$router.push('/')" src="/assets/img/logo-LVBDigiBank.svg" style="width: 140px" alt v-if="mobileMode" />
           <q-toolbar-title
             :class="window.width > 1366 ? 'q-font-20 text-bold' : $store.state.language.language === 'la' ? 'q-font-20 text-bold' : 'q-font-13 text-bold'"
             v-if="!mobileMode && window.width > 1024"
@@ -88,18 +90,18 @@
                 <div class="text-center text-h7">{{ $t('Service') }}</div>
               </div>
             </template>
-            <q-list style="min-width:250px">
+            <q-list style="min-width: 250px">
               <q-item clickable v-close-popup to="/individual">
-                <q-item-section style="margin-right: -140px;">
-                  <img src="assets/img/icon-user-individual.svg" style="width:30px;height:30px" />
+                <q-item-section style="margin-right: -140px">
+                  <img src="assets/img/icon-user-individual.svg" style="width: 30px; height: 30px" />
                 </q-item-section>
                 <q-item-section>
                   <q-item-label class="text-h7">{{ $t('Individualcustomer') }}</q-item-label>
                 </q-item-section>
               </q-item>
               <q-item clickable v-close-popup to="/corporate">
-                <q-item-section style="margin-right: -140px;">
-                  <img src="assets/img/icon-user-business.svg" style="width:30px;height:30px" />
+                <q-item-section style="margin-right: -140px">
+                  <img src="assets/img/icon-user-business.svg" style="width: 30px; height: 30px" />
                 </q-item-section>
                 <q-item-section>
                   <q-item-label class="text-h7">{{ $t('Corporatecustomer') }}</q-item-label>
@@ -119,7 +121,7 @@
             <q-list>
               <q-item clickable v-close-popup @click="lang = 'la'" class="text-lvbdibank">
                 <q-item-section avatar>
-                  <q-avatar style="width:25px;height:25px">
+                  <q-avatar style="width: 25px; height: 25px">
                     <img src="../assets/Flag/la.png" />
                   </q-avatar>
                 </q-item-section>
@@ -129,7 +131,7 @@
               </q-item>
               <q-item clickable v-close-popup @click="lang = 'vi'" class="text-lvbdibank">
                 <q-item-section avatar>
-                  <q-avatar style="width:25px;height:25px">
+                  <q-avatar style="width: 25px; height: 25px">
                     <img src="/assets/Flag/vi.png" width="40px" height="40px" />
                   </q-avatar>
                 </q-item-section>
@@ -139,7 +141,7 @@
               </q-item>
               <q-item clickable v-close-popup @click="lang = 'en'" class="text-lvbdibank">
                 <q-item-section avatar>
-                  <q-avatar style="width:25px;height:25px">
+                  <q-avatar style="width: 25px; height: 25px">
                     <img src="/assets/Flag/en.png" width="40px" height="40px" />
                   </q-avatar>
                 </q-item-section>
@@ -159,23 +161,60 @@
             <q-avatar size="sm" @click="lang = 'en'">
               <img src="/assets/Flag/en.png" width="20px" height="20px" />
             </q-avatar> -->
-            <q-fab padding="xs" dense flat color="primary" push icon="language" direction="down">
-              <q-fab-action padding="xs">
+            <q-btn-dropdown dense flat id="buttonlang" style="width: 20px;">
+              <template v-slot:label>
+                <div class="row items-center no-wrap">
+                  <q-avatar style="width: 25px; height: 25px">
+                    <img :src="returnimglang" />
+                  </q-avatar>
+                </div>
+              </template>
+              <q-list style="width: 60px;">
+                <q-item v-if="language != 'la'" clickable v-close-popup @click="changelanguage11('la')">
+                  <q-item-section avatar>
+                    <q-avatar style="width: 25px; height: 25px">
+                      <img src="../assets/Flag/la.png" />
+                    </q-avatar>
+                  </q-item-section>
+                </q-item>
+                <q-item v-if="language != 'vi'" clickable v-close-popup @click="changelanguage11('vi')">
+                  <q-item-section avatar>
+                    <q-avatar style="width: 25px; height: 25px">
+                      <img src="/assets/Flag/vi.png" width="40px" height="40px" />
+                    </q-avatar>
+                  </q-item-section>
+                </q-item>
+                <q-item v-if="language != 'en'" clickable v-close-popup @click="changelanguage11('en')">
+                  <q-item-section avatar>
+                    <q-avatar style="width: 25px; height: 25px">
+                      <img src="/assets/Flag/en.png" width="40px" height="40px" />
+                    </q-avatar>
+                  </q-item-section>
+                </q-item>
+              </q-list>
+            </q-btn-dropdown>
+            <!-- <q-fab padding="xs" dense flat color="primary" push direction="down">
+              <template v-slot:icon>
+                <q-avatar size="md">
+                  <img src="/assets/Flag/vi.png" width="25px" height="25px" />
+                </q-avatar>
+              </template>
+              <q-fab-action padding="xs" v-if="language != 'vi'">
                 <q-avatar size="md" @click="lang = 'vi'">
                   <img src="/assets/Flag/vi.png" width="25px" height="25px" />
                 </q-avatar>
               </q-fab-action>
-              <q-fab-action padding="xs">
+              <q-fab-action padding="xs" v-if="language != 'la'">
                 <q-avatar size="md" @click="lang = 'la'">
                   <img src="/assets/Flag/la.png" width="30px" height="30px" />
                 </q-avatar>
               </q-fab-action>
-              <q-fab-action padding="xs">
+              <q-fab-action padding="xs" v-if="language != 'en'">
                 <q-avatar size="md" @click="lang = 'en'">
                   <img src="/assets/Flag/en.png" width="25px" height="25px" />
                 </q-avatar>
               </q-fab-action>
-            </q-fab>
+            </q-fab> -->
           </div>
           <q-btn color="black" v-if="mobileMode" dense flat round icon="apps" @click="left = !left" />
         </q-toolbar>
@@ -194,16 +233,16 @@
           <q-expansion-item group="somegroup" icon="dashboard" :label="$t('Service')" header-class="text-teal">
             <q-list>
               <q-item clickable v-close-popup to="/individual">
-                <q-item-section style="margin-right: -150px;">
-                  <img src="assets/img/icon-user-individual.svg" style="width:30px;height:30px" />
+                <q-item-section style="margin-right: -150px">
+                  <img src="assets/img/icon-user-individual.svg" style="width: 30px; height: 30px" />
                 </q-item-section>
                 <q-item-section>
                   <q-item-label>{{ $t('Individualcustomer') }}</q-item-label>
                 </q-item-section>
               </q-item>
               <q-item clickable v-close-popup to="/corporate">
-                <q-item-section style="margin-right: -150px;">
-                  <img src="assets/img/icon-user-business.svg" style="width:30px;height:30px" />
+                <q-item-section style="margin-right: -150px">
+                  <img src="assets/img/icon-user-business.svg" style="width: 30px; height: 30px" />
                 </q-item-section>
                 <q-item-section>
                   <q-item-label>{{ $t('Corporatecustomer') }}</q-item-label>
@@ -225,7 +264,7 @@
             <q-list>
               <q-item clickable v-close-popup @click="changelanguage('la')">
                 <q-item-section avatar>
-                  <q-avatar style="width:25px;height:25px">
+                  <q-avatar style="width: 25px; height: 25px">
                     <img src="../assets/Flag/la.png" />
                   </q-avatar>
                 </q-item-section>
@@ -235,7 +274,7 @@
               </q-item>
               <q-item clickable v-close-popup @click="changelanguage('vi')">
                 <q-item-section avatar>
-                  <q-avatar style="width:25px;height:25px">
+                  <q-avatar style="width: 25px; height: 25px">
                     <img src="/assets/Flag/vi.png" width="40px" height="40px" />
                   </q-avatar>
                 </q-item-section>
@@ -245,7 +284,7 @@
               </q-item>
               <q-item clickable v-close-popup @click="changelanguage('en')">
                 <q-item-section avatar>
-                  <q-avatar style="width:25px;height:25px">
+                  <q-avatar style="width: 25px; height: 25px">
                     <img src="/assets/Flag/en.png" width="40px" height="40px" />
                   </q-avatar>
                 </q-item-section>
@@ -347,6 +386,9 @@ export default {
     changelanguage(val) {
       this.lang = val;
       this.left = !this.left;
+    },
+    changelanguage11(val) {
+      this.lang = val;
     }
   },
   computed: {
@@ -358,6 +400,12 @@ export default {
     bodyheight() {
       var a = this.window.height;
       return 'height:' + a + 'px';
+    },
+    language() {
+      return this.$store.state.language.language;
+    },
+    returnimglang() {
+      return `../assets/Flag/${this.$store.state.language.language}.png`;
     }
   }
 };
@@ -370,6 +418,10 @@ a[type='button']:hover {
 }
 button:hover {
   background: #0262b6;
+  color: white !important;
+}
+#buttonlang:hover {
+  background: #ffffff;
   color: white !important;
 }
 a:hover {

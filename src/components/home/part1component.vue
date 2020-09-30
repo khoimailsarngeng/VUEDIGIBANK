@@ -96,9 +96,9 @@
                     style="line-height: 1.5; margin-top: 10px; color: #17479b !important; text-align: justify"
                     v-if="$store.state.language.language === 'en'"
                   >
-                    <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>is digital banking services of
-                    LaoVietBank. LVB DigiBank allows individuals and corporates to access banking services of LaoVietBank on mobile phones, tablets, desktops
-                    and laptops by LVB DigiBank application or on website:
+                    <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>is the digital banking of LaoVietBank.
+                    LVB DigiBank allows individuals and businesses to access banking services of LaoVietBank on mobile phones, tablets, desktops and laptops by
+                    LVB DigiBank application or on website:
                     <a href="https://www.laovietbank.com.la/en_US/" target="_blank">www.laovietbank.com.la</a>
                   </p>
                 </q-card-section>
@@ -277,9 +277,9 @@
                     style="line-height: 1.5; margin-top: 10px; color: #17479b !important; text-align: justify"
                     v-if="$store.state.language.language === 'en'"
                   >
-                    <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>is digital banking services of
-                    LaoVietBank. LVB DigiBank allows individuals and corporates to access banking services of LaoVietBank on mobile phones, tablets, desktops
-                    and laptops by LVB DigiBank application or on website:
+                    <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>is the digital banking of LaoVietBank.
+                    LVB DigiBank allows individuals and businesses to access banking services of LaoVietBank on mobile phones, tablets, desktops and laptops by
+                    LVB DigiBank application or on website:
                     <a href="https://www.laovietbank.com.la/en_US/" target="_blank">www.laovietbank.com.la</a>
                   </p>
                 </q-card-section>

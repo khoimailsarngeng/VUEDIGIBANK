@@ -112,11 +112,21 @@
       </q-carousel>
     </div>
     <div v-if="mobileMode">
-      <q-carousel animated v-model="slidelvb" infinite autoplay :thumbnails="false" :height="mobileMode ? `${(window.width * 180) / 375}px` : ''">
+      <q-carousel
+        animated
+        v-model="slidelvb"
+        infinite
+        autoplay
+        :thumbnails="false"
+        :height="mobileMode ? `${(window.width * 180) / 375}px` : ''"
+        transition-prev="slide-right"
+        transition-next="slide-left"
+        swipeable
+      >
         <template v-slot:control>
           <q-carousel-control position="bottom" :offset="[0, -5]">
             <div style="height: 50px" class="text-center">
-              <q-carousel animated v-model="slidelvb1" infinite swipeable :thumbnails="false" height="50px" style="background-color: transparent;">
+              <q-carousel v-model="slidelvb1" infinite swipeable :thumbnails="false" height="50px" style="background-color: transparent;">
                 <q-carousel-slide :name="1" style="padding: 0px;">
                   <div class="text-primary">
                     <div class="row justify-center">

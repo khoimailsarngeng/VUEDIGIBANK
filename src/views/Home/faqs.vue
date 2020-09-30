@@ -9,7 +9,7 @@
       :height="$q.screen.name === 'xs' ? '200px' : $q.screen.name === 'sm' ? '250px' : $q.screen.name === 'md' ? '300px' : '400px'"
       :thumbnails="mobileMode ? false : true"
     >
-      <q-carousel-slide style="background-size: 100% 100%;" :name="1" :img-src="mobileMode ? '/assets/img/FAQs_resize.jpg' : '/assets/img/FAQs.jpg'" />
+      <q-carousel-slide style="background-size: 100% 100%" :name="1" :img-src="mobileMode ? '/assets/img/FAQs_resize.jpg' : '/assets/img/FAQs.jpg'" />
       <template v-slot:control>
         <q-carousel-control
           :style="mobileMode ? 'margin: 50px;' : ''"
@@ -17,7 +17,7 @@
           :offset="mobileMode ? [50, 400] : [100, 280]"
           class="q-gutter-xs"
         >
-          <q-card flat bordered class="my-card bg-transparent" style="border:0">
+          <q-card flat bordered class="my-card bg-transparent" style="border: 0">
             <q-card-section>
               <div class="row items-center no-wrap">
                 <div class="col">
@@ -42,8 +42,70 @@
             switch-toggle-side
             :expand-icon="smartbanking ? 'remove_circle_outline' : 'control_point'"
             :header-class="smartbanking ? 'bg-primary text-white' : ''"
-            label="I.	Giới thiệu LVB Digibank"
+            :label="$t('Individualcustomer')"
           >
+            <q-card>
+              <q-card-section>
+                <q-expansion-item
+                  v-for="(item, index) in IndividualFAQ"
+                  :key="index"
+                  switch-toggle-side
+                  :label="lang == 'en' ? item[0].Titleen : lang == 'vi' ? item[0].Titlevi : item[0].Title"
+                >
+                  <q-card>
+                    <q-card-section>
+                      <q-expansion-item
+                        v-for="(item1, index1) in item"
+                        :key="index1"
+                        switch-toggle-side
+                        :label="lang == 'en' ? item1.Questionen : lang == 'vi' ? item1.Questionvi : item1.Question"
+                      >
+                        <q-card>
+                          <q-card-section style="padding-left: 8%; padding-right: 8%; text-align: justify">
+                            <div v-html="lang == 'en' ? item1.Answeren : lang == 'vi' ? item1.Answervi : item1.Answer"></div>
+                          </q-card-section>
+                        </q-card>
+                      </q-expansion-item>
+                    </q-card-section>
+                  </q-card>
+                </q-expansion-item>
+              </q-card-section>
+            </q-card>
+          </q-expansion-item>
+          <q-expansion-item
+            v-model="smartbanking1"
+            switch-toggle-side
+            :expand-icon="smartbanking1 ? 'remove_circle_outline' : 'control_point'"
+            :header-class="smartbanking1 ? 'bg-primary text-white' : ''"
+            :label="$t('Corporatecustomer')"
+          >
+            <q-card>
+              <q-card-section>
+                <q-expansion-item
+                  v-for="(item, index) in CorporateFAQ"
+                  :key="index"
+                  switch-toggle-side
+                  :label="lang == 'en' ? item[0].Titleen : lang == 'vi' ? item[0].Titlevi : item[0].Title"
+                >
+                  <q-card>
+                    <q-card-section>
+                      <q-expansion-item
+                        v-for="(item1, index1) in item"
+                        :key="index1"
+                        switch-toggle-side
+                        :label="lang == 'en' ? item1.Questionen : lang == 'vi' ? item1.Questionvi : item1.Question"
+                      >
+                        <q-card>
+                          <q-card-section style="padding-left: 8%; padding-right: 8%; text-align: justify">
+                            <div v-html="lang == 'en' ? item1.Answeren : lang == 'vi' ? item1.Answervi : item1.Answer"></div>
+                          </q-card-section>
+                        </q-card>
+                      </q-expansion-item>
+                    </q-card-section>
+                  </q-card>
+                </q-expansion-item>
+              </q-card-section>
+            </q-card>
           </q-expansion-item>
           <!-- <q-expansion-item
             v-model="smartbanking"
@@ -198,6 +260,8 @@
 </template>
 <script>
 import { mapState } from 'vuex';
+import datajson from '../../../public/Data/datafaq.json';
+import datajson1 from '../../../public/Data/bussiness.json';
 export default {
   data() {
     return {
@@ -206,8 +270,28 @@ export default {
       smartbanking1: false
     };
   },
+  mounted() {
+    console.log(this.groupArrayOfObjects(datajson, 'ID'));
+  },
+  methods: {
+    groupArrayOfObjects(list, key) {
+      return list.reduce(function(rv, x) {
+        (rv[x[key]] = rv[x[key]] || []).push(x);
+        return rv;
+      }, {});
+    }
+  },
   computed: {
-    ...mapState('mobileMode', ['mobileMode'])
+    ...mapState('mobileMode', ['mobileMode']),
+    IndividualFAQ() {
+      return this.groupArrayOfObjects(datajson, 'ID');
+    },
+    CorporateFAQ() {
+      return this.groupArrayOfObjects(datajson1, 'ID');
+    },
+    lang() {
+      return this.$store.state.language.language;
+    }
   }
 };
 </script>

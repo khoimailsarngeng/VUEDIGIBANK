@@ -45,7 +45,7 @@ export default {
   Corporatecustomer: 'Business Customer',
   InfoIndividualcustomer: 'Individual Customer infomation',
   InfoCorporatecustomer: 'Business Customer infomation',
-  LVB: 'LAO-VIET JOINT VENTURE BANK CO., LTD ',
+  LVB: 'LAO - VIET JOINT VENTURE BANK CO., LTD ',
   LVB1: 'BRIDGE OF SUCCESS',
   SelectLanguage: 'Select lanaguage',
   Individual: 'Individual',

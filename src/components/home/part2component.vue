@@ -87,7 +87,7 @@
                 </q-card-section>
                 <q-card-section v-if="$store.state.language.language === 'en'" style="margin-left: 30px;">
                   <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
-                    >Utilities of <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> - All In One
+                    >The best features of <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> - All In One
                   </span>
 
                   <p style="margin: 22px  0cm 8pt; line-height: 2; font-size: 15px; text-align: justify;">
@@ -265,7 +265,7 @@
                 </q-card-section>
                 <q-card-section v-if="$store.state.language.language === 'en'" class="text-center">
                   <span :class="mobileMode ? 'text-primary text-h5 text-bold' : 'text-primary text-h5 text-bold'"
-                    >Utilities of <br />
+                    >The best features of <br />
                     <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> - All In One
                   </span>
 
@@ -383,7 +383,7 @@
                 </q-card-section>
                 <q-card-section v-if="$store.state.language.language === 'en'" class="text-center">
                   <span :class="mobileMode ? 'text-primary text-h5 text-bold' : 'text-primary text-h5 text-bold'"
-                    >Utilities of <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> - All In One
+                    >The best features of <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> - All In One
                   </span>
 
                   <p style="margin: 22px  0cm 8pt; line-height: 2; font-size: 15px; text-align: justify;">

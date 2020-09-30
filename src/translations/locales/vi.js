@@ -50,7 +50,7 @@ export default {
   Corporatecustomer: 'Khách hàng doanh nghiệp',
   InfoIndividualcustomer: 'Thông tin Khách hàng cá nhân',
   InfoCorporatecustomer: 'Thông tin Khách hàng doanh nghiệp',
-  LVB: 'NGÂN HÀNG LIÊN DOANH LÀO VIỆT',
+  LVB: 'NGÂN HÀNG LIÊN DOANH LÀO - VIỆT',
   LVB1: 'CẦU NỐI CỦA THÀNH CÔNG',
   SelectLanguage: 'Chọn ngôn ngữ',
   Individual: 'Cá nhân',

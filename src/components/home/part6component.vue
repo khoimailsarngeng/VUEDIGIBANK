@@ -19,7 +19,8 @@
           <q-carousel-control :position="mobileMode ? 'top' : 'top'" class="q-gutter-xs text-center">
             <q-card flat bordered class="my-card bg-transparent full-width q-mt-md" style="border:0;width">
               <q-card-section v-if="$store.state.language.language === 'la'" style="line-height: 3;">
-                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">ທະນາຄານຮ່ວມທຸລະກິດລາວຫວຽດ</span>&nbsp;
+                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">{{ $t('LVB') }}</span
+                >&nbsp;
 
                 <br />
                 <span style="line-height: 3.5rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
@@ -34,7 +35,8 @@
                 </span>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'vi'">
-                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">NGÂN HÀNG LIÊN DOANH LÀO VIỆT</span>&nbsp;
+                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">{{ $t('LVB') }}</span
+                >&nbsp;
 
                 <br />
                 <span style="line-height: 3rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
@@ -47,7 +49,8 @@
                 </span>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'en'">
-                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">Lao-Viet Joint Venture Bank</span>&nbsp;
+                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">{{ $t('LVB') }}</span
+                >&nbsp;
 
                 <br />
                 <span style="line-height: 3rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
@@ -90,7 +93,7 @@
           <q-carousel-control :position="mobileMode ? 'top' : 'top'" class="text-center" style="margin-top: 0px">
             <q-card flat bordered class="my-card bg-transparent full-width" style="border:0;padding:0px">
               <q-card-section v-if="$store.state.language.language === 'la'" style="line-height: 3;padding: 5px;">
-                <span class="text-h5 text-white text-bold">ທະນາຄານຮ່ວມທຸລະກິດລາວຫວຽດ</span>
+                <span class="text-h5 text-white text-bold">{{ $t('LVB') }}</span>
                 <br />
                 <div class="q-font-18 text-white">
                   44 ຖະໜົນລ້ານຊ້າງ, ເມືອງ ຈັນທະບູລີ,
@@ -110,7 +113,7 @@
               <q-card-section style="line-height: 3;padding: 9px" v-if="$store.state.language.language === 'vi'">
                 <span class="text-h6 text-white text-bold"
                   >NGÂN HÀNG <br />
-                  LIÊN DOANH LÀO VIỆT</span
+                  LIÊN DOANH LÀO - VIỆT</span
                 >&nbsp;
                 <br />
                 <div class="q-font-18 text-white">
@@ -129,7 +132,7 @@
                 </div>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'en'">
-                <span class="text-h6 text-white text-bold">Lao-Viet Joint Venture Bank</span>
+                <span class="text-h6 text-white text-bold">{{ $t('LVB') }}</span>
                 <br />
                 <div class="q-font-18 text-white">
                   44 Lanexang, Chanthabouly,
@@ -175,7 +178,8 @@
           <q-carousel-control :position="mobileMode ? 'top' : 'top'" class="text-center" style="margin-top: 0">
             <q-card flat bordered class="my-card bg-transparent full-width" style="border:0;width">
               <q-card-section v-if="$store.state.language.language === 'la'" style="line-height: 3;">
-                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">ທະນາຄານຮ່ວມທຸລະກິດລາວຫວຽດ</span>&nbsp;
+                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">{{ $t('LVB') }}</span
+                >&nbsp;
                 <br />
                 <span style="line-height: 3.5rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
                   44 ຖະໜົນລ້ານຊ້າງ, ເມືອງ ຈັນທະບູລີ, ນະຄອນຫຼວງວຽງຈັນ
@@ -189,7 +193,8 @@
                 </span>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'vi'">
-                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">NGÂN HÀNG LIÊN DOANH LÀO VIỆT</span>&nbsp;
+                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">{{ $t('LVB') }}</span
+                >&nbsp;
 
                 <br />
                 <span style="line-height: 3rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">
@@ -202,7 +207,8 @@
                 </span>
               </q-card-section>
               <q-card-section style="line-height: 3;" v-if="$store.state.language.language === 'en'">
-                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">Lao-Viet Joint Venture Bank</span>&nbsp;
+                <span :class="mobileMode ? 'text-h5 text-white' : 'text-h4 text-white'">{{ $t('LVB') }}</span
+                >&nbsp;
 
                 <br />
                 <span style="line-height: 3rem;" :class="mobileMode ? 'text-h7 text-white' : 'text-h6 text-white'">

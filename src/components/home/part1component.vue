@@ -120,9 +120,9 @@
                 <q-carousel-slide :name="1" style="padding: 0px;">
                   <div class="text-primary">
                     <div class="row justify-center">
-                      <div class="col-4 q-pr-xs" style="width: auto">
+                      <!-- <div class="col-4 q-pr-xs" style="width: auto">
                         <span :class="window.width <= 320 ? 'q-font-18' : 'q-font-20'" style="color: black">{{ $t('Individual') }}</span>
-                      </div>
+                      </div> -->
                       <div class="col-4" style="width: auto">
                         <a href="https://ebank.laovietbank.com.la/IBSRetail" target="_blank">
                           <img src="/assets/img/btn_Login.svg" height="33px" />
@@ -147,7 +147,7 @@
                     </div>
                   </div>
                 </q-carousel-slide>
-                <q-carousel-slide :name="2" style="padding: 0px;">
+                <!-- <q-carousel-slide :name="2" style="padding: 0px;">
                   <div class="text-primary">
                     <div class="row justify-center">
                       <div class="col-4 q-pr-xs" style="width: auto">
@@ -176,7 +176,7 @@
                       </div>
                     </div>
                   </div>
-                </q-carousel-slide>
+                </q-carousel-slide> -->
               </q-carousel>
             </div>
           </q-carousel-control>

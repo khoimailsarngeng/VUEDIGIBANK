@@ -111,7 +111,7 @@
                 </q-card-section>
                 <q-card-section v-if="$store.state.language.language === 'en'">
                   <span :class="mobileMode ? 'text-primary text-h6 text-bold' : 'text-primary text-h4 text-bold'"
-                    >Service fees <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span></span
+                    >Service fees of <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span></span
                   >
                   <br />
                   <p style="margin: 22px 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
@@ -123,7 +123,7 @@
                   <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
                     <span :style="window.width <= 1366 ? 'font-size:18px;line-height:107%;color:#17479B' : 'font-size:20px;line-height:107%;color:#17479B'">
                       <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> LaoVietBank currently applies no-fee policies for
-                      several services on LVB DigiBank such as free internal transfer, bill payment, and others. Interantional transfer, interbank transfer are
+                      several services on LVB DigiBank such as free internal transfer, bill payment, and others. international transfer, interbank transfer are
                       charged with the lowest market rate. Detail of fees is <a target="_blank" :href="linkfee">HERE</a>.
                     </span>
                   </p>
@@ -274,7 +274,7 @@
                 </q-card-section>
                 <q-card-section v-if="$store.state.language.language === 'en'" class="text-center">
                   <span :class="mobileMode ? 'text-primary text-h5 text-bold text-center' : 'text-primary text-h5 text-bold'"
-                    >Service fees <br />
+                    >Service fees of <br />
                     <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span></span
                   >
                   <br />
@@ -287,7 +287,7 @@
                   <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
                     <span :style="window.width <= 1366 ? 'font-size:18px;line-height:107%;color:#17479B' : 'font-size:20px;line-height:107%;color:#17479B'">
                       <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> LaoVietBank currently applies no-fee policies for
-                      several services on LVB DigiBank such as free internal transfer, bill payment, and others. Interantional transfer, interbank transfer are
+                      several services on LVB DigiBank such as free internal transfer, bill payment, and others. international transfer, interbank transfer are
                       charged with the lowest market rate. Detail of fees is <a target="_blank" :href="linkfee">HERE</a>.
                     </span>
                   </p>
@@ -414,7 +414,7 @@
                   <p style="margin: 0cm 0cm 8pt; line-height: 2; font-size: 15px; text-align: justify">
                     <span :style="window.width <= 1366 ? 'font-size:18px;line-height:107%;color:#17479B' : 'font-size:20px;line-height:107%;color:#17479B'">
                       <img class="cls-dorkjumpa" src="/assets/img/Champa_bullet.svg" height="16px" alt="" /> LaoVietBank currently applies no-fee policies for
-                      several services on LVB DigiBank such as free internal transfer, bill payment, and others. Interantional transfer, interbank transfer are
+                      several services on LVB DigiBank such as free internal transfer, bill payment, and others. international transfer, interbank transfer are
                       charged with the lowest market rate. Detail of fees is <a target="_blank" :href="linkfee">HERE</a>.
                     </span>
                   </p>

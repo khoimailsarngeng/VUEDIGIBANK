@@ -52,5 +52,7 @@ export default {
   InfoCorporatecustomer: 'ຂໍ້ມູນສຳລັບລູກຄ້າບໍລິສັດ',
   LVB: 'ທະນາຄານຮ່ວມທຸລະກິດລາວຫວຽດ',
   LVB1: 'ຂົວຕໍ່ແຫ່ງຜົນສຳເລັດ',
-  SelectLanguage: 'ເລືອກພາສາ'
+  SelectLanguage: 'ເລືອກພາສາ',
+  Individual: 'ລູກຄ້າບຸກຄົນ',
+  Corporate: 'ລູກຄ້າບໍລິສັດ'
 };

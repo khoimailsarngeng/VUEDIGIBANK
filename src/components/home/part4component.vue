@@ -17,13 +17,13 @@
           <q-carousel-control position="top" class="text-center q-pt-xl">
             <div v-if="!mobileMode">
               <div class="col-xs-12 text-h4 text-bold text-primary" v-if="$store.state.language.language === 'vi'">
-                Đăng kí dịch vụ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+                Đăng kí dịch vụ
               </div>
               <div class="col-xs-12 text-h4 text-bold text-primary" v-if="$store.state.language.language === 'la'">
-                ລົງທະບຽນ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+                ລົງທະບຽນ
               </div>
               <div class="col-xs-12 text-h4 text-bold text-primary" v-if="$store.state.language.language === 'en'">
-                Registration <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+                Registration
               </div>
             </div>
 
@@ -97,10 +97,10 @@
                     <br />
                     <span class="text-primary q-font-20">{{
                       $store.state.language.language === 'la'
-                        ? 'ຕິດຕັ້ງ App '
+                        ? `ຕິດຕັ້ງ App/ເຂົ້າສູ່ website`
                         : $store.state.language.language === 'vi'
                         ? 'Cài đặt ứng dụng/Truy cập website'
-                        : 'Install application'
+                        : `Install application/Login LVB's website`
                     }}</span
                     ><br />
                     <q-btn
@@ -314,13 +314,13 @@
           <q-carousel-control position="top" class="text-center q-pt-xl">
             <div>
               <div class="col-xs-12 text-h5 text-bold text-primary" v-if="$store.state.language.language === 'vi'">
-                Đăng kí dịch vụ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+                Đăng kí dịch vụ
               </div>
               <div class="col-xs-12 text-h5 text-bold text-primary" v-if="$store.state.language.language === 'la'">
-                ລົງທະບຽນ <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+                ລົງທະບຽນ
               </div>
               <div class="col-xs-12 text-h5 text-bold text-primary" v-if="$store.state.language.language === 'en'">
-                Registration <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span>
+                Registration
               </div>
             </div>
             <div class="slide-pro" style="margin-top: 40px">
@@ -385,10 +385,10 @@
                     <br />
                     <span class="text-primary q-font-20">{{
                       $store.state.language.language === 'la'
-                        ? 'ຕິດຕັ້ງ App '
+                        ? `ຕິດຕັ້ງ App/ເຂົ້າສູ່ website`
                         : $store.state.language.language === 'vi'
                         ? 'Cài đặt ứng dụng/Truy cập website'
-                        : 'Install application'
+                        : `Install application/Login LVB's website`
                     }}</span
                     ><br />
                     <q-btn

@@ -52,5 +52,7 @@ export default {
   InfoCorporatecustomer: 'Thông tin Khách hàng doanh nghiệp',
   LVB: 'NGÂN HÀNG LIÊN DOANH LÀO VIỆT',
   LVB1: 'CẦU NỐI CỦA THÀNH CÔNG',
-  SelectLanguage: 'Chọn ngôn ngữ'
+  SelectLanguage: 'Chọn ngôn ngữ',
+  Individual: 'Cá nhân',
+  Corporate: 'Doanh nghiệp'
 };

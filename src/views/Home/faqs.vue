@@ -44,6 +44,14 @@
             :header-class="smartbanking ? 'bg-primary text-white' : ''"
             label="I.	Giới thiệu LVB Digibank"
           >
+          </q-expansion-item>
+          <!-- <q-expansion-item
+            v-model="smartbanking"
+            switch-toggle-side
+            :expand-icon="smartbanking ? 'remove_circle_outline' : 'control_point'"
+            :header-class="smartbanking ? 'bg-primary text-white' : ''"
+            label="I.	Giới thiệu LVB Digibank"
+          >
             <q-card>
               <q-card-section>
                 <q-expansion-item switch-toggle-side header-class="bg-grey-2" label="1.	LVB Digibank là gì?" expand-icon="help">
@@ -182,7 +190,7 @@
                 </q-expansion-item>
               </q-card-section>
             </q-card>
-          </q-expansion-item>
+          </q-expansion-item> -->
         </q-list>
       </div>
     </div>

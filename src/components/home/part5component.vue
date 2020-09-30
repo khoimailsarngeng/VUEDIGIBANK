@@ -16,10 +16,21 @@
         <template v-slot:control>
           <q-carousel-control position="top" class="text-center q-pt-xl">
             <div class="">
-              <div :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h4 text-center text-primary text-bold'">
+              <div
+                v-if="$store.state.language.language === 'la' || $store.state.language.language === 'vi'"
+                :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h4 text-center text-primary text-bold'"
+              >
                 {{ lang === 'en' ? 'Detail' : lang === 'la' ? 'ລາຍລະອຽດ' : 'Chi tiết về' }}
                 <span class="text-primary text-bold">LVB</span>
                 <span class="text-red text-bold"> DigiBank</span>
+              </div>
+              <div
+                v-if="$store.state.language.language === 'en'"
+                :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h4 text-center text-primary text-bold'"
+              >
+                <span class="text-primary text-bold">LVB</span>
+                <span class="text-red text-bold"> DigiBank</span>
+                {{ lang === 'en' ? 'In Detail' : lang === 'la' ? 'ລາຍລະອຽດ' : 'Chi tiết về' }}
               </div>
               <div class="row q-col-gutter-md cls-production" style="padding-top:3%">
                 <div :style="mobileMode ? 'width:50%' : 'width:50%;padding-left: 10%'" class="text-center">
@@ -129,10 +140,21 @@
         <template v-slot:control>
           <q-carousel-control position="top" class="text-center" :style="window.width <= 320 ? 'margin-top: 50px' : 'margin-top: 50px'">
             <div class="">
-              <div :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h4 text-center text-primary text-bold'">
+              <div
+                v-if="$store.state.language.language === 'la' || $store.state.language.language === 'vi'"
+                :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h4 text-center text-primary text-bold'"
+              >
                 {{ lang === 'en' ? 'Detail' : lang === 'la' ? 'ລາຍລະອຽດ' : 'Chi tiết về' }}
                 <span class="text-primary text-bold">LVB</span>
                 <span class="text-red text-bold"> DigiBank</span>
+              </div>
+              <div
+                v-if="$store.state.language.language === 'en'"
+                :class="mobileMode ? 'text-h6 text-center text-primary text-bold' : 'text-h4 text-center text-primary text-bold'"
+              >
+                <span class="text-primary text-bold">LVB</span>
+                <span class="text-red text-bold"> DigiBank</span>
+                {{ lang === 'en' ? 'In Detail' : lang === 'la' ? 'ລາຍລະອຽດ' : 'Chi tiết về' }}
               </div>
               <div class="row q-col-gutter-md">
                 <div style="width:100%" class="text-center">

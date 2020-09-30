@@ -66,10 +66,10 @@
           />
           <img @click="$router.push('/')" src="/assets/img/logo-LVBDigiBank.svg" style="width: 140px" alt v-if="mobileMode" />
           <q-toolbar-title
-            :class="window.width > 1366 ? 'q-font-20 text-bold' : $store.state.language.language === 'la' ? 'q-font-20 text-bold' : 'q-font-13 text-bold'"
+            :class="window.width > 1366 ? 'q-font-30 text-bold' : $store.state.language.language === 'la' ? 'q-font-20 text-bold' : 'q-font-13 text-bold'"
             v-if="!mobileMode && window.width > 1024"
             @click="$router.push('/')"
-            :style="window.width === 1366 ? 'padding: 0;color:#17479b' : 'padding: 0;color:#17479b'"
+            :style="window.width === 1366 ? 'padding: 0;color:#17479b;' : 'padding: 0;color:#17479b'"
           >
             {{ $t('LVB') }}
           </q-toolbar-title>
@@ -451,5 +451,14 @@ a:hover {
 .main {
   padding-right: 5%;
   padding-left: 5%;
+}
+.q-toolbar__title {
+  flex: none;
+  min-width: 1px;
+  max-width: 100%;
+  font-size: 21px;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  padding: 0 12px;
 }
 </style>

@@ -38,8 +38,8 @@
                     : window.width <= 1366
                     ? 'border:0;margin-top:6%;padding-left: 30px;'
                     : window.width === 1600
-                    ? `border:0;margin-top:6%;padding-left: 150px;`
-                    : `border:0;margin-top:6%;padding-left: 250px;`
+                    ? `border:0;margin-top:8%;padding-left: 150px;`
+                    : `border:0;margin-top:8%;padding-left: 250px;`
                 "
               >
                 <q-card-section>
@@ -69,7 +69,7 @@
                   >
                     <span class="text-primary text-bold"> LVB</span
                     ><span class="text-red text-bold"> DigiBank </span> ແມ່ນການບໍລິການທະນາຄານດີຈີຕ້ອນຂອງທະນາຄານຮ່ວມທຸລະກິດລາວຫວຽດ.
-                    <br />
+                    <!-- <br /> -->
                     LVB DigiBank ອະນຸຍາດໃຫ້ລູກຄ້າບຸກຄົນ ແລະ ນິຕິບຸກຄົນ ທີ່ນໍາໃຊ້ໂທລະສັບມືຖື, ແທັບເລັດ, ຄອມພິວເຕີຕັ້ງ ໂຕະ ແລະ ແລັບທັອບ
                     ປະຕິບັດບັນດາທຸລະກຳຂອງທະນາຄານຜ່ານ LVB DigiBank Application ແລະ ຜ່ານຊ່ອງທາງ website:
                     <a href="https://www.laovietbank.com.la/la/" target="_blank">www.laovietbank.com.la</a>
@@ -79,10 +79,12 @@
                     style="line-height: 1.5; margin-top: 26px; color: #17479b !important; text-align: justify"
                     v-if="$store.state.language.language === 'vi'"
                   >
-                    <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> là dịch vụ Ngân hàng số của Ngân hàng
-                    liên doanh Lào Việt.
+                    <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> là Ngân hàng số của Ngân hàng liên doanh
+                    Lào Việt. LVB DigiBank cho phép khách hàng cá nhân và doanh nghiệp sử dụng điện thoại, máy tính bảng, máy tính để bàn và máy tính xách tay
+                    để thực hiện đa dạng các giao dịch ngân hàng thông qua Ứng dụng LVB DigiBank và thông qua website
+                    <a href="https://www.laovietbank.com.la/vi/" target="_blank">www.laovietbank.com.la</a>
                   </p>
-                  <p
+                  <!-- <p
                     class="q-font-20 text-justify text-primary"
                     style="line-height: 1.5; margin-top: 10px; color: #17479b !important; text-align: justify"
                     v-if="$store.state.language.language === 'vi'"
@@ -90,7 +92,7 @@
                     LVB DigiBank cho phép khách hàng cá nhân và doanh nghiệp sử dụng điện thoại, máy tính bảng, máy tính để bàn và máy tính xách tay để thực
                     hiện đa dạng các giao dịch ngân hàng thông qua Ứng dụng LVB DigiBank và thông qua website
                     <a href="https://www.laovietbank.com.la/vi/" target="_blank">www.laovietbank.com.la</a>
-                  </p>
+                  </p> -->
                   <p
                     class="q-font-20 text-justify text-primary"
                     style="line-height: 1.5; margin-top: 10px; color: #17479b !important; text-align: justify"
@@ -135,7 +137,7 @@
                       </div> -->
                       <div class="col-4" style="width: auto">
                         <a href="https://ebank.laovietbank.com.la/IBSRetail" target="_blank">
-                          <img src="/assets/img/btn_Login.svg" height="33px" />
+                          <img src="/assets/img/bg_login_home.svg" height="33px" />
                         </a>
                       </div>
                       <div class="col-4" style="width: auto">
@@ -144,14 +146,14 @@
                           href="https://apps.apple.com/la/app/laovietbank-corporate-banking/id1185365945"
                           target="_blank"
                         >
-                          <img src="/assets/img/bt-web-appstore.svg" height="38px" title="Download App by App Store" style="margin-top: -2px" />
+                          <img src="/assets/img/bt_appstore_home.svg" height="33px" title="Download App by App Store" style="margin-top: 0px" />
                         </a>
                         <a
                           :style="mobileMode ? (detectDevice === 'I' ? 'display:none' : '') : ''"
                           href="https://play.google.com/store/apps/details?id=com.lvb.corp"
                           target="_blank"
                         >
-                          <img src="/assets/img/bt-web-playstore.svg" height="38px" title="Download App by Google Play" style="margin-top: -2px" />
+                          <img src="/assets/img/bt_googleplay_home.svg" height="33px" title="Download App by Google Play" style="margin-top: 0px" />
                         </a>
                       </div>
                     </div>
@@ -270,10 +272,12 @@
                     style="line-height: 1.5; margin-top: 26px; color: #17479b !important; text-align: justify"
                     v-if="$store.state.language.language === 'vi'"
                   >
-                    <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> là dịch vụ Ngân hàng số của Ngân hàng
-                    liên doanh Lào Việt.
+                    <span class="text-primary text-bold"> LVB </span><span class="text-red text-bold"> DigiBank </span> là Ngân hàng số của Ngân hàng liên doanh
+                    Lào Việt. LVB DigiBank cho phép khách hàng cá nhân và doanh nghiệp sử dụng điện thoại, máy tính bảng, máy tính để bàn và máy tính xách tay
+                    để thực hiện đa dạng các giao dịch ngân hàng thông qua Ứng dụng LVB DigiBank và thông qua website
+                    <a href="https://www.laovietbank.com.la/vi/" target="_blank">www.laovietbank.com.la</a>
                   </p>
-                  <p
+                  <!-- <p
                     class="q-font-18 text-justify text-primary"
                     style="line-height: 1.5; margin-top: 10px; color: #17479b !important; text-align: justify"
                     v-if="$store.state.language.language === 'vi'"
@@ -281,7 +285,7 @@
                     LVB DigiBank cho phép khách hàng cá nhân và doanh nghiệp sử dụng điện thoại, máy tính bảng, máy tính để bàn và máy tính xách tay để thực
                     hiện đa dạng các giao dịch ngân hàng thông qua Ứng dụng LVB DigiBank và thông qua website
                     <a href="https://www.laovietbank.com.la/vi/" target="_blank">www.laovietbank.com.la</a>
-                  </p>
+                  </p> -->
                   <p
                     class="q-font-18 text-justify text-primary"
                     style="line-height: 1.5; margin-top: 10px; color: #17479b !important; text-align: justify"

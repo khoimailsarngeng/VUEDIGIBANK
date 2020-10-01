@@ -1,6 +1,6 @@
 <template>
   <div>
-    <q-carousel
+    <!-- <q-carousel
       swipeable
       animated
       v-model="slide"
@@ -32,9 +32,11 @@
           </q-card>
         </q-carousel-control>
       </template>
-    </q-carousel>
+    </q-carousel> -->
     <div class="q-pa-md">
-      <div class="text-h5">Frequently asked questions</div>
+      <div class="text-h5" v-if="$store.state.language.language === 'en'">Frequently asked questions</div>
+      <div class="text-h5" v-if="$store.state.language.language === 'vi'">Câu hỏi thường gặp</div>
+      <div class="text-h5" v-if="$store.state.language.language === 'la'">ຄໍາ​ຖາມ​ທີ່​ຖືກ​ຖາມ​ເລື້ອຍໆ</div>
       <div :class="mobileMode ? '' : 'q-pa-md'" style="max-width: 100%">
         <q-list bordered class="rounded-borders">
           <q-expansion-item
@@ -50,7 +52,7 @@
                   v-for="(item, index) in IndividualFAQ"
                   :key="index"
                   switch-toggle-side
-                  :label="lang == 'en' ? item[0].Titleen : lang == 'vi' ? item[0].Titlevi : item[0].Title"
+                  :label="lang == 'en' ? item[0].Titlevi : lang == 'vi' ? item[0].Titlevi : item[0].Title"
                 >
                   <q-card>
                     <q-card-section>
@@ -58,11 +60,11 @@
                         v-for="(item1, index1) in item"
                         :key="index1"
                         switch-toggle-side
-                        :label="lang == 'en' ? item1.Questionen : lang == 'vi' ? item1.Questionvi : item1.Question"
+                        :label="lang == 'en' ? item1.Questionvi : lang == 'vi' ? item1.Questionvi : item1.Question"
                       >
                         <q-card>
                           <q-card-section style="padding-left: 8%; padding-right: 8%; text-align: justify">
-                            <div v-html="lang == 'en' ? item1.Answeren : lang == 'vi' ? item1.Answervi : item1.Answer"></div>
+                            <div v-html="lang == 'en' ? item1.Answervi : lang == 'vi' ? item1.Answervi : item1.Answer"></div>
                           </q-card-section>
                         </q-card>
                       </q-expansion-item>
@@ -85,7 +87,7 @@
                   v-for="(item, index) in CorporateFAQ"
                   :key="index"
                   switch-toggle-side
-                  :label="lang == 'en' ? item[0].Titleen : lang == 'vi' ? item[0].Titlevi : item[0].Title"
+                  :label="lang == 'en' ? item[0].Titlevi : lang == 'vi' ? item[0].Titlevi : item[0].Title"
                 >
                   <q-card>
                     <q-card-section>
@@ -93,11 +95,11 @@
                         v-for="(item1, index1) in item"
                         :key="index1"
                         switch-toggle-side
-                        :label="lang == 'en' ? item1.Questionen : lang == 'vi' ? item1.Questionvi : item1.Question"
+                        :label="lang == 'en' ? item1.Questionvi : lang == 'vi' ? item1.Questionvi : item1.Question"
                       >
                         <q-card>
                           <q-card-section style="padding-left: 8%; padding-right: 8%; text-align: justify">
-                            <div v-html="lang == 'en' ? item1.Answeren : lang == 'vi' ? item1.Answervi : item1.Answer"></div>
+                            <div v-html="lang == 'en' ? item1.Answervi : lang == 'vi' ? item1.Answervi : item1.Answer"></div>
                           </q-card-section>
                         </q-card>
                       </q-expansion-item>
@@ -266,8 +268,8 @@ export default {
   data() {
     return {
       slide: 1,
-      smartbanking: false,
-      smartbanking1: false
+      smartbanking: true,
+      smartbanking1: true
     };
   },
   mounted() {
